@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<body>
+	<div id="test">
+
+	</div>
+	<script type="text/javascript">
+		//方法一
+		function ajax_test() {
+			$.ajax({
+				url: "https://api.ftvnews.com.tw/API/FtvGetNews?Cate=NCOV&Page=1", //json文件位置
+				type: "GET", //請求方式為get
+				dataType: "json", //返回數據格式為json
+				success: function (data) { //請求成功完成后要執行的方法 
+					//each循環 使用$.each方法遍歷返回的數據
+					$.each(data.ITEM, function (i, item) {
+						var str = '<div>標題：' + item.Title + '</div>'
+							+ '<div>前言：' + item.Preface + '</div>'
+							+ '<div>內文：' + item.Content + '</div>'
+							+ '<div>分類：' + item.Mid + '</div>'
+							+ '<div>影像：' + item.Image + '</div>'
+							+ '<div>影音：' + item.Video + '</div>'
+							+ '<div>hashtags：' + item.KeyWord + '</div>'
+							+ '<div>建立日期：' + item.CreateDate + '</div>'
+							+ '<div>網站連結：' + item.WebLink + '</div>'
+							+ '<br><br><hr><br><br>';
+						document.write(str);
+					})
+				}
+			})
+		} ajax_test(); //執行函數
+	</script>
+</body>
+
+</html>

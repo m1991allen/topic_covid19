@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-news/0.9 http://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
+  <url>
+    <loc>https://www.ftvnews.com.tw/topic/covid19/index.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>民視新聞網</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:genres>PressRelease</news:genres>
+      <news:publication_date>2019-07-04</news:publication_date>
+      <news:title>【掌握武漢肺炎數據，圖表資訊一次看懂！】武漢肺炎 COVID-19｜病毒專題｜民視新聞網</news:title>
+      <news:keywords>covid19 武漢肺炎 中國 中共 台灣 全球 美國 日本 南韓 新加坡 澳洲 伊朗 義大利 圖表</news:keywords>
+      <news:stock_tickers />
+    </news:news>
+  </url>
+</urlset>
