@@ -215,6 +215,8 @@ $(document).ready(function () {
             success: function (data) { //請求成功完成后要執行的方法 
                 //each循環 使用$.each方法遍歷返回的數據
 
+                // console.log(data)
+
                 var html_read = '<div class="news_frame col-lg-4 col-md-4 col-sm-6"><a href="{{link}}"><div class="news"><div class="cover_size"><img class="cover" src="{{url}}"></div><div class="title">{{title}}</div><div class="date">{{date}}</div></div></a></div>';
 
                 for (var i = 0; i < 6; i++) {
