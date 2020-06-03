@@ -201,8 +201,7 @@ p.layout {
 .mainbg .mainbg_title h3 {
     font-size: 3.6rem;
     text-align: center;
-    transition: .5s;
-
+    transition: .5s
 }
 
 @media screen and (max-width:768px) {
@@ -557,8 +556,23 @@ svg {
 .news_layout .news .date {
     padding: 10px;
     font-size: 1rem;
-    background-color: white;
+    background-color: #fff0f0;
     text-align: right;
+}
+
+.moreBtn {
+    background-color: #db9e9e;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.moreBtn:hover {
+    background-color: black;
+    color: white;
 }
 
 /* 症狀 */

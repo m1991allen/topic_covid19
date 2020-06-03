@@ -215,15 +215,13 @@ $(document).ready(function () {
             success: function (data) { //請求成功完成后要執行的方法 
                 //each循環 使用$.each方法遍歷返回的數據
 
-                // console.log(data)
-
-                var html_read = '<div class="news_frame col-lg-4 col-md-4 col-sm-6"><a href="{{link}}"><div class="news"><div class="cover_size"><img class="cover" src="{{url}}"></div><div class="title">{{title}}</div><div class="date">{{date}}</div></div></a></div>';
+                var html_read = '<div class="news_frame col-lg-4 col-md-4 col-sm-6"><a href="https://www.ftvnews.com.tw/news/detail/{{link}}" target="_blank"><div class="news"><div class="cover_size"><img class="cover" src="{{url}}"></div><div class="title">{{title}}</div><div class="date"><i class="far fa-clock" aria-hidden="true"></i> {{date}}</div></div></a></div>';
 
                 for (var i = 0; i < 6; i++) {
                     var html_reading = html_read.replace('{{title}}', limitUploadFileName())
                         .replace('{{url}}', data.ITEM[i].Image)
                         .replace('{{date}}', data.ITEM[i].CreateDate)
-                        .replace('{{link}}', data.ITEM[i].WebLink)
+                        .replace('{{link}}', data.ITEM[i].ID)
                         ;
 
                     function limitUploadFileName() {
