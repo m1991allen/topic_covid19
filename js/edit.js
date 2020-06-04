@@ -898,7 +898,7 @@ $.ajax(settings).done(function (response) {
     // 墨西哥
     var data_gc58 = response.Countries[109].TotalConfirmed;
     var data_gd58 = response.Countries[109].TotalDeaths;
-    $('.data_gc58').addClass('deg2');
+    $('.data_gc58').addClass('deg0');
     $('.data_gc58').attr('title', '墨西哥' + '：' + data_gc58 + '例');
     $('.data_gc58').html(data_gc58);
     $('.data_gd58').html(data_gd58);
