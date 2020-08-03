@@ -1,0 +1,87 @@
+<!-- 起源 -->
+<section class="guideText">
+    <h2>疫情的起源...華南海鮮市場？</h2>
+    <p><span class="first-font">去</span>年12月，中國陸續出現不明原因肺炎病人，隨後世界衛生組織（WHO）將造成此次疫情的病毒，命名為「COVID-19」。</p>
+    <p>根據世界衛生組織疫情報告，武漢肺炎冠狀病毒與蝙蝠傳播的冠狀病毒，存在關聯，其中更明確點出和菊頭蝠科下的「菊頭蝠亞種（Rhinolophus bat sub-species）」相關。</p>
+    <p>而被指為疫情源頭的「華南海鮮批發市場」，除了進行水產批發交易外，也販售各種肉類、調味品和「野味」，因此加深了人畜共通疾病的可能。</p>
+    <p>不過也有學者爆料，距離華南海鮮批發市場僅280公尺的「武漢疾病預防及控制中心」，曾經研究蝙蝠身上的冠狀病毒，有研究員甚至曾被蝙蝠襲擊，蝙蝠血液因此灑到皮膚上，該名研究員擔心受到感染，還自我隔離了14天，也引發實驗室外洩病毒的疑慮。
+    </p>
+    <div class="guideText wuhan">
+        <img id="wuhan" src="img/wuhan.svg">
+        <img id="hubei" src="img/wuhan_hubei.svg">
+        <img id="click_me" src="img/arrow.svg">
+    </div>
+</section>
+
+
+
+<!-- 中共確診案例 -->
+<seciton id="item-1" class="guideText">
+    <h2>中國疫情地圖</h2>
+    <div class="map_china">
+        <!-- {{insert map}} -->
+        <!-- 中共各省案例 -->
+        <table id="dt_china" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+            <!-- {{insert form}} -->
+        </table>
+        <!-- 中共各省案例總計 -->
+        <table class="table table-action">
+            <thead>
+                <tr>
+                    <th>省份</th>
+                    <th>總案例</th>
+                    <th>總死亡</th>
+                </tr>
+            </thead>
+            <tbody class="count_global">
+                <tr style="background-color: rgb(187, 90, 90);color: white;">
+                    <td id="count_sumProvice_china">0</td>
+                    <td id="count_sumConfirm_china">0</td>
+                    <td id="count_sumDeath_china">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</seciton>
+<!-- 中共疫情趨勢 -->
+<section class="guideText" id="lineChart">
+    <h2>中國病例趨勢</h2>
+    <canvas id="lineChart_china_confirm"></canvas>
+    <p class="sign">Y：案例（人數）／ X：日期</p>
+</section>
+
+
+<!-- 旅遊警示 pc -->
+<section class="guideText alert_pc">
+    <h2>各國旅遊警示</h2>
+    <div class="alert_layout">
+        <div class="travel_rank alr1">
+            <span class="vt">第一級</span>
+            <span class="vt_info">注意</span>
+        </div>
+        <div class="travel_info">
+            <p>提醒遵守當地的一般預防措施</p>
+            <p class="alr1_country"></p>
+        </div>
+    </div>
+    <div class="alert_layout">
+        <div class="travel_rank alr2">
+            <span class="vt">第二級</span>
+            <span class="vt_info">警示</span>
+        </div>
+        <div class="travel_info">
+            <p>前往當地應採取加強防護</p>
+            <p class="alr2_country"></p>
+        </div>
+    </div>
+    <div class="alert_layout">
+        <div class="travel_rank alr3">
+            <span class="vt">第三級</span>
+            <span class="vt_info">警告</span>
+        </div>
+        <div class="travel_info">
+            <p>避免至當地所有非必要旅遊</p>
+            <p class="alr3_country"></p>
+        </div>
+    </div>
+</section>
