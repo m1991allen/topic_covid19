@@ -226,7 +226,7 @@ function ajax_gsheet() {
 
             // 台北市
             var data_tc2 = data.feed.entry[104].content.$t;
-            $('.data_tc2').addClass('deg1');
+            $('.data_tc2').addClass('deg0');
             $('.data_tc2').html(data_tc2);
             $('.data_tc2').attr('title', '台北市：' + data_tc2 + '例');
 
@@ -250,7 +250,7 @@ function ajax_gsheet() {
 
             // 新竹縣
             var data_tc6 = data.feed.entry[112].content.$t;
-            $('.data_tc6').addClass('deg4');
+            $('.data_tc6').addClass('deg3');
             $('.data_tc6').html(data_tc6);
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例');
 
@@ -310,7 +310,7 @@ function ajax_gsheet() {
 
             // 屏東縣
             var data_tc16 = data.feed.entry[132].content.$t;
-            $('.data_tc16').addClass('deg4');
+            $('.data_tc16').addClass('deg3');
             $('.data_tc16').html(data_tc16);
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例');
 
