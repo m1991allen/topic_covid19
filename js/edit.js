@@ -409,56 +409,56 @@ function ajax_gsheet() {
             let ov4 = 160;
 
             // 香港
-            var data_gc6 = data.feed.entry[163].content.$t;
-            var data_gd6 = data.feed.entry[164].content.$t;
+            var data_gc6 = data.feed.entry[157].content.$t;
+            var data_gd6 = data.feed.entry[158].content.$t;
             $('.data_gc6').addClass('deg2');
             $('.data_gc6').attr('title', '香港' + '：' + data_gc6 + '例');
             $('.data_gc6').html(data_gc6);
             $('.data_gd6').html(data_gd6);
 
             // 澳門
-            var data_gc7 = data.feed.entry[166].content.$t;
-            var data_gd7 = data.feed.entry[167].content.$t;
+            var data_gc7 = data.feed.entry[160].content.$t;
+            var data_gd7 = data.feed.entry[161].content.$t;
             $('.data_gc7').addClass('deg2');
             $('.data_gc7').attr('title', '澳門' + '：' + data_gc7 + '例');
             $('.data_gc7').html(data_gc7);
             $('.data_gd7').html(data_gd7);
 
             // 法屬圭亞那
-            var data_gc127 = data.feed.entry[169].content.$t;
-            var data_gd127 = data.feed.entry[170].content.$t;
+            var data_gc127 = data.feed.entry[163].content.$t;
+            var data_gd127 = data.feed.entry[164].content.$t;
             $('.data_gc127').addClass('deg3');
             $('.data_gc127').attr('title', '法屬圭亞那' + '：' + data_gc127 + '例');
             $('.data_gc127').html(data_gc127);
             $('.data_gd127').html(data_gd127);
 
             // 波多黎各
-            var data_gc144 = data.feed.entry[172].content.$t;
-            var data_gd144 = data.feed.entry[173].content.$t;
+            var data_gc144 = data.feed.entry[166].content.$t;
+            var data_gd144 = data.feed.entry[167].content.$t;
             $('.data_gc144').addClass('deg4');
             $('.data_gc144').attr('title', '波多黎各' + '：' + data_gc144 + '例');
             $('.data_gc144').html(data_gc144);
             $('.data_gd144').html(data_gd144);
 
             // 格陵蘭
-            var data_gc160 = data.feed.entry[175].content.$t;
-            var data_gd160 = data.feed.entry[176].content.$t;
+            var data_gc160 = data.feed.entry[169].content.$t;
+            var data_gd160 = data.feed.entry[170].content.$t;
             $('.data_gc160').addClass('deg4');
             $('.data_gc160').attr('title', '格陵蘭' + '：' + data_gc160 + '例');
             $('.data_gc160').html(data_gc160);
             $('.data_gd160').html(data_gd160);
 
             // 福克蘭群島
-            var data_gc199 = data.feed.entry[178].content.$t;
-            var data_gd199 = data.feed.entry[179].content.$t;
+            var data_gc199 = data.feed.entry[172].content.$t;
+            var data_gd199 = data.feed.entry[173].content.$t;
             $('.data_gc199').addClass('deg4');
             $('.data_gc199').attr('title', '福克蘭群島' + '：' + data_gc199 + '例');
             $('.data_gc199').html(data_gc199);
             $('.data_gd199').html(data_gd199);
 
             // 新喀里多尼亞
-            var data_gc201 = data.feed.entry[181].content.$t;
-            var data_gd201 = data.feed.entry[182].content.$t;
+            var data_gc201 = data.feed.entry[175].content.$t;
+            var data_gd201 = data.feed.entry[176].content.$t;
             $('.data_gc201').addClass('deg4');
             $('.data_gc201').attr('title', '新喀里多尼亞' + '：' + data_gc201 + '例');
             $('.data_gc201').html(data_gc201);
