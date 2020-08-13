@@ -215,7 +215,7 @@ function ajax_gsheet() {
             ////////////////
             ///////////////////
             /////// 台灣 /////////
-            ////////////////////////
+            ///////本土案例 ////////////
             ///////////////////////////
 
             // 基隆市
@@ -226,13 +226,13 @@ function ajax_gsheet() {
 
             // 台北市
             var data_tc2 = data.feed.entry[104].content.$t;
-            $('.data_tc2').addClass('deg0');
+            $('.data_tc2').addClass('deg2');
             $('.data_tc2').html(data_tc2);
             $('.data_tc2').attr('title', '台北市：' + data_tc2 + '例');
 
             // 新北市
             var data_tc3 = data.feed.entry[106].content.$t;
-            $('.data_tc3').addClass('deg1');
+            $('.data_tc3').addClass('deg2');
             $('.data_tc3').html(data_tc3);
             $('.data_tc3').attr('title', '新北市：' + data_tc3 + '例');
 
@@ -250,13 +250,13 @@ function ajax_gsheet() {
 
             // 新竹縣
             var data_tc6 = data.feed.entry[112].content.$t;
-            $('.data_tc6').addClass('deg3');
+            $('.data_tc6').addClass('degNone');
             $('.data_tc6').html(data_tc6);
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例');
 
             // 苗栗縣
             var data_tc7 = data.feed.entry[114].content.$t;
-            $('.data_tc7').addClass('deg4');
+            $('.data_tc7').addClass('degNone');
             $('.data_tc7').html(data_tc7);
             $('.data_tc7').attr('title', '苗栗縣：' + data_tc7 + '例');
 
@@ -268,7 +268,7 @@ function ajax_gsheet() {
 
             // 彰化縣
             var data_tc9 = data.feed.entry[118].content.$t;;
-            $('.data_tc9').addClass('deg3');
+            $('.data_tc9').addClass('deg2');
             $('.data_tc9').html(data_tc9);
             $('.data_tc9').attr('title', '彰化縣：' + data_tc9 + '例');
 
@@ -280,43 +280,43 @@ function ajax_gsheet() {
 
             // 嘉義市
             var data_tc11 = data.feed.entry[122].content.$t;
-            $('.data_tc11').addClass('deg4');
+            $('.data_tc11').addClass('degNone');
             $('.data_tc11').html(data_tc11);
             $('.data_tc11').attr('title', '嘉義市：' + data_tc11 + '例');
 
             // 嘉義縣
             var data_tc12 = data.feed.entry[124].content.$t;
-            $('.data_tc12').addClass('deg4');
+            $('.data_tc12').addClass('degNone');
             $('.data_tc12').html(data_tc12);
             $('.data_tc12').attr('title', '嘉義縣：' + data_tc12 + '例');
 
             // 雲林縣
             var data_tc13 = data.feed.entry[126].content.$t;
-            $('.data_tc13').addClass('deg4');
+            $('.data_tc13').addClass('degNone');
             $('.data_tc13').html(data_tc13);
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例');
 
             // 台南市
             var data_tc14 = data.feed.entry[128].content.$t;
-            $('.data_tc14').addClass('deg3');
+            $('.data_tc14').addClass('deg4');
             $('.data_tc14').html(data_tc14);
             $('.data_tc14').attr('title', '台南市：' + data_tc14 + '例');
 
             // 高雄市
             var data_tc15 = data.feed.entry[130].content.$t;
-            $('.data_tc15').addClass('deg2');
+            $('.data_tc15').addClass('degNone');
             $('.data_tc15').html(data_tc15);
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例');
 
             // 屏東縣
             var data_tc16 = data.feed.entry[132].content.$t;
-            $('.data_tc16').addClass('deg3');
+            $('.data_tc16').addClass('degNone');
             $('.data_tc16').html(data_tc16);
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例');
 
             // 宜蘭縣
             var data_tc17 = data.feed.entry[134].content.$t;
-            $('.data_tc17').addClass('deg4');
+            $('.data_tc17').addClass('degNone');
             $('.data_tc17').html(data_tc17);
             $('.data_tc17').attr('title', '宜蘭縣：' + data_tc17 + '例');
 
@@ -350,15 +350,197 @@ function ajax_gsheet() {
             $('.data_tc22').html(data_tc22);
             $('.data_tc22').attr('title', '澎湖縣：' + data_tc22 + '例');
 
-            // 近日新增
-            var data_tc23 = data.feed.entry[146].content.$t;
-            $('.data_tc23').html(data_tc23);
+            ////////////////
+            ///////////////////
+            /////// 台灣 /////////
+            ///////境外移入 ////////////
+            ///////////////////////////
+
+            // 其他（磐石艦）
+            var data_imp1 = data.feed.entry[150].content.$t;
+            $('.data_imp1').html(data_imp1);
+
+            // 美國
+            var data_imp2 = data.feed.entry[152].content.$t;
+            $('.data_imp2').html(data_imp2);
+
+            // 英國
+            var data_imp3 = data.feed.entry[154].content.$t;
+            $('.data_imp3').html(data_imp3);
+
+            // 菲律賓
+            var data_imp4 = data.feed.entry[156].content.$t;
+            $('.data_imp4').html(data_imp4);
+
+            // 法國
+            var data_imp5 = data.feed.entry[158].content.$t;
+            $('.data_imp5').html(data_imp5);
+
+            // 西班牙
+            var data_imp6 = data.feed.entry[160].content.$t;
+            $('.data_imp6').html(data_imp6);
+
+            // 土耳其
+            var data_imp7 = data.feed.entry[162].content.$t;
+            $('.data_imp7').html(data_imp7);
+
+            // 埃及
+            var data_imp8 = data.feed.entry[164].content.$t;
+            $('.data_imp8').html(data_imp8);
+
+            // 中國
+            var data_imp9 = data.feed.entry[166].content.$t;
+            $('.data_imp9').html(data_imp9);
+
+            // 奧地利
+            var data_imp10 = data.feed.entry[168].content.$t;
+            $('.data_imp10').html(data_imp10);
+
+            // 尼利
+            var data_imp11 = data.feed.entry[170].content.$t;
+            $('.data_imp11').html(data_imp11);
+
+            // 荷蘭
+            var data_imp12 = data.feed.entry[172].content.$t;
+            $('.data_imp12').html(data_imp12);
+
+            // 捷克
+            var data_imp13 = data.feed.entry[174].content.$t;
+            $('.data_imp13').html(data_imp13);
+
+            // 德國
+            var data_imp14 = data.feed.entry[176].content.$t;
+            $('.data_imp14').html(data_imp14);
+
+            // 瑞士
+            var data_imp15 = data.feed.entry[178].content.$t;
+            $('.data_imp15').html(data_imp15);
+
+            // 義大利
+            var data_imp16 = data.feed.entry[180].content.$t;
+            $('.data_imp16').html(data_imp16);
+
+            // 南非
+            var data_imp17 = data.feed.entry[182].content.$t;
+            $('.data_imp17').html(data_imp17);
+
+            // 智利
+            var data_imp18 = data.feed.entry[184].content.$t;
+            $('.data_imp18').html(data_imp18);
+
+            // 愛爾蘭
+            var data_imp19 = data.feed.entry[186].content.$t;
+            $('.data_imp19').html(data_imp19);
+
+            // 日本
+            var data_imp21 = data.feed.entry[188].content.$t;
+            $('.data_imp21').html(data_imp21);
+
+            // 孟加拉
+            var data_imp22 = data.feed.entry[190].content.$t;
+            $('.data_imp22').html(data_imp22);
+
+            // 加拿大
+            var data_imp23 = data.feed.entry[192].content.$t;
+            $('.data_imp23').html(data_imp23);
+
+            // 冰島
+            var data_imp24 = data.feed.entry[194].content.$t;
+            $('.data_imp24').html(data_imp24);
+
+            // 墨西哥
+            var data_imp25 = data.feed.entry[196].content.$t;
+            $('.data_imp25').html(data_imp25);
+
+            // 摩洛哥
+            var data_imp26 = data.feed.entry[198].content.$t;
+            $('.data_imp26').html(data_imp26);
+
+            // 阿根廷
+            var data_imp27 = data.feed.entry[200].content.$t;
+            $('.data_imp27').html(data_imp27);
+
+            // 澳洲
+            var data_imp28 = data.feed.entry[202].content.$t;
+            $('.data_imp28').html(data_imp28);
+
+            // 比利時
+            var data_imp29 = data.feed.entry[204].content.$t;
+            $('.data_imp29').html(data_imp29);
+
+            // 丹麥
+            var data_imp30 = data.feed.entry[206].content.$t;
+            $('.data_imp30').html(data_imp30);
+
+            // 瓜地馬拉
+            var data_imp31 = data.feed.entry[208].content.$t;
+            $('.data_imp31').html(data_imp31);
+
+            // 香港
+            var data_imp32 = data.feed.entry[210].content.$t;
+            $('.data_imp32').html(data_imp32);
+
+            // 紐西蘭
+            var data_imp33 = data.feed.entry[212].content.$t;
+            $('.data_imp33').html(data_imp33);
+
+            // 卡達
+            var data_imp34 = data.feed.entry[214].content.$t;
+            $('.data_imp34').html(data_imp34);
+
+            // 塞內加爾
+            var data_imp35 = data.feed.entry[216].content.$t;
+            $('.data_imp35').html(data_imp35);
+
+            // 希臘
+            var data_imp36 = data.feed.entry[218].content.$t;
+            $('.data_imp36').html(data_imp36);
+
+            // 賴索托
+            var data_imp37 = data.feed.entry[220].content.$t;
+            $('.data_imp37').html(data_imp37);
+
+            // 澳門
+            var data_imp38 = data.feed.entry[222].content.$t;
+            $('.data_imp38').html(data_imp38);
+
+            // 馬來西亞
+            var data_imp39 = data.feed.entry[224].content.$t;
+            $('.data_imp39').html(data_imp39);
+
+            // 阿曼
+            var data_imp40 = data.feed.entry[226].content.$t;
+            $('.data_imp40').html(data_imp40);
+
+            // 波蘭
+            var data_imp41 = data.feed.entry[228].content.$t;
+            $('.data_imp41').html(data_imp41);
+
+            // 泰國
+            var data_imp42 = data.feed.entry[230].content.$t;
+            $('.data_imp42').html(data_imp42);
+
+            // 俄羅斯
+            var data_imp43 = data.feed.entry[232].content.$t;
+            $('.data_imp43').html(data_imp43);
+
+            // 台灣總合 //
+            // 台灣總合 //
+            // 台灣總合 //
+
+            // 總數-本土案例 變數：tc-local
+            var data_tcloc = data.feed.entry[146].content.$t;
+            $('.data_tcloc').html(data_tcloc);
+
+            // 總數-境外移入 變數：tc-import
+            var data_tcimp = data.feed.entry[234].content.$t;
+            $('.data_tcimp').html(data_tcimp);
 
             //// 台灣總和 ////
-            $('#count_sumConfirm_taiwan').html(data.feed.entry[148].content.$t);
-            $('#tw_con').html(data.feed.entry[148].content.$t);
-            $('#tw_die').html(data.feed.entry[150].content.$t);
-            $('#tw_rec').html(data.feed.entry[152].content.$t);
+            $('#count_sumConfirm_taiwan').html(data.feed.entry[238].content.$t);
+            $('#tw_con').html(data.feed.entry[238].content.$t);
+            $('#tw_die').html(data.feed.entry[240].content.$t);
+            $('#tw_rec').html(data.feed.entry[242].content.$t);
 
             //// 台灣首屏動態數字 ////
             $('#tw_con').each(function () {
@@ -405,60 +587,57 @@ function ajax_gsheet() {
             /////第一筆有資料的編號為０/////
             ///////////////////////////////
 
-            let ov3 = 159;
-            let ov4 = 160;
-
             // 香港
-            var data_gc6 = data.feed.entry[157].content.$t;
-            var data_gd6 = data.feed.entry[158].content.$t;
+            var data_gc6 = data.feed.entry[247].content.$t;
+            var data_gd6 = data.feed.entry[248].content.$t;
             $('.data_gc6').addClass('deg2');
             $('.data_gc6').attr('title', '香港' + '：' + data_gc6 + '例');
             $('.data_gc6').html(data_gc6);
             $('.data_gd6').html(data_gd6);
 
             // 澳門
-            var data_gc7 = data.feed.entry[160].content.$t;
-            var data_gd7 = data.feed.entry[161].content.$t;
+            var data_gc7 = data.feed.entry[250].content.$t;
+            var data_gd7 = data.feed.entry[251].content.$t;
             $('.data_gc7').addClass('deg2');
             $('.data_gc7').attr('title', '澳門' + '：' + data_gc7 + '例');
             $('.data_gc7').html(data_gc7);
             $('.data_gd7').html(data_gd7);
 
             // 法屬圭亞那
-            var data_gc127 = data.feed.entry[163].content.$t;
-            var data_gd127 = data.feed.entry[164].content.$t;
+            var data_gc127 = data.feed.entry[253].content.$t;
+            var data_gd127 = data.feed.entry[254].content.$t;
             $('.data_gc127').addClass('deg3');
             $('.data_gc127').attr('title', '法屬圭亞那' + '：' + data_gc127 + '例');
             $('.data_gc127').html(data_gc127);
             $('.data_gd127').html(data_gd127);
 
             // 波多黎各
-            var data_gc144 = data.feed.entry[166].content.$t;
-            var data_gd144 = data.feed.entry[167].content.$t;
+            var data_gc144 = data.feed.entry[256].content.$t;
+            var data_gd144 = data.feed.entry[257].content.$t;
             $('.data_gc144').addClass('deg4');
             $('.data_gc144').attr('title', '波多黎各' + '：' + data_gc144 + '例');
             $('.data_gc144').html(data_gc144);
             $('.data_gd144').html(data_gd144);
 
             // 格陵蘭
-            var data_gc160 = data.feed.entry[169].content.$t;
-            var data_gd160 = data.feed.entry[170].content.$t;
+            var data_gc160 = data.feed.entry[259].content.$t;
+            var data_gd160 = data.feed.entry[260].content.$t;
             $('.data_gc160').addClass('deg4');
             $('.data_gc160').attr('title', '格陵蘭' + '：' + data_gc160 + '例');
             $('.data_gc160').html(data_gc160);
             $('.data_gd160').html(data_gd160);
 
             // 福克蘭群島
-            var data_gc199 = data.feed.entry[172].content.$t;
-            var data_gd199 = data.feed.entry[173].content.$t;
+            var data_gc199 = data.feed.entry[262].content.$t;
+            var data_gd199 = data.feed.entry[263].content.$t;
             $('.data_gc199').addClass('deg4');
             $('.data_gc199').attr('title', '福克蘭群島' + '：' + data_gc199 + '例');
             $('.data_gc199').html(data_gc199);
             $('.data_gd199').html(data_gd199);
 
             // 新喀里多尼亞
-            var data_gc201 = data.feed.entry[175].content.$t;
-            var data_gd201 = data.feed.entry[176].content.$t;
+            var data_gc201 = data.feed.entry[265].content.$t;
+            var data_gd201 = data.feed.entry[266].content.$t;
             $('.data_gc201').addClass('deg4');
             $('.data_gc201').attr('title', '新喀里多尼亞' + '：' + data_gc201 + '例');
             $('.data_gc201').html(data_gc201);
@@ -476,6 +655,7 @@ var settings = {
 };
 
 $.ajax(settings).done(function (response) {
+    console.log(response)
     // console.log(response)
     //// 亞洲 ////
     // 台灣
@@ -2054,7 +2234,7 @@ $.ajax(settings).done(function (response) {
     });
 
     //表格排序 Data Table Sorting
-    $('#dt_taiwan').DataTable({
+    $('#dt_loc_taiwan').DataTable({
         "paging": false,
         "searching": false,
         "aaSorting": [],
@@ -2064,7 +2244,7 @@ $.ajax(settings).done(function (response) {
         }],
         destroy: true,
     });
-    $('#dt_china').DataTable({
+    $('#dt_imp_taiwan').DataTable({
         "paging": false,
         "searching": false,
         "aaSorting": [],
@@ -2074,6 +2254,7 @@ $.ajax(settings).done(function (response) {
         }],
         destroy: true,
     });
+
     $('#dt_global1').DataTable({
         "paging": false,
         "searching": false,
@@ -2124,6 +2305,17 @@ $.ajax(settings).done(function (response) {
         }],
         destroy: true,
     });
+
+    // $('#dt_china').DataTable({
+    //     "paging": false,
+    //     "searching": false,
+    //     "aaSorting": [],
+    //     columnDefs: [{
+    //         orderable: false,
+    //         targets: 0
+    //     }],
+    //     destroy: true,
+    // });
 });
 // END get API
 // END get API

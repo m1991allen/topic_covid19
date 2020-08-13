@@ -1065,6 +1065,13 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     background-position: 75% 50%;
 }
 
+.section_total {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    background-color: #fff;
+}
+
 /* 台灣疫情時間關係 */
 
 .case_ex1, .case_ex2, .case_ex3, .case_ex4 {

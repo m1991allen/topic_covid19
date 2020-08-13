@@ -65,7 +65,7 @@
     <nav id="navbar" class="navbar navbar-light bg-light">
         <nav class="nav nav-pills flex-column">
             <p>導覽：</p>
-            <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">台灣疫情地圖</a>
+            <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">台灣本土案例</a>
             <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">台灣確診關係</a>
             <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">世界疫情地圖</a>
         </nav>
@@ -117,25 +117,19 @@
 
         <!-- 台灣各地疫情地圖 -->
         <section id="item-1" class="guideText">
-            <h2>台灣疫情地圖</h2>
+            <h2>台灣本土案例分佈</h2>
             <div class="hovertext"></div>
-            <p>台灣在1月21日出現首例武漢肺炎確診個案，為一名55歲自武漢返台台商，之後出現零星社區感染，並在3月中旬歐美疫情爆發後，進入境外移入高峰期。</p>
 
-            <p>然而在政府祭出「入境者需居家檢疫14天」、「搭乘大眾運輸需佩戴口罩」、「保持社交安全距離」等防疫政策下，台灣截至7月3日，累計448例確診，分別為357例境外移入、55例本土病例及36例敦睦艦隊，其中7人死亡。
-            </p>
             <div class="taiwan_map">
                 <!-- {{insert map}} -->
             </div>
-            <table id="dt_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+            <table id="dt_loc_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                <!-- {{insert form}} -->
+            </table>
+            <table id="dt_imp_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <!-- {{insert form}} -->
             </table>
             <table class="table table-action">
-                <thead>
-                    <tr>
-                        <th>近日新增</th>
-                        <th class="data_tc23">0</th>
-                    </tr>
-                </thead>
                 <tbody class="count_taiwan">
                     <tr style="background-color: rgb(187, 90, 90);color: white;">
                         <td>總計</td>
@@ -143,6 +137,7 @@
                     </tr>
                 </tbody>
             </table>
+
         </section>
 
         <!-- 台灣疫情 時間關係圖 -->

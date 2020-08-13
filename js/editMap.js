@@ -984,16 +984,6 @@ $('#dt_global1').append(`
             <td class="data_gd5">0</td>
         </tr>
         <tr>
-            <td>香港</td>
-            <td class="data_gc6">0</td>
-            <td class="data_gd6">0</td>
-        </tr>
-        <tr>
-            <td>澳門</td>
-            <td class="data_gc7">0</td>
-            <td class="data_gd7">0</td>
-        </tr>
-        <tr>
             <td>新加坡</td>
             <td class="data_gc8">0</td>
             <td class="data_gd8">0</td>
@@ -1199,6 +1189,25 @@ $('#dt_global1').append(`
             <td class="data_gd198">0</td>
         </tr>
     </tbody>
+    <thead>
+        <tr>
+            <th class="th-sm"></th>
+            <th class="th-sm"></th>
+            <th class="th-sm"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>香港</td>
+            <td class="data_gc6">0</td>
+            <td class="data_gd6">0</td>
+        </tr>
+        <tr>
+            <td>澳門</td>
+            <td class="data_gc7">0</td>
+            <td class="data_gd7">0</td>
+        </tr> 
+    </tbody>   
 `);
 
 // 表格：世界疫情 - 美洲
@@ -1302,11 +1311,6 @@ $('#dt_global2').append(`
             <td class="data_gd117">0</td>
         </tr>
         <tr>
-            <td>法屬圭亞那</td>
-            <td class="data_gc127">0</td>
-            <td class="data_gd127">0</td>
-        </tr>
-        <tr>
             <td>烏拉圭</td>
             <td class="data_gc128">0</td>
             <td class="data_gd128">0</td>
@@ -1330,11 +1334,6 @@ $('#dt_global2').append(`
             <td>聖露西亞</td>
             <td class="data_gc133">0</td>
             <td class="data_gd133">0</td>
-        </tr>
-        <tr>
-            <td>波多黎各</td>
-            <td class="data_gc144">0</td>
-            <td class="data_gd144">0</td>
         </tr>
         <tr>
             <td>千里達及托巴哥</td>
@@ -1396,6 +1395,25 @@ $('#dt_global2').append(`
             <td class="data_gc186">0</td>
             <td class="data_gd186">0</td>
         </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th class="th-sm"></th>
+            <th class="th-sm"></th>
+            <th class="th-sm"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>法屬圭亞那</td>
+            <td class="data_gc127">0</td>
+            <td class="data_gd127">0</td>
+        </tr>
+        <tr>
+            <td>波多黎各</td>
+            <td class="data_gc144">0</td>
+            <td class="data_gd144">0</td>
+        </tr>
         <tr>
             <td>格陵蘭</td>
             <td class="data_gc160">0</td>
@@ -1445,6 +1463,7 @@ $('#dt_global3').append(`
             <td class="data_gd201">0</td>
         </tr>
     </tbody>
+
 `);
 
 // 表格：世界疫情 - 歐洲
@@ -2176,11 +2195,11 @@ $('.taiwan_map').append(`
 `)
 
 // 表格：台灣各縣市 確診/總數
-$('#dt_taiwan').append(`
+$('#dt_loc_taiwan').append(`
     <thead>
         <tr>
             <th class="th-sm">縣市別</th>
-            <th class="th-sm">案例</th>
+            <th class="th-sm">本土案例</th>
         </tr>
     </thead>
     <tbody class="count_taiwan">
@@ -2271,6 +2290,196 @@ $('#dt_taiwan').append(`
         <tr>
             <td>澎湖縣</td>
             <td class="data_tc22">0</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th class="th-sm">本土總和</th>
+            <th class="th-sm data_tcloc"></th>
+        </tr>
+    </tbody>
+`)
+$('#dt_imp_taiwan').append(`
+    <thead>
+        <tr>
+            <th class="th-sm">國家</th>
+            <th class="th-sm">近外移入</th>
+        </tr>
+    </thead>
+    <tbody class="count_taiwan">
+        <tr>
+            <td>其他（磐石艦）</td>
+            <td class="data_imp1">0</td>
+        </tr>
+        <tr>
+            <td>美國</td>
+            <td class="data_imp2">0</td>
+        </tr>
+        <tr>
+            <td>英國</td>
+            <td class="data_imp3">0</td>
+        </tr>
+        <tr>
+            <td>菲律賓</td>
+            <td class="data_imp4">0</td>
+        </tr>
+        <tr>
+            <td>法國</td>
+            <td class="data_imp5">0</td>
+        </tr>
+        <tr>
+            <td>西班牙</td>
+            <td class="data_imp6">0</td>
+        </tr>
+        <tr>
+            <td>土耳其</td>
+            <td class="data_imp7">0</td>
+        </tr>
+        <tr>
+            <td>埃及</td>
+            <td class="data_imp8">0</td>
+        </tr>
+        <tr>
+            <td>中國</td>
+            <td class="data_imp9">0</td>
+        </tr>
+        <tr>
+            <td>奧地利</td>
+            <td class="data_imp10>0</td>
+        </tr>
+        <tr>
+            <td>印尼</td>
+            <td class="data_imp11">0</td>
+        </tr>
+        <tr>
+            <td>荷蘭</td>
+            <td class="data_imp12">0</td>
+        </tr>
+        <tr>
+            <td>捷克</td>
+            <td class="data_imp13">0</td>
+        </tr>
+        <tr>
+            <td>德國</td>
+            <td class="data_imp14">0</td>
+        </tr>
+        <tr>
+            <td>瑞士</td>
+            <td class="data_imp15">0</td>
+        </tr>
+        <tr>
+            <td>義大利</td>
+            <td class="data_imp16">0</td>
+        </tr>
+        <tr>
+            <td>南非</td>
+            <td class="data_imp17">0</td>
+        </tr>
+        <tr>
+            <td>智利</td>
+            <td class="data_imp18">0</td>
+        </tr>
+        <tr>
+            <td>愛爾蘭</td>
+            <td class="data_imp19">0</td>
+        </tr>
+        <tr>
+            <td>日本</td>
+            <td class="data_imp20">0</td>
+        </tr>
+        <tr>
+            <td>孟加拉</td>
+            <td class="data_imp21">0</td>
+        </tr>
+        <tr>
+            <td>加拿大</td>
+            <td class="data_imp22">0</td>
+        </tr>
+        <tr>
+            <td>冰島</td>
+            <td class="data_imp22">0</td>
+        </tr>
+        <tr>
+            <td>墨西哥</td>
+            <td class="data_imp22">0</td>
+        </tr>
+        <tr>
+            <td>摩洛哥</td>
+            <td class="data_imp23">0</td>
+        </tr>
+        <tr>
+            <td>阿根廷</td>
+            <td class="data_imp24">0</td>
+        </tr>
+        <tr>
+            <td>澳大利亞</td>
+            <td class="data_imp25">0</td>
+        </tr>
+        <tr>
+            <td>比利時</td>
+            <td class="data_imp26">0</td>
+        </tr>
+        <tr>
+            <td>丹麥</td>
+            <td class="data_imp27">0</td>
+        </tr>
+        <tr>
+            <td>瓜地馬拉</td>
+            <td class="data_imp28">0</td>
+        </tr>
+        <tr>
+            <td>香港</td>
+            <td class="data_imp29">0</td>
+        </tr>
+        <tr>
+            <td>紐西蘭</td>
+            <td class="data_imp30">0</td>
+        </tr>
+        <tr>
+            <td>卡達</td>
+            <td class="data_imp31">0</td>
+        </tr>
+        <tr>
+            <td>塞內加爾</td>
+            <td class="data_imp32">0</td>
+        </tr>
+        <tr>
+            <td>希臘</td>
+            <td class="data_imp33">0</td>
+        </tr>
+        <tr>
+            <td>賴索托</td>
+            <td class="data_imp34">0</td>
+        </tr>
+        <tr>
+            <td>澳門</td>
+            <td class="data_imp35">0</td>
+        </tr>
+        <tr>
+            <td>馬來西亞</td>
+            <td class="data_imp36">0</td>
+        </tr>
+        <tr>
+            <td>阿曼</td>
+            <td class="data_imp37">0</td>
+        </tr>
+        <tr>
+            <td>波蘭</td>
+            <td class="data_imp38">0</td>
+        </tr>
+        <tr>
+            <td>泰國</td>
+            <td class="data_imp39">0</td>
+        </tr>
+        <tr>
+            <td>俄羅斯</td>
+            <td class="data_imp40">0</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th class="th-sm">境外總和</th>
+            <th class="th-sm data_tcimp"></th>
         </tr>
     </tbody>
 `)

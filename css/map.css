@@ -135,12 +135,12 @@
 /* 100 up */
 
 .deg3 {
-    fill: #e65454;
+    fill: #fc5d5d;
 }
 
 /* 10 */
 
-.deg4 {
+.deg4 { 
     fill: #fda1a1;
 }
 
@@ -155,4 +155,3 @@
 .degstyle2 {
     fill: #ad9e9a;
 }
-
