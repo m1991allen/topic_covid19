@@ -528,6 +528,27 @@ function ajax_gsheet() {
             // 台灣總合 //
             // 台灣總合 //
 
+            $('#dt_loc_taiwan').DataTable({
+                "paging": false,
+                "searching": false,
+                "aaSorting": [],
+                columnDefs: [{
+                    orderable: false,
+                    targets: 0
+                }],
+                destroy: true,
+            });
+            $('#dt_imp_taiwan').DataTable({
+                "paging": false,
+                "searching": false,
+                "aaSorting": [],
+                columnDefs: [{
+                    orderable: false,
+                    targets: 0
+                }],
+                destroy: true,
+            });
+
             // 總數-本土案例 變數：tc-local
             var data_tcloc = data.feed.entry[146].content.$t;
             $('.data_tcloc').html(data_tcloc);
@@ -2234,26 +2255,6 @@ $.ajax(settings).done(function (response) {
     });
 
     //表格排序 Data Table Sorting
-    $('#dt_loc_taiwan').DataTable({
-        "paging": false,
-        "searching": false,
-        "aaSorting": [],
-        columnDefs: [{
-            orderable: false,
-            targets: 0
-        }],
-        destroy: true,
-    });
-    $('#dt_imp_taiwan').DataTable({
-        "paging": false,
-        "searching": false,
-        "aaSorting": [],
-        columnDefs: [{
-            orderable: false,
-            targets: 0
-        }],
-        destroy: true,
-    });
 
     $('#dt_global1').DataTable({
         "paging": false,
