@@ -2223,7 +2223,7 @@ function ajax_gsheet() {
                     + parseInt(data.feed.entry[259].content.$t)
                     + parseInt(data.feed.entry[262].content.$t)
                     + parseInt(data.feed.entry[265].content.$t)
-                    + 300000
+                    + 350000
                 let result_death = response.Global.TotalDeaths
                     + parseInt(data.feed.entry[248].content.$t)
                     + parseInt(data.feed.entry[251].content.$t)
