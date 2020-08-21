@@ -2228,7 +2228,7 @@ function ajax_gsheet() {
                     + parseInt(data.feed.entry[248].content.$t)
                     + parseInt(data.feed.entry[251].content.$t)
                     + parseInt(data.feed.entry[254].content.$t)
-                    + parseInt(data.feed.entry[256].content.$t)
+                    + parseInt(data.feed.entry[257].content.$t)
                     + parseInt(data.feed.entry[260].content.$t)
                     + parseInt(data.feed.entry[263].content.$t)
                     + parseInt(data.feed.entry[266].content.$t)
