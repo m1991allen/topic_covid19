@@ -1405,22 +1405,22 @@ $('#dt_global2').append(`
     </thead>
     <tbody>
         <tr>
-            <td>法屬圭亞那</td>
+            <td>法屬圭亞那（法）</td>
             <td class="data_gc127">0</td>
             <td class="data_gd127">0</td>
         </tr>
         <tr>
-            <td>波多黎各</td>
+            <td>波多黎各（美）</td>
             <td class="data_gc144">0</td>
             <td class="data_gd144">0</td>
         </tr>
         <tr>
-            <td>格陵蘭</td>
+            <td>格陵蘭（丹麥）</td>
             <td class="data_gc160">0</td>
             <td class="data_gd160">0</td>
         </tr>
         <tr>
-            <td>福克蘭群島</td>
+            <td>福克蘭群島（英）</td>
             <td class="data_gc199">0</td>
             <td class="data_gd199">0</td>
         </tr>
