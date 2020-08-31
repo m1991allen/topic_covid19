@@ -2308,7 +2308,7 @@ $('#dt_imp_taiwan').append(`
     </thead>
     <tbody class="count_taiwan">
         <tr>
-            <td>其他（磐石艦）</td>
+            <td>其他</td>
             <td class="data_imp1">0</td>
         </tr>
         <tr>
