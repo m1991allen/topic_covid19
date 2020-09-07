@@ -2345,7 +2345,7 @@ $('#dt_imp_taiwan').append(`
         </tr>
         <tr>
             <td>奧地利</td>
-            <td class="data_imp10>0</td>
+            <td class="data_imp10">0</td>
         </tr>
         <tr>
             <td>印尼</td>
