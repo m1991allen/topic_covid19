@@ -1246,7 +1246,7 @@ $('#dt_global2').append(`
             <td class="data_gd61">0</td>
         </tr>
         <tr>
-            <td>多明尼加</td>
+            <td>多明尼加共和國</td>
             <td class="data_gc65">0</td>
             <td class="data_gd65">0</td>
         </tr>

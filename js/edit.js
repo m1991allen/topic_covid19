@@ -1112,7 +1112,7 @@ function ajax_gsheet() {
                 // 多明尼加共和國
                 var data_gc65 = response.Countries[49].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd65 = response.Countries[49].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc65').addClass('deg2');
+                $('.data_gc65').addClass('deg1');
                 $('.data_gc65').attr('title', '多明尼加共和國' + '：' + data_gc65 + '例');
                 $('.data_gc65').html(data_gc65);
                 $('.data_gd65').html(data_gd65);
