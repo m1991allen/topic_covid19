@@ -528,6 +528,10 @@ function ajax_gsheet() {
             var data_imp43 = data.feed.entry[234].content.$t;
             $('.data_imp43').html(data_imp43);
 
+            // 緬甸
+            var data_imp44 = data.feed.entry[236].content.$t;
+            $('.data_imp44').html(data_imp44);
+
             // 台灣總合 //
             // 台灣總合 //
             // 台灣總合 //
@@ -558,14 +562,14 @@ function ajax_gsheet() {
             $('.data_tcloc').html(data_tcloc);
 
             // 總數-境外移入 變數：tc-import
-            var data_tcimp = data.feed.entry[236].content.$t;
+            var data_tcimp = data.feed.entry[240].content.$t;
             $('.data_tcimp').html(data_tcimp);
 
             //// 台灣總和 ////
-            $('#count_sumConfirm_taiwan').html(data.feed.entry[240].content.$t);
-            $('#tw_con').html(data.feed.entry[240].content.$t);
-            $('#tw_die').html(data.feed.entry[242].content.$t);
-            $('#tw_rec').html(data.feed.entry[244].content.$t);
+            $('#count_sumConfirm_taiwan').html(data.feed.entry[242].content.$t);
+            $('#tw_con').html(data.feed.entry[242].content.$t);
+            $('#tw_die').html(data.feed.entry[244].content.$t);
+            $('#tw_rec').html(data.feed.entry[246].content.$t);
 
             //// 台灣首屏動態數字 ////
             $('#tw_con').each(function () {
@@ -613,56 +617,56 @@ function ajax_gsheet() {
             ///////////////////////////////
 
             // 香港
-            var data_gc6 = data.feed.entry[249].content.$t;
-            var data_gd6 = data.feed.entry[250].content.$t;
+            var data_gc6 = data.feed.entry[251].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd6 = data.feed.entry[252].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc6').addClass('deg3');
             $('.data_gc6').attr('title', '香港' + '：' + data_gc6 + '例');
             $('.data_gc6').html(data_gc6);
             $('.data_gd6').html(data_gd6);
 
             // 澳門
-            var data_gc7 = data.feed.entry[252].content.$t;
-            var data_gd7 = data.feed.entry[253].content.$t;
+            var data_gc7 = data.feed.entry[254].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd7 = data.feed.entry[255].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc7').addClass('deg4');
             $('.data_gc7').attr('title', '澳門' + '：' + data_gc7 + '例');
             $('.data_gc7').html(data_gc7);
             $('.data_gd7').html(data_gd7);
 
             // 法屬圭亞那
-            var data_gc127 = data.feed.entry[255].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd127 = data.feed.entry[256].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc127 = data.feed.entry[257].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd127 = data.feed.entry[258].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc127').addClass('deg3');
             $('.data_gc127').attr('title', '法屬圭亞那' + '：' + data_gc127 + '例');
             $('.data_gc127').html(data_gc127);
             $('.data_gd127').html(data_gd127);
 
             // 波多黎各
-            var data_gc144 = data.feed.entry[258].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd144 = data.feed.entry[259].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc144 = data.feed.entry[260].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd144 = data.feed.entry[261].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc144').addClass('deg4');
             $('.data_gc144').attr('title', '波多黎各' + '：' + data_gc144 + '例');
             $('.data_gc144').html(data_gc144);
             $('.data_gd144').html(data_gd144);
 
             // 格陵蘭
-            var data_gc160 = data.feed.entry[261].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd160 = data.feed.entry[262].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc160 = data.feed.entry[263].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd160 = data.feed.entry[264].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc160').addClass('deg4');
             $('.data_gc160').attr('title', '格陵蘭' + '：' + data_gc160 + '例');
             $('.data_gc160').html(data_gc160);
             $('.data_gd160').html(data_gd160);
 
             // 福克蘭群島
-            var data_gc199 = data.feed.entry[264].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd199 = data.feed.entry[265].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc199 = data.feed.entry[266].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd199 = data.feed.entry[267].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc199').addClass('deg4');
             $('.data_gc199').attr('title', '福克蘭群島' + '：' + data_gc199 + '例');
             $('.data_gc199').html(data_gc199);
             $('.data_gd199').html(data_gd199);
 
             // 新喀里多尼亞
-            var data_gc201 = data.feed.entry[267].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd201 = data.feed.entry[268].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc201 = data.feed.entry[269].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd201 = data.feed.entry[270].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc201').addClass('deg4');
             $('.data_gc201').attr('title', '新喀里多尼亞' + '：' + data_gc201 + '例');
             $('.data_gc201').html(data_gc201);
@@ -2220,22 +2224,22 @@ function ajax_gsheet() {
 
                 //// 世界總和 ////
                 let result_confirm = response.Global.TotalConfirmed
-                    + parseInt(data.feed.entry[249].content.$t)
+                    + parseInt(data.feed.entry[251].content.$t)
+                    + parseInt(data.feed.entry[254].content.$t)
+                    + parseInt(data.feed.entry[257].content.$t)
+                    + parseInt(data.feed.entry[260].content.$t)
+                    + parseInt(data.feed.entry[263].content.$t)
+                    + parseInt(data.feed.entry[266].content.$t)
+                    + parseInt(data.feed.entry[269].content.$t)
+                    + 500000
+                let result_death = response.Global.TotalDeaths
                     + parseInt(data.feed.entry[252].content.$t)
                     + parseInt(data.feed.entry[255].content.$t)
                     + parseInt(data.feed.entry[258].content.$t)
                     + parseInt(data.feed.entry[261].content.$t)
                     + parseInt(data.feed.entry[264].content.$t)
                     + parseInt(data.feed.entry[267].content.$t)
-                    + 300000
-                let result_death = response.Global.TotalDeaths
-                    + parseInt(data.feed.entry[250].content.$t)
-                    + parseInt(data.feed.entry[253].content.$t)
-                    + parseInt(data.feed.entry[256].content.$t)
-                    + parseInt(data.feed.entry[259].content.$t)
-                    + parseInt(data.feed.entry[262].content.$t)
-                    + parseInt(data.feed.entry[265].content.$t)
-                    + parseInt(data.feed.entry[268].content.$t)
+                    + parseInt(data.feed.entry[270].content.$t)
                 $('#inc_con').html(result_confirm);
                 $('#inc_die').html(result_death);
                 $('.count_sumConfirm_global').html(result_confirm);
@@ -7486,6 +7490,36 @@ case_data.list = [
         group: 'trp_A',
         info: '《案500》' + '<br>' + `
         菲律賓籍30多歲女性，因工作於今(2020)年9月13日抵達台灣，入境時無症狀，由機場檢疫人員安排採檢後確診。
+
+        `
+    }, {
+        no: '501',
+        case: '501',
+        date: '9/17',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案501》' + '<br>' + `
+        本國籍40多歲女性，今(2020)年2月至緬甸工作，9月13日返國入境時無症狀，個案自述在當地曾與確診個案同桌用餐超過2小時，故由機場檢疫人員安排採檢後確診。
+
+        `
+    }, {
+        no: '502',
+        case: '502',
+        date: '9/17',
+        status: 'default',
+        group: 'trp_EU',
+        info: '《案502》' + '<br>' + `
+        本國籍20多歲女性，去(2019)年2月至英國工作，9月6日入境時無不適症狀，入境後前往防疫旅館居家檢疫，個案9月10日曾有輕微喉嚨痛，15日出現腹瀉、腹痛、喉嚨痛、流鼻水及鼻塞等症狀，經通報衛生單位後安排就醫及採檢後確診。
+
+        `
+    }, {
+        no: '503',
+        case: '503',
+        date: '9/17',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案503》' + '<br>' + `
+        本國籍30多歲男性，今(2020)年3月至菲律賓工作，9月10日陸續出現鼻塞、流鼻水、喉嚨乾癢、咳嗽、嗅覺變差及胸悶等症狀，僅自行服用成藥，未在當地就醫，9月13日與案500搭乘同班機(非案500座位前後二排旅客)返國，入境時主動告知有症狀，初次採檢結果為陰性，因個案症狀持續，16日由檢疫所安排就醫採檢後確診。
 
         `
     }

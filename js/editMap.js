@@ -2478,8 +2478,12 @@ $('#dt_imp_taiwan').append(`
         <tr>
             <td>尼泊爾</td>
             <td class="data_imp43">0</td>
-        </tr >
-    </tbody >
+        </tr>
+        <tr>
+            <td>緬甸</td>
+            <td class="data_imp44">0</td>
+        </tr>
+    </tbody>
     <tbody>
         <tr>
             <th class="th-sm">境外總和</th>
