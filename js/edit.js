@@ -1172,7 +1172,7 @@ function ajax_gsheet() {
                 // 巴拿馬
                 var data_gc86 = response.Countries[128].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd86 = response.Countries[128].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc86').addClass('deg2');
+                $('.data_gc86').addClass('deg1');
                 $('.data_gc86').attr('title', '巴拿馬' + '：' + data_gc86 + '例');
                 $('.data_gc86').html(data_gc86);
                 $('.data_gd86').html(data_gd86);
@@ -1470,7 +1470,7 @@ function ajax_gsheet() {
                 // 比利時
                 var data_gc28 = response.Countries[16].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd28 = response.Countries[16].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc28').addClass('deg2');
+                $('.data_gc28').addClass('deg1');
                 $('.data_gc28').attr('title', '比利時' + '：' + data_gc28 + '例');
                 $('.data_gc28').html(data_gc28);
                 $('.data_gd28').html(data_gd28);
@@ -1502,7 +1502,7 @@ function ajax_gsheet() {
                 // 羅馬尼亞
                 var data_gc45 = response.Countries[137].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd45 = response.Countries[137].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc45').addClass('deg2');
+                $('.data_gc45').addClass('deg1');
                 $('.data_gc45').attr('title', '羅馬尼亞' + '：' + data_gc45 + '例');
                 $('.data_gc45').html(data_gc45);
                 $('.data_gd45').html(data_gd45);
@@ -1776,7 +1776,7 @@ function ajax_gsheet() {
                 // 埃及
                 var data_gc29 = response.Countries[51].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd29 = response.Countries[51].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc29').addClass('deg2');
+                $('.data_gc29').addClass('deg1');
                 $('.data_gc29').attr('title', '埃及' + '：' + data_gc29 + '例');
                 $('.data_gc29').html(data_gc29);
                 $('.data_gd29').html(data_gd29);
@@ -1816,7 +1816,7 @@ function ajax_gsheet() {
                 // 摩洛哥
                 var data_gc78 = response.Countries[136].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd78 = response.Countries[136].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc78').addClass('deg2');
+                $('.data_gc78').addClass('deg1');
                 $('.data_gc78').attr('title', '摩洛哥' + '：' + data_gc78 + '例');
                 $('.data_gc78').html(data_gc78);
                 $('.data_gd78').html(data_gd78);
