@@ -827,7 +827,7 @@ function ajax_gsheet() {
                 // 科威特
                 var data_gc34 = response.Countries[89].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd34 = response.Countries[89].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc34').addClass('deg2');
+                $('.data_gc34').addClass('deg1');
                 $('.data_gc34').attr('title', '科威特' + '：' + data_gc34 + '例');
                 $('.data_gc34').html(data_gc34);
                 $('.data_gd34').html(data_gd34);
