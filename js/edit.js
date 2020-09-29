@@ -562,7 +562,7 @@ function ajax_gsheet() {
             $('.data_tcloc').html(data_tcloc);
 
             // 總數-境外移入 變數：tc-import
-            var data_tcimp = data.feed.entry[240].content.$t;
+            var data_tcimp = data.feed.entry[238].content.$t;
             $('.data_tcimp').html(data_tcimp);
 
             //// 台灣總和 ////
