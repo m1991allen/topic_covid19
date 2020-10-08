@@ -758,7 +758,7 @@ function ajax_gsheet() {
                 // 阿拉伯聯合大公國
                 var data_gc11 = response.Countries[177].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd11 = response.Countries[177].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc11').addClass('deg2');
+                $('.data_gc11').addClass('deg1');
                 $('.data_gc11').attr('title', '阿聯' + '：' + data_gc11 + '例');
                 $('.data_gc11').html(data_gc11);
                 $('.data_gd11').html(data_gd11);
@@ -7703,6 +7703,26 @@ case_data.list = [
         group: 'trp_NA',
         info: '《案521》' + '<br>' + `
         30多歲男性，長期於美國工作，今年10月3日起陸續出現腹瀉、喉嚨腫情形，10月4日返台，入境時主動告知檢疫人員有腹瀉情形，於機場進行採檢後確診。
+
+        `
+    }, {
+        no: '523',
+        case: '523',
+        date: '10/7',
+        status: 'default',
+        group: 'trp_EU',
+        info: '《案523》' + '<br>' + `
+        本國籍20多歲女性，於2019年10月前往愛爾蘭工作，今(2020)年10月4日入境時無疑似症狀，直接返家進行居家檢疫，10月5日出現發燒及全身肌肉痠痛等不適症狀，經衛生單位安排就醫採檢後確診。
+
+        `
+    }, {
+        no: '524',
+        case: '524',
+        date: '10/7',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案524》' + '<br>' + `
+        印度籍30多歲男性，因工作來台，持有登機前3日內檢驗陰性報告，入境迄今無疑似症狀，9月9日入境後前往防疫旅館進行居家檢疫(9月9日至9月23日)，9月24日至30日於飯店進行自主健康管理，10月5日因工作需求自費檢驗，於今（7）日確診。
 
         `
     }
