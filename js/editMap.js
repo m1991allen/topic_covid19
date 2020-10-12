@@ -2487,6 +2487,10 @@ $('#dt_imp_taiwan').append(`
             <td>印度</td>
             <td class="data_imp45">0</td>
         </tr>
+        <tr>
+            <td>烏克蘭</td>
+            <td class="data_imp46">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
@@ -2495,6 +2499,7 @@ $('#dt_imp_taiwan').append(`
         </tr>
     </tbody>
 `)
+//新增新國家
 
 
 $('.time_pc').append(`
