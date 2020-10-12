@@ -2241,22 +2241,22 @@ function ajax_gsheet() {
                 //// 世界總和 ////
                 // 新增新國家 每筆+3
                 let result_confirm = response.Global.TotalConfirmed
-                    + parseInt(data.feed.entry[257].content.$t)
-                    + parseInt(data.feed.entry[260].content.$t)
-                    + parseInt(data.feed.entry[263].content.$t)
-                    + parseInt(data.feed.entry[266].content.$t)
-                    + parseInt(data.feed.entry[269].content.$t)
-                    + parseInt(data.feed.entry[272].content.$t)
-                    + parseInt(data.feed.entry[275].content.$t)
-                    + 500000
-                let result_death = response.Global.TotalDeaths
+                    + parseInt(data.feed.entry[255].content.$t)
                     + parseInt(data.feed.entry[258].content.$t)
                     + parseInt(data.feed.entry[261].content.$t)
                     + parseInt(data.feed.entry[264].content.$t)
                     + parseInt(data.feed.entry[267].content.$t)
                     + parseInt(data.feed.entry[270].content.$t)
                     + parseInt(data.feed.entry[273].content.$t)
-                    + parseInt(data.feed.entry[276].content.$t)
+                    + 500000
+                let result_death = response.Global.TotalDeaths
+                    + parseInt(data.feed.entry[256].content.$t)
+                    + parseInt(data.feed.entry[259].content.$t)
+                    + parseInt(data.feed.entry[262].content.$t)
+                    + parseInt(data.feed.entry[265].content.$t)
+                    + parseInt(data.feed.entry[268].content.$t)
+                    + parseInt(data.feed.entry[271].content.$t)
+                    + parseInt(data.feed.entry[274].content.$t)
                 $('#inc_con').html(result_confirm);
                 $('#inc_die').html(result_death);
                 $('.count_sumConfirm_global').html(result_confirm);
