@@ -7774,7 +7774,7 @@ case_data.list = [
         case: '527',
         date: '10/9',
         status: 'default',
-        group: 'trp_A',
+        group: 'trp_EU',
         info: '《案527》' + '<br>' + `
         烏克蘭籍30多歲男性，因工作於9月22日自烏克蘭入境，於10月7日居家檢疫期滿解除後，由公司安排自費採檢後確診。
 
