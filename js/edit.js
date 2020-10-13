@@ -652,7 +652,7 @@ function ajax_gsheet() {
             // 法屬圭亞那
             var data_gc127 = data.feed.entry[263].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             var data_gd127 = data.feed.entry[264].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            $('.data_gc127').addClass('deg3');
+            $('.data_gc127').addClass('deg2');
             $('.data_gc127').attr('title', '法屬圭亞那' + '：' + data_gc127 + '例');
             $('.data_gc127').html(data_gc127);
             $('.data_gd127').html(data_gd127);
@@ -799,7 +799,7 @@ function ajax_gsheet() {
                 // 尼泊爾
                 var data_gc14 = response.Countries[119].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd14 = response.Countries[119].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc14').addClass('deg2');
+                $('.data_gc14').addClass('deg1');
                 $('.data_gc14').attr('title', '尼泊爾' + '：' + data_gc14 + '例');
                 $('.data_gc14').html(data_gc14);
                 $('.data_gd14').html(data_gd14);
