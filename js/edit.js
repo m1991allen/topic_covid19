@@ -540,6 +540,10 @@ function ajax_gsheet() {
             var data_imp46 = data.feed.entry[240].content.$t;
             $('.data_imp46').html(data_imp46);
 
+            // 法國
+            var data_imp47 = data.feed.entry[242].content.$t;
+            $('.data_imp47').html(data_imp47);
+
             // 新增新國家 data.feed.entry+2 / data_imp+1
 
             // 台灣總合 //
@@ -573,15 +577,15 @@ function ajax_gsheet() {
 
             // 新增新國家 / 新增每筆+2
             // 總數-境外移入 變數：tc-import
-            var data_tcimp = data.feed.entry[242].content.$t;
+            var data_tcimp = data.feed.entry[244].content.$t;
             $('.data_tcimp').html(data_tcimp);
 
             // 新增新國家 / 新增每筆+2
             //// 台灣總和 ////
-            $('#count_sumConfirm_taiwan').html(data.feed.entry[246].content.$t);
-            $('#tw_con').html(data.feed.entry[246].content.$t);
-            $('#tw_die').html(data.feed.entry[248].content.$t);
-            $('#tw_rec').html(data.feed.entry[250].content.$t);
+            $('#count_sumConfirm_taiwan').html(data.feed.entry[248].content.$t);
+            $('#tw_con').html(data.feed.entry[248].content.$t);
+            $('#tw_die').html(data.feed.entry[250].content.$t);
+            $('#tw_rec').html(data.feed.entry[252].content.$t);
 
             //// 台灣首屏動態數字 ////
             $('#tw_con').each(function () {
@@ -627,59 +631,59 @@ function ajax_gsheet() {
             //////////////////////////
             /////第一筆有資料的編號為０/////
             ///////////////////////////////
-            // 新增新國家 / 新增每筆+3
+            // 新增新國家 / 新增每筆+3 首筆+2
 
             // 香港
-            var data_gc6 = data.feed.entry[255].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd6 = data.feed.entry[256].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc6 = data.feed.entry[257].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd6 = data.feed.entry[258].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc6').addClass('deg3');
             $('.data_gc6').attr('title', '香港' + '：' + data_gc6 + '例');
             $('.data_gc6').html(data_gc6);
             $('.data_gd6').html(data_gd6);
 
             // 澳門
-            var data_gc7 = data.feed.entry[258].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd7 = data.feed.entry[259].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc7 = data.feed.entry[260].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd7 = data.feed.entry[261].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc7').addClass('deg4');
             $('.data_gc7').attr('title', '澳門' + '：' + data_gc7 + '例');
             $('.data_gc7').html(data_gc7);
             $('.data_gd7').html(data_gd7);
 
             // 法屬圭亞那
-            var data_gc127 = data.feed.entry[261].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd127 = data.feed.entry[262].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc127 = data.feed.entry[263].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd127 = data.feed.entry[264].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc127').addClass('deg3');
             $('.data_gc127').attr('title', '法屬圭亞那' + '：' + data_gc127 + '例');
             $('.data_gc127').html(data_gc127);
             $('.data_gd127').html(data_gd127);
 
             // 波多黎各
-            var data_gc144 = data.feed.entry[264].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd144 = data.feed.entry[265].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc144 = data.feed.entry[266].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd144 = data.feed.entry[267].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc144').addClass('deg4');
             $('.data_gc144').attr('title', '波多黎各' + '：' + data_gc144 + '例');
             $('.data_gc144').html(data_gc144);
             $('.data_gd144').html(data_gd144);
 
             // 格陵蘭
-            var data_gc160 = data.feed.entry[267].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd160 = data.feed.entry[268].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc160 = data.feed.entry[269].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd160 = data.feed.entry[270].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc160').addClass('deg4');
             $('.data_gc160').attr('title', '格陵蘭' + '：' + data_gc160 + '例');
             $('.data_gc160').html(data_gc160);
             $('.data_gd160').html(data_gd160);
 
             // 福克蘭群島
-            var data_gc199 = data.feed.entry[270].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd199 = data.feed.entry[271].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc199 = data.feed.entry[272].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd199 = data.feed.entry[273].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc199').addClass('deg4');
             $('.data_gc199').attr('title', '福克蘭群島' + '：' + data_gc199 + '例');
             $('.data_gc199').html(data_gc199);
             $('.data_gd199').html(data_gd199);
 
             // 新喀里多尼亞
-            var data_gc201 = data.feed.entry[273].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            var data_gd201 = data.feed.entry[274].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gc201 = data.feed.entry[275].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd201 = data.feed.entry[276].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             $('.data_gc201').addClass('deg4');
             $('.data_gc201').attr('title', '新喀里多尼亞' + '：' + data_gc201 + '例');
             $('.data_gc201').html(data_gc201);
@@ -2241,22 +2245,22 @@ function ajax_gsheet() {
                 //// 世界總和 ////
                 // 新增新國家 每筆+3
                 let result_confirm = response.Global.TotalConfirmed
-                    + parseInt(data.feed.entry[255].content.$t)
+                    + parseInt(data.feed.entry[257].content.$t)
+                    + parseInt(data.feed.entry[260].content.$t)
+                    + parseInt(data.feed.entry[263].content.$t)
+                    + parseInt(data.feed.entry[266].content.$t)
+                    + parseInt(data.feed.entry[269].content.$t)
+                    + parseInt(data.feed.entry[272].content.$t)
+                    + parseInt(data.feed.entry[275].content.$t)
+                    + 500000
+                let result_death = response.Global.TotalDeaths
                     + parseInt(data.feed.entry[258].content.$t)
                     + parseInt(data.feed.entry[261].content.$t)
                     + parseInt(data.feed.entry[264].content.$t)
                     + parseInt(data.feed.entry[267].content.$t)
                     + parseInt(data.feed.entry[270].content.$t)
                     + parseInt(data.feed.entry[273].content.$t)
-                    + 500000
-                let result_death = response.Global.TotalDeaths
-                    + parseInt(data.feed.entry[256].content.$t)
-                    + parseInt(data.feed.entry[259].content.$t)
-                    + parseInt(data.feed.entry[262].content.$t)
-                    + parseInt(data.feed.entry[265].content.$t)
-                    + parseInt(data.feed.entry[268].content.$t)
-                    + parseInt(data.feed.entry[271].content.$t)
-                    + parseInt(data.feed.entry[274].content.$t)
+                    + parseInt(data.feed.entry[276].content.$t)
                 $('#inc_con').html(result_confirm);
                 $('#inc_die').html(result_death);
                 $('.count_sumConfirm_global').html(result_confirm);
@@ -7777,6 +7781,26 @@ case_data.list = [
         group: 'trp_EU',
         info: '《案527》' + '<br>' + `
         烏克蘭籍30多歲男性，因工作於9月22日自烏克蘭入境，於10月7日居家檢疫期滿解除後，由公司安排自費採檢後確診。
+
+        `
+    }, {
+        no: '528',
+        case: '528',
+        date: '10/9',
+        status: 'default',
+        group: 'trp_EU',
+        info: '《案528》' + '<br>' + `
+        本國籍20多歲女性，今(2020)年1月至法國留學，10月4日與1名友人一同返國，入境時無症狀，兩人一同返家進行居家檢疫。個案10月7日起出現流鼻水、喉嚨癢等症狀，10月9日由衛生單位安排就醫採檢後確診。
+
+        `
+    }, {
+        no: '529',
+        case: '529',
+        date: '10/9',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案529》' + '<br>' + `
+        本國籍20多歲女性，期於杜拜及其他國家工作，9月30日回國休假，入境時無症狀，居家檢疫期間，於10月10日出現味覺異常症狀，由衛生單位安排就醫採檢後確診。
 
         `
     }
