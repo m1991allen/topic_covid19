@@ -1144,7 +1144,7 @@ function ajax_gsheet() {
                 // 阿根廷
                 var data_gc75 = response.Countries[6].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd75 = response.Countries[6].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc75').addClass('deg1');
+                $('.data_gc75').addClass('deg0');
                 $('.data_gc75').attr('title', '阿根廷' + '：' + data_gc75 + '例');
                 $('.data_gc75').html(data_gc75);
                 $('.data_gd75').html(data_gd75);
@@ -1466,7 +1466,7 @@ function ajax_gsheet() {
                 // 西班牙
                 var data_gc25 = response.Countries[158].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd25 = response.Countries[158].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc25').addClass('deg1');
+                $('.data_gc25').addClass('deg0');
                 $('.data_gc25').attr('title', '西班牙' + '：' + data_gc25 + '例');
                 $('.data_gc25').html(data_gc25);
                 $('.data_gd25').html(data_gd25);
