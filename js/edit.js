@@ -1176,7 +1176,7 @@ function ajax_gsheet() {
                 // 哥倫比亞
                 var data_gc101 = response.Countries[36].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd101 = response.Countries[36].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc101').addClass('deg1');
+                $('.data_gc101').addClass('deg0');
                 $('.data_gc101').attr('title', '哥倫比亞' + '：' + data_gc101 + '例');
                 $('.data_gc101').html(data_gc101);
                 $('.data_gd101').html(data_gd101);
@@ -1442,7 +1442,7 @@ function ajax_gsheet() {
                 // 法國
                 var data_gc21 = response.Countries[59].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd21 = response.Countries[59].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc21').addClass('deg1');
+                $('.data_gc21').addClass('deg0');
                 $('.data_gc21').attr('title', '法國' + '：' + data_gc21 + '例');
                 $('.data_gc21').html(data_gc21);
                 $('.data_gd21').html(data_gd21);
@@ -1474,7 +1474,7 @@ function ajax_gsheet() {
                 // 瑞典
                 var data_gc26 = response.Countries[163].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd26 = response.Countries[163].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc26').addClass('deg2');
+                $('.data_gc26').addClass('deg1');
                 $('.data_gc26').attr('title', '瑞典' + '：' + data_gc26 + '例');
                 $('.data_gc26').html(data_gc26);
                 $('.data_gd26').html(data_gd26);
@@ -1498,7 +1498,7 @@ function ajax_gsheet() {
                 // 瑞士
                 var data_gc38 = response.Countries[164].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 var data_gd38 = response.Countries[164].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $('.data_gc38').addClass('deg2');
+                $('.data_gc38').addClass('deg1');
                 $('.data_gc38').attr('title', '瑞士' + '：' + data_gc38 + '例');
                 $('.data_gc38').html(data_gc38);
                 $('.data_gd38').html(data_gd38);
@@ -7990,7 +7990,27 @@ case_data.list = [
         status: 'default',
         group: 'trp_A',
         info: '《案548》' + '<br>' + `
-        案548為菲律賓籍30多歲女性，過去2年於土耳其工作，因預定來臺工作，於10月13日入境臺灣，搭機前3日內檢驗陰性，入境時無症狀。個案於防疫旅館居家檢疫期間，10月17日至20日因陸續出現流鼻水、倦怠及嗅味覺異常情形通報衛生單位，經安排就醫採檢後確診
+        案548為菲律賓籍30多歲女性，過去2年於土耳其工作，因預定來臺工作，於10月13日入境臺灣，搭機前3日內檢驗陰性，入境時無症狀。個案於防疫旅館居家檢疫期間，10月17日至20日因陸續出現流鼻水、倦怠及嗅味覺異常情形通報衛生單位，經安排就醫採檢後確診。
+
+        `
+    }, {
+        no: '549',
+        case: '549',
+        date: '10/24',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案549》' + '<br>' + `
+        案549為20多歲菲律賓籍女性，因工作於今(2020)年9月30日入境臺灣，搭機前3日內檢驗陰性，入境時至集中檢疫期滿均無症狀，10月13日檢疫期滿前採檢結果為陰性，檢疫期滿後由仲介安排至隔離宿舍進行自主健康管理，並於10月22由仲介安排至醫院自費檢驗後確診。
+
+        `
+    }, {
+        no: '550',
+        case: '550',
+        date: '10/24',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案550》' + '<br>' + `
+        案550為30多歲本國籍男性，今年10月2日出境至美國，並於10月18日返國，入境時無不適症狀。個案於10月21日居家檢疫期間出現發燒、咳嗽、肌肉痠痛、關節痛及全身倦怠等症狀，由衛生單位安排就醫採檢後確診。
 
         `
     }
