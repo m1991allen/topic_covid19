@@ -7,6 +7,211 @@ function ajax_gsheet() {
         type: 'GET',
         dataType: 'json',
         success: function data_sheet(data) {
+            ////////////////////
+            /////// 中國 //////////
+            /////// 第一筆資料為０ ////
+            let ov1 = 4;
+            let ov2 = 5;
+            let mv = 3;
+
+            // 湖北
+            var data_cc1 = data.feed.entry[ov1].content.$t;
+            var data_cd1 = data.feed.entry[ov2].content.$t;
+            $('.data_cc1').html(data_cc1);
+            $('.data_cd1').html(data_cd1);
+
+            // 北京
+            var data_cc2 = data.feed.entry[ov1 + mv * 1].content.$t;
+            var data_cd2 = data.feed.entry[ov2 + mv * 1].content.$t;
+            $('.data_cc2').html(data_cc2);
+            $('.data_cd2').html(data_cd2);
+
+            // 廣東
+            var data_cc3 = data.feed.entry[ov1 + mv * 2].content.$t;
+            var data_cd3 = data.feed.entry[ov2 + mv * 2].content.$t;
+            $('.data_cc3').html(data_cc3);
+            $('.data_cd3').html(data_cd3);
+
+            // 上海
+            var data_cc4 = data.feed.entry[ov1 + mv * 3].content.$t;
+            var data_cd4 = data.feed.entry[ov2 + mv * 3].content.$t;
+            $('.data_cc4').html(data_cc4);
+            $('.data_cd4').html(data_cd4);
+
+            // 重慶
+            var data_cc5 = data.feed.entry[ov1 + mv * 4].content.$t;
+            var data_cd5 = data.feed.entry[ov2 + mv * 4].content.$t;
+            $('.data_cc5').html(data_cc5);
+            $('.data_cd5').html(data_cd5);
+
+            // 浙江
+            var data_cc6 = data.feed.entry[ov1 + mv * 5].content.$t;
+            var data_cd6 = data.feed.entry[ov2 + mv * 5].content.$t;
+            $('.data_cc6').html(data_cc6);
+            $('.data_cd6').html(data_cd6);
+
+            // 天津
+            var data_cc7 = data.feed.entry[ov1 + mv * 6].content.$t;
+            var data_cd7 = data.feed.entry[ov2 + mv * 6].content.$t;
+            $('.data_cc7').html(data_cc7);
+            $('.data_cd7').html(data_cd7);
+
+            // 江西
+            var data_cc8 = data.feed.entry[ov1 + mv * 7].content.$t;
+            var data_cd8 = data.feed.entry[ov2 + mv * 7].content.$t;
+            $('.data_cc8').html(data_cc8);
+            $('.data_cd8').html(data_cd8);
+
+            // 四川
+            var data_cc9 = data.feed.entry[ov1 + mv * 8].content.$t;
+            var data_cd9 = data.feed.entry[ov2 + mv * 8].content.$t;
+            $('.data_cc9').html(data_cc9);
+            $('.data_cd9').html(data_cd9);
+
+            // 山東
+            var data_cc10 = data.feed.entry[ov1 + mv * 9].content.$t;
+            var data_cd10 = data.feed.entry[ov2 + mv * 9].content.$t;
+            $('.data_cc10').html(data_cc10);
+            $('.data_cd10').html(data_cd10);
+
+            // 河南
+            var data_cc11 = data.feed.entry[ov1 + mv * 10].content.$t;
+            var data_cd11 = data.feed.entry[ov2 + mv * 10].content.$t;
+            $('.data_cc11').html(data_cc11);
+            $('.data_cd11').html(data_cd11);
+
+            // 湖南
+            var data_cc12 = data.feed.entry[ov1 + mv * 11].content.$t;
+            var data_cd12 = data.feed.entry[ov2 + mv * 11].content.$t;
+            $('.data_cc12').html(data_cc12);
+            $('.data_cd12').html(data_cd12);
+
+            // 雲南
+            var data_cc13 = data.feed.entry[ov1 + mv * 12].content.$t;
+            var data_cd13 = data.feed.entry[ov2 + mv * 12].content.$t;
+            $('.data_cc13').html(data_cc13);
+            $('.data_cd13').html(data_cd13);
+
+            // 海南
+            var data_cc14 = data.feed.entry[ov1 + mv * 13].content.$t;
+            var data_cd14 = data.feed.entry[ov2 + mv * 13].content.$t;
+            $('.data_cc14').html(data_cc14);
+            $('.data_cd14').html(data_cd14);
+
+            // 廣西
+            var data_cc15 = data.feed.entry[ov1 + mv * 14].content.$t;
+            var data_cd15 = data.feed.entry[ov2 + mv * 14].content.$t;
+            $('.data_cc15').html(data_cc15);
+            $('.data_cd15').html(data_cd15);
+
+            // 遼寧
+            var data_cc16 = data.feed.entry[ov1 + mv * 15].content.$t;
+            var data_cd16 = data.feed.entry[ov2 + mv * 15].content.$t;
+            $('.data_cc16').html(data_cc16);
+            $('.data_cd16').html(data_cd16);
+
+            // 安徽
+            var data_cc17 = data.feed.entry[ov1 + mv * 16].content.$t;
+            var data_cd17 = data.feed.entry[ov2 + mv * 16].content.$t;
+            $('.data_cc17').html(data_cc17);
+            $('.data_cd17').html(data_cd17);
+
+            // 山西
+            var data_cc18 = data.feed.entry[ov1 + mv * 17].content.$t;
+            var data_cd18 = data.feed.entry[ov2 + mv * 17].content.$t;
+            $('.data_cc18').html(data_cc18);
+            $('.data_cd18').html(data_cd18);
+
+            // 河北
+            var data_cc19 = data.feed.entry[ov1 + mv * 18].content.$t;
+            var data_cd19 = data.feed.entry[ov2 + mv * 18].content.$t;
+            $('.data_cc19').html(data_cc19);
+            $('.data_cd19').html(data_cd19);
+
+            // 福建
+            var data_cc20 = data.feed.entry[ov1 + mv * 19].content.$t;
+            var data_cd20 = data.feed.entry[ov2 + mv * 19].content.$t;
+            $('.data_cc20').html(data_cc20);
+            $('.data_cd20').html(data_cd20);
+
+            // 寧夏
+            var data_cc21 = data.feed.entry[ov1 + mv * 20].content.$t;
+            var data_cd21 = data.feed.entry[ov2 + mv * 20].content.$t;
+            $('.data_cc21').html(data_cc21);
+            $('.data_cd21').html(data_cd21);
+
+            // 江蘇
+            var data_cc22 = data.feed.entry[ov1 + mv * 21].content.$t;
+            var data_cd22 = data.feed.entry[ov2 + mv * 21].content.$t;
+            $('.data_cc22').html(data_cc22);
+            $('.data_cd22').html(data_cd22);
+
+            // 貴州
+            var data_cc23 = data.feed.entry[ov1 + mv * 22].content.$t;
+            var data_cd23 = data.feed.entry[ov2 + mv * 22].content.$t;
+            $('.data_cc23').html(data_cc23);
+            $('.data_cd23').html(data_cd23);
+
+            // 吉林
+            var data_cc24 = data.feed.entry[ov1 + mv * 23].content.$t;
+            var data_cd24 = data.feed.entry[ov2 + mv * 23].content.$t;
+            $('.data_cc24').html(data_cc24);
+            $('.data_cd24').html(data_cd24);
+
+            // 黑龍江
+            var data_cc25 = data.feed.entry[ov1 + mv * 24].content.$t;
+            var data_cd25 = data.feed.entry[ov2 + mv * 24].content.$t;
+            $('.data_cc25').html(data_cc25);
+            $('.data_cd25').html(data_cd25);
+
+            // 甘肅
+            var data_cc26 = data.feed.entry[ov1 + mv * 25].content.$t;
+            var data_cd26 = data.feed.entry[ov2 + mv * 25].content.$t;
+            $('.data_cc26').html(data_cc26);
+            $('.data_cd26').html(data_cd26);
+
+            // 新疆
+            var data_cc27 = data.feed.entry[ov1 + mv * 26].content.$t;
+            var data_cd27 = data.feed.entry[ov2 + mv * 26].content.$t;
+            $('.data_cc27').html(data_cc27);
+            $('.data_cd27').html(data_cd27);
+
+            // 陝西
+            var data_cc28 = data.feed.entry[ov1 + mv * 27].content.$t;
+            var data_cd28 = data.feed.entry[ov2 + mv * 27].content.$t;
+            $('.data_cc28').html(data_cc28);
+            $('.data_cd28').html(data_cd28);
+
+            // 內蒙古
+            var data_cc29 = data.feed.entry[ov1 + mv * 28].content.$t;
+            var data_cd29 = data.feed.entry[ov2 + mv * 28].content.$t;
+            $('.data_cc29').html(data_cc29);
+            $('.data_cd29').html(data_cd29);
+
+            // 青海
+            var data_cc30 = data.feed.entry[ov1 + mv * 29].content.$t;
+            var data_cd30 = data.feed.entry[ov2 + mv * 29].content.$t;
+            $('.data_cc30').html(data_cc30);
+            $('.data_cd30').html(data_cd30);
+
+            // 西藏
+            var data_cc31 = data.feed.entry[ov1 + mv * 30].content.$t;
+            var data_cd31 = data.feed.entry[ov2 + mv * 30].content.$t;
+            $('.data_cc31').html(data_cc31);
+            $('.data_cd31').html(data_cd31);
+
+            //// 中共總和 ////
+            $('#count_sumConfirm_china').html(data.feed.entry[ov1 + mv * 31].content.$t);
+            $('#count_sumDeath_china').html(data.feed.entry[ov2 + mv * 31].content.$t);
+            // 中國省份數
+            var ctr_total = 0;
+            $('.count_china tr').each(function () {
+                ctr_total += parseInt($(this).find('td:eq(0)').length);
+            });
+            $('#count_sumProvice_china').html(ctr_total);
+
+
+
             ////////////////
             ///////////////////
             /////// 台灣 /////////
@@ -14,133 +219,133 @@ function ajax_gsheet() {
             ///////////////////////////
 
             // 基隆市
-            var data_tc1 = data.feed.entry[23].content.$t;
+            var data_tc1 = data.feed.entry[102].content.$t;
             $('.data_tc1').addClass('deg4');
             $('.data_tc1').attr('title', '基隆市：' + data_tc1 + '例');
             $('.data_tc1').html(data_tc1);
 
             // 台北市
-            var data_tc2 = data.feed.entry[25].content.$t;
+            var data_tc2 = data.feed.entry[104].content.$t;
             $('.data_tc2').addClass('deg2');
             $('.data_tc2').html(data_tc2);
             $('.data_tc2').attr('title', '台北市：' + data_tc2 + '例');
 
             // 新北市
-            var data_tc3 = data.feed.entry[27].content.$t;
+            var data_tc3 = data.feed.entry[106].content.$t;
             $('.data_tc3').addClass('deg2');
             $('.data_tc3').html(data_tc3);
             $('.data_tc3').attr('title', '新北市：' + data_tc3 + '例');
 
             // 桃園市
-            var data_tc4 = data.feed.entry[29].content.$t;
+            var data_tc4 = data.feed.entry[108].content.$t;
             $('.data_tc4').addClass('deg2');
             $('.data_tc4').html(data_tc4);
             $('.data_tc4').attr('title', '桃園市：' + data_tc4 + '例');
 
             // 新竹市
-            var data_tc5 = data.feed.entry[31].content.$t;
+            var data_tc5 = data.feed.entry[110].content.$t;
             $('.data_tc5').addClass('deg3');
             $('.data_tc5').html(data_tc5);
             $('.data_tc5').attr('title', '新竹市：' + data_tc5 + '例');
 
             // 新竹縣
-            var data_tc6 = data.feed.entry[33].content.$t;
+            var data_tc6 = data.feed.entry[112].content.$t;
             $('.data_tc6').addClass('degNone');
             $('.data_tc6').html(data_tc6);
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例');
 
             // 苗栗縣
-            var data_tc7 = data.feed.entry[35].content.$t;
+            var data_tc7 = data.feed.entry[114].content.$t;
             $('.data_tc7').addClass('degNone');
             $('.data_tc7').html(data_tc7);
             $('.data_tc7').attr('title', '苗栗縣：' + data_tc7 + '例');
 
             // 台中市
-            var data_tc8 = data.feed.entry[37].content.$t;;
+            var data_tc8 = data.feed.entry[116].content.$t;;
             $('.data_tc8').addClass('deg2');
             $('.data_tc8').html(data_tc8);
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例');
 
             // 彰化縣
-            var data_tc9 = data.feed.entry[39].content.$t;;
+            var data_tc9 = data.feed.entry[118].content.$t;;
             $('.data_tc9').addClass('deg2');
             $('.data_tc9').html(data_tc9);
             $('.data_tc9').attr('title', '彰化縣：' + data_tc9 + '例');
 
             // 南投縣
-            var data_tc10 = data.feed.entry[41].content.$t;
+            var data_tc10 = data.feed.entry[120].content.$t;
             $('.data_tc10').addClass('deg4');
             $('.data_tc10').html(data_tc10);
             $('.data_tc10').attr('title', '南投縣：' + data_tc10 + '例');
 
             // 嘉義市
-            var data_tc11 = data.feed.entry[43].content.$t;
+            var data_tc11 = data.feed.entry[122].content.$t;
             $('.data_tc11').addClass('degNone');
             $('.data_tc11').html(data_tc11);
             $('.data_tc11').attr('title', '嘉義市：' + data_tc11 + '例');
 
             // 嘉義縣
-            var data_tc12 = data.feed.entry[45].content.$t;
+            var data_tc12 = data.feed.entry[124].content.$t;
             $('.data_tc12').addClass('degNone');
             $('.data_tc12').html(data_tc12);
             $('.data_tc12').attr('title', '嘉義縣：' + data_tc12 + '例');
 
             // 雲林縣
-            var data_tc13 = data.feed.entry[47].content.$t;
+            var data_tc13 = data.feed.entry[126].content.$t;
             $('.data_tc13').addClass('degNone');
             $('.data_tc13').html(data_tc13);
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例');
 
             // 台南市
-            var data_tc14 = data.feed.entry[49].content.$t;
+            var data_tc14 = data.feed.entry[128].content.$t;
             $('.data_tc14').addClass('deg4');
             $('.data_tc14').html(data_tc14);
             $('.data_tc14').attr('title', '台南市：' + data_tc14 + '例');
 
             // 高雄市
-            var data_tc15 = data.feed.entry[51].content.$t;
+            var data_tc15 = data.feed.entry[130].content.$t;
             $('.data_tc15').addClass('degNone');
             $('.data_tc15').html(data_tc15);
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例');
 
             // 屏東縣
-            var data_tc16 = data.feed.entry[53].content.$t;
+            var data_tc16 = data.feed.entry[132].content.$t;
             $('.data_tc16').addClass('degNone');
             $('.data_tc16').html(data_tc16);
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例');
 
             // 宜蘭縣
-            var data_tc17 = data.feed.entry[55].content.$t;
+            var data_tc17 = data.feed.entry[134].content.$t;
             $('.data_tc17').addClass('degNone');
             $('.data_tc17').html(data_tc17);
             $('.data_tc17').attr('title', '宜蘭縣：' + data_tc17 + '例');
 
             // 花蓮縣
-            var data_tc18 = data.feed.entry[57].content.$t;
+            var data_tc18 = data.feed.entry[136].content.$t;
             $('.data_tc18').addClass('degNone');
             $('.data_tc18').html(data_tc18);
             $('.data_tc18').attr('title', '花蓮縣：' + data_tc18 + '例');
 
             // 台東縣
-            var data_tc19 = data.feed.entry[59].content.$t;
+            var data_tc19 = data.feed.entry[138].content.$t;
             $('.data_tc19').addClass('degNone');
             $('.data_tc19').html(data_tc19);
             $('.data_tc19').attr('title', '台東縣：' + data_tc19 + '例');
 
             // 連江縣
-            var data_tc20 = data.feed.entry[61].content.$t;
+            var data_tc20 = data.feed.entry[140].content.$t;
             $('.data_tc20').addClass('degNone');
             $('.data_tc20').html(data_tc20);
             $('.data_tc20').attr('title', '連江縣：' + data_tc20 + '例');
 
             // 金門縣
-            var data_tc21 = data.feed.entry[63].content.$t;
+            var data_tc21 = data.feed.entry[142].content.$t;
             $('.data_tc21').addClass('degNone');
             $('.data_tc21').html(data_tc21);
             $('.data_tc21').attr('title', '金門縣：' + data_tc21 + '例');
 
             // 澎湖縣
-            var data_tc22 = data.feed.entry[65].content.$t;
+            var data_tc22 = data.feed.entry[144].content.$t;
             $('.data_tc22').addClass('degNone');
             $('.data_tc22').html(data_tc22);
             $('.data_tc22').attr('title', '澎湖縣：' + data_tc22 + '例');
@@ -152,198 +357,198 @@ function ajax_gsheet() {
             ///////////////////////////
 
             // 其他（磐石艦）
-            var data_imp1 = data.feed.entry[71].content.$t;
+            var data_imp1 = data.feed.entry[150].content.$t;
             $('.data_imp1').html(data_imp1);
 
             // 美國
-            var data_imp2 = data.feed.entry[73].content.$t;
+            var data_imp2 = data.feed.entry[152].content.$t;
             $('.data_imp2').html(data_imp2);
 
             // 英國
-            var data_imp3 = data.feed.entry[75].content.$t;
+            var data_imp3 = data.feed.entry[154].content.$t;
             $('.data_imp3').html(data_imp3);
 
             // 菲律賓
-            var data_imp4 = data.feed.entry[77].content.$t;
+            var data_imp4 = data.feed.entry[156].content.$t;
             $('.data_imp4').html(data_imp4);
 
             // 法國
-            var data_imp5 = data.feed.entry[79].content.$t;
+            var data_imp5 = data.feed.entry[158].content.$t;
             $('.data_imp5').html(data_imp5);
 
             // 西班牙
-            var data_imp6 = data.feed.entry[81].content.$t;
+            var data_imp6 = data.feed.entry[160].content.$t;
             $('.data_imp6').html(data_imp6);
 
             // 土耳其
-            var data_imp7 = data.feed.entry[83].content.$t;
+            var data_imp7 = data.feed.entry[162].content.$t;
             $('.data_imp7').html(data_imp7);
 
             // 埃及
-            var data_imp8 = data.feed.entry[85].content.$t;
+            var data_imp8 = data.feed.entry[164].content.$t;
             $('.data_imp8').html(data_imp8);
 
             // 中國
-            var data_imp9 = data.feed.entry[87].content.$t;
+            var data_imp9 = data.feed.entry[166].content.$t;
             $('.data_imp9').html(data_imp9);
 
             // 奧地利
-            var data_imp10 = data.feed.entry[89].content.$t;
+            var data_imp10 = data.feed.entry[168].content.$t;
             $('.data_imp10').html(data_imp10);
 
             // 印尼
-            var data_imp11 = data.feed.entry[91].content.$t;
+            var data_imp11 = data.feed.entry[170].content.$t;
             $('.data_imp11').html(data_imp11);
 
             // 荷蘭
-            var data_imp12 = data.feed.entry[93].content.$t;
+            var data_imp12 = data.feed.entry[172].content.$t;
             $('.data_imp12').html(data_imp12);
 
             // 捷克
-            var data_imp13 = data.feed.entry[95].content.$t;
+            var data_imp13 = data.feed.entry[174].content.$t;
             $('.data_imp13').html(data_imp13);
 
             // 德國
-            var data_imp14 = data.feed.entry[97].content.$t;
+            var data_imp14 = data.feed.entry[176].content.$t;
             $('.data_imp14').html(data_imp14);
 
             // 瑞士
-            var data_imp15 = data.feed.entry[99].content.$t;
+            var data_imp15 = data.feed.entry[178].content.$t;
             $('.data_imp15').html(data_imp15);
 
             // 義大利
-            var data_imp16 = data.feed.entry[101].content.$t;
+            var data_imp16 = data.feed.entry[180].content.$t;
             $('.data_imp16').html(data_imp16);
 
             // 南非
-            var data_imp17 = data.feed.entry[103].content.$t;
+            var data_imp17 = data.feed.entry[182].content.$t;
             $('.data_imp17').html(data_imp17);
 
             // 智利
-            var data_imp18 = data.feed.entry[105].content.$t;
+            var data_imp18 = data.feed.entry[184].content.$t;
             $('.data_imp18').html(data_imp18);
 
             // 愛爾蘭
-            var data_imp19 = data.feed.entry[107].content.$t;
+            var data_imp19 = data.feed.entry[186].content.$t;
             $('.data_imp19').html(data_imp19);
 
             // 日本
-            var data_imp20 = data.feed.entry[109].content.$t;
+            var data_imp20 = data.feed.entry[188].content.$t;
             $('.data_imp20').html(data_imp20);
 
             // 孟加拉
-            var data_imp21 = data.feed.entry[111].content.$t;
+            var data_imp21 = data.feed.entry[190].content.$t;
             $('.data_imp21').html(data_imp21);
 
             // 加拿大
-            var data_imp22 = data.feed.entry[113].content.$t;
+            var data_imp22 = data.feed.entry[192].content.$t;
             $('.data_imp22').html(data_imp22);
 
             // 冰島
-            var data_imp23 = data.feed.entry[115].content.$t;
+            var data_imp23 = data.feed.entry[194].content.$t;
             $('.data_imp23').html(data_imp23);
 
             // 墨西哥
-            var data_imp24 = data.feed.entry[117].content.$t;
+            var data_imp24 = data.feed.entry[196].content.$t;
             $('.data_imp24').html(data_imp24);
 
             // 摩洛哥
-            var data_imp25 = data.feed.entry[119].content.$t;
+            var data_imp25 = data.feed.entry[198].content.$t;
             $('.data_imp25').html(data_imp25);
 
             // 阿根廷
-            var data_imp26 = data.feed.entry[121].content.$t;
+            var data_imp26 = data.feed.entry[200].content.$t;
             $('.data_imp26').html(data_imp26);
 
             // 澳洲
-            var data_imp27 = data.feed.entry[123].content.$t;
+            var data_imp27 = data.feed.entry[202].content.$t;
             $('.data_imp27').html(data_imp27);
 
             // 比利時
-            var data_imp28 = data.feed.entry[125].content.$t;
+            var data_imp28 = data.feed.entry[204].content.$t;
             $('.data_imp28').html(data_imp28);
 
             // 丹麥
-            var data_imp29 = data.feed.entry[127].content.$t;
+            var data_imp29 = data.feed.entry[206].content.$t;
             $('.data_imp29').html(data_imp29);
 
             // 瓜地馬拉
-            var data_imp30 = data.feed.entry[129].content.$t;
+            var data_imp30 = data.feed.entry[208].content.$t;
             $('.data_imp30').html(data_imp30);
 
             // 香港
-            var data_imp31 = data.feed.entry[131].content.$t;
+            var data_imp31 = data.feed.entry[210].content.$t;
             $('.data_imp31').html(data_imp31);
 
             // 紐西蘭
-            var data_imp32 = data.feed.entry[133].content.$t;
+            var data_imp32 = data.feed.entry[212].content.$t;
             $('.data_imp32').html(data_imp32);
 
             // 卡達
-            var data_imp33 = data.feed.entry[135].content.$t;
+            var data_imp33 = data.feed.entry[214].content.$t;
             $('.data_imp33').html(data_imp33);
 
             // 塞內加爾
-            var data_imp34 = data.feed.entry[137].content.$t;
+            var data_imp34 = data.feed.entry[216].content.$t;
             $('.data_imp34').html(data_imp34);
 
             // 希臘
-            var data_imp35 = data.feed.entry[139].content.$t;
+            var data_imp35 = data.feed.entry[218].content.$t;
             $('.data_imp35').html(data_imp35);
 
             // 賴索托
-            var data_imp36 = data.feed.entry[141].content.$t;
+            var data_imp36 = data.feed.entry[220].content.$t;
             $('.data_imp36').html(data_imp36);
 
             // 澳門
-            var data_imp37 = data.feed.entry[143].content.$t;
+            var data_imp37 = data.feed.entry[222].content.$t;
             $('.data_imp37').html(data_imp37);
 
             // 馬來西亞
-            var data_imp38 = data.feed.entry[145].content.$t;
+            var data_imp38 = data.feed.entry[224].content.$t;
             $('.data_imp38').html(data_imp38);
 
             // 阿曼
-            var data_imp39 = data.feed.entry[147].content.$t;
+            var data_imp39 = data.feed.entry[226].content.$t;
             $('.data_imp39').html(data_imp39);
 
             // 波蘭
-            var data_imp40 = data.feed.entry[149].content.$t;
+            var data_imp40 = data.feed.entry[228].content.$t;
             $('.data_imp40').html(data_imp40);
 
             // 泰國
-            var data_imp41 = data.feed.entry[151].content.$t;
+            var data_imp41 = data.feed.entry[230].content.$t;
             $('.data_imp41').html(data_imp41);
 
             // 俄羅斯
-            var data_imp42 = data.feed.entry[153].content.$t;
+            var data_imp42 = data.feed.entry[232].content.$t;
             $('.data_imp42').html(data_imp42);
 
             // 尼泊爾
-            var data_imp43 = data.feed.entry[155].content.$t;
+            var data_imp43 = data.feed.entry[234].content.$t;
             $('.data_imp43').html(data_imp43);
 
             // 緬甸
-            var data_imp44 = data.feed.entry[157].content.$t;
+            var data_imp44 = data.feed.entry[236].content.$t;
             $('.data_imp44').html(data_imp44);
 
             // 印度
-            var data_imp45 = data.feed.entry[159].content.$t;
+            var data_imp45 = data.feed.entry[238].content.$t;
             $('.data_imp45').html(data_imp45);
 
             // 烏克蘭
-            var data_imp46 = data.feed.entry[161].content.$t;
+            var data_imp46 = data.feed.entry[240].content.$t;
             $('.data_imp46').html(data_imp46);
 
-            // 阿聯
-            var data_imp47 = data.feed.entry[163].content.$t;
+            // 法國
+            var data_imp47 = data.feed.entry[242].content.$t;
             $('.data_imp47').html(data_imp47);
 
-            // 阿聯
-            var data_imp48 = data.feed.entry[165].content.$t;
-            $('.data_imp48').html(data_imp48);
+            // 新增新國家 data.feed.entry+2 / data_imp+1
 
-            // 台灣本土／境外 表格 //
+            // 台灣總合 //
+            // 台灣總合 //
+            // 台灣總合 //
 
             $('#dt_loc_taiwan').DataTable({
                 "paging": false,
@@ -367,25 +572,22 @@ function ajax_gsheet() {
             });
 
             // 總數-本土案例 變數：tc-local
-            var data_tcloc = data.feed.entry[21].content.$t;
+            var data_tcloc = data.feed.entry[146].content.$t;
             $('.data_tcloc').html(data_tcloc);
 
+            // 新增新國家 / 新增每筆+2
             // 總數-境外移入 變數：tc-import
-            var data_tcimp = data.feed.entry[69].content.$t;
+            var data_tcimp = data.feed.entry[244].content.$t;
             $('.data_tcimp').html(data_tcimp);
 
+            // 新增新國家 / 新增每筆+2
             //// 台灣總和 ////
-            $('#count_recently_taiwan').html(data.feed.entry[11].content.$t);
-            $('#count_sumConfirm_taiwan').html(data.feed.entry[13].content.$t);
-            $('#tw_con').html(data.feed.entry[13].content.$t);
-            $('#tw_die').html(data.feed.entry[15].content.$t);
-            $('#tw_rec').html(data.feed.entry[17].content.$t);
+            $('#count_sumConfirm_taiwan').html(data.feed.entry[248].content.$t);
+            $('#tw_con').html(data.feed.entry[248].content.$t);
+            $('#tw_die').html(data.feed.entry[250].content.$t);
+            $('#tw_rec').html(data.feed.entry[252].content.$t);
 
-            //// 全球總合 ////
-            $('#inc_con').html(data.feed.entry[5].content.$t);
-            $('#inc_die').html(data.feed.entry[6].content.$t);
-
-            //// 台灣 首屏動態數字 ////
+            //// 台灣首屏動態數字 ////
             $('#tw_con').each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
@@ -422,43 +624,1885 @@ function ajax_gsheet() {
                 });
             });
 
-            //// 全球 首屏動態數字 ////
+            ///////////////
+            //////////////////
+            /////////////////////
+            /////// 全球 ///////////
+            //////////////////////////
+            /////第一筆有資料的編號為０/////
+            ///////////////////////////////
+            // 新增新國家 / 新增每筆+3 首筆+2
 
-            $('#inc_con').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 3000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
+            // 香港
+            var data_gc6 = data.feed.entry[257].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd6 = data.feed.entry[258].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc6').addClass('deg3');
+            $('.data_gc6').attr('title', '香港' + '：' + data_gc6 + '例');
+            $('.data_gc6').html(data_gc6);
+            $('.data_gd6').html(data_gd6);
+
+            // 澳門
+            var data_gc7 = data.feed.entry[260].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd7 = data.feed.entry[261].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc7').addClass('deg4');
+            $('.data_gc7').attr('title', '澳門' + '：' + data_gc7 + '例');
+            $('.data_gc7').html(data_gc7);
+            $('.data_gd7').html(data_gd7);
+
+            // 法屬圭亞那
+            var data_gc127 = data.feed.entry[263].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd127 = data.feed.entry[264].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc127').addClass('deg2');
+            $('.data_gc127').attr('title', '法屬圭亞那' + '：' + data_gc127 + '例');
+            $('.data_gc127').html(data_gc127);
+            $('.data_gd127').html(data_gd127);
+
+            // 波多黎各
+            var data_gc144 = data.feed.entry[266].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd144 = data.feed.entry[267].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc144').addClass('deg4');
+            $('.data_gc144').attr('title', '波多黎各' + '：' + data_gc144 + '例');
+            $('.data_gc144').html(data_gc144);
+            $('.data_gd144').html(data_gd144);
+
+            // 格陵蘭
+            var data_gc160 = data.feed.entry[269].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd160 = data.feed.entry[270].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc160').addClass('deg4');
+            $('.data_gc160').attr('title', '格陵蘭' + '：' + data_gc160 + '例');
+            $('.data_gc160').html(data_gc160);
+            $('.data_gd160').html(data_gd160);
+
+            // 福克蘭群島
+            var data_gc199 = data.feed.entry[272].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd199 = data.feed.entry[273].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc199').addClass('deg4');
+            $('.data_gc199').attr('title', '福克蘭群島' + '：' + data_gc199 + '例');
+            $('.data_gc199').html(data_gc199);
+            $('.data_gd199').html(data_gd199);
+
+            // 新喀里多尼亞
+            var data_gc201 = data.feed.entry[275].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var data_gd201 = data.feed.entry[276].content.$t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            $('.data_gc201').addClass('deg4');
+            $('.data_gc201').attr('title', '新喀里多尼亞' + '：' + data_gc201 + '例');
+            $('.data_gc201').html(data_gc201);
+            $('.data_gd201').html(data_gd201);
+
+            var settings = {
+                "url": "https://api.covid19api.com/summary",
+                "method": "GET",
+                "timeout": 0,
+            };
+
+            $.ajax(settings).done(function (response) {
+                // console.log(response)
+                //// 亞洲 ////
+                // 台灣
+                var data_gc1 = response.Countries[166].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd1 = response.Countries[166].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc1').addClass('deg4');
+                $('.data_gc1').attr('title', '台灣' + '：' + data_gc1 + '例');
+                $('.data_gc1').html(data_gc1);
+                $('.data_gd1').html(data_gd1);
+
+                // 中國
+                var data_gc2 = response.Countries[35].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd2 = response.Countries[35].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc2').addClass('deg2');
+                $('.data_gc2').attr('title', '中國' + '：' + data_gc2 + '例');
+                $('.data_gc2').html(data_gc2);
+                $('.data_gd2').html(data_gd2);
+
+                // 日本
+                var data_gc3 = response.Countries[84].TotalConfirmed + 712;
+                var data_gd3 = response.Countries[84].TotalDeaths + 13;
+                // .toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") 
+                // .toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")   
+                $('.data_gc3').addClass('deg2');
+                $('.data_gc3').attr('title', '日本' + '：' + data_gc3 + '例');
+                $('.data_gc3').html(data_gc3.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                $('.data_gd3').html(data_gd3.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+
+                // 南韓
+                var data_gc4 = response.Countries[88].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd4 = response.Countries[88].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc4').addClass('deg2');
+                $('.data_gc4').attr('title', '南韓' + '：' + data_gc4 + '例');
+                $('.data_gc4').html(data_gc4);
+                $('.data_gd4').html(data_gd4);
+
+                // 泰國
+                var data_gc5 = response.Countries[169].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd5 = response.Countries[169].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc5').addClass('deg3');
+                $('.data_gc5').attr('title', '泰國' + '：' + data_gc5 + '例');
+                $('.data_gc5').html(data_gc5);
+                $('.data_gd5').html(data_gd5);
+
+                // 新加坡
+                var data_gc8 = response.Countries[152].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd8 = response.Countries[152].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc8').addClass('deg2');
+                $('.data_gc8').attr('title', '新加坡' + '：' + data_gc8 + '例');
+                $('.data_gc8').html(data_gc8);
+                $('.data_gd8').html(data_gd8);
+
+                // 馬來西亞
+                var data_gc9 = response.Countries[104].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd9 = response.Countries[104].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc9').addClass('deg3');
+                $('.data_gc9').attr('title', '馬來西亞' + '：' + data_gc9 + '例');
+                $('.data_gc9').html(data_gc9);
+                $('.data_gd9').html(data_gd9);
+
+                // 越南
+                var data_gc10 = response.Countries[183].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd10 = response.Countries[183].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc10').addClass('deg3');
+                $('.data_gc10').attr('title', '越南' + '：' + data_gc10 + '例');
+                $('.data_gc10').html(data_gc10);
+                $('.data_gd10').html(data_gd10);
+
+                // 伊朗
+                var data_gc30 = response.Countries[78].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd30 = response.Countries[78].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc30').addClass('deg1');
+                $('.data_gc30').attr('title', '伊朗' + '：' + data_gc30 + '例');
+                $('.data_gc30').html(data_gc30);
+                $('.data_gd30').html(data_gd30);
+
+                // 阿拉伯聯合大公國
+                var data_gc11 = response.Countries[177].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd11 = response.Countries[177].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc11').addClass('deg1');
+                $('.data_gc11').attr('title', '阿聯' + '：' + data_gc11 + '例');
+                $('.data_gc11').html(data_gc11);
+                $('.data_gd11').html(data_gd11);
+
+                // 菲律賓
+                var data_gc12 = response.Countries[133].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd12 = response.Countries[133].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc12').addClass('deg1');
+                $('.data_gc12').attr('title', '菲律賓' + '：' + data_gc12 + '例');
+                $('.data_gc12').html(data_gc12);
+                $('.data_gd12').html(data_gd12);
+
+                // 印度
+                var data_gc13 = response.Countries[76].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd13 = response.Countries[76].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc13').addClass('deg0');
+                $('.data_gc13').attr('title', '印度' + '：' + data_gc13 + '例');
+                $('.data_gc13').html(data_gc13);
+                $('.data_gd13').html(data_gd13);
+
+                // 尼泊爾
+                var data_gc14 = response.Countries[119].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd14 = response.Countries[119].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc14').addClass('deg1');
+                $('.data_gc14').attr('title', '尼泊爾' + '：' + data_gc14 + '例');
+                $('.data_gc14').html(data_gc14);
+                $('.data_gd14').html(data_gd14);
+
+                // 柬埔寨
+                var data_gc15 = response.Countries[28].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd15 = response.Countries[28].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc15').addClass('deg4');
+                $('.data_gc15').attr('title', '柬埔寨' + '：' + data_gc15 + '例');
+                $('.data_gc15').html(data_gc15);
+                $('.data_gd15').html(data_gd15);
+
+                // 斯里蘭卡
+                var data_gc16 = response.Countries[159].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd16 = response.Countries[159].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc16').addClass('deg3');
+                $('.data_gc16').attr('title', '斯里蘭卡' + '：' + data_gc16 + '例');
+                $('.data_gc16').html(data_gc16);
+                $('.data_gd16').html(data_gd16);
+
+                // 以色列
+                var data_gc31 = response.Countries[81].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd31 = response.Countries[81].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc31').addClass('deg1');
+                $('.data_gc31').attr('title', '以色列' + '：' + data_gc31 + '例');
+                $('.data_gc31').html(data_gc31);
+                $('.data_gd31').html(data_gd31);
+
+                // 黎巴嫩
+                var data_gc32 = response.Countries[93].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd32 = response.Countries[93].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc32').addClass('deg2');
+                $('.data_gc32').attr('title', '黎巴嫩' + '：' + data_gc32 + '例');
+                $('.data_gc32').html(data_gc32);
+                $('.data_gd32').html(data_gd32);
+
+                // 伊拉克
+                var data_gc33 = response.Countries[79].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd33 = response.Countries[79].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc33').addClass('deg1');
+                $('.data_gc33').attr('title', '伊拉克' + '：' + data_gc33 + '例');
+                $('.data_gc33').html(data_gc33);
+                $('.data_gd33').html(data_gd33);
+
+                // 科威特
+                var data_gc34 = response.Countries[89].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd34 = response.Countries[89].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc34').addClass('deg1');
+                $('.data_gc34').attr('title', '科威特' + '：' + data_gc34 + '例');
+                $('.data_gc34').html(data_gc34);
+                $('.data_gd34').html(data_gd34);
+
+                // 阿富汗
+                var data_gc35 = response.Countries[0].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd35 = response.Countries[0].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc35').addClass('deg2');
+                $('.data_gc35').attr('title', '阿富汗' + '：' + data_gc35 + '例');
+                $('.data_gc35').html(data_gc35);
+                $('.data_gd35').html(data_gd35);
+
+                // 巴林
+                var data_gc36 = response.Countries[12].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd36 = response.Countries[12].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_g36').addClass('deg2');
+                $('.data_gc36').attr('title', '巴林' + '：' + data_gc36 + '例');
+                $('.data_gc36').html(data_gc36);
+                $('.data_gd36').html(data_gd36);
+
+                // 阿曼
+                var data_gc37 = response.Countries[126].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd37 = response.Countries[126].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc37').addClass('deg1');
+                $('.data_gc37').attr('title', '阿曼' + '：' + data_gc37 + '例');
+                $('.data_gc37').html(data_gc37);
+                $('.data_gd37').html(data_gd37);
+
+                // 喬治亞
+                var data_gc42 = response.Countries[62].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd42 = response.Countries[62].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc42').addClass('deg3');
+                $('.data_gc42').attr('title', '喬治亞' + '：' + data_gc42 + '例');
+                $('.data_gc42').html(data_gc42);
+                $('.data_gd42').html(data_gd42);
+
+                // 巴基斯坦
+                var data_gc43 = response.Countries[127].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd43 = response.Countries[127].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc43').addClass('deg1');
+                $('.data_gc43').attr('title', '巴基斯坦' + '：' + data_gc43 + '例');
+                $('.data_gc43').html(data_gc43);
+                $('.data_gd43').html(data_gd43);
+
+                // 卡達
+                var data_gc60 = response.Countries[136].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd60 = response.Countries[136].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc60').addClass('deg1');
+                $('.data_gc60').attr('title', '卡達' + '：' + data_gc60 + '例');
+                $('.data_gc60').html(data_gc60);
+                $('.data_gd60').html(data_gd60);
+
+                // 印尼
+                var data_gc67 = response.Countries[77].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd67 = response.Countries[77].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc67').addClass('deg1');
+                $('.data_gc67').attr('title', '印尼' + '：' + data_gc67 + '例');
+                $('.data_gc67').html(data_gc67);
+                $('.data_gd67').html(data_gd67);
+
+                // 約旦
+                var data_gc68 = response.Countries[85].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd68 = response.Countries[85].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc68').addClass('deg3');
+                $('.data_gc68').attr('title', '約旦' + '：' + data_gc68 + '例');
+                $('.data_gc68').html(data_gc68);
+                $('.data_gd68').html(data_gd68);
+
+                // 沙烏地阿拉伯
+                var data_gc69 = response.Countries[147].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd69 = response.Countries[147].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc69').addClass('deg1');
+                $('.data_gc69').attr('title', '沙烏地阿拉伯' + '：' + data_gc69 + '例');
+                $('.data_gc69').html(data_gc69);
+                $('.data_gd69').html(data_gd69);
+
+                // 亞美尼亞
+                var data_gc79 = response.Countries[7].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd79 = response.Countries[7].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc79').addClass('deg2');
+                $('.data_gc79').attr('title', '亞美尼亞' + '：' + data_gc79 + '例');
+                $('.data_gc79').html(data_gc79);
+                $('.data_gd79').html(data_gd79);
+
+                // 巴勒斯坦
+                var data_gc82 = response.Countries[128].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd82 = response.Countries[128].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc82').addClass('deg2');
+                $('.data_gc82').attr('title', '巴勒斯坦' + '：' + data_gc82 + '例');
+                $('.data_gc82').html(data_gc82);
+                $('.data_gd82').html(data_gd82);
+
+                // 不丹
+                var data_gc85 = response.Countries[19].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd85 = response.Countries[19].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc85').addClass('deg4');
+                $('.data_gc85').attr('title', '不丹' + '：' + data_gc85 + '例');
+                $('.data_gc85').html(data_gc85);
+                $('.data_gd85').html(data_gd85);
+
+                // 馬爾地夫
+                var data_gc98 = response.Countries[105].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd98 = response.Countries[105].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc98').addClass('deg3');
+                $('.data_gc98').attr('title', '馬爾地夫' + '：' + data_gc98 + '例');
+                $('.data_gc98').html(data_gc98);
+                $('.data_gd98').html(data_gd98);
+
+                // 孟加拉
+                var data_gc103 = response.Countries[13].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd103 = response.Countries[13].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc103').addClass('deg1');
+                $('.data_gc103').attr('title', '孟加拉' + '：' + data_gc103 + '例');
+                $('.data_gc103').html(data_gc103);
+                $('.data_gd103').html(data_gd103);
+
+                // 汶萊
+                var data_gc106 = response.Countries[24].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd106 = response.Countries[24].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc106').addClass('deg4');
+                $('.data_gc106').attr('title', '汶萊' + '：' + data_gc106 + '例');
+                $('.data_gc106').html(data_gc106);
+                $('.data_gd106').html(data_gd106);
+
+                // 蒙古
+                var data_gc109 = response.Countries[113].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd109 = response.Countries[113].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc109').addClass('deg4');
+                $('.data_gc109').attr('title', '蒙古' + '：' + data_gc109 + '例');
+                $('.data_gc109').html(data_gc109);
+                $('.data_gd109').html(data_gd109);
+
+                // 土耳其
+                var data_gc110 = response.Countries[174].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd110 = response.Countries[174].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc110').addClass('deg1');
+                $('.data_gc110').attr('title', '土耳其' + '：' + data_gc110 + '例');
+                $('.data_gc110').html(data_gc110);
+                $('.data_gd110').html(data_gd110);
+
+                // 亞塞拜然
+                var data_gc54 = response.Countries[10].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd54 = response.Countries[10].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc54').addClass('deg2');
+                $('.data_gc54').attr('title', '亞塞拜然' + '：' + data_gc54 + '例');
+                $('.data_gc54').html(data_gc54);
+                $('.data_gd54').html(data_gd54);
+
+                // 哈薩克
+                var data_gc118 = response.Countries[86].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd118 = response.Countries[86].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc118').addClass('deg1');
+                $('.data_gc118').attr('title', '哈薩克' + '：' + data_gc118 + '例');
+                $('.data_gc118').html(data_gc118);
+                $('.data_gd118').html(data_gd118);
+
+                // 烏茲別克
+                var data_gc140 = response.Countries[181].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd140 = response.Countries[181].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc140').addClass('deg2');
+                $('.data_gc140').attr('title', '烏茲別克' + '：' + data_gc140 + '例');
+                $('.data_gc140').html(data_gc140);
+                $('.data_gd140').html(data_gd140);
+
+                // 吉爾吉斯
+                var data_gc158 = response.Countries[90].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd158 = response.Countries[90].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc158').addClass('deg2');
+                $('.data_gc158').attr('title', '吉爾吉斯' + '：' + data_gc158 + '例');
+                $('.data_gc158').html(data_gc158);
+                $('.data_gd158').html(data_gd158);
+
+                // 東帝汶
+                var data_gc173 = response.Countries[168].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd173 = response.Countries[168].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc173').addClass('deg4');
+                $('.data_gc173').attr('title', '東帝汶' + '：' + data_gc173 + '例');
+                $('.data_gc173').html(data_gc173);
+                $('.data_gd173').html(data_gd173);
+
+                // 賽普勒斯
+                var data_gc105 = response.Countries[43].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd105 = response.Countries[43].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc105').addClass('deg3');
+                $('.data_gc105').attr('title', '賽普勒斯' + '：' + data_gc105 + '例');
+                $('.data_gc105').html(data_gc105);
+                $('.data_gd105').html(data_gd105);
+
+                // 敘利亞
+                var data_gc179 = response.Countries[165].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd179 = response.Countries[165].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc179').addClass('deg3');
+                $('.data_gc179').attr('title', '敘利亞' + '：' + data_gc179 + '例');
+                $('.data_gc179').html(data_gc179);
+                $('.data_gd179').html(data_gd179);
+
+                // 緬甸
+                var data_gc184 = response.Countries[117].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd184 = response.Countries[117].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc184').addClass('deg4');
+                $('.data_gc184').attr('title', '緬甸' + '：' + data_gc184 + '例');
+                $('.data_gc184').html(data_gc184);
+                $('.data_gd184').html(data_gd184);
+
+                // 寮國
+                var data_gc185 = response.Countries[91].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd185 = response.Countries[91].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc185').addClass('deg4');
+                $('.data_gc185').attr('title', '寮國' + '：' + data_gc185 + '例');
+                $('.data_gc185').html(data_gc185);
+                $('.data_gd185').html(data_gd185);
+
+                // 葉門   
+                var data_gc195 = response.Countries[185].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd195 = response.Countries[185].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc195').addClass('deg3');
+                $('.data_gc195').attr('title', '葉門' + '：' + data_gc195 + '例');
+                $('.data_gc195').html(data_gc195);
+                $('.data_gd195').html(data_gd195);
+
+                // 塔吉克   
+                var data_gc198 = response.Countries[165].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd198 = response.Countries[165].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc198').addClass('deg3');
+                $('.data_gc198').attr('title', '塔吉克' + '：' + data_gc198 + '例');
+                $('.data_gc198').html(data_gc198);
+                $('.data_gd198').html(data_gd198);
+
+                // 土庫曼   
+                var data_gc196 = 0;
+                var data_gd196 = 0;
+                $('.data_gc196').addClass('degNone');
+                $('.data_gc196').attr('title', '土庫曼' + '：' + data_gc196 + '例');
+                $('.data_gc196').html(data_gc196);
+                $('.data_gd196').html(data_gd196);
+
+                // 北朝鮮   
+                var data_gc197 = 0;
+                var data_gd197 = 0;
+                $('.data_gc197').addClass('degNone');
+                $('.data_gc197').attr('title', '北朝鮮' + '：' + data_gc197 + '例');
+                $('.data_gc197').html(data_gc197);
+                $('.data_gd197').html(data_gd197);
+
+                //// 美洲 ////
+                // 美國
+                var data_gc17 = response.Countries[179].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd17 = response.Countries[179].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc17').addClass('deg0');
+                $('.data_gc17').attr('title', '美國' + '：' + data_gc17 + '例');
+                $('.data_gc17').html(data_gc17);
+                $('.data_gd17').html(data_gd17);
+
+                // 加拿大
+                var data_gc18 = response.Countries[30].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd18 = response.Countries[30].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc18').addClass('deg1');
+                $('.data_gc18').attr('title', '加拿大' + '：' + data_gc18 + '例');
+                $('.data_gc18').html(data_gc18);
+                $('.data_gd18').html(data_gd18);
+
+                // 巴西
+                var data_gc44 = response.Countries[23].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd44 = response.Countries[23].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc44').addClass('deg0');
+                $('.data_gc44').attr('title', '巴西' + '：' + data_gc44 + '例');
+                $('.data_gc44').html(data_gc44);
+                $('.data_gd44').html(data_gd44);
+
+                // 墨西哥
+                var data_gc58 = response.Countries[110].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd58 = response.Countries[110].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc58').addClass('deg1');
+                $('.data_gc58').attr('title', '墨西哥' + '：' + data_gc58 + '例');
+                $('.data_gc58').html(data_gc58);
+                $('.data_gd58').html(data_gd58);
+
+                // 厄瓜多
+                var data_gc61 = response.Countries[50].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd61 = response.Countries[50].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc61').addClass('deg1');
+                $('.data_gc61').attr('title', '厄瓜多' + '：' + data_gc61 + '例');
+                $('.data_gc61').html(data_gc61);
+                $('.data_gd61').html(data_gd61);
+
+                // 多明尼加共和國
+                var data_gc65 = response.Countries[49].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd65 = response.Countries[49].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc65').addClass('deg1');
+                $('.data_gc65').attr('title', '多明尼加共和國' + '：' + data_gc65 + '例');
+                $('.data_gc65').html(data_gc65);
+                $('.data_gd65').html(data_gd65);
+
+                // 阿根廷
+                var data_gc75 = response.Countries[6].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd75 = response.Countries[6].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc75').addClass('deg0');
+                $('.data_gc75').attr('title', '阿根廷' + '：' + data_gc75 + '例');
+                $('.data_gc75').html(data_gc75);
+                $('.data_gd75').html(data_gd75);
+
+                // 智利
+                var data_gc76 = response.Countries[34].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd76 = response.Countries[34].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc76').addClass('deg1');
+                $('.data_gc76').attr('title', '智利' + '：' + data_gc76 + '例');
+                $('.data_gc76').html(data_gc76);
+                $('.data_gd76').html(data_gd76);
+
+                // 秘魯
+                var data_gc87 = response.Countries[132].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd87 = response.Countries[132].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc87').addClass('deg1');
+                $('.data_gc87').attr('title', '祕魯' + '：' + data_gc87 + '例');
+                $('.data_gc87').html(data_gc87);
+                $('.data_gd87').html(data_gd87);
+
+                // 哥斯大黎加
+                var data_gc88 = response.Countries[40].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd88 = response.Countries[40].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc88').addClass('deg1');
+                $('.data_gc88').attr('title', '哥斯大黎加' + '：' + data_gc88 + '例');
+                $('.data_gc88').html(data_gc88);
+                $('.data_gd88').html(data_gd88);
+
+                // 哥倫比亞
+                var data_gc101 = response.Countries[36].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd101 = response.Countries[36].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc101').addClass('deg0');
+                $('.data_gc101').attr('title', '哥倫比亞' + '：' + data_gc101 + '例');
+                $('.data_gc101').html(data_gc101);
+                $('.data_gd101').html(data_gd101);
+
+                // 巴拉圭
+                var data_gc102 = response.Countries[131].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd102 = response.Countries[131].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc102').addClass('deg2');
+                $('.data_gc102').attr('title', '巴拉圭' + '：' + data_gc102 + '例');
+                $('.data_gc102').html(data_gc102);
+                $('.data_gd102').html(data_gd102);
+
+                // 巴拿馬
+                var data_gc86 = response.Countries[129].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd86 = response.Countries[129].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc86').addClass('deg1');
+                $('.data_gc86').attr('title', '巴拿馬' + '：' + data_gc86 + '例');
+                $('.data_gc86').html(data_gc86);
+                $('.data_gd86').html(data_gd86);
+
+                // 玻利維亞
+                var data_gc112 = response.Countries[20].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd112 = response.Countries[20].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc112').addClass('deg1');
+                $('.data_gc112').attr('title', '玻利維亞' + '：' + data_gc112 + '例');
+                $('.data_gc112').html(data_gc112);
+                $('.data_gd112').html(data_gd112);
+
+                // 宏都拉斯
+                var data_gc113 = response.Countries[73].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd113 = response.Countries[73].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc113').addClass('deg2');
+                $('.data_gc113').attr('title', '宏都拉斯' + '：' + data_gc113 + '例');
+                $('.data_gc113').html(data_gc113);
+                $('.data_gd113').html(data_gd113);
+
+                // 牙買加
+                var data_gc114 = response.Countries[83].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd114 = response.Countries[83].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc114').addClass('deg3');
+                $('.data_gc114').attr('title', '牙買加' + '：' + data_gc114 + '例');
+                $('.data_gc114').html(data_gc114);
+                $('.data_gd114').html(data_gd114);
+
+                // 古巴
+                var data_gc116 = response.Countries[42].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd116 = response.Countries[42].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc116').addClass('deg3');
+                $('.data_gc116').attr('title', '古巴' + '：' + data_gc116 + '例');
+                $('.data_gc116').html(data_gc116);
+                $('.data_gd116').html(data_gd116);
+
+                // 蓋亞那
+                var data_gc117 = response.Countries[70].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd117 = response.Countries[70].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc117').addClass('deg3');
+                $('.data_gc117').attr('title', '蓋亞那' + '：' + data_gc117 + '例');
+                $('.data_gc117').html(data_gc117);
+                $('.data_gd117').html(data_gd117);
+
+                // 烏拉圭
+                var data_gc128 = response.Countries[180].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd128 = response.Countries[180].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc128').addClass('deg3');
+                $('.data_gc128').attr('title', '烏拉圭' + '：' + data_gc128 + '例');
+                $('.data_gc128').html(data_gc128);
+                $('.data_gd128').html(data_gd128);
+
+                // 委內瑞拉
+                var data_gc130 = response.Countries[182].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd130 = response.Countries[182].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc130').addClass('deg2');
+                $('.data_gc130').attr('title', '委內瑞拉' + '：' + data_gc130 + '例');
+                $('.data_gc130').html(data_gc130);
+                $('.data_gd130').html(data_gd130);
+
+                // 瓜地馬拉
+                var data_gc131 = response.Countries[67].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd131 = response.Countries[67].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc131').addClass('deg2');
+                $('.data_gc131').attr('title', '瓜地馬拉' + '：' + data_gc131 + '例');
+                $('.data_gc131').html(data_gc131);
+                $('.data_gd131').html(data_gd131);
+
+                // 聖文森及格瑞那丁
+                var data_gc132 = response.Countries[144].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd132 = response.Countries[144].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc132').addClass('deg4');
+                $('.data_gc132').attr('title', '聖文森及格瑞那丁' + '：' + data_gc132 + '例');
+                $('.data_gc132').html(data_gc132);
+                $('.data_gd132').html(data_gd132);
+
+                // 聖露西亞
+                var data_gc133 = response.Countries[143].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd133 = response.Countries[143].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc133').addClass('deg4');
+                $('.data_gc133').attr('title', '聖露西亞' + '：' + data_gc133 + '例');
+                $('.data_gc133').html(data_gc133);
+                $('.data_gd133').html(data_gd133);
+
+                // 千里達及托巴哥
+                var data_gc145 = response.Countries[172].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd145 = response.Countries[172].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc145').addClass('deg3');
+                $('.data_gc145').attr('title', '千里達及托巴哥' + '：' + data_gc145 + '例');
+                $('.data_gc145').html(data_gc145);
+                $('.data_gd145').html(data_gd145);
+
+                // 安地卡及巴布達
+                var data_gc146 = response.Countries[5].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd146 = response.Countries[5].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc146').addClass('deg4');
+                $('.data_gc146').attr('title', '安地卡及巴布達' + '：' + data_gc146 + '例');
+                $('.data_gc146').html(data_gc146);
+                $('.data_gd146').html(data_gd146);
+
+                // 蘇利南
+                var data_gc147 = response.Countries[161].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd147 = response.Countries[161].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc147').addClass('deg3');
+                $('.data_gc147').attr('title', '蘇利南' + '：' + data_gc147 + '例');
+                $('.data_gc147').html(data_gc147);
+                $('.data_gd147').html(data_gd147);
+
+                // 巴哈馬
+                var data_gc148 = response.Countries[11].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd148 = response.Countries[11].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc148').addClass('deg3');
+                $('.data_gc148').attr('title', '巴哈馬' + '：' + data_gc148 + '例');
+                $('.data_gc148').html(data_gc148);
+                $('.data_gd148').html(data_gd148);
+
+                // 巴貝多
+                var data_gc154 = response.Countries[14].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd154 = response.Countries[14].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc154').addClass('deg4');
+                $('.data_gc154').attr('title', '巴貝多' + '：' + data_gc154 + '例');
+                $('.data_gc154').html(data_gc154);
+                $('.data_gd154').html(data_gd154);
+
+                // 薩爾瓦多
+                var data_gc161 = response.Countries[52].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd161 = response.Countries[52].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc161').addClass('deg2');
+                $('.data_gc161').attr('title', '薩爾瓦多' + '：' + data_gc161 + '例');
+                $('.data_gc161').html(data_gc161);
+                $('.data_gd161').html(data_gd161);
+
+                // 尼加拉瓜
+                var data_gc162 = response.Countries[122].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd162 = response.Countries[122].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc162').addClass('deg3');
+                $('.data_gc162').attr('title', '尼加拉瓜' + '：' + data_gc162 + '例');
+                $('.data_gc162').html(data_gc162);
+                $('.data_gd162').html(data_gd162);
+
+                // 海地
+                var data_gc168 = response.Countries[71].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd168 = response.Countries[71].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc168').addClass('deg3');
+                $('.data_gc168').attr('title', '海地' + '：' + data_gc168 + '例');
+                $('.data_gc168').html(data_gc168);
+                $('.data_gd168').html(data_gd168);
+
+                // 多米尼克
+                var data_gc180 = response.Countries[48].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd180 = response.Countries[48].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc180').addClass('deg4');
+                $('.data_gc180').attr('title', '多米尼克' + '：' + data_gc180 + '例');
+                $('.data_gc180').html(data_gc180);
+                $('.data_gd180').html(data_gd180);
+
+                // 貝里斯
+                var data_gc181 = response.Countries[17].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd181 = response.Countries[17].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc181').addClass('deg3');
+                $('.data_gc181').attr('title', '貝里斯' + '：' + data_gc181 + '例');
+                $('.data_gc181').html(data_gc181);
+                $('.data_gd181').html(data_gd181);
+
+                // 格瑞那達
+                var data_gc182 = response.Countries[66].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd182 = response.Countries[66].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc182').addClass('deg4');
+                $('.data_gc182').attr('title', '格瑞那達' + '：' + data_gc182 + '例');
+                $('.data_gc182').html(data_gc182);
+                $('.data_gd182').html(data_gd182);
+
+                // 聖克里斯多福及尼維斯
+                var data_gc186 = response.Countries[142].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd186 = response.Countries[142].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc186').addClass('deg4');
+                $('.data_gc186').attr('title', '聖克里斯多福' + '：' + data_gc186 + '例');
+                $('.data_gc186').html(data_gc186);
+                $('.data_gd186').html(data_gd186);
+
+                //// 大洋洲 ////
+                // 澳洲
+                var data_gc19 = response.Countries[8].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd19 = response.Countries[8].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc19').addClass('deg2');
+                $('.data_gc19').attr('title', '澳洲' + '：' + data_gc19 + '例');
+                $('.data_gc19').html(data_gc19);
+                $('.data_gd19').html(data_gd19);
+
+                // 紐西蘭
+                var data_gc57 = response.Countries[121].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd57 = response.Countries[121].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc57').addClass('deg3');
+                $('.data_gc57').attr('title', '紐西蘭' + '：' + data_gc57 + '例');
+                $('.data_gc57').html(data_gc57);
+                $('.data_gd57').html(data_gd57);
+
+                // 斐濟
+                var data_gc172 = response.Countries[57].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd172 = response.Countries[57].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc172').addClass('deg4');
+                $('.data_gc172').attr('title', '斐濟' + '：' + data_gc172 + '例');
+                $('.data_gc172').html(data_gc172);
+                $('.data_gd172').html(data_gd172);
+
+                // 巴布亞紐幾內亞
+                var data_gc175 = response.Countries[130].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd175 = response.Countries[130].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc175').addClass('deg4');
+                $('.data_gc175').attr('title', '巴布亞紐幾內亞' + '：' + data_gc175 + '例');
+                $('.data_gc175').html(data_gc175);
+                $('.data_gd175').html(data_gd175);
+
+                // 萬那杜
+                var data_gc200 = 0;
+                var data_gd200 = 0;
+                $('.data_gc200').addClass('degNone');
+                $('.data_gc200').attr('title', '萬那杜' + '：' + data_gc200 + '例');
+                $('.data_gc200').html(data_gc200);
+                $('.data_gd200').html(data_gd200);
+
+                // 索羅門群島
+                var data_gc202 = 0;
+                var data_gd202 = 0;
+                $('.data_gc202').addClass('degNone');
+                $('.data_gc202').attr('title', '索羅門群島' + '：' + data_gc202 + '例');
+                $('.data_gc202').html(data_gc202);
+                $('.data_gd202').html(data_gd202);
+
+                //// 歐洲 ////
+                // 義大利
+                var data_gc23 = response.Countries[82].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd23 = response.Countries[82].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc23').addClass('deg0');
+                $('.data_gc23').attr('title', '義大利' + '：' + data_gc23 + '例');
+                $('.data_gc23').html(data_gc23);
+                $('.data_gd23').html(data_gd23);
+
+                // 德國
+                var data_gc20 = response.Countries[63].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd20 = response.Countries[63].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc20').addClass('deg1');
+                $('.data_gc20').attr('title', '德國' + '：' + data_gc20 + '例');
+                $('.data_gc20').html(data_gc20);
+                $('.data_gd20').html(data_gd20);
+
+                // 法國
+                var data_gc21 = response.Countries[59].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd21 = response.Countries[59].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc21').addClass('deg0');
+                $('.data_gc21').attr('title', '法國' + '：' + data_gc21 + '例');
+                $('.data_gc21').html(data_gc21);
+                $('.data_gd21').html(data_gd21);
+
+                // 英國
+                var data_gc22 = response.Countries[178].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd22 = response.Countries[178].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc22').addClass('deg0');
+                $('.data_gc22').attr('title', '英國' + '：' + data_gc22 + '例');
+                $('.data_gc22').html(data_gc22);
+                $('.data_gd22').html(data_gd22);
+
+                // 俄羅斯
+                var data_gc24 = response.Countries[139].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd24 = response.Countries[139].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc24').addClass('deg0');
+                $('.data_gc24').attr('title', '俄羅斯' + '：' + data_gc24 + '例');
+                $('.data_gc24').html(data_gc24);
+                $('.data_gd24').html(data_gd24);
+
+                // 西班牙
+                var data_gc25 = response.Countries[158].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd25 = response.Countries[158].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc25').addClass('deg0');
+                $('.data_gc25').attr('title', '西班牙' + '：' + data_gc25 + '例');
+                $('.data_gc25').html(data_gc25);
+                $('.data_gd25').html(data_gd25);
+
+                // 瑞典
+                var data_gc26 = response.Countries[163].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd26 = response.Countries[163].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc26').addClass('deg1');
+                $('.data_gc26').attr('title', '瑞典' + '：' + data_gc26 + '例');
+                $('.data_gc26').html(data_gc26);
+                $('.data_gd26').html(data_gd26);
+
+                // 芬蘭
+                var data_gc27 = response.Countries[58].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd27 = response.Countries[58].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc27').addClass('deg3');
+                $('.data_gc27').attr('title', '芬蘭' + '：' + data_gc27 + '例');
+                $('.data_gc27').html(data_gc27);
+                $('.data_gd27').html(data_gd27);
+
+                // 比利時
+                var data_gc28 = response.Countries[16].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd28 = response.Countries[16].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc28').addClass('deg1');
+                $('.data_gc28').attr('title', '比利時' + '：' + data_gc28 + '例');
+                $('.data_gc28').html(data_gc28);
+                $('.data_gd28').html(data_gd28);
+
+                // 瑞士
+                var data_gc38 = response.Countries[164].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd38 = response.Countries[164].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc38').addClass('deg1');
+                $('.data_gc38').attr('title', '瑞士' + '：' + data_gc38 + '例');
+                $('.data_gc38').html(data_gc38);
+                $('.data_gd38').html(data_gd38);
+
+                // 奧地利
+                var data_gc39 = response.Countries[9].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd39 = response.Countries[9].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc39').addClass('deg2');
+                $('.data_gc39').attr('title', '奧地利' + '：' + data_gc39 + '例');
+                $('.data_gc39').html(data_gc39);
+                $('.data_gd39').html(data_gd39);
+
+                // 克羅埃西亞
+                var data_gc40 = response.Countries[41].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd40 = response.Countries[41].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc40').addClass('deg2');
+                $('.data_gc40').attr('title', '克羅埃西亞' + '：' + data_gc40 + '例');
+                $('.data_gc40').html(data_gc40);
+                $('.data_gd40').html(data_gd40);
+
+                // 羅馬尼亞
+                var data_gc45 = response.Countries[138].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd45 = response.Countries[138].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc45').addClass('deg1');
+                $('.data_gc45').attr('title', '羅馬尼亞' + '：' + data_gc45 + '例');
+                $('.data_gc45').html(data_gc45);
+                $('.data_gd45').html(data_gd45);
+
+                // 挪威
+                var data_gc46 = response.Countries[125].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd46 = response.Countries[125].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc46').addClass('deg2');
+                $('.data_gc46').attr('title', '挪威' + '：' + data_gc46 + '例');
+                $('.data_gc46').html(data_gc46);
+                $('.data_gd46').html(data_gd46);
+
+                // 希臘
+                var data_gc47 = response.Countries[65].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd47 = response.Countries[65].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc47').addClass('deg2');
+                $('.data_gc47').attr('title', '希臘' + '：' + data_gc47 + '例');
+                $('.data_gc47').html(data_gc47);
+                $('.data_gd47').html(data_gd47);
+
+                // 北馬其頓
+                var data_gc48 = response.Countries[101].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd48 = response.Countries[101].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc48').addClass('deg2');
+                $('.data_gc48').attr('title', '北馬其頓' + '：' + data_gc48 + '例');
+                $('.data_gc48').html(data_gc48);
+                $('.data_gd48').html(data_gd48);
+
+                // 丹麥
+                var data_gc49 = response.Countries[46].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd49 = response.Countries[46].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc49').addClass('deg2');
+                $('.data_gc49').attr('title', '丹麥' + '：' + data_gc49 + '例');
+                $('.data_gc49').html(data_gc49);
+                $('.data_gd49').html(data_gd49);
+
+                // 荷蘭
+                var data_gc50 = response.Countries[120].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd50 = response.Countries[120].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc50').addClass('deg2');
+                $('.data_gc50').attr('title', '荷蘭' + '：' + data_gc50 + '例');
+                $('.data_gc50').html(data_gc50);
+                $('.data_gd50').html(data_gd50);
+
+                // 愛沙尼亞
+                var data_gc51 = response.Countries[55].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd51 = response.Countries[55].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc51').addClass('deg3');
+                $('.data_gc51').attr('title', '愛沙尼亞' + '：' + data_gc51 + '例');
+                $('.data_gc51').html(data_gc51);
+                $('.data_gd51').html(data_gd51);
+
+                // 冰島
+                var data_gc53 = response.Countries[75].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd53 = response.Countries[75].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc53').addClass('deg3');
+                $('.data_gc53').attr('title', '冰島' + '：' + data_gc53 + '例');
+                $('.data_gc53').html(data_gc53);
+                $('.data_gd53').html(data_gd53);
+
+                // 立陶宛
+                var data_gc55 = response.Countries[98].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd55 = response.Countries[98].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc55').addClass('deg3');
+                $('.data_gc55').attr('title', '立陶宛' + '：' + data_gc55 + '例');
+                $('.data_gc55').html(data_gc55);
+                $('.data_gd55').html(data_gd55);
+
+                // 白俄羅斯
+                var data_gc56 = response.Countries[15].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd56 = response.Countries[15].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc56').addClass('deg2');
+                $('.data_gc56').attr('title', '白俄羅斯' + '：' + data_gc56 + '例');
+                $('.data_gc56').html(data_gc56);
+                $('.data_gd56').html(data_gd56);
+
+                // 摩納哥
+                var data_gc59 = response.Countries[112].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd59 = response.Countries[112].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc59').addClass('deg4');
+                $('.data_gc59').attr('title', '摩納哥' + '：' + data_gc59 + '例');
+                $('.data_gc59').html(data_gc59);
+                $('.data_gd59').html(data_gd59);
+
+                // 盧森堡
+                var data_gc62 = response.Countries[99].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd62 = response.Countries[99].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc62').addClass('deg3');
+                $('.data_gc62').attr('title', '盧森堡' + '：' + data_gc62 + '例');
+                $('.data_gc62').html(data_gc62);
+                $('.data_gd62').html(data_gd62);
+
+                // 愛爾蘭
+                var data_gc63 = response.Countries[80].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd63 = response.Countries[80].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc63').addClass('deg2');
+                $('.data_gc63').attr('title', '愛爾蘭' + '：' + data_gc63 + '例');
+                $('.data_gc63').html(data_gc63);
+                $('.data_gd63').html(data_gd63);
+
+                // 聖馬利諾
+                var data_gc64 = response.Countries[145].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd64 = response.Countries[145].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc64').addClass('deg4');
+                $('.data_gc64').attr('title', '聖馬利諾' + '：' + data_gc64 + '例');
+                $('.data_gc64').html(data_gc64);
+                $('.data_gd64').html(data_gd64);
+
+                // 捷克
+                var data_gc66 = response.Countries[44].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd66 = response.Countries[44].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc66').addClass('deg2');
+                $('.data_gc66').attr('title', '捷克' + '：' + data_gc66 + '例');
+                $('.data_gc66').html(data_gc66);
+                $('.data_gd66').html(data_gd66);
+
+                // 葡萄牙
+                var data_gc70 = response.Countries[135].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd70 = response.Countries[135].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc70').addClass('deg2');
+                $('.data_gc70').attr('title', '葡萄牙' + '：' + data_gc70 + '例');
+                $('.data_gc70').html(data_gc70);
+                $('.data_gd70').html(data_gd70);
+
+                // 拉脫維亞
+                var data_gc71 = response.Countries[92].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd71 = response.Countries[92].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc71').addClass('deg3');
+                $('.data_gc71').attr('title', '拉脫維亞' + '：' + data_gc71 + '例');
+                $('.data_gc71').html(data_gc71);
+                $('.data_gd71').html(data_gd71);
+
+                // 安道爾
+                var data_gc72 = response.Countries[3].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd72 = response.Countries[3].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc72').addClass('deg3');
+                $('.data_gc72').attr('title', '安道爾' + '：' + data_gc72 + '例');
+                $('.data_gc72').html(data_gc72);
+                $('.data_gd72').html(data_gd72);
+
+                // 烏克蘭
+                var data_gc77 = response.Countries[176].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd77 = response.Countries[176].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc77').addClass('deg1');
+                $('.data_gc77').attr('title', '烏克蘭' + '：' + data_gc77 + '例');
+                $('.data_gc77').html(data_gc77);
+                $('.data_gd77').html(data_gd77);
+
+                // 匈牙利
+                var data_gc80 = response.Countries[74].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd80 = response.Countries[74].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc80').addClass('deg3');
+                $('.data_gc80').attr('title', '匈牙利' + '：' + data_gc80 + '例');
+                $('.data_gc80').html(data_gc80);
+                $('.data_gd80').html(data_gd80);
+
+                // 波蘭
+                var data_gc81 = response.Countries[134].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd81 = response.Countries[134].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc81').addClass('deg1');
+                $('.data_gc81').attr('title', '波蘭' + '：' + data_gc81 + '例');
+                $('.data_gc81').html(data_gc81);
+                $('.data_gd81').html(data_gd81);
+
+                // 波士尼亞與赫塞哥維納
+                var data_gc83 = response.Countries[21].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd83 = response.Countries[21].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc83').addClass('deg2');
+                $('.data_gc83').attr('title', '波士尼亞與赫塞哥維納' + '：' + data_gc83 + '例');
+                $('.data_gc83').html(data_gc83);
+                $('.data_gd83').html(data_gd83);
+
+                // 斯洛維尼亞
+                var data_gc89 = response.Countries[154].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd89 = response.Countries[154].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc89').addClass('deg3');
+                $('.data_gc89').attr('title', '斯洛維尼亞' + '：' + data_gc89 + '例');
+                $('.data_gc89').html(data_gc89);
+                $('.data_gd89').html(data_gd89);
+
+                // 斯洛伐克
+                var data_gc90 = response.Countries[153].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd90 = response.Countries[153].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc90').addClass('deg3');
+                $('.data_gc90').attr('title', '斯洛伐克' + '：' + data_gc90 + '例');
+                $('.data_gc90').html(data_gc90);
+                $('.data_gd90').html(data_gd90);
+
+                // 梵蒂岡
+                var data_gc91 = response.Countries[72].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd91 = response.Countries[72].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc91').addClass('deg4');
+                $('.data_gc91').attr('title', '梵蒂岡' + '：' + data_gc91 + '例');
+                $('.data_gc91').html(data_gc91);
+                $('.data_gd91').html(data_gd91);
+
+                // 列支敦斯登
+                var data_gc92 = response.Countries[97].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd92 = response.Countries[97].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc92').addClass('deg4');
+                $('.data_gc92').attr('title', '列支敦斯登' + '：' + data_gc92 + '例');
+                $('.data_gc92').html(data_gc92);
+                $('.data_gd92').html(data_gd92);
+
+                // 塞爾維亞
+                var data_gc95 = response.Countries[149].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd95 = response.Countries[149].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc95').addClass('deg2');
+                $('.data_gc95').attr('title', '塞爾維亞' + '：' + data_gc95 + '例');
+                $('.data_gc95').html(data_gc95);
+                $('.data_gd95').html(data_gd95);
+
+                // 馬爾他
+                var data_gc99 = response.Countries[107].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd99 = response.Countries[107].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc99').addClass('deg3');
+                $('.data_gc99').attr('title', '馬爾他' + '：' + data_gc99 + '例');
+                $('.data_gc99').html(data_gc99);
+                $('.data_gd99').html(data_gd99);
+
+                // 摩爾多瓦
+                var data_gc100 = response.Countries[111].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd100 = response.Countries[111].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc100').addClass('deg2');
+                $('.data_gc100').attr('title', '摩爾多瓦' + '：' + data_gc100 + '例');
+                $('.data_gc100').html(data_gc100);
+                $('.data_gd100').html(data_gd100);
+
+                // 保加利亞
+                var data_gc104 = response.Countries[25].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd104 = response.Countries[25].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc104').addClass('deg2');
+                $('.data_gc104').attr('title', '保加利亞' + '：' + data_gc104 + '例');
+                $('.data_gc104').html(data_gc104);
+                $('.data_gd104').html(data_gd104);
+
+                // 阿爾巴尼亞
+                var data_gc107 = response.Countries[1].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd107 = response.Countries[1].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc107').addClass('deg3');
+                $('.data_gc107').attr('title', '阿爾巴尼亞' + '：' + data_gc107 + '例');
+                $('.data_gc107').html(data_gc107);
+                $('.data_gd107').html(data_gd107);
+
+                // 蒙特內哥羅
+                var data_gc155 = response.Countries[114].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd155 = response.Countries[114].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc155').addClass('deg3');
+                $('.data_gc155').attr('title', '蒙特內哥羅' + '：' + data_gc155 + '例');
+                $('.data_gc155').html(data_gc155);
+                $('.data_gd155').html(data_gd155);
+
+                // 科索沃
+                var data_gc159 = response.Countries[137].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd159 = response.Countries[137].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc159').addClass('deg2');
+                $('.data_gc159').attr('title', '科索沃' + '：' + data_gc159 + '例');
+                $('.data_gc159').html(data_gc159);
+                $('.data_gd159').html(data_gd159);
+
+                // 斯瓦巴及尖棉島
+                var data_gc203 = 0
+                var data_gd203 = 0
+                $('.data_gc203').addClass('degNone');
+                $('.data_gc203').attr('title', '斯瓦巴及尖棉島' + '：' + data_gc203 + '例');
+                $('.data_gc203').html(data_gc203);
+                $('.data_gd203').html(data_gd203);
+
+
+                //// 非洲 ////
+                // 埃及
+                var data_gc29 = response.Countries[51].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd29 = response.Countries[51].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc29').addClass('deg1');
+                $('.data_gc29').attr('title', '埃及' + '：' + data_gc29 + '例');
+                $('.data_gc29').html(data_gc29);
+                $('.data_gd29').html(data_gd29);
+
+                // 阿爾及利亞
+                var data_gc41 = response.Countries[2].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd41 = response.Countries[2].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc41').addClass('deg2');
+                $('.data_gc41').attr('title', '阿爾及利亞' + '：' + data_gc41 + '例');
+                $('.data_gc41').html(data_gc41);
+                $('.data_gd41').html(data_gd41);
+
+                // 奈及利亞
+                var data_gc52 = response.Countries[124].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd52 = response.Countries[124].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc52').addClass('deg2');
+                $('.data_gc52').attr('title', '奈及利亞' + '：' + data_gc52 + '例');
+                $('.data_gc52').html(data_gc52);
+                $('.data_gd52').html(data_gd52);
+
+                // 突尼西亞
+                var data_gc73 = response.Countries[173].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd73 = response.Countries[173].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc73').addClass('deg3');
+                $('.data_gc73').attr('title', '突尼西亞' + '：' + data_gc73 + '例');
+                $('.data_gc73').html(data_gc73);
+                $('.data_gd73').html(data_gd73);
+
+                // 塞內加爾
+                var data_gc74 = response.Countries[148].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd74 = response.Countries[148].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc74').addClass('deg2');
+                $('.data_gc74').attr('title', '塞內加爾' + '：' + data_gc74 + '例');
+                $('.data_gc74').html(data_gc74);
+                $('.data_gd74').html(data_gd74);
+
+                // 摩洛哥
+                var data_gc78 = response.Countries[115].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd78 = response.Countries[115].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc78').addClass('deg1');
+                $('.data_gc78').attr('title', '摩洛哥' + '：' + data_gc78 + '例');
+                $('.data_gc78').html(data_gc78);
+                $('.data_gd78').html(data_gd78);
+
+                // 南非
+                var data_gc84 = response.Countries[154].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd84 = response.Countries[154].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc84').addClass('deg1');
+                $('.data_gc84').attr('title', '南非' + '：' + data_gc84 + '例');
+                $('.data_gc84').html(data_gc84);
+                $('.data_gd84').html(data_gd84);
+
+                // 喀麥隆
+                var data_gc96 = response.Countries[29].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd96 = response.Countries[29].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc96').addClass('deg2');
+                $('.data_gc96').attr('title', '喀麥隆' + '：' + data_gc96 + '例');
+                $('.data_gc96').html(data_gc96);
+                $('.data_gd96').html(data_gd96);
+
+                // 多哥
+                var data_gc97 = response.Countries[169].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd97 = response.Countries[169].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc97').addClass('deg3');
+                $('.data_gc97').attr('title', '多哥' + '：' + data_gc97 + '例');
+                $('.data_gc97').html(data_gc97);
+                $('.data_gd97').html(data_gd97);
+
+                // 布吉納法索
+                var data_gc108 = response.Countries[26].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd108 = response.Countries[26].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc108').addClass('deg3');
+                $('.data_gc108').attr('title', '布吉納法索' + '：' + data_gc108 + '例');
+                $('.data_gc108').html(data_gc108);
+                $('.data_gd108').html(data_gd108);
+
+                // 剛果民主共和國
+                var data_gc111 = response.Countries[39].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd111 = response.Countries[39].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc111').addClass('deg2');
+                $('.data_gc111').attr('title', '剛果民主共和國' + '：' + data_gc111 + '例');
+                $('.data_gc111').html(data_gc111);
+                $('.data_gd111').html(data_gd111);
+
+                // 象牙海岸
+                var data_gc115 = response.Countries[45].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd115 = response.Countries[45].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc115').addClass('deg2');
+                $('.data_gc115').attr('title', '象牙海岸' + '：' + data_gc115 + '例');
+                $('.data_gc115').html(data_gc115);
+                $('.data_gd115').html(data_gd115);
+
+                // 迦納
+                var data_gc119 = response.Countries[64].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd119 = response.Countries[64].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc119').addClass('deg2');
+                $('.data_gc119').attr('title', '迦納' + '：' + data_gc119 + '例');
+                $('.data_gc119').html(data_gc119);
+                $('.data_gd119').html(data_gd119);
+
+                // 加彭
+                var data_gc120 = response.Countries[60].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd120 = response.Countries[60].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc120').addClass('deg3');
+                $('.data_gc120').attr('title', '加彭' + '：' + data_gc120 + '例');
+                $('.data_gc120').html(data_gc120);
+                $('.data_gd120').html(data_gd120);
+
+                // 肯亞
+                var data_gc121 = response.Countries[87].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd121 = response.Countries[87].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc121').addClass('deg2');
+                $('.data_gc121').attr('title', '肯亞' + '：' + data_gc121 + '例');
+                $('.data_gc121').html(data_gc121);
+                $('.data_gd121').html(data_gd121);
+
+                // 衣索比亞
+                var data_gc122 = response.Countries[56].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd122 = response.Countries[56].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc122').addClass('deg2');
+                $('.data_gc122').attr('title', '衣索比亞' + '：' + data_gc122 + '例');
+                $('.data_gc122').html(data_gc122);
+                $('.data_gd122').html(data_gd122);
+
+                // 幾內亞
+                var data_gc123 = response.Countries[68].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd123 = response.Countries[68].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc123').addClass('deg3');
+                $('.data_gc123').attr('title', '幾內亞' + '：' + data_gc123 + '例');
+                $('.data_gc123').html(data_gc123);
+                $('.data_gd123').html(data_gd123);
+
+                // 蘇丹
+                var data_gc124 = response.Countries[160].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd124 = response.Countries[160].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc124').addClass('deg2');
+                $('.data_gc124').attr('title', '蘇丹' + '：' + data_gc124 + '例');
+                $('.data_gc124').html(data_gc124);
+                $('.data_gd124').html(data_gd124);
+
+                // 茅利塔尼亞
+                var data_gc135 = response.Countries[108].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd135 = response.Countries[108].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc135').addClass('deg3');
+                $('.data_gc135').attr('title', '茅利塔尼亞' + '：' + data_gc135 + '例');
+                $('.data_gc135').html(data_gc135);
+                $('.data_gd135').html(data_gd135);
+
+                // 納米比亞
+                var data_gc137 = response.Countries[118].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd137 = response.Countries[118].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc137').addClass('deg3');
+                $('.data_gc137').attr('title', '納米比亞' + '：' + data_gc137 + '例');
+                $('.data_gc137').html(data_gc137);
+                $('.data_gd137').html(data_gd137);
+
+                // 塞席爾
+                var data_gc138 = response.Countries[150].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd138 = response.Countries[150].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc138').addClass('deg4');
+                $('.data_gc138').attr('title', '塞席爾' + '：' + data_gc138 + '例');
+                $('.data_gc138').html(data_gc138);
+                $('.data_gd138').html(data_gd138);
+
+                // 盧安達
+                var data_gc139 = response.Countries[140].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd139 = response.Countries[140].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc139').addClass('deg3');
+                $('.data_gc139').attr('title', '盧安達' + '：' + data_gc139 + '例');
+                $('.data_gc139').html(data_gc139);
+                $('.data_gd139').html(data_gd139);
+
+                // 史瓦帝尼(史瓦濟蘭)
+                var data_gc141 = response.Countries[160].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd141 = response.Countries[160].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc141').addClass('deg3');
+                $('.data_gc141').attr('title', '史瓦帝尼' + '：' + data_gc141 + '例');
+                $('.data_gc141').html(data_gc141);
+                $('.data_gd141').html(data_gd141);
+
+                // 中非共和國
+                var data_gc142 = response.Countries[32].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd142 = response.Countries[32].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc142').addClass('deg3');
+                $('.data_gc142').attr('title', '中非' + '：' + data_gc142 + '例');
+                $('.data_gc142').html(data_gc142);
+                $('.data_gd142').html(data_gd142);
+
+                // 剛果(剛果共和國)
+                var data_gc143 = response.Countries[38].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd143 = response.Countries[38].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc143').addClass('deg3');
+                $('.data_gc143').attr('title', '剛果' + '：' + data_gc143 + '例');
+                $('.data_gc143').html(data_gc143);
+                $('.data_gd143').html(data_gd143);
+
+                // 赤道幾內亞
+                var data_gc149 = response.Countries[53].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd149 = response.Countries[53].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc149').addClass('deg3');
+                $('.data_gc149').attr('title', '赤道幾內亞' + '：' + data_gc149 + '例');
+                $('.data_gc149').html(data_gc149);
+                $('.data_gd149').html(data_gd149);
+
+                // 利比亞
+                var data_gc150 = response.Countries[96].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd150 = response.Countries[96].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc150').addClass('deg2');
+                $('.data_gc150').attr('title', '利比亞' + '：' + data_gc150 + '例');
+                $('.data_gc150').html(data_gc150);
+                $('.data_gd150').html(data_gd150);
+
+                // 坦尚尼亞
+                var data_gc151 = response.Countries[166].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd151 = response.Countries[166].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc151').addClass('deg4');
+                $('.data_gc151').attr('title', '坦尚尼亞' + '：' + data_gc151 + '例');
+                $('.data_gc151').html(data_gc151);
+                $('.data_gd151').html(data_gd151);
+
+                // 索馬利亞
+                var data_gc152 = response.Countries[155].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd152 = response.Countries[155].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc152').addClass('deg3');
+                $('.data_gc152').attr('title', '索馬利亞' + '：' + data_gc152 + '例');
+                $('.data_gc152').html(data_gc152);
+                $('.data_gd152').html(data_gd152);
+
+                // 貝南
+                var data_gc153 = response.Countries[18].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd153 = response.Countries[18].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc153').addClass('deg3');
+                $('.data_gc153').attr('title', '貝南' + '：' + data_gc153 + '例');
+                $('.data_gc153').html(data_gc153);
+                $('.data_gd153').html(data_gd153);
+
+                // 賴比瑞亞
+                var data_gc156 = response.Countries[95].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd156 = response.Countries[95].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc156').addClass('deg3');
+                $('.data_gc156').attr('title', '賴比瑞亞' + '：' + data_gc156 + '例');
+                $('.data_gc156').html(data_gc156);
+                $('.data_gd156').html(data_gd156);
+
+                // 甘比亞
+                var data_gc157 = response.Countries[61].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd157 = response.Countries[61].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc157').addClass('deg3');
+                $('.data_gc157').attr('title', '甘比亞' + '：' + data_gc157 + '例');
+                $('.data_gc157').html(data_gc157);
+                $('.data_gd157').html(data_gd157);
+
+                // 模里西斯
+                var data_gc163 = response.Countries[109].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd163 = response.Countries[109].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc163').addClass('deg4');
+                $('.data_gc163').attr('title', '模里西斯' + '：' + data_gc163 + '例');
+                $('.data_gc163').html(data_gc163);
+                $('.data_gd163').html(data_gd163);
+
+                // 尚比亞
+                var data_gc164 = response.Countries[186].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd164 = response.Countries[186].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc164').addClass('deg2');
+                $('.data_gc164').attr('title', '尚比亞' + '：' + data_gc164 + '例');
+                $('.data_gc164').html(data_gc164);
+                $('.data_gd164').html(data_gd164);
+
+                // 吉布地
+                var data_gc165 = response.Countries[47].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd165 = response.Countries[47].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc165').addClass('deg3');
+                $('.data_gc165').attr('title', '吉布地' + '：' + data_gc165 + '例');
+                $('.data_gc165').html(data_gc165);
+                $('.data_gd165').html(data_gd165);
+
+                // 查德
+                var data_gc166 = response.Countries[33].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd166 = response.Countries[33].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc166').addClass('deg3');
+                $('.data_gc166').attr('title', '查德' + '：' + data_gc166 + '例');
+                $('.data_gc166').html(data_gc166);
+                $('.data_gd166').html(data_gd166);
+
+                // 尼日
+                var data_gc167 = response.Countries[123].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd167 = response.Countries[123].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc167').addClass('deg3');
+                $('.data_gc167').attr('title', '尼日' + '：' + data_gc167 + '例');
+                $('.data_gc167').html(data_gc167);
+                $('.data_gd167').html(data_gd167);
+
+                // 馬達加斯加
+                var data_gc169 = response.Countries[102].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd169 = response.Countries[102].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc169').addClass('deg2');
+                $('.data_gc169').attr('title', '馬達加斯加' + '：' + data_gc169 + '例');
+                $('.data_gc169').html(data_gc169);
+                $('.data_gd169').html(data_gd169);
+
+                // 維德角
+                var data_gc170 = response.Countries[31].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd170 = response.Countries[31].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc170').addClass('deg3');
+                $('.data_gc170').attr('title', '維德角' + '：' + data_gc170 + '例');
+                $('.data_gc170').html(data_gc170);
+                $('.data_gd170').html(data_gd170);
+
+                // 辛巴威
+                var data_gc171 = response.Countries[187].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd171 = response.Countries[187].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc171').addClass('deg3');
+                $('.data_gc171').attr('title', '辛巴威' + '：' + data_gc171 + '例');
+                $('.data_gc171').html(data_gc171);
+                $('.data_gd171').html(data_gd171);
+
+                // 烏干達
+                var data_gc174 = response.Countries[175].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd174 = response.Countries[175].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc174').addClass('deg3');
+                $('.data_gc174').attr('title', '烏干達' + '：' + data_gc174 + '例');
+                $('.data_gc174').html(data_gc174);
+                $('.data_gd174').html(data_gd174);
+
+                // 厄利垂亞
+                var data_gc176 = response.Countries[54].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd176 = response.Countries[54].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc176').addClass('deg4');
+                $('.data_gc176').attr('title', '厄利垂亞' + '：' + data_gc176 + '例');
+                $('.data_gc176').html(data_gc176);
+                $('.data_gd176').html(data_gd176);
+
+                // 莫三比克
+                var data_gc177 = response.Countries[116].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd177 = response.Countries[116].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc177').addClass('deg3');
+                $('.data_gc177').attr('title', '莫三比克' + '：' + data_gc177 + '例');
+                $('.data_gc177').html(data_gc177);
+                $('.data_gd177').html(data_gd177);
+
+                // 安哥拉
+                var data_gc183 = response.Countries[4].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd183 = response.Countries[4].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc183').addClass('deg3');
+                $('.data_gc183').attr('title', '安哥拉' + '：' + data_gc183 + '例');
+                $('.data_gc183').html(data_gc183);
+                $('.data_gd183').html(data_gd183);
+
+                // 幾內亞比索
+                var data_gc187 = response.Countries[69].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd187 = response.Countries[69].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc187').addClass('deg3');
+                $('.data_gc187').attr('title', '幾內亞比索' + '：' + data_gc187 + '例');
+                $('.data_gc187').html(data_gc187);
+                $('.data_gd187').html(data_gd187);
+
+                // 馬利
+                var data_gc188 = response.Countries[106].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd188 = response.Countries[106].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc188').addClass('deg3');
+                $('.data_gc188').attr('title', '馬利' + '：' + data_gc188 + '例');
+                $('.data_gc188').html(data_gc188);
+                $('.data_gd188').html(data_gd188);
+
+                // 波札那
+                var data_gc189 = response.Countries[22].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd189 = response.Countries[22].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc189').addClass('deg3');
+                $('.data_gc189').attr('title', '波札那' + '：' + data_gc189 + '例');
+                $('.data_gc189').html(data_gc189);
+                $('.data_gd189').html(data_gd189);
+
+                // 獅子山
+                var data_gc190 = response.Countries[151].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd190 = response.Countries[151].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc190').addClass('deg3');
+                $('.data_gc190').attr('title', '獅子山' + '：' + data_gc190 + '例');
+                $('.data_gc190').html(data_gc190);
+                $('.data_gd190').html(data_gd190);
+
+                // 蒲隆地
+                var data_gc191 = response.Countries[27].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd191 = response.Countries[27].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc191').addClass('deg4');
+                $('.data_gc191').attr('title', '蒲隆地' + '：' + data_gc191 + '例');
+                $('.data_gc191').html(data_gc191);
+                $('.data_gd191').html(data_gd191);
+
+                // 馬拉威   
+                var data_gc192 = response.Countries[103].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd192 = response.Countries[103].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc192').addClass('deg3');
+                $('.data_gc192').attr('title', '馬拉威' + '：' + data_gc192 + '例');
+                $('.data_gc192').html(data_gc192);
+                $('.data_gd192').html(data_gd192);
+
+                // 西撒哈拉
+                var data_gc193 = response.Countries[184].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd193 = response.Countries[184].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc193').addClass('deg4');
+                $('.data_gc193').attr('title', '西撒哈拉' + '：' + data_gc193 + '例');
+                $('.data_gc193').html(data_gc193);
+                $('.data_gd193').html(data_gd193);
+
+                // 南蘇丹   
+                var data_gc194 = response.Countries[157].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd194 = response.Countries[157].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc194').addClass('deg3');
+                $('.data_gc194').attr('title', '南蘇丹' + '：' + data_gc194 + '例');
+                $('.data_gc194').html(data_gc194);
+                $('.data_gd194').html(data_gd194);
+
+                // 聖多美普林西比
+                var data_gc206 = response.Countries[146].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd206 = response.Countries[146].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc206').addClass('deg4');
+                $('.data_gc206').attr('title', '聖多美普林西比' + '：' + data_gc206 + '例');
+                $('.data_gc206').html(data_gc206);
+                $('.data_gd206').html(data_gd206);
+
+                // 葛摩
+                var data_gc207 = response.Countries[37].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd207 = response.Countries[37].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc207').addClass('deg4');
+                $('.data_gc207').attr('title', '葛摩' + '：' + data_gc207 + '例');
+                $('.data_gc207').html(data_gc207);
+                $('.data_gd207').html(data_gd207);
+
+
+                // 賴索托
+                var data_gc204 = response.Countries[94].TotalConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var data_gd204 = response.Countries[94].TotalDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $('.data_gc204').addClass('deg3');
+                $('.data_gc204').attr('title', '賴索托' + '：' + data_gc204 + '例');
+                $('.data_gc204').html(data_gc204);
+                $('.data_gd204').html(data_gd204);
+
+                // 法屬南部屬地
+                var data_gc205 = 0;
+                var data_gd205 = 0;
+                $('.data_gc205').addClass('degNone');
+                $('.data_gc205').attr('title', '法屬南部屬地' + '：' + data_gc205 + '例');
+                $('.data_gc205').html(data_gc205);
+                $('.data_gd205').html(data_gd205);
+
+                //// 世界總和 ////
+                // 新增新國家 每筆+3
+                let result_confirm = response.Global.TotalConfirmed
+                    + parseInt(data.feed.entry[257].content.$t)
+                    + parseInt(data.feed.entry[260].content.$t)
+                    + parseInt(data.feed.entry[263].content.$t)
+                    + parseInt(data.feed.entry[266].content.$t)
+                    + parseInt(data.feed.entry[269].content.$t)
+                    + parseInt(data.feed.entry[272].content.$t)
+                    + parseInt(data.feed.entry[275].content.$t)
+                    + 500000
+                let result_death = response.Global.TotalDeaths
+                    + parseInt(data.feed.entry[258].content.$t)
+                    + parseInt(data.feed.entry[261].content.$t)
+                    + parseInt(data.feed.entry[264].content.$t)
+                    + parseInt(data.feed.entry[267].content.$t)
+                    + parseInt(data.feed.entry[270].content.$t)
+                    + parseInt(data.feed.entry[273].content.$t)
+                    + parseInt(data.feed.entry[276].content.$t)
+                $('#inc_con').html(result_confirm);
+                $('#inc_die').html(result_death);
+                $('.count_sumConfirm_global').html(result_confirm);
+                $('.count_sumDeath_global').html(result_death);
+
+                //// 其他設定 ////
+                // 首屏動態數字
+
+                $('#inc_con').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+
+                $('#inc_die').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+
+                //表格排序 Data Table Sorting
+
+                $('#dt_global1').DataTable({
+                    "paging": false,
+                    "searching": false,
+                    "aaSorting": [],
+                    columnDefs: [{
+                        orderable: false,
+                        targets: 0
+                    }],
+                    destroy: true,
+                });
+                $('#dt_global2').DataTable({
+                    "paging": false,
+                    "searching": false,
+                    "aaSorting": [],
+                    columnDefs: [{
+                        orderable: false,
+                        targets: 0
+                    }],
+                    destroy: true,
+                });
+                $('#dt_global3').DataTable({
+                    "paging": false,
+                    "searching": false,
+                    "aaSorting": [],
+                    columnDefs: [{
+                        orderable: false,
+                        targets: 0
+                    }],
+                    destroy: true,
+                });
+                $('#dt_global4').DataTable({
+                    "paging": false,
+                    "searching": false,
+                    "aaSorting": [],
+                    columnDefs: [{
+                        orderable: false,
+                        targets: 0
+                    }],
+                    destroy: true,
+                });
+                $('#dt_global5').DataTable({
+                    "paging": false,
+                    "searching": false,
+                    "aaSorting": [],
+                    columnDefs: [{
+                        orderable: false,
+                        targets: 0
+                    }],
+                    destroy: true,
                 });
             });
-
-            $('#inc_die').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 3000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-            });
-
         }
     });
 } ajax_gsheet();
 
 
+
 // END get API
+// END get API
+
+
+
+// 長條圖：台灣 確診病例
+// 每日新增一筆
+
+// var ctx = document.getElementById('lineChart_taiwan_confirm').getContext('2d');
+// var myLineChart = new Chart(ctx, {
+//     type: 'line',
+//     data: {
+//         labels: ['1/21', '1/22', '1/23', '1/24', '1/25', '1/26', '1/27', '1/28', '1/29', '1/30', '1/31', '2/1', '2/2', '2/3', '2/4', '2/5', '2/6', '2/7', '2/8', '2/9', '2/10', '2/11', '2/12', '2/13', '2/14', '2/15', '2/16', '2/17', '2/18', '2/19', '2/20', '2/21', '2/22', '2/23', '2/24', '2/25', '2/26', '2/27', '2/28', '2/29', '3/1', '3/2', '3/3', '3/4', '3/5', '3/6', '3/7', '3/8', '3/9', '3/10', '3/11', '3/12', '3/13', '3/14', '3/15', '3/16', '3/17', '3/18', '3/19', '3/20', '3/21', '3/22', '3/23', '3/24', '3/25', '3/26', '3/27', '3/28', '3/29', '3/30', '3/31', '4/1', '4/2', '4/3', '4/4', '4/5', '4/6', '4/7', '4/8', '4/9', '4/10', '4/11', '4/12', '4/13', '4/14', '4/15', '4/16', '4/17', '4/18', '4/19', '4/20', '4/21', '4/22', '4/23', '4/24', '4/25', '4/26', '4/27', '4/28', '4/29', '4/30', '5/1', '5/2', '5/3', '5/4', '5/5', '5/6', '5/7', '5/8', '5/9', '5/10', '5/11', '5/12', '5/13', '5/14', '5/15', '5/16', '5/17', '5/18', '5/19', '5/20', '5/21', '5/22', '5/23', '5/24', '5/25', '5/26', '5/27', '5/28', '5/29', '5/30', '5/31', '6/1', '6/2', '6/3', '6/4', '6/5', '6/7', '6/10', '6/15', '6/18', '6/25', '6/26', '7/2', '7/3', '7/10', '7/15', '7/16', '7/17', '7/19', '7/24', '7/27', '7/28', '8/1', '8/2',],
+//         datasets: [{
+//             label: '確診案例',
+//             data: [],
+//             backgroundColor: 'rgba(227, 89, 89, 1)',
+//             borderColor: 'rgba(227, 89, 89, 1)',
+//             pointStyle: 'dash',
+//             borderWidth: 2,
+//             fill: false
+//         }, {
+//             label: '境外移入',
+//             data: [1, 1, 1, 3, 3, 4, 5, 7, 7, 7, 8, 8, 8, 8, 9, 9, 14, 14, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 17, 18, 19, 19, 19, 19, 20, 20, 20, 20, 20, 21, 22, 23, 24, 26, 32, 40, 50, 71, 78, 102, 120, 133, 158, 178, 197, 212, 227, 241, 255, 262, 276, 283, 291, 298, 304, 312, 321, 324, 326, 326, 328, 331, 333, 338, 338, 340, 340, 340, 340, 341, 343, 343, 343, 343, 343, 343, 343, 343, 343, 343, 343, 343, 346, 346, 347, 348, 348, 349, 349, 349, 349, 349, 349, 349, 349, 349, 349, 349, 349, 349, 349, 350, 350, 350, 350, 350, 350, 350, 350, 351, 351, 351, 352, 352, 352, 352, 352, 352, 352, 352, 354, 355, 356, 356, 357, 358, 360, 360, 361, 363, 364, 367, 371, 376, 383, 384,],
+//             backgroundColor: 'rgba(235, 204, 204, 1)',
+//             borderColor: 'rgba(235, 204, 204, 1)',
+//             pointStyle: 'dash',
+//             borderWidth: 2,
+//             fill: false
+//         }, {
+//             label: '本土案例',
+//             data: [0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 6, 6, 8, 8, 10, 10, 12, 14, 15, 16, 16, 17, 21, 21, 22, 23, 23, 24, 25, 25, 25, 25, 26, 26, 26, 26, 27, 27, 27, 27, 29, 30, 33, 33, 36, 37, 37, 38, 40, 40, 42, 43, 44, 46, 46, 48, 50, 51, 51, 52, 52, 53, 54, 54, 54, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55],
+//             backgroundColor: 'rgba(242, 211, 53, 1)',
+//             borderColor: 'rgba(242, 211, 53, 1)',
+//             pointStyle: 'dash',
+//             borderWidth: 2,
+//             fill: false
+
+//         }, {
+//             label: '敦睦艦隊',
+//             data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 24, 24, 27, 28, 29, 30, 31, 31, 31, 31, 31, 31, 31, 31, 35, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36],
+//             backgroundColor: 'rgba(184, 201, 209, 1)',
+//             borderColor: 'rgba(184, 201, 209, 1)',
+//             pointStyle: 'dash',
+//             borderWidth: 2,
+//             fill: false
+
+//         }]
+//     },
+//     //////////////////////////////////// 此區不要動！！
+//     options: {
+//         aspectRatio: 1,
+//         scales: {
+//             yAxes: [{
+//                 ticks: {
+//                     fontSize: 14,
+//                 }
+//             }],
+//             xAxes: [{
+//                 ticks: {
+//                     fontSize: 14
+//                 }
+//             }],
+//         }
+//     }
+// });
+
+
+// n國 n月份比較趨勢圖
+// 有需要再更新
+// var ctx = document.getElementById('lineChart_country_confirm').getContext('2d');
+// var myLineChart = new Chart(ctx, {
+//     type: 'line',
+//     data: {
+//         labels: ['4/2', '4/4', '4/6', '4/8', '4/10', '4/12', '4/14', '4/16', '4/18', '4/20', '4/22', '4/24', '4/26', '4/28', '5/1', '5/3', '5/5', '5/7', '5/9', '5/11', '5/13', '5/15', '5/17', '5/19', '5/21', '5/23', '5/25', '5/27', '5/29', '5/31'],
+//         datasets: [{
+//             label: '美國',
+//             data: [242971, 310286, 364258, 428355, 502876, 560425, 613886, 677570, 738830, 792759, 848735, 925038, 983985, 1010356, 1131280, 1188122, 1237633, 1292623, 1347309, 1385834, 1430348, 1483994, 1527664, 1570583, 1620902, 1666828, 1706226, 1745803, 1793530, 1837170],
+//             fill: false,
+//             borderColor: 'rgba(51, 131, 181, 0.6)',
+//             pointBackgroundColor: 'rgba(51, 131, 181, 0.6)',
+//             borderWidth: 3,
+//             pointStyle: 'dash'
+
+//         }, {
+//             label: '俄羅斯',
+//             data: [3548, 4731, 6343, 8672, 11917, 15770, 21102, 27938, 36793, 47121, 57999, 68622, 80949, 93558, 114431, 134687, 155370, 177160, 198676, 221344, 242271, 262843, 281752, 299941, 317554, 335882, 353427, 370680, 387623, 405843],
+//             fill: false,
+//             borderColor: 'rgba(177, 222, 113, 0.6)',
+//             pointBackgroundColor: 'rgba(177, 222, 113, 0.6)',
+//             borderWidth: 3,
+//             pointStyle: 'dash'
+//         }, {
+//             label: '英國',
+//             data: [33718, 41903, 51608, 60733, 73758, 84279, 93873, 103093, 114217, 124743, 133495, 143464, 152840, 161145, 177454, 186599, 194990, 206715, 215260, 223060, 229705, 236711, 243695, 248818, 250908, 257154, 261184, 267240, 271222, 274762],
+//             fill: false,
+//             borderColor: 'rgba(126, 104, 171, 0.6)',
+//             pointBackgroundColor: 'rgba(126, 104, 171, 0.6)',
+//             borderWidth: 3,
+//             pointStyle: 'dash'
+//         }, {
+//             label: '西班牙',
+//             data: [112065, 126168, 136675, 148220, 158273, 166831, 174060, 184948, 194416, 200210, 208389, 219764, 223759, 232128, 242988, 247122, 250561, 256855, 262783, 268143, 271095, 274367, 277719, 278803, 280117, 282370, 282480, 283849, 285644, 286509],
+//             fill: false,
+//             borderColor: 'rgba(181, 81, 93, 0.6)',
+//             pointBackgroundColor: 'rgba(181, 81, 93, 0.6)',
+//             borderWidth: 3,
+//             pointStyle: 'dash'
+//         }, {
+//             label: '義大利',
+//             data: [115242, 124632, 132547, 139422, 147577, 156363, 162488, 168941, 175925, 181228, 187327, 192994, 197675, 201505, 207428, 210717, 213013, 215858, 218268, 219814, 222104, 223885, 225435, 226699, 228006, 229327, 230158, 231139, 232248, 232997],
+//             fill: false,
+//             borderColor: 'rgba(235, 168, 52, 0.6)',
+//             pointBackgroundColor: 'rgba(235, 168, 52, 0.6)',
+//             borderWidth: 3,
+//             pointStyle: 'dash'
+//         }, {
+//             label: '巴西',
+//             data: [7910, 10360, 12161, 16188, 19943, 22318, 25262, 30683, 36760, 40743, 45757, 52995, 62787, 66896, 92109, 101147, 114715, 135693, 156061, 169143, 189157, 218223, 241080, 271885, 310921, 347398, 376669, 414661, 468338, 514849],
+//             fill: false,
+//             borderColor: 'rgba(207, 126, 185, 0.6)',
+//             pointBackgroundColor: 'rgba(207, 126, 185, 0.6)',
+//             borderWidth: 3,
+//             pointStyle: 'dash'
+//         }]
+//     },
+//     //////////////////////////////////// 此區不要動！！
+//     options: {
+//         // maintainAspectRatio: false,
+//         aspectRatio: 1,
+//         scales: {
+//             yAxes: [{
+//                 ticks: {
+//                     fontSize: 14,
+//                     drawTicks: true,
+//                     tickMarkLength: 3
+//                 }
+//             }],
+//             xAxes: [{
+//                 ticks: {
+//                     fontSize: 14
+//                 }
+//             }],
+//         },
+//     }
+// });
 
 //////////////////////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
-/////////////    國家警示    //////////////
+/////////////    國家警示    ///////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -6071,7 +8115,7 @@ case_data.list = [
 ];
 
 
-// 案例群組設定
+// 以下不要動！！
 var case_total = case_data.list;
 var case_html = `
 <div class="case_box">
@@ -6114,3 +8158,7 @@ for (var i = 0; i < case_total.length; i++) {
     }
 
 }
+
+
+
+

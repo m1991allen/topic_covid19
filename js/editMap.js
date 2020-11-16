@@ -948,1060 +948,1060 @@ $('.wholeNewWorld').append(`
     </svg>
 `);
 
-// 表格：世界疫情 - 亞洲
-$('#dt_global1').append(`
-    <thead>
-        <tr>
-            <th class="th-sm">亞洲國家</th>
-            <th class="th-sm">案例</th>
-            <th class="th-sm">死亡</th>
-        </tr>
-    </thead>
-    <tbody class="count_global">
-        <tr>
-            <td>台灣</td>
-            <td class="data_gc1">0</td>
-            <td class="data_gd1">0</td>
-        </tr>
-        <tr>
-            <td>中國</td>
-            <td class="data_gc2">0</td>
-            <td class="data_gd2">0</td>
-        </tr>
-        <tr>
-            <td>日本</td>
-            <td class="data_gc3">0</td>
-            <td class="data_gd3">0</td>
-        </tr>
-        <tr>
-            <td>南韓</td>
-            <td class="data_gc4">0</td>
-            <td class="data_gd4">0</td>
-        </tr>
-        <tr>
-            <td>泰國</td>
-            <td class="data_gc5">0</td>
-            <td class="data_gd5">0</td>
-        </tr>
-        <tr>
-            <td>新加坡</td>
-            <td class="data_gc8">0</td>
-            <td class="data_gd8">0</td>
-        </tr>
-        <tr>
-            <td>馬來西亞</td>
-            <td class="data_gc9">0</td>
-            <td class="data_gd9">0</td>
-        </tr>
-        <tr>
-            <td>越南</td>
-            <td class="data_gc10">0</td>
-            <td class="data_gd10">0</td>
-        </tr>
-        <tr>
-            <td>伊朗</td>
-            <td class="data_gc30">0</td>
-            <td class="data_gd30">0</td>
-        </tr>
-        <tr>
-            <td>阿聯</td>
-            <td class="data_gc11">0</td>
-            <td class="data_gd11">0</td>
-        </tr>
-        <tr>
-            <td>菲律賓</td>
-            <td class="data_gc12">0</td>
-            <td class="data_gd12">0</td>
-        </tr>
-        <tr>
-            <td>印度</td>
-            <td class="data_gc13">0</td>
-            <td class="data_gd13">0</td>
-        </tr>
-        <tr>
-            <td>尼泊爾</td>
-            <td class="data_gc14">0</td>
-            <td class="data_gd14">0</td>
-        </tr>
-        <tr>
-            <td>柬埔寨</td>
-            <td class="data_gc15">0</td>
-            <td class="data_gd15">0</td>
-        </tr>
-        <tr>
-            <td>斯里蘭卡</td>
-            <td class="data_gc16">0</td>
-            <td class="data_gd16">0</td>
-        </tr>
-        <tr>
-            <td>以色列</td>
-            <td class="data_gc31">0</td>
-            <td class="data_gd31">0</td>
-        </tr>
-        <tr>
-            <td>黎巴嫩</td>
-            <td class="data_gc32">0</td>
-            <td class="data_gd32">0</td>
-        </tr>
-        <tr>
-            <td>伊拉克</td>
-            <td class="data_gc33">0</td>
-            <td class="data_gd33">0</td>
-        </tr>
-        <tr>
-            <td>科威特</td>
-            <td class="data_gc34">0</td>
-            <td class="data_gd34">0</td>
-        </tr>
-        <tr>
-            <td>阿富汗</td>
-            <td class="data_gc35">0</td>
-            <td class="data_gd35">0</td>
-        </tr>
-        <tr>
-            <td>巴林</td>
-            <td class="data_gc36">0</td>
-            <td class="data_gd36">0</td>
-        </tr>
-        <tr>
-            <td>阿曼</td>
-            <td class="data_gc37">0</td>
-            <td class="data_gd37">0</td>
-        </tr>
-        <tr>
-            <td>喬治亞</td>
-            <td class="data_gc42">0</td>
-            <td class="data_gd42">0</td>
-        </tr>
-        <tr>
-            <td>巴基斯坦</td>
-            <td class="data_gc43">0</td>
-            <td class="data_gd43">0</td>
-        </tr>
-        <tr>
-            <td>卡達</td>
-            <td class="data_gc60">0</td>
-            <td class="data_gd60">0</td>
-        </tr>
-        <tr>
-            <td>印尼</td>
-            <td class="data_gc67">0</td>
-            <td class="data_gd67">0</td>
-        </tr>
-        <tr>
-            <td>約旦</td>
-            <td class="data_gc68">0</td>
-            <td class="data_gd68">0</td>
-        </tr>
-        <tr>
-            <td>沙烏地阿拉伯</td>
-            <td class="data_gc69">0</td>
-            <td class="data_gd69">0</td>
-        </tr>
-        <tr>
-            <td>亞美尼亞</td>
-            <td class="data_gc79">0</td>
-            <td class="data_gd79">0</td>
-        </tr>
-        <tr>
-            <td>巴勒斯坦</td>
-            <td class="data_gc82">0</td>
-            <td class="data_gd82">0</td>
-        </tr>
-        <tr>
-            <td>不丹</td>
-            <td class="data_gc85">0</td>
-            <td class="data_gd85">0</td>
-        </tr>
-        <tr>
-            <td>馬爾地夫</td>
-            <td class="data_gc98">0</td>
-            <td class="data_gd98">0</td>
-        </tr>
-        <tr>
-            <td>孟加拉</td>
-            <td class="data_gc103">0</td>
-            <td class="data_gd103">0</td>
-        </tr>
-        <tr>
-            <td>汶萊</td>
-            <td class="data_gc106">0</td>
-            <td class="data_gd106">0</td>
-        </tr>
-        <tr>
-            <td>蒙古</td>
-            <td class="data_gc109">0</td>
-            <td class="data_gd109">0</td>
-        </tr>
-        <tr>
-            <td>土耳其</td>
-            <td class="data_gc110">0</td>
-            <td class="data_gd110">0</td>
-        </tr>
-        <tr>
-            <td>亞塞拜然</td>
-            <td class="data_gc54">0</td>
-            <td class="data_gd54">0</td>
-        </tr>
-        <tr>
-            <td>哈薩克</td>
-            <td class="data_gc118">0</td>
-            <td class="data_gd118">0</td>
-        </tr>
-        <tr>
-            <td>烏茲別克</td>
-            <td class="data_gc140">0</td>
-            <td class="data_gd140">0</td>
-        </tr>
-        <tr>
-            <td>吉爾吉斯</td>
-            <td class="data_gc158">0</td>
-            <td class="data_gd158">0</td>
-        </tr>
-        <tr>
-            <td>東帝汶</td>
-            <td class="data_gc173">0</td>
-            <td class="data_gd173">0</td>
-        </tr>
-        <tr>
-            <td>敘利亞</td>
-            <td class="data_gc179">0</td>
-            <td class="data_gd179">0</td>
-        </tr>
-        <tr>
-            <td>緬甸</td>
-            <td class="data_gc184">0</td>
-            <td class="data_gd184">0</td>
-        </tr>
-        <tr>
-            <td>寮國</td>
-            <td class="data_gc185">0</td>
-            <td class="data_gd185">0</td>
-        </tr>
-        <tr>
-            <td>葉門</td>
-            <td class="data_gc195">0</td>
-            <td class="data_gd195">0</td>
-        </tr>
-        <tr>
-            <td>塔吉克</td>
-            <td class="data_gc198">0</td>
-            <td class="data_gd198">0</td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th class="th-sm"></th>
-            <th class="th-sm"></th>
-            <th class="th-sm"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>香港</td>
-            <td class="data_gc6">0</td>
-            <td class="data_gd6">0</td>
-        </tr>
-        <tr>
-            <td>澳門</td>
-            <td class="data_gc7">0</td>
-            <td class="data_gd7">0</td>
-        </tr> 
-    </tbody>   
-`);
+// // 表格：世界疫情 - 亞洲
+// $('#dt_global1').append(`
+//     <thead>
+//         <tr>
+//             <th class="th-sm">亞洲國家</th>
+//             <th class="th-sm">案例</th>
+//             <th class="th-sm">死亡</th>
+//         </tr>
+//     </thead>
+//     <tbody class="count_global">
+//         <tr>
+//             <td>台灣</td>
+//             <td class="data_gc1">0</td>
+//             <td class="data_gd1">0</td>
+//         </tr>
+//         <tr>
+//             <td>中國</td>
+//             <td class="data_gc2">0</td>
+//             <td class="data_gd2">0</td>
+//         </tr>
+//         <tr>
+//             <td>日本</td>
+//             <td class="data_gc3">0</td>
+//             <td class="data_gd3">0</td>
+//         </tr>
+//         <tr>
+//             <td>南韓</td>
+//             <td class="data_gc4">0</td>
+//             <td class="data_gd4">0</td>
+//         </tr>
+//         <tr>
+//             <td>泰國</td>
+//             <td class="data_gc5">0</td>
+//             <td class="data_gd5">0</td>
+//         </tr>
+//         <tr>
+//             <td>新加坡</td>
+//             <td class="data_gc8">0</td>
+//             <td class="data_gd8">0</td>
+//         </tr>
+//         <tr>
+//             <td>馬來西亞</td>
+//             <td class="data_gc9">0</td>
+//             <td class="data_gd9">0</td>
+//         </tr>
+//         <tr>
+//             <td>越南</td>
+//             <td class="data_gc10">0</td>
+//             <td class="data_gd10">0</td>
+//         </tr>
+//         <tr>
+//             <td>伊朗</td>
+//             <td class="data_gc30">0</td>
+//             <td class="data_gd30">0</td>
+//         </tr>
+//         <tr>
+//             <td>阿聯</td>
+//             <td class="data_gc11">0</td>
+//             <td class="data_gd11">0</td>
+//         </tr>
+//         <tr>
+//             <td>菲律賓</td>
+//             <td class="data_gc12">0</td>
+//             <td class="data_gd12">0</td>
+//         </tr>
+//         <tr>
+//             <td>印度</td>
+//             <td class="data_gc13">0</td>
+//             <td class="data_gd13">0</td>
+//         </tr>
+//         <tr>
+//             <td>尼泊爾</td>
+//             <td class="data_gc14">0</td>
+//             <td class="data_gd14">0</td>
+//         </tr>
+//         <tr>
+//             <td>柬埔寨</td>
+//             <td class="data_gc15">0</td>
+//             <td class="data_gd15">0</td>
+//         </tr>
+//         <tr>
+//             <td>斯里蘭卡</td>
+//             <td class="data_gc16">0</td>
+//             <td class="data_gd16">0</td>
+//         </tr>
+//         <tr>
+//             <td>以色列</td>
+//             <td class="data_gc31">0</td>
+//             <td class="data_gd31">0</td>
+//         </tr>
+//         <tr>
+//             <td>黎巴嫩</td>
+//             <td class="data_gc32">0</td>
+//             <td class="data_gd32">0</td>
+//         </tr>
+//         <tr>
+//             <td>伊拉克</td>
+//             <td class="data_gc33">0</td>
+//             <td class="data_gd33">0</td>
+//         </tr>
+//         <tr>
+//             <td>科威特</td>
+//             <td class="data_gc34">0</td>
+//             <td class="data_gd34">0</td>
+//         </tr>
+//         <tr>
+//             <td>阿富汗</td>
+//             <td class="data_gc35">0</td>
+//             <td class="data_gd35">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴林</td>
+//             <td class="data_gc36">0</td>
+//             <td class="data_gd36">0</td>
+//         </tr>
+//         <tr>
+//             <td>阿曼</td>
+//             <td class="data_gc37">0</td>
+//             <td class="data_gd37">0</td>
+//         </tr>
+//         <tr>
+//             <td>喬治亞</td>
+//             <td class="data_gc42">0</td>
+//             <td class="data_gd42">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴基斯坦</td>
+//             <td class="data_gc43">0</td>
+//             <td class="data_gd43">0</td>
+//         </tr>
+//         <tr>
+//             <td>卡達</td>
+//             <td class="data_gc60">0</td>
+//             <td class="data_gd60">0</td>
+//         </tr>
+//         <tr>
+//             <td>印尼</td>
+//             <td class="data_gc67">0</td>
+//             <td class="data_gd67">0</td>
+//         </tr>
+//         <tr>
+//             <td>約旦</td>
+//             <td class="data_gc68">0</td>
+//             <td class="data_gd68">0</td>
+//         </tr>
+//         <tr>
+//             <td>沙烏地阿拉伯</td>
+//             <td class="data_gc69">0</td>
+//             <td class="data_gd69">0</td>
+//         </tr>
+//         <tr>
+//             <td>亞美尼亞</td>
+//             <td class="data_gc79">0</td>
+//             <td class="data_gd79">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴勒斯坦</td>
+//             <td class="data_gc82">0</td>
+//             <td class="data_gd82">0</td>
+//         </tr>
+//         <tr>
+//             <td>不丹</td>
+//             <td class="data_gc85">0</td>
+//             <td class="data_gd85">0</td>
+//         </tr>
+//         <tr>
+//             <td>馬爾地夫</td>
+//             <td class="data_gc98">0</td>
+//             <td class="data_gd98">0</td>
+//         </tr>
+//         <tr>
+//             <td>孟加拉</td>
+//             <td class="data_gc103">0</td>
+//             <td class="data_gd103">0</td>
+//         </tr>
+//         <tr>
+//             <td>汶萊</td>
+//             <td class="data_gc106">0</td>
+//             <td class="data_gd106">0</td>
+//         </tr>
+//         <tr>
+//             <td>蒙古</td>
+//             <td class="data_gc109">0</td>
+//             <td class="data_gd109">0</td>
+//         </tr>
+//         <tr>
+//             <td>土耳其</td>
+//             <td class="data_gc110">0</td>
+//             <td class="data_gd110">0</td>
+//         </tr>
+//         <tr>
+//             <td>亞塞拜然</td>
+//             <td class="data_gc54">0</td>
+//             <td class="data_gd54">0</td>
+//         </tr>
+//         <tr>
+//             <td>哈薩克</td>
+//             <td class="data_gc118">0</td>
+//             <td class="data_gd118">0</td>
+//         </tr>
+//         <tr>
+//             <td>烏茲別克</td>
+//             <td class="data_gc140">0</td>
+//             <td class="data_gd140">0</td>
+//         </tr>
+//         <tr>
+//             <td>吉爾吉斯</td>
+//             <td class="data_gc158">0</td>
+//             <td class="data_gd158">0</td>
+//         </tr>
+//         <tr>
+//             <td>東帝汶</td>
+//             <td class="data_gc173">0</td>
+//             <td class="data_gd173">0</td>
+//         </tr>
+//         <tr>
+//             <td>敘利亞</td>
+//             <td class="data_gc179">0</td>
+//             <td class="data_gd179">0</td>
+//         </tr>
+//         <tr>
+//             <td>緬甸</td>
+//             <td class="data_gc184">0</td>
+//             <td class="data_gd184">0</td>
+//         </tr>
+//         <tr>
+//             <td>寮國</td>
+//             <td class="data_gc185">0</td>
+//             <td class="data_gd185">0</td>
+//         </tr>
+//         <tr>
+//             <td>葉門</td>
+//             <td class="data_gc195">0</td>
+//             <td class="data_gd195">0</td>
+//         </tr>
+//         <tr>
+//             <td>塔吉克</td>
+//             <td class="data_gc198">0</td>
+//             <td class="data_gd198">0</td>
+//         </tr>
+//     </tbody>
+//     <thead>
+//         <tr>
+//             <th class="th-sm"></th>
+//             <th class="th-sm"></th>
+//             <th class="th-sm"></th>
+//         </tr>
+//     </thead>
+//     <tbody>
+//         <tr>
+//             <td>香港</td>
+//             <td class="data_gc6">0</td>
+//             <td class="data_gd6">0</td>
+//         </tr>
+//         <tr>
+//             <td>澳門</td>
+//             <td class="data_gc7">0</td>
+//             <td class="data_gd7">0</td>
+//         </tr> 
+//     </tbody>   
+// `);
 
-// 表格：世界疫情 - 美洲
-$('#dt_global2').append(`
-    <thead>
-        <tr>
-            <th class="th-sm">美洲國家</th>
-            <th class="th-sm">案例</th>
-            <th class="th-sm">死亡</th>
-        </tr>
-    </thead>
-    <tbody class="count_global">
-        <tr>
-            <td>美國</td>
-            <td class="data_gc17">0</td>
-            <td class="data_gd17">0</td>
-        </tr>
-        <tr>
-            <td>加拿大</td>
-            <td class="data_gc18">0</td>
-            <td class="data_gd18">0</td>
-        </tr>
-        <tr>
-            <td>巴西</td>
-            <td class="data_gc44">0</td>
-            <td class="data_gd44">0</td>
-        </tr>
-        <tr>
-            <td>墨西哥</td>
-            <td class="data_gc58">0</td>
-            <td class="data_gd58">0</td>
-        </tr>
-        <tr>
-            <td>厄瓜多</td>
-            <td class="data_gc61">0</td>
-            <td class="data_gd61">0</td>
-        </tr>
-        <tr>
-            <td>多明尼加共和國</td>
-            <td class="data_gc65">0</td>
-            <td class="data_gd65">0</td>
-        </tr>
-        <tr>
-            <td>阿根廷</td>
-            <td class="data_gc75">0</td>
-            <td class="data_gd75">0</td>
-        </tr>
-        <tr>
-            <td>智利</td>
-            <td class="data_gc76">0</td>
-            <td class="data_gd76">0</td>
-        </tr>
-        <tr>
-            <td>祕魯</td>
-            <td class="data_gc87">0</td>
-            <td class="data_gd87">0</td>
-        </tr>
-        <tr>
-            <td>哥斯大黎加</td>
-            <td class="data_gc88">0</td>
-            <td class="data_gd88">0</td>
-        </tr>
-        <tr>
-            <td>哥倫比亞</td>
-            <td class="data_gc101">0</td>
-            <td class="data_gd101">0</td>
-        </tr>
-        <tr>
-            <td>巴拉圭</td>
-            <td class="data_gc102">0</td>
-            <td class="data_gd102">0</td>
-        </tr>
-        <tr>
-            <td>巴拿馬</td>
-            <td class="data_gc86">0</td>
-            <td class="data_gd86">0</td>
-        </tr>
-        <tr>
-            <td>玻利維亞</td>
-            <td class="data_gc112">0</td>
-            <td class="data_gd112">0</td>
-        </tr>
-        <tr>
-            <td>宏都拉斯</td>
-            <td class="data_gc113">0</td>
-            <td class="data_gd113">0</td>
-        </tr>
-        <tr>
-            <td>牙買加</td>
-            <td class="data_gc114">0</td>
-            <td class="data_gd114">0</td>
-        </tr>
-        <tr>
-            <td>古巴</td>
-            <td class="data_gc116">0</td>
-            <td class="data_gd116">0</td>
-        </tr>
-        <tr>
-            <td>蓋亞那</td>
-            <td class="data_gc117">0</td>
-            <td class="data_gd117">0</td>
-        </tr>
-        <tr>
-            <td>烏拉圭</td>
-            <td class="data_gc128">0</td>
-            <td class="data_gd128">0</td>
-        </tr>
-        <tr>
-            <td>委內瑞拉</td>
-            <td class="data_gc130">0</td>
-            <td class="data_gd130">0</td>
-        </tr>
-        <tr>
-            <td>瓜地馬拉</td>
-            <td class="data_gc131">0</td>
-            <td class="data_gd131">0</td>
-        </tr>
-        <tr>
-            <td>聖文森及格瑞那丁</td>
-            <td class="data_gc132">0</td>
-            <td class="data_gd132">0</td>
-        </tr>
-        <tr>
-            <td>聖露西亞</td>
-            <td class="data_gc133">0</td>
-            <td class="data_gd133">0</td>
-        </tr>
-        <tr>
-            <td>千里達及托巴哥</td>
-            <td class="data_gc145">0</td>
-            <td class="data_gd145">0</td>
-        </tr>
-        <tr>
-            <td>安地卡及巴布達</td>
-            <td class="data_gc146">0</td>
-            <td class="data_gd146">0</td>
-        </tr>
-        <tr>
-            <td>蘇利南</td>
-            <td class="data_gc147">0</td>
-            <td class="data_gd147">0</td>
-        </tr>
-        <tr>
-            <td>巴哈馬</td>
-            <td class="data_gc148">0</td>
-            <td class="data_gd148">0</td>
-        </tr>
-        <tr>
-            <td>巴貝多</td>
-            <td class="data_gc154">0</td>
-            <td class="data_gd154">0</td>
-        </tr>
-        <tr>
-            <td>薩爾瓦多</td>
-            <td class="data_gc161">0</td>
-            <td class="data_gd161">0</td>
-        </tr>
-        <tr>
-            <td>尼加拉瓜</td>
-            <td class="data_gc162">0</td>
-            <td class="data_gd162">0</td>
-        </tr>
-        <tr>
-            <td>海地</td>
-            <td class="data_gc168">0</td>
-            <td class="data_gd168">0</td>
-        </tr>
-        <tr>
-            <td>多米尼克</td>
-            <td class="data_gc180">0</td>
-            <td class="data_gd180">0</td>
-        </tr>
-        <tr>
-            <td>貝里斯</td>
-            <td class="data_gc181">0</td>
-            <td class="data_gd181">0</td>
-        </tr>
-        <tr>
-            <td>格瑞那達</td>
-            <td class="data_gc182">0</td>
-            <td class="data_gd182">0</td>
-        </tr>
-        <tr>
-            <td>聖克里斯多福</td>
-            <td class="data_gc186">0</td>
-            <td class="data_gd186">0</td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th class="th-sm"></th>
-            <th class="th-sm"></th>
-            <th class="th-sm"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>法屬圭亞那（法）</td>
-            <td class="data_gc127">0</td>
-            <td class="data_gd127">0</td>
-        </tr>
-        <tr>
-            <td>波多黎各（美）</td>
-            <td class="data_gc144">0</td>
-            <td class="data_gd144">0</td>
-        </tr>
-        <tr>
-            <td>格陵蘭（丹麥）</td>
-            <td class="data_gc160">0</td>
-            <td class="data_gd160">0</td>
-        </tr>
-        <tr>
-            <td>福克蘭群島（英）</td>
-            <td class="data_gc199">0</td>
-            <td class="data_gd199">0</td>
-        </tr>
-    </tbody>
-`)
+// // 表格：世界疫情 - 美洲
+// $('#dt_global2').append(`
+//     <thead>
+//         <tr>
+//             <th class="th-sm">美洲國家</th>
+//             <th class="th-sm">案例</th>
+//             <th class="th-sm">死亡</th>
+//         </tr>
+//     </thead>
+//     <tbody class="count_global">
+//         <tr>
+//             <td>美國</td>
+//             <td class="data_gc17">0</td>
+//             <td class="data_gd17">0</td>
+//         </tr>
+//         <tr>
+//             <td>加拿大</td>
+//             <td class="data_gc18">0</td>
+//             <td class="data_gd18">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴西</td>
+//             <td class="data_gc44">0</td>
+//             <td class="data_gd44">0</td>
+//         </tr>
+//         <tr>
+//             <td>墨西哥</td>
+//             <td class="data_gc58">0</td>
+//             <td class="data_gd58">0</td>
+//         </tr>
+//         <tr>
+//             <td>厄瓜多</td>
+//             <td class="data_gc61">0</td>
+//             <td class="data_gd61">0</td>
+//         </tr>
+//         <tr>
+//             <td>多明尼加共和國</td>
+//             <td class="data_gc65">0</td>
+//             <td class="data_gd65">0</td>
+//         </tr>
+//         <tr>
+//             <td>阿根廷</td>
+//             <td class="data_gc75">0</td>
+//             <td class="data_gd75">0</td>
+//         </tr>
+//         <tr>
+//             <td>智利</td>
+//             <td class="data_gc76">0</td>
+//             <td class="data_gd76">0</td>
+//         </tr>
+//         <tr>
+//             <td>祕魯</td>
+//             <td class="data_gc87">0</td>
+//             <td class="data_gd87">0</td>
+//         </tr>
+//         <tr>
+//             <td>哥斯大黎加</td>
+//             <td class="data_gc88">0</td>
+//             <td class="data_gd88">0</td>
+//         </tr>
+//         <tr>
+//             <td>哥倫比亞</td>
+//             <td class="data_gc101">0</td>
+//             <td class="data_gd101">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴拉圭</td>
+//             <td class="data_gc102">0</td>
+//             <td class="data_gd102">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴拿馬</td>
+//             <td class="data_gc86">0</td>
+//             <td class="data_gd86">0</td>
+//         </tr>
+//         <tr>
+//             <td>玻利維亞</td>
+//             <td class="data_gc112">0</td>
+//             <td class="data_gd112">0</td>
+//         </tr>
+//         <tr>
+//             <td>宏都拉斯</td>
+//             <td class="data_gc113">0</td>
+//             <td class="data_gd113">0</td>
+//         </tr>
+//         <tr>
+//             <td>牙買加</td>
+//             <td class="data_gc114">0</td>
+//             <td class="data_gd114">0</td>
+//         </tr>
+//         <tr>
+//             <td>古巴</td>
+//             <td class="data_gc116">0</td>
+//             <td class="data_gd116">0</td>
+//         </tr>
+//         <tr>
+//             <td>蓋亞那</td>
+//             <td class="data_gc117">0</td>
+//             <td class="data_gd117">0</td>
+//         </tr>
+//         <tr>
+//             <td>烏拉圭</td>
+//             <td class="data_gc128">0</td>
+//             <td class="data_gd128">0</td>
+//         </tr>
+//         <tr>
+//             <td>委內瑞拉</td>
+//             <td class="data_gc130">0</td>
+//             <td class="data_gd130">0</td>
+//         </tr>
+//         <tr>
+//             <td>瓜地馬拉</td>
+//             <td class="data_gc131">0</td>
+//             <td class="data_gd131">0</td>
+//         </tr>
+//         <tr>
+//             <td>聖文森及格瑞那丁</td>
+//             <td class="data_gc132">0</td>
+//             <td class="data_gd132">0</td>
+//         </tr>
+//         <tr>
+//             <td>聖露西亞</td>
+//             <td class="data_gc133">0</td>
+//             <td class="data_gd133">0</td>
+//         </tr>
+//         <tr>
+//             <td>千里達及托巴哥</td>
+//             <td class="data_gc145">0</td>
+//             <td class="data_gd145">0</td>
+//         </tr>
+//         <tr>
+//             <td>安地卡及巴布達</td>
+//             <td class="data_gc146">0</td>
+//             <td class="data_gd146">0</td>
+//         </tr>
+//         <tr>
+//             <td>蘇利南</td>
+//             <td class="data_gc147">0</td>
+//             <td class="data_gd147">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴哈馬</td>
+//             <td class="data_gc148">0</td>
+//             <td class="data_gd148">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴貝多</td>
+//             <td class="data_gc154">0</td>
+//             <td class="data_gd154">0</td>
+//         </tr>
+//         <tr>
+//             <td>薩爾瓦多</td>
+//             <td class="data_gc161">0</td>
+//             <td class="data_gd161">0</td>
+//         </tr>
+//         <tr>
+//             <td>尼加拉瓜</td>
+//             <td class="data_gc162">0</td>
+//             <td class="data_gd162">0</td>
+//         </tr>
+//         <tr>
+//             <td>海地</td>
+//             <td class="data_gc168">0</td>
+//             <td class="data_gd168">0</td>
+//         </tr>
+//         <tr>
+//             <td>多米尼克</td>
+//             <td class="data_gc180">0</td>
+//             <td class="data_gd180">0</td>
+//         </tr>
+//         <tr>
+//             <td>貝里斯</td>
+//             <td class="data_gc181">0</td>
+//             <td class="data_gd181">0</td>
+//         </tr>
+//         <tr>
+//             <td>格瑞那達</td>
+//             <td class="data_gc182">0</td>
+//             <td class="data_gd182">0</td>
+//         </tr>
+//         <tr>
+//             <td>聖克里斯多福</td>
+//             <td class="data_gc186">0</td>
+//             <td class="data_gd186">0</td>
+//         </tr>
+//     </tbody>
+//     <thead>
+//         <tr>
+//             <th class="th-sm"></th>
+//             <th class="th-sm"></th>
+//             <th class="th-sm"></th>
+//         </tr>
+//     </thead>
+//     <tbody>
+//         <tr>
+//             <td>法屬圭亞那（法）</td>
+//             <td class="data_gc127">0</td>
+//             <td class="data_gd127">0</td>
+//         </tr>
+//         <tr>
+//             <td>波多黎各（美）</td>
+//             <td class="data_gc144">0</td>
+//             <td class="data_gd144">0</td>
+//         </tr>
+//         <tr>
+//             <td>格陵蘭（丹麥）</td>
+//             <td class="data_gc160">0</td>
+//             <td class="data_gd160">0</td>
+//         </tr>
+//         <tr>
+//             <td>福克蘭群島（英）</td>
+//             <td class="data_gc199">0</td>
+//             <td class="data_gd199">0</td>
+//         </tr>
+//     </tbody>
+// `)
 
-// 表格：世界疫情 - 大洋洲
-$('#dt_global3').append(`
-    <thead>
-        <tr>
-            <th class="th-sm">大洋洲國家</th>
-            <th class="th-sm">案例</th>
-            <th class="th-sm">死亡</th>
-        </tr>
-    </thead>
-    <tbody class="count_global">
-        <tr>
-            <td>澳洲</td>
-            <td class="data_gc19">0</td>
-            <td class="data_gd19">0</td>
-        </tr>
-        <tr>
-            <td>紐西蘭</td>
-            <td class="data_gc57">0</td>
-            <td class="data_gd57">0</td>
-        </tr>
-        <tr>
-            <td>斐濟</td>
-            <td class="data_gc172">0</td>
-            <td class="data_gd172">0</td>
-        </tr>
-        <tr>
-            <td>巴布亞紐幾內亞</td>
-            <td class="data_gc175">0</td>
-            <td class="data_gd175">0</td>
-        </tr>
-        <tr>
-            <td>新喀里多尼亞</td>
-            <td class="data_gc201">0</td>
-            <td class="data_gd201">0</td>
-        </tr>
-    </tbody>
+// // 表格：世界疫情 - 大洋洲
+// $('#dt_global3').append(`
+//     <thead>
+//         <tr>
+//             <th class="th-sm">大洋洲國家</th>
+//             <th class="th-sm">案例</th>
+//             <th class="th-sm">死亡</th>
+//         </tr>
+//     </thead>
+//     <tbody class="count_global">
+//         <tr>
+//             <td>澳洲</td>
+//             <td class="data_gc19">0</td>
+//             <td class="data_gd19">0</td>
+//         </tr>
+//         <tr>
+//             <td>紐西蘭</td>
+//             <td class="data_gc57">0</td>
+//             <td class="data_gd57">0</td>
+//         </tr>
+//         <tr>
+//             <td>斐濟</td>
+//             <td class="data_gc172">0</td>
+//             <td class="data_gd172">0</td>
+//         </tr>
+//         <tr>
+//             <td>巴布亞紐幾內亞</td>
+//             <td class="data_gc175">0</td>
+//             <td class="data_gd175">0</td>
+//         </tr>
+//         <tr>
+//             <td>新喀里多尼亞</td>
+//             <td class="data_gc201">0</td>
+//             <td class="data_gd201">0</td>
+//         </tr>
+//     </tbody>
 
-`);
+// `);
 
-// 表格：世界疫情 - 歐洲
-$('#dt_global4').append(`
-    <thead>
-        <tr>
-            <th class="th-sm">歐洲國家</th>
-            <th class="th-sm">案例</th>
-            <th class="th-sm">死亡</th>
-        </tr>
-    </thead>
-    <tbody class="count_global">
-        <tr>
-            <td>義大利</td>
-            <td class="data_gc23">0</td>
-            <td class="data_gd23">0</td>
-        </tr>
-        <tr>
-            <td>德國</td>
-            <td class="data_gc20">0</td>
-            <td class="data_gd20">0</td>
-        </tr>
-        <tr>
-            <td>法國</td>
-            <td class="data_gc21">0</td>
-            <td class="data_gd21">0</td>
-        </tr>
-        <tr>
-            <td>英國</td>
-            <td class="data_gc22">0</td>
-            <td class="data_gd22">0</td>
-        </tr>
-        <tr>
-            <td>俄羅斯</td>
-            <td class="data_gc24">0</td>
-            <td class="data_gd24">0</td>
-        </tr>
-        <tr>
-            <td>西班牙</td>
-            <td class="data_gc25">0</td>
-            <td class="data_gd25">0</td>
-        </tr>
-        <tr>
-            <td>瑞典</td>
-            <td class="data_gc26">0</td>
-            <td class="data_gd26">0</td>
-        </tr>
-        <tr>
-            <td>芬蘭</td>
-            <td class="data_gc27">0</td>
-            <td class="data_gd27">0</td>
-        </tr>
-        <tr>
-            <td>比利時</td>
-            <td class="data_gc28">0</td>
-            <td class="data_gd28">0</td>
-        </tr>
-        <tr>
-            <td>瑞士</td>
-            <td class="data_gc38">0</td>
-            <td class="data_gd38">0</td>
-        </tr>
-        <tr>
-            <td>奧地利</td>
-            <td class="data_gc39">0</td>
-            <td class="data_gd39">0</td>
-        </tr>
-        <tr>
-            <td>克羅埃西亞</td>
-            <td class="data_gc40">0</td>
-            <td class="data_gd40">0</td>
-        </tr>
-        <tr>
-            <td>羅馬尼亞</td>
-            <td class="data_gc45">0</td>
-            <td class="data_gd45">0</td>
-        </tr>
-        <tr>
-            <td>挪威</td>
-            <td class="data_gc46">0</td>
-            <td class="data_gd46">0</td>
-        </tr>
-        <tr>
-            <td>希臘</td>
-            <td class="data_gc47">0</td>
-            <td class="data_gd47">0</td>
-        </tr>
-        <tr>
-            <td>北馬其頓</td>
-            <td class="data_gc48">0</td>
-            <td class="data_gd48">0</td>
-        </tr>
-        <tr>
-            <td>丹麥</td>
-            <td class="data_gc49">0</td>
-            <td class="data_gd49">0</td>
-        </tr>
-        <tr>
-            <td>荷蘭</td>
-            <td class="data_gc50">0</td>
-            <td class="data_gd50">0</td>
-        </tr>
-        <tr>
-            <td>愛沙尼亞</td>
-            <td class="data_gc51">0</td>
-            <td class="data_gd51">0</td>
-        </tr>
-        <tr>
-            <td>冰島</td>
-            <td class="data_gc53">0</td>
-            <td class="data_gd53">0</td>
-        </tr>
-        <tr>
-            <td>立陶宛</td>
-            <td class="data_gc55">0</td>
-            <td class="data_gd55">0</td>
-        </tr>
-        <tr>
-            <td>白俄羅斯</td>
-            <td class="data_gc56">0</td>
-            <td class="data_gd56">0</td>
-        </tr>
-        <tr>
-            <td>摩納哥</td>
-            <td class="data_gc59">0</td>
-            <td class="data_gd59">0</td>
-        </tr>
-        <tr>
-            <td>盧森堡</td>
-            <td class="data_gc62">0</td>
-            <td class="data_gd62">0</td>
-        </tr>
-        <tr>
-            <td>愛爾蘭</td>
-            <td class="data_gc63">0</td>
-            <td class="data_gd63">0</td>
-        </tr>
-        <tr>
-            <td>聖馬利諾</td>
-            <td class="data_gc64">0</td>
-            <td class="data_gd64">0</td>
-        </tr>
-        <tr>
-            <td>捷克</td>
-            <td class="data_gc66">0</td>
-            <td class="data_gd66">0</td>
-        </tr>
-        <tr>
-            <td>葡萄牙</td>
-            <td class="data_gc70">0</td>
-            <td class="data_gd70">0</td>
-        </tr>
-        <tr>
-            <td>拉脫維亞</td>
-            <td class="data_gc71">0</td>
-            <td class="data_gd71">0</td>
-        </tr>
-        <tr>
-            <td>安道爾</td>
-            <td class="data_gc72">0</td>
-            <td class="data_gd72">0</td>
-        </tr>
-        <tr>
-            <td>烏克蘭</td>
-            <td class="data_gc77">0</td>
-            <td class="data_gd77">0</td>
-        </tr>
-        <tr>
-            <td>匈牙利</td>
-            <td class="data_gc80">0</td>
-            <td class="data_gd80">0</td>
-        </tr>
-        <tr>
-            <td>波蘭</td>
-            <td class="data_gc81">0</td>
-            <td class="data_gd81">0</td>
-        </tr>
-        <tr>
-            <td>波士尼亞與赫塞哥維納</td>
-            <td class="data_gc83">0</td>
-            <td class="data_gd83">0</td>
-        </tr>
-        <tr>
-            <td>斯洛維尼亞</td>
-            <td class="data_gc89">0</td>
-            <td class="data_gd89">0</td>
-        </tr>
-        <tr>
-            <td>斯洛伐克</td>
-            <td class="data_gc90">0</td>
-            <td class="data_gd90">0</td>
-        </tr>
-        <tr>
-            <td>梵蒂岡</td>
-            <td class="data_gc91">0</td>
-            <td class="data_gd91">0</td>
-        </tr>
-        <tr>
-            <td>列支敦斯登</td>
-            <td class="data_gc92">0</td>
-            <td class="data_gd92">0</td>
-        </tr>
-        <tr>
-            <td>賽普勒斯</td>
-            <td class="data_gc105">0</td>
-            <td class="data_gd105">0</td>
-        </tr>
-        <!-- <tr>
-            <td>法羅群島</td>
-            <td class="data_gc93">0</td>
-            <td class="data_gd93">0</td>
-        </tr>
-        <tr>
-            <td>直布羅陀</td>
-            <td class="data_gc94">0</td>
-            <td class="data_gd94">0</td>
-        </tr> -->
-        <tr>
-            <td>塞爾維亞</td>
-            <td class="data_gc95">0</td>
-            <td class="data_gd95">0</td>
-        </tr>
-        <tr>
-            <td>馬爾他</td>
-            <td class="data_gc99">0</td>
-            <td class="data_gd99">0</td>
-        </tr>
-        <tr>
-            <td>摩爾多瓦</td>
-            <td class="data_gc100">0</td>
-            <td class="data_gd100">0</td>
-        </tr>
-        <tr>
-            <td>保加利亞</td>
-            <td class="data_gc104">0</td>
-            <td class="data_gd104">0</td>
-        </tr>
-        <tr>
-            <td>阿爾巴尼亞</td>
-            <td class="data_gc107">0</td>
-            <td class="data_gd107">0</td>
-        </tr>
-        <tr>
-            <td>蒙特內哥羅</td>
-            <td class="data_gc155">0</td>
-            <td class="data_gd155">0</td>
-        </tr>
-        <tr>
-            <td>科索沃</td>
-            <td class="data_gc159">0</td>
-            <td class="data_gd159">0</td>
-        </tr>
-    </tbody>
-`);
+// // 表格：世界疫情 - 歐洲
+// $('#dt_global4').append(`
+//     <thead>
+//         <tr>
+//             <th class="th-sm">歐洲國家</th>
+//             <th class="th-sm">案例</th>
+//             <th class="th-sm">死亡</th>
+//         </tr>
+//     </thead>
+//     <tbody class="count_global">
+//         <tr>
+//             <td>義大利</td>
+//             <td class="data_gc23">0</td>
+//             <td class="data_gd23">0</td>
+//         </tr>
+//         <tr>
+//             <td>德國</td>
+//             <td class="data_gc20">0</td>
+//             <td class="data_gd20">0</td>
+//         </tr>
+//         <tr>
+//             <td>法國</td>
+//             <td class="data_gc21">0</td>
+//             <td class="data_gd21">0</td>
+//         </tr>
+//         <tr>
+//             <td>英國</td>
+//             <td class="data_gc22">0</td>
+//             <td class="data_gd22">0</td>
+//         </tr>
+//         <tr>
+//             <td>俄羅斯</td>
+//             <td class="data_gc24">0</td>
+//             <td class="data_gd24">0</td>
+//         </tr>
+//         <tr>
+//             <td>西班牙</td>
+//             <td class="data_gc25">0</td>
+//             <td class="data_gd25">0</td>
+//         </tr>
+//         <tr>
+//             <td>瑞典</td>
+//             <td class="data_gc26">0</td>
+//             <td class="data_gd26">0</td>
+//         </tr>
+//         <tr>
+//             <td>芬蘭</td>
+//             <td class="data_gc27">0</td>
+//             <td class="data_gd27">0</td>
+//         </tr>
+//         <tr>
+//             <td>比利時</td>
+//             <td class="data_gc28">0</td>
+//             <td class="data_gd28">0</td>
+//         </tr>
+//         <tr>
+//             <td>瑞士</td>
+//             <td class="data_gc38">0</td>
+//             <td class="data_gd38">0</td>
+//         </tr>
+//         <tr>
+//             <td>奧地利</td>
+//             <td class="data_gc39">0</td>
+//             <td class="data_gd39">0</td>
+//         </tr>
+//         <tr>
+//             <td>克羅埃西亞</td>
+//             <td class="data_gc40">0</td>
+//             <td class="data_gd40">0</td>
+//         </tr>
+//         <tr>
+//             <td>羅馬尼亞</td>
+//             <td class="data_gc45">0</td>
+//             <td class="data_gd45">0</td>
+//         </tr>
+//         <tr>
+//             <td>挪威</td>
+//             <td class="data_gc46">0</td>
+//             <td class="data_gd46">0</td>
+//         </tr>
+//         <tr>
+//             <td>希臘</td>
+//             <td class="data_gc47">0</td>
+//             <td class="data_gd47">0</td>
+//         </tr>
+//         <tr>
+//             <td>北馬其頓</td>
+//             <td class="data_gc48">0</td>
+//             <td class="data_gd48">0</td>
+//         </tr>
+//         <tr>
+//             <td>丹麥</td>
+//             <td class="data_gc49">0</td>
+//             <td class="data_gd49">0</td>
+//         </tr>
+//         <tr>
+//             <td>荷蘭</td>
+//             <td class="data_gc50">0</td>
+//             <td class="data_gd50">0</td>
+//         </tr>
+//         <tr>
+//             <td>愛沙尼亞</td>
+//             <td class="data_gc51">0</td>
+//             <td class="data_gd51">0</td>
+//         </tr>
+//         <tr>
+//             <td>冰島</td>
+//             <td class="data_gc53">0</td>
+//             <td class="data_gd53">0</td>
+//         </tr>
+//         <tr>
+//             <td>立陶宛</td>
+//             <td class="data_gc55">0</td>
+//             <td class="data_gd55">0</td>
+//         </tr>
+//         <tr>
+//             <td>白俄羅斯</td>
+//             <td class="data_gc56">0</td>
+//             <td class="data_gd56">0</td>
+//         </tr>
+//         <tr>
+//             <td>摩納哥</td>
+//             <td class="data_gc59">0</td>
+//             <td class="data_gd59">0</td>
+//         </tr>
+//         <tr>
+//             <td>盧森堡</td>
+//             <td class="data_gc62">0</td>
+//             <td class="data_gd62">0</td>
+//         </tr>
+//         <tr>
+//             <td>愛爾蘭</td>
+//             <td class="data_gc63">0</td>
+//             <td class="data_gd63">0</td>
+//         </tr>
+//         <tr>
+//             <td>聖馬利諾</td>
+//             <td class="data_gc64">0</td>
+//             <td class="data_gd64">0</td>
+//         </tr>
+//         <tr>
+//             <td>捷克</td>
+//             <td class="data_gc66">0</td>
+//             <td class="data_gd66">0</td>
+//         </tr>
+//         <tr>
+//             <td>葡萄牙</td>
+//             <td class="data_gc70">0</td>
+//             <td class="data_gd70">0</td>
+//         </tr>
+//         <tr>
+//             <td>拉脫維亞</td>
+//             <td class="data_gc71">0</td>
+//             <td class="data_gd71">0</td>
+//         </tr>
+//         <tr>
+//             <td>安道爾</td>
+//             <td class="data_gc72">0</td>
+//             <td class="data_gd72">0</td>
+//         </tr>
+//         <tr>
+//             <td>烏克蘭</td>
+//             <td class="data_gc77">0</td>
+//             <td class="data_gd77">0</td>
+//         </tr>
+//         <tr>
+//             <td>匈牙利</td>
+//             <td class="data_gc80">0</td>
+//             <td class="data_gd80">0</td>
+//         </tr>
+//         <tr>
+//             <td>波蘭</td>
+//             <td class="data_gc81">0</td>
+//             <td class="data_gd81">0</td>
+//         </tr>
+//         <tr>
+//             <td>波士尼亞與赫塞哥維納</td>
+//             <td class="data_gc83">0</td>
+//             <td class="data_gd83">0</td>
+//         </tr>
+//         <tr>
+//             <td>斯洛維尼亞</td>
+//             <td class="data_gc89">0</td>
+//             <td class="data_gd89">0</td>
+//         </tr>
+//         <tr>
+//             <td>斯洛伐克</td>
+//             <td class="data_gc90">0</td>
+//             <td class="data_gd90">0</td>
+//         </tr>
+//         <tr>
+//             <td>梵蒂岡</td>
+//             <td class="data_gc91">0</td>
+//             <td class="data_gd91">0</td>
+//         </tr>
+//         <tr>
+//             <td>列支敦斯登</td>
+//             <td class="data_gc92">0</td>
+//             <td class="data_gd92">0</td>
+//         </tr>
+//         <tr>
+//             <td>賽普勒斯</td>
+//             <td class="data_gc105">0</td>
+//             <td class="data_gd105">0</td>
+//         </tr>
+//         <!-- <tr>
+//             <td>法羅群島</td>
+//             <td class="data_gc93">0</td>
+//             <td class="data_gd93">0</td>
+//         </tr>
+//         <tr>
+//             <td>直布羅陀</td>
+//             <td class="data_gc94">0</td>
+//             <td class="data_gd94">0</td>
+//         </tr> -->
+//         <tr>
+//             <td>塞爾維亞</td>
+//             <td class="data_gc95">0</td>
+//             <td class="data_gd95">0</td>
+//         </tr>
+//         <tr>
+//             <td>馬爾他</td>
+//             <td class="data_gc99">0</td>
+//             <td class="data_gd99">0</td>
+//         </tr>
+//         <tr>
+//             <td>摩爾多瓦</td>
+//             <td class="data_gc100">0</td>
+//             <td class="data_gd100">0</td>
+//         </tr>
+//         <tr>
+//             <td>保加利亞</td>
+//             <td class="data_gc104">0</td>
+//             <td class="data_gd104">0</td>
+//         </tr>
+//         <tr>
+//             <td>阿爾巴尼亞</td>
+//             <td class="data_gc107">0</td>
+//             <td class="data_gd107">0</td>
+//         </tr>
+//         <tr>
+//             <td>蒙特內哥羅</td>
+//             <td class="data_gc155">0</td>
+//             <td class="data_gd155">0</td>
+//         </tr>
+//         <tr>
+//             <td>科索沃</td>
+//             <td class="data_gc159">0</td>
+//             <td class="data_gd159">0</td>
+//         </tr>
+//     </tbody>
+// `);
 
-// 表格：世界疫情 - 非洲
-$('#dt_global5').append(`
-    <thead>
-        <tr>
-            <th class="th-sm">非洲國家</th>
-            <th class="th-sm">案例</th>
-            <th class="th-sm">死亡</th>
-        </tr>
-    </thead>
-    <tbody class="count_global">
-        <tr>
-            <td>埃及</td>
-            <td class="data_gc29">0</td>
-            <td class="data_gd29">0</td>
-        </tr>
-        <tr>
-            <td>阿爾及利亞</td>
-            <td class="data_gc41">0</td>
-            <td class="data_gd41">0</td>
-        </tr>
-        <tr>
-            <td>奈及利亞</td>
-            <td class="data_gc52">0</td>
-            <td class="data_gd52">0</td>
-        </tr>
-        <tr>
-            <td>突尼西亞</td>
-            <td class="data_gc73">0</td>
-            <td class="data_gd73">0</td>
-        </tr>
-        <tr>
-            <td>塞內加爾</td>
-            <td class="data_gc74">0</td>
-            <td class="data_gd74">0</td>
-        </tr>
-        <tr>
-            <td>摩洛哥</td>
-            <td class="data_gc78">0</td>
-            <td class="data_gd78">0</td>
-        </tr>
-        <tr>
-            <td>南非</td>
-            <td class="data_gc84">0</td>
-            <td class="data_gd84">0</td>
-        </tr>
-        <tr>
-            <td>喀麥隆</td>
-            <td class="data_gc96">0</td>
-            <td class="data_gd96">0</td>
-        </tr>
-        <tr>
-            <td>多哥</td>
-            <td class="data_gc97">0</td>
-            <td class="data_gd97">0</td>
-        </tr>
-        <tr>
-            <td>布吉納法索</td>
-            <td class="data_gc108">0</td>
-            <td class="data_gd108">0</td>
-        </tr>
-        <tr>
-            <td>剛果</td>
-            <td class="data_gc111">0</td>
-            <td class="data_gd111">0</td>
-        </tr>
-        <tr>
-            <td>象牙海岸</td>
-            <td class="data_gc115">0</td>
-            <td class="data_gd115">0</td>
-        </tr>
-        <tr>
-            <td>迦納</td>
-            <td class="data_gc119">0</td>
-            <td class="data_gd119">0</td>
-        </tr>
-        <tr>
-            <td>加彭</td>
-            <td class="data_gc120">0</td>
-            <td class="data_gd120">0</td>
-        </tr>
-        <tr>
-            <td>肯亞</td>
-            <td class="data_gc121">0</td>
-            <td class="data_gd121">0</td>
-        </tr>
-        <tr>
-            <td>衣索比亞</td>
-            <td class="data_gc122">0</td>
-            <td class="data_gd122">0</td>
-        </tr>
-        <tr>
-            <td>幾內亞</td>
-            <td class="data_gc123">0</td>
-            <td class="data_gd123">0</td>
-        </tr>
-        <tr>
-            <td>蘇丹</td>
-            <td class="data_gc124">0</td>
-            <td class="data_gd124">0</td>
-        </tr>
-        <tr>
-            <td>茅利塔尼亞</td>
-            <td class="data_gc135">0</td>
-            <td class="data_gd135">0</td>
-        </tr>
-        <tr>
-            <td>納米比亞</td>
-            <td class="data_gc137">0</td>
-            <td class="data_gd137">0</td>
-        </tr>
-        <tr>
-            <td>塞席爾</td>
-            <td class="data_gc138">0</td>
-            <td class="data_gd138">0</td>
-        </tr>
-        <tr>
-            <td>盧安達</td>
-            <td class="data_gc139">0</td>
-            <td class="data_gd139">0</td>
-        </tr>
-        <tr>
-            <td>史瓦帝尼</td>
-            <td class="data_gc141">0</td>
-            <td class="data_gd141">0</td>
-        </tr>
-        <tr>
-            <td>中非</td>
-            <td class="data_gc142">0</td>
-            <td class="data_gd142">0</td>
-        </tr>
-        <tr>
-            <td>剛果</td>
-            <td class="data_gc143">0</td>
-            <td class="data_gd143">0</td>
-        </tr>
-        <tr>
-            <td>赤道幾內亞</td>
-            <td class="data_gc149">0</td>
-            <td class="data_gd149">0</td>
-        </tr>
-        <tr>
-            <td>利比亞</td>
-            <td class="data_gc150">0</td>
-            <td class="data_gd150">0</td>
-        </tr>
-        <tr>
-            <td>坦尚尼亞</td>
-            <td class="data_gc151">0</td>
-            <td class="data_gd151">0</td>
-        </tr>
-        <tr>
-            <td>索馬利亞</td>
-            <td class="data_gc152">0</td>
-            <td class="data_gd152">0</td>
-        </tr>
-        <tr>
-            <td>貝南</td>
-            <td class="data_gc153">0</td>
-            <td class="data_gd153">0</td>
-        </tr>
-        <tr>
-            <td>賴比瑞亞</td>
-            <td class="data_gc156">0</td>
-            <td class="data_gd156">0</td>
-        </tr>
-        <tr>
-            <td>甘比亞</td>
-            <td class="data_gc157">0</td>
-            <td class="data_gd157">0</td>
-        </tr>
-        <tr>
-            <td>模里西斯</td>
-            <td class="data_gc163">0</td>
-            <td class="data_gd163">0</td>
-        </tr>
-        <tr>
-            <td>尚比亞</td>
-            <td class="data_gc164">0</td>
-            <td class="data_gd164">0</td>
-        </tr>
-        <tr>
-            <td>吉布地</td>
-            <td class="data_gc165">0</td>
-            <td class="data_gd165">0</td>
-        </tr>
-        <tr>
-            <td>查德</td>
-            <td class="data_gc166">0</td>
-            <td class="data_gd166">0</td>
-        </tr>
-        <tr>
-            <td>尼日</td>
-            <td class="data_gc167">0</td>
-            <td class="data_gd167">0</td>
-        </tr>
-        <tr>
-            <td>馬達加斯加</td>
-            <td class="data_gc169">0</td>
-            <td class="data_gd169">0</td>
-        </tr>
-        <tr>
-            <td>維德角</td>
-            <td class="data_gc170">0</td>
-            <td class="data_gd170">0</td>
-        </tr>
-        <tr>
-            <td>辛巴威</td>
-            <td class="data_gc171">0</td>
-            <td class="data_gd171">0</td>
-        </tr>
-        <tr>
-            <td>烏干達</td>
-            <td class="data_gc174">0</td>
-            <td class="data_gd174">0</td>
-        </tr>
-        <tr>
-            <td>厄利垂亞</td>
-            <td class="data_gc176">0</td>
-            <td class="data_gd176">0</td>
-        </tr>
-        <tr>
-            <td>莫三比克</td>
-            <td class="data_gc177">0</td>
-            <td class="data_gd177">0</td>
-        </tr>
-        <tr>
-            <td>安哥拉</td>
-            <td class="data_gc183">0</td>
-            <td class="data_gd183">0</td>
-        </tr>
-        <tr>
-            <td>幾內亞比索</td>
-            <td class="data_gc187">0</td>
-            <td class="data_gd187">0</td>
-        </tr>
-        <tr>
-            <td>馬利</td>
-            <td class="data_gc188">0</td>
-            <td class="data_gd188">0</td>
-        </tr>
-        <tr>
-            <td>波札那</td>
-            <td class="data_gc189">0</td>
-            <td class="data_gd189">0</td>
-        </tr>
-        <tr>
-            <td>獅子山</td>
-            <td class="data_gc190">0</td>
-            <td class="data_gd190">0</td>
-        </tr>
-        <tr>
-            <td>蒲隆地</td>
-            <td class="data_gc191">0</td>
-            <td class="data_gd191">0</td>
-        </tr>
-        <tr>
-            <td>西撒哈拉</td>
-            <td class="data_gc193">0</td>
-            <td class="data_gd193">0</td>
-        </tr>
-        <tr>
-            <td>南蘇丹</td>
-            <td class="data_gc194">0</td>
-            <td class="data_gd194">0</td>
-        </tr>
-        <tr>
-            <td>聖多美普林西比</td>
-            <td class="data_gc206">0</td>
-            <td class="data_gd206">0</td>
-        </tr>
-        <tr>
-            <td>葛摩</td>
-            <td class="data_gc207">0</td>
-            <td class="data_gd207">0</td>
-        </tr>
-        <tr>
-            <td>賴索托</td>
-            <td class="data_gc204">0</td>
-            <td class="data_gd204">0</td>
-        </tr>
-        
-    </tbody>
-`);
+// // 表格：世界疫情 - 非洲
+// $('#dt_global5').append(`
+//     <thead>
+//         <tr>
+//             <th class="th-sm">非洲國家</th>
+//             <th class="th-sm">案例</th>
+//             <th class="th-sm">死亡</th>
+//         </tr>
+//     </thead>
+//     <tbody class="count_global">
+//         <tr>
+//             <td>埃及</td>
+//             <td class="data_gc29">0</td>
+//             <td class="data_gd29">0</td>
+//         </tr>
+//         <tr>
+//             <td>阿爾及利亞</td>
+//             <td class="data_gc41">0</td>
+//             <td class="data_gd41">0</td>
+//         </tr>
+//         <tr>
+//             <td>奈及利亞</td>
+//             <td class="data_gc52">0</td>
+//             <td class="data_gd52">0</td>
+//         </tr>
+//         <tr>
+//             <td>突尼西亞</td>
+//             <td class="data_gc73">0</td>
+//             <td class="data_gd73">0</td>
+//         </tr>
+//         <tr>
+//             <td>塞內加爾</td>
+//             <td class="data_gc74">0</td>
+//             <td class="data_gd74">0</td>
+//         </tr>
+//         <tr>
+//             <td>摩洛哥</td>
+//             <td class="data_gc78">0</td>
+//             <td class="data_gd78">0</td>
+//         </tr>
+//         <tr>
+//             <td>南非</td>
+//             <td class="data_gc84">0</td>
+//             <td class="data_gd84">0</td>
+//         </tr>
+//         <tr>
+//             <td>喀麥隆</td>
+//             <td class="data_gc96">0</td>
+//             <td class="data_gd96">0</td>
+//         </tr>
+//         <tr>
+//             <td>多哥</td>
+//             <td class="data_gc97">0</td>
+//             <td class="data_gd97">0</td>
+//         </tr>
+//         <tr>
+//             <td>布吉納法索</td>
+//             <td class="data_gc108">0</td>
+//             <td class="data_gd108">0</td>
+//         </tr>
+//         <tr>
+//             <td>剛果</td>
+//             <td class="data_gc111">0</td>
+//             <td class="data_gd111">0</td>
+//         </tr>
+//         <tr>
+//             <td>象牙海岸</td>
+//             <td class="data_gc115">0</td>
+//             <td class="data_gd115">0</td>
+//         </tr>
+//         <tr>
+//             <td>迦納</td>
+//             <td class="data_gc119">0</td>
+//             <td class="data_gd119">0</td>
+//         </tr>
+//         <tr>
+//             <td>加彭</td>
+//             <td class="data_gc120">0</td>
+//             <td class="data_gd120">0</td>
+//         </tr>
+//         <tr>
+//             <td>肯亞</td>
+//             <td class="data_gc121">0</td>
+//             <td class="data_gd121">0</td>
+//         </tr>
+//         <tr>
+//             <td>衣索比亞</td>
+//             <td class="data_gc122">0</td>
+//             <td class="data_gd122">0</td>
+//         </tr>
+//         <tr>
+//             <td>幾內亞</td>
+//             <td class="data_gc123">0</td>
+//             <td class="data_gd123">0</td>
+//         </tr>
+//         <tr>
+//             <td>蘇丹</td>
+//             <td class="data_gc124">0</td>
+//             <td class="data_gd124">0</td>
+//         </tr>
+//         <tr>
+//             <td>茅利塔尼亞</td>
+//             <td class="data_gc135">0</td>
+//             <td class="data_gd135">0</td>
+//         </tr>
+//         <tr>
+//             <td>納米比亞</td>
+//             <td class="data_gc137">0</td>
+//             <td class="data_gd137">0</td>
+//         </tr>
+//         <tr>
+//             <td>塞席爾</td>
+//             <td class="data_gc138">0</td>
+//             <td class="data_gd138">0</td>
+//         </tr>
+//         <tr>
+//             <td>盧安達</td>
+//             <td class="data_gc139">0</td>
+//             <td class="data_gd139">0</td>
+//         </tr>
+//         <tr>
+//             <td>史瓦帝尼</td>
+//             <td class="data_gc141">0</td>
+//             <td class="data_gd141">0</td>
+//         </tr>
+//         <tr>
+//             <td>中非</td>
+//             <td class="data_gc142">0</td>
+//             <td class="data_gd142">0</td>
+//         </tr>
+//         <tr>
+//             <td>剛果</td>
+//             <td class="data_gc143">0</td>
+//             <td class="data_gd143">0</td>
+//         </tr>
+//         <tr>
+//             <td>赤道幾內亞</td>
+//             <td class="data_gc149">0</td>
+//             <td class="data_gd149">0</td>
+//         </tr>
+//         <tr>
+//             <td>利比亞</td>
+//             <td class="data_gc150">0</td>
+//             <td class="data_gd150">0</td>
+//         </tr>
+//         <tr>
+//             <td>坦尚尼亞</td>
+//             <td class="data_gc151">0</td>
+//             <td class="data_gd151">0</td>
+//         </tr>
+//         <tr>
+//             <td>索馬利亞</td>
+//             <td class="data_gc152">0</td>
+//             <td class="data_gd152">0</td>
+//         </tr>
+//         <tr>
+//             <td>貝南</td>
+//             <td class="data_gc153">0</td>
+//             <td class="data_gd153">0</td>
+//         </tr>
+//         <tr>
+//             <td>賴比瑞亞</td>
+//             <td class="data_gc156">0</td>
+//             <td class="data_gd156">0</td>
+//         </tr>
+//         <tr>
+//             <td>甘比亞</td>
+//             <td class="data_gc157">0</td>
+//             <td class="data_gd157">0</td>
+//         </tr>
+//         <tr>
+//             <td>模里西斯</td>
+//             <td class="data_gc163">0</td>
+//             <td class="data_gd163">0</td>
+//         </tr>
+//         <tr>
+//             <td>尚比亞</td>
+//             <td class="data_gc164">0</td>
+//             <td class="data_gd164">0</td>
+//         </tr>
+//         <tr>
+//             <td>吉布地</td>
+//             <td class="data_gc165">0</td>
+//             <td class="data_gd165">0</td>
+//         </tr>
+//         <tr>
+//             <td>查德</td>
+//             <td class="data_gc166">0</td>
+//             <td class="data_gd166">0</td>
+//         </tr>
+//         <tr>
+//             <td>尼日</td>
+//             <td class="data_gc167">0</td>
+//             <td class="data_gd167">0</td>
+//         </tr>
+//         <tr>
+//             <td>馬達加斯加</td>
+//             <td class="data_gc169">0</td>
+//             <td class="data_gd169">0</td>
+//         </tr>
+//         <tr>
+//             <td>維德角</td>
+//             <td class="data_gc170">0</td>
+//             <td class="data_gd170">0</td>
+//         </tr>
+//         <tr>
+//             <td>辛巴威</td>
+//             <td class="data_gc171">0</td>
+//             <td class="data_gd171">0</td>
+//         </tr>
+//         <tr>
+//             <td>烏干達</td>
+//             <td class="data_gc174">0</td>
+//             <td class="data_gd174">0</td>
+//         </tr>
+//         <tr>
+//             <td>厄利垂亞</td>
+//             <td class="data_gc176">0</td>
+//             <td class="data_gd176">0</td>
+//         </tr>
+//         <tr>
+//             <td>莫三比克</td>
+//             <td class="data_gc177">0</td>
+//             <td class="data_gd177">0</td>
+//         </tr>
+//         <tr>
+//             <td>安哥拉</td>
+//             <td class="data_gc183">0</td>
+//             <td class="data_gd183">0</td>
+//         </tr>
+//         <tr>
+//             <td>幾內亞比索</td>
+//             <td class="data_gc187">0</td>
+//             <td class="data_gd187">0</td>
+//         </tr>
+//         <tr>
+//             <td>馬利</td>
+//             <td class="data_gc188">0</td>
+//             <td class="data_gd188">0</td>
+//         </tr>
+//         <tr>
+//             <td>波札那</td>
+//             <td class="data_gc189">0</td>
+//             <td class="data_gd189">0</td>
+//         </tr>
+//         <tr>
+//             <td>獅子山</td>
+//             <td class="data_gc190">0</td>
+//             <td class="data_gd190">0</td>
+//         </tr>
+//         <tr>
+//             <td>蒲隆地</td>
+//             <td class="data_gc191">0</td>
+//             <td class="data_gd191">0</td>
+//         </tr>
+//         <tr>
+//             <td>西撒哈拉</td>
+//             <td class="data_gc193">0</td>
+//             <td class="data_gd193">0</td>
+//         </tr>
+//         <tr>
+//             <td>南蘇丹</td>
+//             <td class="data_gc194">0</td>
+//             <td class="data_gd194">0</td>
+//         </tr>
+//         <tr>
+//             <td>聖多美普林西比</td>
+//             <td class="data_gc206">0</td>
+//             <td class="data_gd206">0</td>
+//         </tr>
+//         <tr>
+//             <td>葛摩</td>
+//             <td class="data_gc207">0</td>
+//             <td class="data_gd207">0</td>
+//         </tr>
+//         <tr>
+//             <td>賴索托</td>
+//             <td class="data_gc204">0</td>
+//             <td class="data_gd204">0</td>
+//         </tr>
+
+//     </tbody>
+// `);
 
 
 // 台灣
@@ -2303,7 +2303,7 @@ $('#dt_imp_taiwan').append(`
     <thead>
         <tr>
             <th class="th-sm">國家</th>
-            <th class="th-sm">近外移入</th>
+            <th class="th-sm">境外移入</th>
         </tr>
     </thead>
     <tbody class="count_taiwan">
@@ -2494,6 +2494,10 @@ $('#dt_imp_taiwan').append(`
         <tr>
             <td>阿聯</td>
             <td class="data_imp47">0</td>
+        </tr>
+        <tr>
+            <td>克羅埃西亞</td>
+            <td class="data_imp48">0</td>
         </tr>
     </tbody>
     <tbody>
