@@ -431,7 +431,9 @@ function ajax_gsheet() {
                     duration: 3000,
                     easing: 'swing',
                     step: function (now) {
-                        $(this).text(Math.ceil(now));
+                        console.log(now)
+                        // let newNum = now.toString.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                        $(this).text(Math.floor(now));
                     }
                 });
             });
@@ -447,7 +449,6 @@ function ajax_gsheet() {
                     }
                 });
             });
-
         }
     });
 } ajax_gsheet();
@@ -6064,6 +6065,16 @@ case_data.list = [
         group: 'trp_NA',
         info: '《案603》' + '<br>' + `
             30多歲本國籍女性，因工作長期居住美國（前次自台灣出境日期為今年8月），11月13日與家人一同返國，入境時個案主動告知搭機時自覺出現嗅味覺異常情形，但下機後即恢復，於機場採檢後安排至集中檢疫所，今（15）日確診。
+    
+            `
+    }, {
+        no: '604',
+        case: '604',
+        date: '11/16',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案604》' + '<br>' + `
+        20多歲印尼籍女性，無症狀，11月1日入境後前往集中檢疫所檢疫，11月14日進行檢疫期滿前採檢因檢出陽性於今（16）日確診。
     
             `
     }
