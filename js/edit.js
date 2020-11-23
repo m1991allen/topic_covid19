@@ -339,9 +339,13 @@ function ajax_gsheet() {
             var data_imp47 = data.feed.entry[163].content.$t;
             $('.data_imp47').html(data_imp47);
 
+            // 克羅埃西亞
+            var data_imp49 = data.feed.entry[165].content.$t;
+            $('.data_imp49').html(data_imp49);
+
             // 阿聯
-            var data_imp48 = data.feed.entry[165].content.$t;
-            $('.data_imp48').html(data_imp48);
+            var data_imp49 = data.feed.entry[167].content.$t;
+            $('.data_imp49').html(data_imp49);
 
             // 台灣本土／境外 表格 //
 
