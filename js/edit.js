@@ -6284,7 +6284,7 @@ case_data.list = [
     }, {
         no: '625',
         case: '625',
-        date: '11/25',
+        date: '11/26',
         status: 'default',
         group: 'trp_NA',
         info: '《案625》' + '<br>' + `
@@ -6294,7 +6294,7 @@ case_data.list = [
     }, {
         no: '626',
         case: '626',
-        date: '11/25',
+        date: '11/26',
         status: 'default',
         group: 'trp_A',
         info: '《案626》' + '<br>' + `
