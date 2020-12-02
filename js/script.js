@@ -195,16 +195,16 @@ $(document).ready(function () {
         $(".case_info").css('display', 'none');
     });
 
-    function callCovid19() {
-        $.ajax({
-            url: 'https://2019ncov.asia/api/country_region',
-            method: "GET",
-            dataType: 'json',
-            success: (data) => {
-                console.log(data)
-            }
-        })
-    } callCovid19();
+    // function callCovid19() {
+    //     $.ajax({
+    //         url: 'https://2019ncov.asia/api/country_region',
+    //         method: "GET",
+    //         dataType: 'json',
+    //         success: (data) => {
+    //             console.log(data)
+    //         }
+    //     })
+    // } callCovid19();
 
     //延伸閱讀api
     function ajax_test() {

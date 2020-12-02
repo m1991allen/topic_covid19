@@ -340,12 +340,16 @@ function ajax_gsheet() {
             $('.data_imp47').html(data_imp47);
 
             // 克羅埃西亞
-            var data_imp49 = data.feed.entry[165].content.$t;
-            $('.data_imp49').html(data_imp49);
+            var data_imp48 = data.feed.entry[165].content.$t;
+            $('.data_imp48').html(data_imp48);
 
-            // 阿聯
+            // 迦納
             var data_imp49 = data.feed.entry[167].content.$t;
             $('.data_imp49').html(data_imp49);
+
+            // 白俄羅斯
+            var data_imp50 = data.feed.entry[169].content.$t;
+            $('.data_imp50').html(data_imp50);
 
             // 台灣本土／境外 表格 //
 
@@ -389,8 +393,10 @@ function ajax_gsheet() {
             $('#inc_con').html(data.feed.entry[5].content.$t);
             $('#inc_die').html(data.feed.entry[6].content.$t);
 
+
             //// 台灣 首屏動態數字 ////
-            $('#tw_con').each(function () {
+
+            $('#tw_con').each(function (now) {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
@@ -401,6 +407,15 @@ function ajax_gsheet() {
                     }
                 });
             });
+            setTimeout(() => {
+                segment($('#tw_con')[0].Counter)
+                function segment(orignNum) {
+                    let newNum = String(orignNum)
+                    let addSegNum = newNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                    $('#tw_con')[0].Counter = addSegNum
+                    $('#tw_con').text(addSegNum)
+                }
+            }, 3600)
 
             $('#tw_die').each(function () {
                 $(this).prop('Counter', 0).animate({
@@ -412,6 +427,15 @@ function ajax_gsheet() {
                         $(this).text(Math.ceil(now));
                     }
                 });
+                setTimeout(() => {
+                    segment($('#tw_die')[0].Counter)
+                    function segment(orignNum) {
+                        let newNum = String(orignNum)
+                        let addSegNum = newNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                        $('#tw_die')[0].Counter = addSegNum
+                        $('#tw_die').text(addSegNum)
+                    }
+                }, 3600)
             });
 
             $('#tw_rec').each(function () {
@@ -424,34 +448,63 @@ function ajax_gsheet() {
                         $(this).text(Math.ceil(now));
                     }
                 });
+                setTimeout(() => {
+                    segment($('#tw_rec')[0].Counter)
+                    function segment(orignNum) {
+                        let newNum = String(orignNum)
+                        let addSegNum = newNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                        $('#tw_rec')[0].Counter = addSegNum
+                        $('#tw_rec').text(addSegNum)
+                    }
+                }, 3600)
             });
 
             //// 全球 首屏動態數字 ////
+
+            // function segment(a) {
+            //     a.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            // }
 
             $('#inc_con').each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 3000,
+                    duration: 3500,
                     easing: 'swing',
                     step: function (now) {
-                        console.log(now)
-                        // let newNum = now.toString.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-                        $(this).text(Math.floor(now));
+                        $(this).text(Math.ceil(now));
                     }
                 });
+                setTimeout(() => {
+                    segment($('#inc_con')[0].Counter)
+                    function segment(orignNum) {
+                        let newNum = String(orignNum)
+                        let addSegNum = newNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                        $('#inc_con')[0].Counter = addSegNum
+                        $('#inc_con').text(addSegNum)
+                    }
+                }, 3600)
             });
 
             $('#inc_die').each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 3000,
+                    duration: 3500,
                     easing: 'swing',
                     step: function (now) {
                         $(this).text(Math.ceil(now));
                     }
                 });
+                setTimeout(() => {
+                    segment($('#inc_die')[0].Counter)
+                    function segment(orignNum) {
+                        let newNum = String(orignNum)
+                        let addSegNum = newNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                        $('#inc_die')[0].Counter = addSegNum
+                        $('#inc_die').text(addSegNum)
+                    }
+                }, 3600)
             });
         }
     });
@@ -6799,6 +6852,46 @@ case_data.list = [
         group: 'trp_A',
         info: '《案676》' + '<br>' + `
             印尼籍移工，分別為17女3男，年齡介於20多歲至40多歲，入境日介於11月20日至11月27日，無症狀，經採檢後確診。
+    
+            `
+    }, {
+        no: '677',
+        case: '677',
+        date: '12/1',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案677》' + '<br>' + `
+            菲律賓籍20多歲男性，11月16日來台工作，集中檢疫期間，於11月27日出現流鼻水情形，11月29日進行檢疫期滿前採檢，於今（1）日確診。
+    
+            `
+    }, {
+        no: '678',
+        case: '678',
+        date: '12/1',
+        status: 'default',
+        group: 'trp_A',
+        info: '《案678》' + '<br>' + `
+            印尼籍30多歲女性，11月28日來台工作，入境時主動通報自11月21日起有頭暈症狀，僅自行服藥未就醫，經檢疫人員評估後安排於機場採檢，於今（1）日確診。
+    
+            `
+    }, {
+        no: '679',
+        case: '679',
+        date: '12/1',
+        status: 'default',
+        group: 'trp_EU',
+        info: '《案679》' + '<br>' + `
+            本國籍30多歲男性，長期於英國工作，10月26日出現全身倦怠、流鼻水及鼻塞情形，10月28日於英國當地就醫，經檢驗確診武漢肺炎，後續依當地規定自我隔離10天，隔離期間出現嗅味覺喪失情形。個案11月7日隔離期滿後症狀緩解，11月28日返國，入境時無症狀，並主動告知曾確診武漢肺炎，於機場進行採檢後確診。
+    
+            `
+    }, {
+        no: '680',
+        case: '680',
+        date: '12/1',
+        status: 'default',
+        group: 'trp_EU',
+        info: '《案680》' + '<br>' + `
+            白俄羅斯籍40多歲男性，持有我國居留證，10月中旬返回母國探親，11月13日再次來台工作，入境迄今無疑似症狀。個案檢疫期滿後，於11月30日由公司安排至醫院自費採檢，因檢出陽性於今日（1）確診。
     
             `
     }
