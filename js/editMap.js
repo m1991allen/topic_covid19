@@ -2511,6 +2511,10 @@ $('#dt_imp_taiwan').append(`
             <td>巴基斯坦</td>
             <td class="data_imp51">0</td>
         </tr>
+        <tr>
+            <td>史瓦帝尼</td>
+            <td class="data_imp52">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
