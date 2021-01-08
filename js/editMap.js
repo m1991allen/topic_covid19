@@ -2519,6 +2519,10 @@ $('#dt_imp_taiwan').append(`
             <td>多明尼加</td>
             <td class="data_imp53">0</td>
         </tr>
+        <tr>
+            <td>奈及利亞</td>
+            <td class="data_imp54">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
