@@ -3131,6 +3131,9 @@ $('.time_pc').append(`
         <dl>
             <dt></dt>
             <dd class="dd_3_line">
+
+            <dt>1月12日</dt>
+            <dd class="dd_3_line">新增2本土病例，為照顧確診者醫師及其女友，是台灣首例醫師感染個案
         </dl>
     </div>
     <!-- 全球pc -->
@@ -3138,6 +3141,9 @@ $('.time_pc').append(`
         <dl>
             <dt>1月1日</dt>
             <dd class="dd_3_line">世衛秘書長譚德塞發布新年致詞影片，喊話「隧道的盡頭是光明，我們將一起走向那裡」；美國確診病例突破2000萬
+
+            <dt></dt>
+            <dd class="dd_3_line">
         </dl>
     </div>
 </div>
@@ -3312,6 +3318,12 @@ $('.time_mobile').append(`
 
         <dt>12月23日</dt>
         <dd class="dd_3_line">自英國入境及過去14日有英國旅遊史者，皆至集中檢疫所進行居家檢疫
+    </dl>
+
+    <p class="timeline-year item-4" id="item-4">—— 2021 ——</p> 
+    <dl>
+        <dt>1月12日</dt>
+        <dd class="dd_3_line">新增2本土病例，為照顧確診者醫師及其女友，是台灣首例醫師感染個案
     </dl>
 </div>
 
