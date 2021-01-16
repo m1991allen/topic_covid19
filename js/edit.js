@@ -8544,7 +8544,7 @@ case_data.list = [
     }, {
         no: '844',
         case: '844',
-        date: '1/13',
+        date: '1/15',
         status: 'default',
         group: 'trp_A',
         info: '《案844》' + '<br>' + `
