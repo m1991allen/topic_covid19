@@ -2,11 +2,14 @@ $('.time_mobile').append(`
 <h2>武漢肺炎重點時間軸</h2>
 <div class="timeline">
     <p class="icon_taiwan">台灣</p>
-    
-    <p class="timeline-year">—— 2019 ——</p>
+
+    <p class="timeline-year item-4" id="item-4">—— 2021 ——</p> 
     <dl>
-        <dt>12月31日</dt>
-        <dd class="dd_3_line">疾管署宣布針對武漢直航班機進行登機檢疫</dd>
+        <dt>1月12日</dt>
+        <dd class="dd_3_line">新增2本土病例，為照顧確診者醫師及其女友，是台灣首例醫師感染個案
+
+        <dt>1月18日</dt>
+        <dd class="dd_3_line">醫院群聚累計2醫師、3護理師確診；陳時中公布「北部染疫醫院」為部立桃園醫院，指揮中心駐醫院成立「前進指揮所」，清空相關樓層、全院患者只出不進、取消探病。
     </dl>
 
 
@@ -172,13 +175,10 @@ $('.time_mobile').append(`
 
 
 
-    <p class="timeline-year item-4" id="item-4">—— 2021 ——</p> 
+    <p class="timeline-year">—— 2019 ——</p>
     <dl>
-        <dt>1月12日</dt>
-        <dd class="dd_3_line">新增2本土病例，為照顧確診者醫師及其女友，是台灣首例醫師感染個案
-
-        <dt>1月18日</dt>
-        <dd class="dd_3_line">醫院群聚累計2醫師、2護理師確診；陳時中公布「北部染疫醫院」為部立桃園醫院，指揮中心駐醫院成立「前進指揮所」，清空相關樓層、全院患者只出不進、取消探病。
+        <dt>12月31日</dt>
+        <dd class="dd_3_line">疾管署宣布針對武漢直航班機進行登機檢疫</dd>
     </dl>
 </div>
 
@@ -188,18 +188,11 @@ $('.time_mobile').append(`
 
 <div class="timeline">
     <p class="icon_global">全球</p>
-    <p class="timeline-year">—— 2019 ——</p>
+    
+    <p class="timeline-year item-4" id="item-4">—— 2021 ——</p> 
     <dl>
-        <dt>12月上旬</dt>
-        <dd class="dd_3_line">湖北武漢華南海鮮市場，陸續出現不明肺炎案例。
-
-        <dt>12月30日</dt>
-        <dd class="dd_3_line">網路流傳一張武漢衛健委內部通知，稱武漢出現
-            「不明原因」肺炎，並與華南海鮮市場有關，但
-            相關8人被政府指控造謠。
-
-        <dt>12月31日</dt>
-        <dd>中國向WHO通報，出現27起原因不明肺炎病例。
+        <dt>1月1日</dt>
+        <dd class="dd_3_line">世衛秘書長譚德塞發布新年致詞影片，喊話「隧道的盡頭是光明，我們將一起走向那裡」；美國確診病例突破2000萬
     </dl>
 
 
@@ -362,12 +355,21 @@ $('.time_mobile').append(`
     </dl>
 
 
-    
-    <p class="timeline-year item-4" id="item-4">—— 2021 ——</p> 
+
+    <p class="timeline-year">—— 2019 ——</p>
     <dl>
-        <dt>1月1日</dt>
-        <dd class="dd_3_line">世衛秘書長譚德塞發布新年致詞影片，喊話「隧道的盡頭是光明，我們將一起走向那裡」；美國確診病例突破2000萬
+        <dt>12月上旬</dt>
+        <dd class="dd_3_line">湖北武漢華南海鮮市場，陸續出現不明肺炎案例。
+
+        <dt>12月30日</dt>
+        <dd class="dd_3_line">網路流傳一張武漢衛健委內部通知，稱武漢出現
+            「不明原因」肺炎，並與華南海鮮市場有關，但
+            相關8人被政府指控造謠。
+
+        <dt>12月31日</dt>
+        <dd>中國向WHO通報，出現27起原因不明肺炎病例。
     </dl>
+
 </div>
 
 `);
