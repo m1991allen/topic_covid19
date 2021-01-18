@@ -2,7 +2,7 @@ $('.time_pc').append(`
 <h2> 武漢肺炎重點時間軸</h2>
 
 <p class="timeline-year">—— 2019 ——</p>
-<div class="timeline row">
+<div class="timeline row" id="time1">
     <!-- 台灣pc -->
     <div class="col-md-6">
         <p class="icon_taiwan">台灣</p>
