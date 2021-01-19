@@ -5,6 +5,7 @@ $('.time_pc').append(`
 <div class="timeline row">
     <!-- 台灣pc -->
     <div class="col-md-6">
+        <p class="icon_taiwan">台灣</p> 
         <dl>
             <dt></dt>
             <dd class="dd_3_line">
@@ -18,6 +19,7 @@ $('.time_pc').append(`
     </div>
     <!-- 全球pc -->
     <div class="col-md-6">
+        <p class="icon_global">全球</p>
         <dl>
             <dt>1月1日</dt>
             <dd class="dd_3_line">世衛秘書長譚德塞發布新年致詞影片，喊話「隧道的盡頭是光明，我們將一起走向那裡」；美國確診病例突破2000萬
@@ -597,7 +599,6 @@ $('.time_pc').append(`
 <div class="timeline row" id="time1">
     <!-- 台灣pc -->
     <div class="col-md-6">
-        <p class="icon_taiwan">台灣</p>
         <dl>
             <dt></dt>
             <dd class="dd_3_line">
@@ -612,7 +613,6 @@ $('.time_pc').append(`
 
     <!-- 全球pc -->
     <div class="col-md-6">
-        <p class="icon_global">全球</p>
         <dl>
             <dt>12月上旬</dt>
             <dd class="dd_3_line">湖北武漢華南海鮮市場，陸續出現不明肺炎案例。
