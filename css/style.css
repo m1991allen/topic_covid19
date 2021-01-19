@@ -245,6 +245,15 @@ p.layout {
     color: white;
 }
 
+@media screen and (max-width:500px) {
+    .bar1 {
+        width: 51.68%;
+    }
+    .bar2 {
+        width: 48.32%;
+    }
+}
+
 .guideText {
     margin: 15% 0;
 }
