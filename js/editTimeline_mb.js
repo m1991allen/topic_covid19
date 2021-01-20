@@ -1,5 +1,4 @@
 $('.time_mobile').append(`
-<h2>武漢肺炎重點時間軸</h2>
 <div class="timeline">
     <p class="icon_taiwan">台灣</p>
 
@@ -15,6 +14,7 @@ $('.time_mobile').append(`
 
 
     <p class="timeline-year">—— 2020 ——</p>
+    <div style="height:800px; overflow-y:scroll">
     <dl>
         <dt>1月7日</dt>
         <dd class="dd_3_line">將中國武漢旅遊疫情建議列為「第一級注意（Watch）」
@@ -172,8 +172,7 @@ $('.time_mobile').append(`
         <dt>12月23日</dt>
         <dd class="dd_3_line">自英國入境及過去14日有英國旅遊史者，皆至集中檢疫所進行居家檢疫
     </dl>
-
-
+    </div>
 
     <p class="timeline-year">—— 2019 ——</p>
     <dl>
@@ -198,6 +197,7 @@ $('.time_mobile').append(`
 
 
     <p class="timeline-year">—— 2020 ——</p>
+    <div style="height:800px; overflow-y:scroll">
     <dl>
         <dt>1月7日</dt>
         <dd class="dd_3_line">WHO宣布新病毒並命名為2019新型冠狀病毒（2019-nCoV）
@@ -353,8 +353,7 @@ $('.time_mobile').append(`
         <dt>12月26日</dt>
         <dd>全球確診病例突破8000萬
     </dl>
-
-
+    </div>
 
     <p class="timeline-year">—— 2019 ——</p>
     <dl>

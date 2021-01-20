@@ -1,6 +1,4 @@
 $('.time_pc').append(`
-<h2> 武漢肺炎重點時間軸</h2>
-
 <p class="timeline-year item-4" id="item-4">—— 2021 ——</p>
 <div class="timeline row">
     <!-- 台灣pc -->
@@ -36,7 +34,7 @@ $('.time_pc').append(`
 
 
 <p class="timeline-year">—— 2020 ——</p>
-<div class="timeline row">
+<div class="timeline row" style="height:800px; overflow-y:scroll">
     <!-- 台灣pc -->
     <div class="col-md-6">
         <dl>
@@ -594,9 +592,8 @@ $('.time_pc').append(`
 </div>
 
 
-
 <p class="timeline-year">—— 2019 ——</p>
-<div class="timeline row" id="time1">
+<div class="timeline row">
     <!-- 台灣pc -->
     <div class="col-md-6">
         <dl>
@@ -626,4 +623,5 @@ $('.time_pc').append(`
         </dl>
     </div>
 </div>
+
 `);

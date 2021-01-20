@@ -247,6 +247,31 @@ $(document).ready(function () {
 });
 
 
+// accordion
+
+const btn_display = document.querySelectorAll('.fa-plus-square')
+for (let i = 0; i < btn_display.length; i++) {
+    btn_display[i].addEventListener('click', function () {
+        // 控制按鈕icon
+        if (btn_display[i].classList.contains('fa-plus-square')) {
+            btn_display[i].classList.remove('fa-plus-square')
+            btn_display[i].classList.add('fa-minus-square')
+        }
+        else {
+            btn_display[i].classList.add('fa-plus-square')
+            btn_display[i].classList.remove('fa-minus-square')
+        }
+
+        // 控制疫情關係圖
+        const case_layout = document.querySelectorAll('.case_layout')
+        if (case_layout[i].classList.contains('disable')) {
+            case_layout[i].classList.remove('disable')
+        } else {
+            case_layout[i].classList.add('disable')
+        }
+    })
+}
+
 
 
 
