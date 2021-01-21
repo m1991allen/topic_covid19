@@ -29,8 +29,8 @@ $(document).ready(function () {
     });
     // navbar toggle
     $('#navbarBtn').click(function () {
-        $('#navbar').slideToggle();
-        $('#navbar').css('display', 'flex');
+        $('#navbar').slideToggle("slow");
+        $('#navbar').css('display', 'flexr');
     })
 
 

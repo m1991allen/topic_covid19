@@ -96,12 +96,11 @@ table td {
     position: fixed;
     height: 100vh;
     z-index: 99;
-    transition: .3s;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:998px) {
     #navbarBtn {
-        display: block
+        display: flex
     }
     #navbar {
         display: none;
