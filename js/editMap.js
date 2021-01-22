@@ -1466,6 +1466,10 @@ $('#dt_imp_taiwan').append(`
             <td>奈及利亞</td>
             <td class="data_imp54">0</td>
         </tr>
+        <tr>
+            <td>喀麥隆</td>
+            <td class="data_imp55">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
