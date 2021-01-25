@@ -141,6 +141,24 @@
 
             <img src="img/hospital.png" style="margin:5% 0;max-width:100%;" alt="部桃感染關係圖">
         </section>
+        <!-- 足跡表格 -->
+        <section>
+            <div id="footmap">
+                <ul class="footmap-table">
+                    <li>日期</li>
+                    <li>案例</li>
+                    <li>時間</li>
+                    <li>地點</li>
+                </ul>
+                <hr style="margin:1%; border-top-color: #ebcccc;">
+                <ul v-for="stuff of listArray" class="footmap-table">
+                    <li>{{stuff.date}}</li>
+                    <li>{{stuff.case}}</li>
+                    <li>{{stuff.time}}</li>
+                    <li>{{stuff.site}}</li>
+                </ul>
+            </div>
+        </section>
         <!-- 台灣各地疫情地圖 -->
         <section id="item-1" class="guideText">
             <h2>台灣本土案例分佈</h2>
@@ -416,6 +434,10 @@
     <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
     <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+    <!-- vuejs -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script src="js/data.js"></script>
 
     <!-- customize -->
     <script src="js/editMap.js?ver=202101180830"></script>

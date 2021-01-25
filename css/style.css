@@ -80,10 +80,6 @@ table th {
     background-color: rgb(235, 204, 204);
 }
 
-table td {
-    width: 33.3%
-}
-
 #navbarBtn {
     position: fixed;
     display: none;
@@ -1266,4 +1262,19 @@ footer img {
 
 .HzV7m-b7CEbf .i4ewOd-pzNkMb-tJHJj {
     background-color: #cc6655 !important;
+}
+
+/* 足跡表格 */
+
+#footmap .footmap-table:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: border;
+}
+
+.footmap-table {
+    display: flex;
+}
+
+.footmap-table li {
+    width: 25%;
 }
