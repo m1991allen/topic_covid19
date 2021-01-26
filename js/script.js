@@ -30,7 +30,7 @@ $(document).ready(function () {
     // navbar toggle
     $('#navbarBtn').click(function () {
         $('#navbar').slideToggle("slow");
-        $('#navbar').css('display', 'flexr');
+        $('#navbar').css('display', 'flex');
     })
 
 
