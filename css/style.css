@@ -60,7 +60,7 @@ h5 {
 }
 
 ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 0px;
 }
 
 ul li {
@@ -1275,6 +1275,14 @@ footer img {
     display: flex;
 }
 
-.footmap-table li {
-    width: 33.333%;
+.footmap-table li:nth-child(1) {
+    width: 15%;
+}
+
+.footmap-table li:nth-child(2) {
+    width: 25%;
+}
+
+.footmap-table li:nth-child(3), .footmap-table li:nth-child(4) {
+    width: 30%;
 }
