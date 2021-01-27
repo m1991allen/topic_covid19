@@ -1101,7 +1101,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 
 .case_ex1:before {
-    content: '案例編號';
+    content: '境外移入';
     position: absolute;
 }
 
@@ -1130,6 +1130,14 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .case_ex4:before {
     content: '敦睦艦隊';
     position: absolute;
+}
+
+.spec_case_layout {
+    display: inline-block;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 40px #e6e6e6;
 }
 
 .case_layout {
@@ -1285,4 +1293,8 @@ footer img {
 
 .footmap-table li:nth-child(3), .footmap-table li:nth-child(4) {
     width: 30%;
+}
+
+.ctrl-display {
+    display: none;
 }

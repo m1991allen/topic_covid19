@@ -1146,91 +1146,91 @@ $('#dt_loc_taiwan').append(`
         </tr>
     </thead>
     <tbody class="count_taiwan">
-        <tr>
+        <tr class="ctrl">
             <td>基隆市</td>
             <td class="data_tc1">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>台北市</td>
             <td class="data_tc2">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>新北市</td>
             <td class="data_tc3">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>桃園市</td>
             <td class="data_tc4">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>新竹市</td>
             <td class="data_tc5">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>新竹縣</td>
             <td class="data_tc6">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>苗栗縣</td>
             <td class="data_tc7">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>台中市</td>
             <td class="data_tc8">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>彰化縣</td>
             <td class="data_tc9">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>南投縣</td>
             <td class="data_tc10">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>嘉義市</td>
             <td class="data_tc11">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>嘉義縣</td>
             <td class="data_tc12">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>雲林縣</td>
             <td class="data_tc13">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>台南市</td>
             <td class="data_tc14">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>高雄市</td>
             <td class="data_tc15">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>屏東縣</td>
             <td class="data_tc16">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>宜蘭縣</td>
             <td class="data_tc17">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>花蓮縣</td>
             <td class="data_tc18">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>台東縣</td>
             <td class="data_tc19">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>連江縣</td>
             <td class="data_tc20">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>金門縣</td>
             <td class="data_tc21">0</td>
         </tr>
-        <tr>
+        <tr class="ctrl">
             <td>澎湖縣</td>
             <td class="data_tc22">0</td>
         </tr>
