@@ -1294,7 +1294,3 @@ footer img {
 .footmap-table li:nth-child(3), .footmap-table li:nth-child(4) {
     width: 30%;
 }
-
-.ctrl-display {
-    display: none;
-}
