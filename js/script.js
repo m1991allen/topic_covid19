@@ -183,10 +183,11 @@ $(document).ready(function () {
 
     //台灣疫情關係
     $('.case_i').mousemove(function (e) {
+        // console.log(e.pageX, e.pageY)
         var case_item = $(this).text();
         $('.case_info').css({
-            'top': e.pageY + 20,
-            'left': e.pageX
+            'top': e.pageY + 10,
+            'left': 1800 / 2 - (386 / 2)
         }).fadeIn();
         $('.case_info').html(case_total[case_item - 1].info);
     });
