@@ -187,7 +187,7 @@ $(document).ready(function () {
         var case_item = $(this).text();
         $('.case_info').css({
             'top': e.pageY + 10,
-            'left': 1800 / 2 - 150
+            'left': $(document.body).width() / 2 - 200
         }).fadeIn();
         $('.case_info').html(case_total[case_item - 1].info);
     });
