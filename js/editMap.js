@@ -1470,6 +1470,10 @@ $('#dt_imp_taiwan').append(`
             <td>喀麥隆</td>
             <td class="data_imp55">0</td>
         </tr>
+        <tr>
+            <td>巴西</td>
+            <td class="data_imp56">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
