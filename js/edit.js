@@ -9226,7 +9226,7 @@ case_data.list = [
     }, {
         no: '911',
         case: '911',
-        date: '1/30',
+        date: '1/31',
         status: 'default',
         group: 'trp_A',
         info: '《案911》' + '<br>' + `
@@ -9236,7 +9236,7 @@ case_data.list = [
     }, {
         no: '912',
         case: '912',
-        date: '1/30',
+        date: '1/31',
         status: 'default',
         group: 'trp_A',
         info: '《案912》' + '<br>' + `
