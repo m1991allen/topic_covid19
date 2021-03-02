@@ -222,7 +222,7 @@ $('.map_china').append(`
         <text class="map_china__num is-show" data-title="澳門" x="365.817" y="380.61">10</text> -->
     </g>
     </svg>
-`);
+`)
 
 // // 表格：中共各省 確診/死亡/總數
 // $('#dt_china').append(`
@@ -393,7 +393,7 @@ $('.map_china').append(`
 // `);
 
 // 世界
-// 地圖：世界疫情 
+// 地圖：世界疫情
 $('.wholeNewWorld').append(`
     <svg viewBox="0 0 1009 652" id="wholeNewWorld"> 
     <!-- input 亞洲 -->
@@ -945,7 +945,7 @@ $('.wholeNewWorld').append(`
         </path>
 
     </svg>
-`);
+`)
 
 // 台灣
 // 地圖：台灣疫情
@@ -1474,6 +1474,10 @@ $('#dt_imp_taiwan').append(`
             <td>巴西</td>
             <td class="data_imp56">0</td>
         </tr>
+        <tr>
+            <td>越南</td>
+            <td class="data_imp57">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
@@ -1483,10 +1487,3 @@ $('#dt_imp_taiwan').append(`
     </tbody>
 `)
 //新增新國家
-
-
-
-
-
-
-
