@@ -380,6 +380,10 @@ function ajax_gsheet() {
             var data_imp57 = data.feed.entry[183].content.$t
             $('.data_imp57').html(data_imp57)
 
+            // 巴拉圭
+            var data_imp58 = data.feed.entry[185].content.$t
+            $('.data_imp58').html(data_imp58)
+
             // 台灣本土／境外 表格 //
 
             $('#dt_loc_taiwan').DataTable({
