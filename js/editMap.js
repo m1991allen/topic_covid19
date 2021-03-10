@@ -1482,6 +1482,10 @@ $('#dt_imp_taiwan').append(`
             <td>巴拉圭</td>
             <td class="data_imp58">0</td>
         </tr>
+        <tr>
+            <td>宏都拉斯</td>
+            <td class="data_imp59">0</td>
+        </tr>
     </tbody>
     <tbody>
         <tr>
