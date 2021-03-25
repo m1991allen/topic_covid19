@@ -11,8 +11,32 @@ $('.time_pc').append(`
             <dt>1月12日</dt>
             <dd class="dd_3_line">新增2本土病例，為照顧確診者醫師及其女友，是台灣首例醫師感染個案
 
+            <dt></dt>
+            <dd class="dd_3_line">
+
             <dt>1月18日</dt>
             <dd class="dd_3_line">醫院群聚累計2醫師、3護理師確診；陳時中公布「北部染疫醫院」為部立桃園醫院，指揮中心駐醫院成立「前進指揮所」，清空相關樓層、全院患者只出不進、取消探病。
+
+            <dt></dt>
+            <dd class="dd_3_line">
+
+            <dt>2月7日</dt>
+            <dd class="dd_3_line">部立桃園醫院群聚危機解除，累計20名感染者
+
+            <dt></dt>
+            <dd class="dd_3_line">
+
+            <dt>2月19日</dt>
+            <dd class="dd_3_line">部立桃園醫院恢復營運，隔離、專責病房分階段開放
+
+            <dt>3月3日</dt>
+            <dd class="dd_3_line">台灣首批AZ疫苗運抵桃園機場
+
+            <dt>3月19日</dt>
+            <dd class="dd_3_line">台灣確診數破1000例
+            
+            <dt>3月22日</dt>
+            <dd class="dd_3_line">台灣開始施打AZ疫苗
         </dl>
     </div>
     <!-- 全球pc -->
@@ -21,6 +45,30 @@ $('.time_pc').append(`
         <dl>
             <dt>1月1日</dt>
             <dd class="dd_3_line">世衛秘書長譚德塞發布新年致詞影片，喊話「隧道的盡頭是光明，我們將一起走向那裡」；美國確診病例突破2000萬
+
+            <dt>1月12日</dt>
+            <dd class="dd_3_line">全球確診病例突破9000萬
+
+            <dt>1月14日</dt>
+            <dd class="dd_3_line">WHO團隊抵達中國，隔離14天後將調查疫情源頭
+
+            <dt></dt>
+            <dd class="dd_3_line">
+
+            <dt>1月26日</dt>
+            <dd class="dd_3_line">全球確診病例突破1億
+
+            <dt></dt>
+            <dd class="dd_3_line">
+
+            <dt>2月9日</dt>
+            <dd class="dd_3_line">WHO調查：無足夠證據證明武漢2019年12月前有疫情傳播
+
+            <dt></dt>
+            <dd class="dd_3_line">
+
+            <dt></dt>
+            <dd class="dd_3_line">
 
             <dt></dt>
             <dd class="dd_3_line">
@@ -624,4 +672,4 @@ $('.time_pc').append(`
     </div>
 </div>
 
-`);
+`)
