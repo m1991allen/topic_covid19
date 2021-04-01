@@ -388,6 +388,10 @@ function ajax_gsheet() {
             var data_imp59 = data.feed.entry[187].content.$t
             $('.data_imp59').html(data_imp59)
 
+            // 衣索比亞
+            var data_imp60 = data.feed.entry[189].content.$t
+            $('.data_imp60').html(data_imp60)
+
             // 台灣本土／境外 表格 //
 
             $('#dt_loc_taiwan').DataTable({
