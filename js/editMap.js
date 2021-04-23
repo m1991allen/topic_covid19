@@ -1494,6 +1494,10 @@ $('#dt_imp_taiwan').append(`
             <td>斯洛伐克</td>
             <td class="data_imp61">0</td>
         </tr>
+        <tr>
+            <td>哈薩克</td>
+            <td class="data_imp62">0</td>
+        </tr>
     </tr>
     </tbody>
     <tbody>
