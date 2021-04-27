@@ -11,397 +11,142 @@ function ajax_gsheet() {
             ////////////////
             ///////////////////
             /////// 台灣 /////////
-            ///////本土案例 ////////////
+            ///////本土案例 表格 /////
             ///////////////////////////
 
             // 基隆市
-            var data_tc1 = data.feed.entry[23].content.$t
+            var data_tc1 = data.feed.entry[21].content.$t
             $('.data_tc1').addClass('deg4')
             $('.data_tc1').attr('title', '基隆市：' + data_tc1 + '例')
             $('.data_tc1').html(data_tc1)
 
             // 台北市
-            var data_tc2 = data.feed.entry[25].content.$t
+            var data_tc2 = data.feed.entry[23].content.$t
             $('.data_tc2').addClass('deg2')
             $('.data_tc2').html(data_tc2)
             $('.data_tc2').attr('title', '台北市：' + data_tc2 + '例')
 
             // 新北市
-            var data_tc3 = data.feed.entry[27].content.$t
+            var data_tc3 = data.feed.entry[25].content.$t
             $('.data_tc3').addClass('deg2')
             $('.data_tc3').html(data_tc3)
             $('.data_tc3').attr('title', '新北市：' + data_tc3 + '例')
 
             // 桃園市
-            var data_tc4 = data.feed.entry[29].content.$t
+            var data_tc4 = data.feed.entry[27].content.$t
             $('.data_tc4').addClass('deg1')
             $('.data_tc4').html(data_tc4)
             $('.data_tc4').attr('title', '桃園市：' + data_tc4 + '例')
 
             // 新竹市
-            var data_tc5 = data.feed.entry[31].content.$t
+            var data_tc5 = data.feed.entry[29].content.$t
             $('.data_tc5').addClass('deg3')
             $('.data_tc5').html(data_tc5)
             $('.data_tc5').attr('title', '新竹市：' + data_tc5 + '例')
 
             // 新竹縣
-            var data_tc6 = data.feed.entry[33].content.$t
+            var data_tc6 = data.feed.entry[31].content.$t
             $('.data_tc6').addClass('degNone')
             $('.data_tc6').html(data_tc6)
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例')
 
             // 苗栗縣
-            var data_tc7 = data.feed.entry[35].content.$t
+            var data_tc7 = data.feed.entry[33].content.$t
             $('.data_tc7').addClass('degNone')
             $('.data_tc7').html(data_tc7)
             $('.data_tc7').attr('title', '苗栗縣：' + data_tc7 + '例')
 
             // 台中市
-            var data_tc8 = data.feed.entry[37].content.$t
+            var data_tc8 = data.feed.entry[35].content.$t
             $('.data_tc8').addClass('deg2')
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
             // 彰化縣
-            var data_tc9 = data.feed.entry[39].content.$t
+            var data_tc9 = data.feed.entry[37].content.$t
             $('.data_tc9').addClass('deg2')
             $('.data_tc9').html(data_tc9)
             $('.data_tc9').attr('title', '彰化縣：' + data_tc9 + '例')
 
             // 南投縣
-            var data_tc10 = data.feed.entry[41].content.$t
+            var data_tc10 = data.feed.entry[39].content.$t
             $('.data_tc10').addClass('deg4')
             $('.data_tc10').html(data_tc10)
             $('.data_tc10').attr('title', '南投縣：' + data_tc10 + '例')
 
             // 嘉義市
-            var data_tc11 = data.feed.entry[43].content.$t
+            var data_tc11 = data.feed.entry[41].content.$t
             $('.data_tc11').addClass('degNone')
             $('.data_tc11').html(data_tc11)
             $('.data_tc11').attr('title', '嘉義市：' + data_tc11 + '例')
 
             // 嘉義縣
-            var data_tc12 = data.feed.entry[45].content.$t
+            var data_tc12 = data.feed.entry[43].content.$t
             $('.data_tc12').addClass('degNone')
             $('.data_tc12').html(data_tc12)
             $('.data_tc12').attr('title', '嘉義縣：' + data_tc12 + '例')
 
             // 雲林縣
-            var data_tc13 = data.feed.entry[47].content.$t
+            var data_tc13 = data.feed.entry[45].content.$t
             $('.data_tc13').addClass('degNone')
             $('.data_tc13').html(data_tc13)
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例')
 
             // 台南市
-            var data_tc14 = data.feed.entry[49].content.$t
+            var data_tc14 = data.feed.entry[47].content.$t
             $('.data_tc14').addClass('deg4')
             $('.data_tc14').html(data_tc14)
             $('.data_tc14').attr('title', '台南市：' + data_tc14 + '例')
 
             // 高雄市
-            var data_tc15 = data.feed.entry[51].content.$t
+            var data_tc15 = data.feed.entry[49].content.$t
             $('.data_tc15').addClass('degNone')
             $('.data_tc15').html(data_tc15)
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例')
 
             // 屏東縣
-            var data_tc16 = data.feed.entry[53].content.$t
+            var data_tc16 = data.feed.entry[51].content.$t
             $('.data_tc16').addClass('degNone')
             $('.data_tc16').html(data_tc16)
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例')
 
             // 宜蘭縣
-            var data_tc17 = data.feed.entry[55].content.$t
+            var data_tc17 = data.feed.entry[53].content.$t
             $('.data_tc17').addClass('degNone')
             $('.data_tc17').html(data_tc17)
             $('.data_tc17').attr('title', '宜蘭縣：' + data_tc17 + '例')
 
             // 花蓮縣
-            var data_tc18 = data.feed.entry[57].content.$t
+            var data_tc18 = data.feed.entry[55].content.$t
             $('.data_tc18').addClass('degNone')
             $('.data_tc18').html(data_tc18)
             $('.data_tc18').attr('title', '花蓮縣：' + data_tc18 + '例')
 
             // 台東縣
-            var data_tc19 = data.feed.entry[59].content.$t
+            var data_tc19 = data.feed.entry[57].content.$t
             $('.data_tc19').addClass('degNone')
             $('.data_tc19').html(data_tc19)
             $('.data_tc19').attr('title', '台東縣：' + data_tc19 + '例')
 
             // 連江縣
-            var data_tc20 = data.feed.entry[61].content.$t
+            var data_tc20 = data.feed.entry[59].content.$t
             $('.data_tc20').addClass('degNone')
             $('.data_tc20').html(data_tc20)
             $('.data_tc20').attr('title', '連江縣：' + data_tc20 + '例')
 
             // 金門縣
-            var data_tc21 = data.feed.entry[63].content.$t
+            var data_tc21 = data.feed.entry[61].content.$t
             $('.data_tc21').addClass('degNone')
             $('.data_tc21').html(data_tc21)
             $('.data_tc21').attr('title', '金門縣：' + data_tc21 + '例')
 
             // 澎湖縣
-            var data_tc22 = data.feed.entry[65].content.$t
+            var data_tc22 = data.feed.entry[63].content.$t
             $('.data_tc22').addClass('degNone')
             $('.data_tc22').html(data_tc22)
             $('.data_tc22').attr('title', '澎湖縣：' + data_tc22 + '例')
 
-            ////////////////
-            ///////////////////
-            /////// 台灣 /////////
-            ///////境外移入 ////////////
-            ///////////////////////////
-
-            // 其他（磐石艦）
-            var data_imp1 = data.feed.entry[71].content.$t
-            $('.data_imp1').html(data_imp1)
-
-            // 美國
-            var data_imp2 = data.feed.entry[73].content.$t
-            $('.data_imp2').html(data_imp2)
-
-            // 英國
-            var data_imp3 = data.feed.entry[75].content.$t
-            $('.data_imp3').html(data_imp3)
-
-            // 菲律賓
-            var data_imp4 = data.feed.entry[77].content.$t
-            $('.data_imp4').html(data_imp4)
-
-            // 法國
-            var data_imp5 = data.feed.entry[79].content.$t
-            $('.data_imp5').html(data_imp5)
-
-            // 西班牙
-            var data_imp6 = data.feed.entry[81].content.$t
-            $('.data_imp6').html(data_imp6)
-
-            // 土耳其
-            var data_imp7 = data.feed.entry[83].content.$t
-            $('.data_imp7').html(data_imp7)
-
-            // 埃及
-            var data_imp8 = data.feed.entry[85].content.$t
-            $('.data_imp8').html(data_imp8)
-
-            // 中國
-            var data_imp9 = data.feed.entry[87].content.$t
-            $('.data_imp9').html(data_imp9)
-
-            // 奧地利
-            var data_imp10 = data.feed.entry[89].content.$t
-            $('.data_imp10').html(data_imp10)
-
-            // 印尼
-            var data_imp11 = data.feed.entry[91].content.$t
-            $('.data_imp11').html(data_imp11)
-
-            // 荷蘭
-            var data_imp12 = data.feed.entry[93].content.$t
-            $('.data_imp12').html(data_imp12)
-
-            // 捷克
-            var data_imp13 = data.feed.entry[95].content.$t
-            $('.data_imp13').html(data_imp13)
-
-            // 德國
-            var data_imp14 = data.feed.entry[97].content.$t
-            $('.data_imp14').html(data_imp14)
-
-            // 瑞士
-            var data_imp15 = data.feed.entry[99].content.$t
-            $('.data_imp15').html(data_imp15)
-
-            // 義大利
-            var data_imp16 = data.feed.entry[101].content.$t
-            $('.data_imp16').html(data_imp16)
-
-            // 南非
-            var data_imp17 = data.feed.entry[103].content.$t
-            $('.data_imp17').html(data_imp17)
-
-            // 智利
-            var data_imp18 = data.feed.entry[105].content.$t
-            $('.data_imp18').html(data_imp18)
-
-            // 愛爾蘭
-            var data_imp19 = data.feed.entry[107].content.$t
-            $('.data_imp19').html(data_imp19)
-
-            // 日本
-            var data_imp20 = data.feed.entry[109].content.$t
-            $('.data_imp20').html(data_imp20)
-
-            // 孟加拉
-            var data_imp21 = data.feed.entry[111].content.$t
-            $('.data_imp21').html(data_imp21)
-
-            // 加拿大
-            var data_imp22 = data.feed.entry[113].content.$t
-            $('.data_imp22').html(data_imp22)
-
-            // 冰島
-            var data_imp23 = data.feed.entry[115].content.$t
-            $('.data_imp23').html(data_imp23)
-
-            // 墨西哥
-            var data_imp24 = data.feed.entry[117].content.$t
-            $('.data_imp24').html(data_imp24)
-
-            // 摩洛哥
-            var data_imp25 = data.feed.entry[119].content.$t
-            $('.data_imp25').html(data_imp25)
-
-            // 阿根廷
-            var data_imp26 = data.feed.entry[121].content.$t
-            $('.data_imp26').html(data_imp26)
-
-            // 澳洲
-            var data_imp27 = data.feed.entry[123].content.$t
-            $('.data_imp27').html(data_imp27)
-
-            // 比利時
-            var data_imp28 = data.feed.entry[125].content.$t
-            $('.data_imp28').html(data_imp28)
-
-            // 丹麥
-            var data_imp29 = data.feed.entry[127].content.$t
-            $('.data_imp29').html(data_imp29)
-
-            // 瓜地馬拉
-            var data_imp30 = data.feed.entry[129].content.$t
-            $('.data_imp30').html(data_imp30)
-
-            // 香港
-            var data_imp31 = data.feed.entry[131].content.$t
-            $('.data_imp31').html(data_imp31)
-
-            // 紐西蘭
-            var data_imp32 = data.feed.entry[133].content.$t
-            $('.data_imp32').html(data_imp32)
-
-            // 卡達
-            var data_imp33 = data.feed.entry[135].content.$t
-            $('.data_imp33').html(data_imp33)
-
-            // 塞內加爾
-            var data_imp34 = data.feed.entry[137].content.$t
-            $('.data_imp34').html(data_imp34)
-
-            // 希臘
-            var data_imp35 = data.feed.entry[139].content.$t
-            $('.data_imp35').html(data_imp35)
-
-            // 賴索托
-            var data_imp36 = data.feed.entry[141].content.$t
-            $('.data_imp36').html(data_imp36)
-
-            // 澳門
-            var data_imp37 = data.feed.entry[143].content.$t
-            $('.data_imp37').html(data_imp37)
-
-            // 馬來西亞
-            var data_imp38 = data.feed.entry[145].content.$t
-            $('.data_imp38').html(data_imp38)
-
-            // 阿曼
-            var data_imp39 = data.feed.entry[147].content.$t
-            $('.data_imp39').html(data_imp39)
-
-            // 波蘭
-            var data_imp40 = data.feed.entry[149].content.$t
-            $('.data_imp40').html(data_imp40)
-
-            // 泰國
-            var data_imp41 = data.feed.entry[151].content.$t
-            $('.data_imp41').html(data_imp41)
-
-            // 俄羅斯
-            var data_imp42 = data.feed.entry[153].content.$t
-            $('.data_imp42').html(data_imp42)
-
-            // 尼泊爾
-            var data_imp43 = data.feed.entry[155].content.$t
-            $('.data_imp43').html(data_imp43)
-
-            // 緬甸
-            var data_imp44 = data.feed.entry[157].content.$t
-            $('.data_imp44').html(data_imp44)
-
-            // 印度
-            var data_imp45 = data.feed.entry[159].content.$t
-            $('.data_imp45').html(data_imp45)
-
-            // 烏克蘭
-            var data_imp46 = data.feed.entry[161].content.$t
-            $('.data_imp46').html(data_imp46)
-
-            // 阿聯
-            var data_imp47 = data.feed.entry[163].content.$t
-            $('.data_imp47').html(data_imp47)
-
-            // 克羅埃西亞
-            var data_imp48 = data.feed.entry[165].content.$t
-            $('.data_imp48').html(data_imp48)
-
-            // 迦納
-            var data_imp49 = data.feed.entry[167].content.$t
-            $('.data_imp49').html(data_imp49)
-
-            // 白俄羅斯
-            var data_imp50 = data.feed.entry[169].content.$t
-            $('.data_imp50').html(data_imp50)
-
-            // 巴基斯坦
-            var data_imp51 = data.feed.entry[171].content.$t
-            $('.data_imp51').html(data_imp51)
-
-            // 史瓦帝尼
-            var data_imp52 = data.feed.entry[173].content.$t
-            $('.data_imp52').html(data_imp52)
-
-            // 多明尼加
-            var data_imp53 = data.feed.entry[175].content.$t
-            $('.data_imp53').html(data_imp53)
-
-            // 奈及利亞
-            var data_imp54 = data.feed.entry[177].content.$t
-            $('.data_imp54').html(data_imp54)
-
-            // 喀麥隆
-            var data_imp55 = data.feed.entry[179].content.$t
-            $('.data_imp55').html(data_imp55)
-
-            // 巴西
-            var data_imp56 = data.feed.entry[181].content.$t
-            $('.data_imp56').html(data_imp56)
-
-            // 越南
-            var data_imp57 = data.feed.entry[183].content.$t
-            $('.data_imp57').html(data_imp57)
-
-            // 巴拉圭
-            var data_imp58 = data.feed.entry[185].content.$t
-            $('.data_imp58').html(data_imp58)
-
-            // 宏都拉斯
-            var data_imp59 = data.feed.entry[187].content.$t
-            $('.data_imp59').html(data_imp59)
-
-            // 衣索比亞
-            var data_imp60 = data.feed.entry[189].content.$t
-            $('.data_imp60').html(data_imp60)
-
-            // 斯洛伐克
-            var data_imp61 = data.feed.entry[191].content.$t
-            $('.data_imp61').html(data_imp61)
-
-            // 哈薩克
-            var data_imp62 = data.feed.entry[193].content.$t
-            $('.data_imp62').html(data_imp62)
-
-            // 台灣本土／境外 表格 //
-
+            // 台灣本土／境外 表格控制 //
             $('#dt_loc_taiwan').DataTable({
                 paging: false,
                 searching: false,
@@ -427,14 +172,6 @@ function ajax_gsheet() {
                 destroy: true,
             })
 
-            // 總數-本土案例 變數：tc-local
-            var data_tcloc = data.feed.entry[21].content.$t
-            $('.data_tcloc').html(data_tcloc)
-
-            // 總數-境外移入 變數：tc-import
-            var data_tcimp = data.feed.entry[69].content.$t
-            $('.data_tcimp').html(data_tcimp)
-
             //// 台灣總和 ////
             $('#count_recently_taiwan').html(data.feed.entry[11].content.$t)
             $('#count_sumConfirm_taiwan').html(data.feed.entry[13].content.$t)
@@ -445,6 +182,23 @@ function ajax_gsheet() {
             //// 全球總合 ////
             $('#inc_con').html(data.feed.entry[5].content.$t)
             $('#inc_die').html(data.feed.entry[6].content.$t)
+
+            // 總數
+            // 本土案例 變數：tc-local
+            var data_tcloc = data.feed.entry[67].content.$t
+            $('.data_tcloc').html(data_tcloc)
+
+            // 境外移入 變數：tc-import
+            var data_tcimp = data.feed.entry[69].content.$t
+            $('.data_tcimp').html(data_tcimp)
+
+            // 其他（敦睦36 + 航空2 + 不明1）
+            var data_imp1 = data.feed.entry[71].content.$t
+            $('.data_imp1').html(data_imp1)
+
+            // 華航機組染疫
+            var data_imp2 = data.feed.entry[73].content.$t
+            $('.data_imp2').html(data_imp2)
 
             //// 台灣 首屏動態數字 ////
 
@@ -15493,6 +15247,252 @@ case_data.list = [
             '<br>' +
             `
             比利時籍40多歲男性，今年4月6日來臺工作，持有搭機前3日內檢驗陰性報告，入境後至防疫旅館進行檢疫，4月20日出現頭痛、喉嚨痛、流鼻水及嗅味覺異常等症狀，隔日由衛生單位安排就醫採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1090',
+        case: '1090',
+        date: '4/23',
+        status: 'default',
+        group: 'trp_OC',
+        info:
+            '《案1090》' +
+            '<br>' +
+            `
+            我國今（2021）年4月21日接獲我國某航空公司通報，該公司1名印尼籍40多歲男性貨機機師，4月20日執勤至澳洲時，自覺出現喉嚨癢情形，並於當地檢出COVID-19陽性。
+
+            案1090為印尼籍10多歲男性，為該名機師之同住家人，近期無出國史，4月21日匡列為居家隔離接觸者，並由衛生單位安排就醫採檢，4月22日出現喉嚨乾痛、暈眩等症狀，經採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1091',
+        case: '1091',
+        date: '4/23',
+        status: 'default',
+        group: 'trp_OC',
+        info:
+            '《案1091》' +
+            '<br>' +
+            `
+            我國今（2021）年4月21日接獲我國某航空公司通報，該公司1名印尼籍40多歲男性貨機機師，4月20日執勤至澳洲時，自覺出現喉嚨癢情形，並於當地檢出COVID-19陽性。
+
+            案1091為印尼籍50多歲男性，為該名機師之同事，4月4日至4月10日曾執勤至美國，期間無症狀，返臺後於4月15日進行檢疫期滿採檢，結果為陰性；個案4月16日自覺有疲憊、身體微熱情形，同日中午與該機師及案1090一同於台北清真寺活動，4月18日出現輕微咳嗽症狀，經服藥後症狀改善，因預計返回印尼探親，4月21日進行自費採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1092',
+        case: '1092',
+        date: '4/24',
+        status: 'default',
+        group: 'trp_OC',
+        info:
+            '《案1092》' +
+            '<br>' +
+            `
+            我國今（2021）年4月21日接獲我國某航空公司通報，該公司1名印尼籍40多歲男性貨機機師，4月20日執勤至澳洲時，自覺出現喉嚨癢情形，並於當地檢出COVID-19陽性。
+
+            案1092為本國籍40多歲男性，為該航空公司之貨機機組員，個案今年4月9日至4月16日曾執勤至紐西蘭及荷蘭，因出勤需求曾於4月9日及13日進行採檢，結果皆為陰性，出勤期間無症狀，返臺後於4月19日進行檢疫期滿採檢，結果為陰性；個案4月22日執勤往返日本，返臺後於住家居家檢疫，同日下午因指揮中心針對澳洲檢出陽性機師之接觸者進行回溯採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1093',
+        case: '1093',
+        date: '4/24',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1093》' +
+            '<br>' +
+            `
+            菲律賓籍20多歲男性，今（2021）年3月17日來臺工作，持有搭機前3日內檢驗陰性報告，入境後至集中檢疫所進行檢疫，期間並無症狀及期滿採檢為陰性；個案於4月7日因同行移工確診（案1054）進行居家隔離，於4月11日解除後進行自主健康管理，因工作需要，4月22日由公司安排至醫院自費採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1094',
+        case: '1094',
+        date: '4/24',
+        status: 'case_s2',
+        group: 'trp_A',
+        info:
+            '《案1094》' +
+            '<br>' +
+            `
+            本國籍70多歲男性，長期居住菲律賓，並於今年4月8日來臺，持有搭機前3日內檢驗陰性報告，入境後至防疫旅館進行檢疫，4月19日因心情不佳無食慾等狀況，由衛生局安排就醫，因無發燒及呼吸道相關症狀，故無採檢並返回旅館繼續檢疫，4月21日因個案未領早餐，旅館人員發現個案已無心跳，經法醫採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1095',
+        case: '1095',
+        date: '4/24',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1095》' +
+            '<br>' +
+            `
+            印度籍20多歲男性學生，今年4月8日首次來臺，持有搭機前3日內檢驗陰性報告，入境後至防疫旅館檢疫至4月22日，期滿後隔日由學校專案安排至醫院採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1096',
+        case: '1096',
+        date: '4/24',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1096》' +
+            '<br>' +
+            `
+            印尼籍20多歲男性學生，今年4月8日首次來臺，持有搭機前3日內檢驗陰性報告，入境後至防疫旅館檢疫至4月22日，期滿後隔日由學校專案安排至醫院採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1097',
+        case: '1097',
+        date: '4/24',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1097》' +
+            '<br>' +
+            `
+            印尼籍30多歲男性漁工，4月22日來臺工作，持有搭機前3日內檢驗陰性報告，入境後至集中檢疫所檢疫，4月23日因有咳嗽症狀，由集中檢疫所安排採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1098',
+        case: '1098',
+        date: '4/24',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1098》' +
+            '<br>' +
+            `
+            菲律賓籍20多歲女性移工，今年3月26日來臺工作，持有搭機前3日內檢驗陰性報告，入境後至集中檢疫所檢疫，4月8日接受檢疫期滿前採檢陰性；因工作需要，個案於4月23日至醫院自費採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1099',
+        case: '1099',
+        date: '4/25',
+        status: 'default',
+        group: 'trp_NA',
+        info:
+            '《案1099》' +
+            '<br>' +
+            `
+            本國籍40多歲男性，今（2021）年2月3日至墨西哥洽公，4月12日至16日停留美國，於4月18日抵臺，持有搭機前3日內檢驗陰性報告，入境後至防疫旅館進行檢疫；4月22日因出現發燒及咳嗽症狀，由衛生單位安排至醫院就醫採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1100',
+        case: '1100',
+        date: '4/25',
+        status: 'default',
+        group: 'trp_NA',
+        info:
+            '《案1100》' +
+            '<br>' +
+            `
+            本國籍50多歲男性，為該航空公司之貨機機組員，個案今（2021）年4月13日至4月17日曾執勤至美國，4月18日抵臺，居家檢疫3天，4月21由公司安排自費期滿採檢，結果為陰性；4月22日因指揮中心針對澳洲檢出陽性機師之接觸者進行回溯採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1101',
+        case: '1101',
+        date: '4/25',
+        status: 'default',
+        group: 'trp_EU',
+        info:
+            '《案1101》' +
+            '<br>' +
+            `
+            本國籍30多歲男性，同為該航空公司之貨機機師，於今年4月18日與另3名機組員一同執勤至德國，並由公司安排於當地旅館檢疫，4月22日返臺後進行3天居家檢疫，4月24日檢疫期滿後由公司安排採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1102',
+        case: '1102',
+        date: '4/26',
+        status: 'default',
+        group: 'trp_NA',
+        info:
+            '《案1102》' +
+            '<br>' +
+            `
+            本國籍30多歲男性，為該航空公司貨機機師，個案今（2021）年4月6日至4月9日曾執勤美國，返臺後居家檢疫至4月14日，採檢結果為陰性，在臺期間並無症狀；4月19日至4月22日再次執勤至美國，返臺後於住家進行居家檢疫，4月24日出現咳嗽、發燒等症狀，4月25日進行期滿前採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1103',
+        case: '1103',
+        date: '4/25',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1103》' +
+            '<br>' +
+            `
+            緬甸籍40多歲男性，多次航行往返日本及菲律賓2國，4月22日出現發燒、肌肉痛、疲勞及呼吸喘等症狀，個案自出現症狀起，便分別單獨於艙房內隔離，並於4月24日該船停靠我國後，經衛生單位安排就醫採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1104',
+        case: '1104',
+        date: '4/25',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1104》' +
+            '<br>' +
+            `
+            中國籍40多歲男性，今年3月自日本登船，4月23日出現發燒及咳嗽症狀，個案自出現症狀起，便分別單獨於艙房內隔離，並於4月24日該船停靠我國後，經衛生單位安排就醫採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1105',
+        case: '1105',
+        date: '4/25',
+        status: 'default',
+        group: 'trp_NA',
+        info:
+            '《案1105》' +
+            '<br>' +
+            `
+            本國籍40多歲男性，為該航空公司貨機機師，個案今年4月8日至4月10日曾執勤美國，返臺後居家檢疫至4月15日，採檢結果為陰性，檢疫期間並無症狀；4月25日因飛航機師採檢專案進行採檢後確診。
 
         
             `,

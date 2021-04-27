@@ -1235,275 +1235,30 @@ $('#dt_loc_taiwan').append(`
             <td class="data_tc22">0</td>
         </tr>
     </tbody>
-    <tbody>
-        <tr>
-            <th class="th-sm">本土總和</th>
-            <th class="th-sm data_tcloc"></th>
-        </tr>
-    </tbody>
 `)
 $('#dt_imp_taiwan').append(`
     <thead>
         <tr>
-            <th class="th-sm">國家</th>
-            <th class="th-sm">境外移入</th>
+            <th class="th-sm">案例項目</th>
+            <th class="th-sm">案例數</th>
         </tr>
     </thead>
-    <tbody class="count_taiwan">
-        <tr>
-            <td>其他</td>
-            <td class="data_imp1">0</td>
-        </tr>
-        <tr>
-            <td>美國</td>
-            <td class="data_imp2">0</td>
-        </tr>
-        <tr>
-            <td>英國</td>
-            <td class="data_imp3">0</td>
-        </tr>
-        <tr>
-            <td>菲律賓</td>
-            <td class="data_imp4">0</td>
-        </tr>
-        <tr>
-            <td>法國</td>
-            <td class="data_imp5">0</td>
-        </tr>
-        <tr>
-            <td>西班牙</td>
-            <td class="data_imp6">0</td>
-        </tr>
-        <tr>
-            <td>土耳其</td>
-            <td class="data_imp7">0</td>
-        </tr>
-        <tr>
-            <td>埃及</td>
-            <td class="data_imp8">0</td>
-        </tr>
-        <tr>
-            <td>中國</td>
-            <td class="data_imp9">0</td>
-        </tr>
-        <tr>
-            <td>奧地利</td>
-            <td class="data_imp10">0</td>
-        </tr>
-        <tr>
-            <td>印尼</td>
-            <td class="data_imp11">0</td>
-        </tr>
-        <tr>
-            <td>荷蘭</td>
-            <td class="data_imp12">0</td>
-        </tr>
-        <tr>
-            <td>捷克</td>
-            <td class="data_imp13">0</td>
-        </tr>
-        <tr>
-            <td>德國</td>
-            <td class="data_imp14">0</td>
-        </tr>
-        <tr>
-            <td>瑞士</td>
-            <td class="data_imp15">0</td>
-        </tr>
-        <tr>
-            <td>義大利</td>
-            <td class="data_imp16">0</td>
-        </tr>
-        <tr>
-            <td>南非</td>
-            <td class="data_imp17">0</td>
-        </tr>
-        <tr>
-            <td>智利</td>
-            <td class="data_imp18">0</td>
-        </tr>
-        <tr>
-            <td>愛爾蘭</td>
-            <td class="data_imp19">0</td>
-        </tr>
-        <tr>
-            <td>日本</td>
-            <td class="data_imp20">0</td>
-        </tr>
-        <tr>
-            <td>孟加拉</td>
-            <td class="data_imp21">0</td>
-        </tr>
-        <tr>
-            <td>加拿大</td>
-            <td class="data_imp22">0</td>
-        </tr>
-        <tr>
-            <td>冰島</td>
-            <td class="data_imp23">0</td>
-        </tr>
-        <tr>
-            <td>墨西哥</td>
-            <td class="data_imp24">0</td>
-        </tr>
-        <tr>
-            <td>摩洛哥</td>
-            <td class="data_imp25">0</td>
-        </tr>
-        <tr>
-            <td>阿根廷</td>
-            <td class="data_imp26">0</td>
-        </tr>
-        <tr>
-            <td>澳洲</td>
-            <td class="data_imp27">0</td>
-        </tr>
-        <tr>
-            <td>比利時</td>
-            <td class="data_imp28">0</td>
-        </tr>
-        <tr>
-            <td>丹麥</td>
-            <td class="data_imp29">0</td>
-        </tr>
-        <tr>
-            <td>瓜地馬拉</td>
-            <td class="data_imp30">0</td>
-        </tr>
-        <tr>
-            <td>香港</td>
-            <td class="data_imp31">0</td>
-        </tr>
-        <tr>
-            <td>紐西蘭</td>
-            <td class="data_imp32">0</td>
-        </tr>
-        <tr>
-            <td>卡達</td>
-            <td class="data_imp33">0</td>
-        </tr>
-        <tr>
-            <td>塞內加爾</td>
-            <td class="data_imp34">0</td>
-        </tr>
-        <tr>
-            <td>希臘</td>
-            <td class="data_imp35">0</td>
-        </tr>
-        <tr>
-            <td>賴索托</td>
-            <td class="data_imp36">0</td>
-        </tr>
-        <tr>
-            <td>澳門</td>
-            <td class="data_imp37">0</td>
-        </tr>
-        <tr>
-            <td>馬來西亞</td>
-            <td class="data_imp38">0</td>
-        </tr>
-        <tr>
-            <td>阿曼</td>
-            <td class="data_imp39">0</td>
-        </tr>
-        <tr>
-            <td>波蘭</td>
-            <td class="data_imp40">0</td>
-        </tr>
-        <tr>
-            <td>泰國</td>
-            <td class="data_imp41">0</td>
-        </tr>
-        <tr>
-            <td>俄羅斯</td>
-            <td class="data_imp42">0</td>
-        </tr>
-        <tr>
-            <td>尼泊爾</td>
-            <td class="data_imp43">0</td>
-        </tr>
-        <tr>
-            <td>緬甸</td>
-            <td class="data_imp44">0</td>
-        </tr>
-        <tr>
-            <td>印度</td>
-            <td class="data_imp45">0</td>
-        </tr>
-        <tr>
-            <td>烏克蘭</td>
-            <td class="data_imp46">0</td>
-        </tr>
-        <tr>
-            <td>阿聯</td>
-            <td class="data_imp47">0</td>
-        </tr>
-        <tr>
-            <td>克羅埃西亞</td>
-            <td class="data_imp48">0</td>
-        </tr>
-        <tr>
-            <td>迦納</td>
-            <td class="data_imp49">0</td>
-        </tr>
-        <tr>
-            <td>白俄羅斯</td>
-            <td class="data_imp50">0</td>
-        </tr>
-        <tr>
-            <td>巴基斯坦</td>
-            <td class="data_imp51">0</td>
-        </tr>
-        <tr>
-            <td>史瓦帝尼</td>
-            <td class="data_imp52">0</td>
-        </tr>
-        <tr>
-            <td>多明尼加</td>
-            <td class="data_imp53">0</td>
-        </tr>
-        <tr>
-            <td>奈及利亞</td>
-            <td class="data_imp54">0</td>
-        </tr>
-        <tr>
-            <td>喀麥隆</td>
-            <td class="data_imp55">0</td>
-        </tr>
-        <tr>
-            <td>巴西</td>
-            <td class="data_imp56">0</td>
-        </tr>
-        <tr>
-            <td>越南</td>
-            <td class="data_imp57">0</td>
-        </tr>
-        <tr>
-            <td>巴拉圭</td>
-            <td class="data_imp58">0</td>
-        </tr>
-        <tr>
-            <td>宏都拉斯</td>
-            <td class="data_imp59">0</td>
-        </tr>
-        <tr>
-            <td>衣索比亞</td>
-            <td class="data_imp60">0</td>
-        </tr>
-        <tr>
-            <td>斯洛伐克</td>
-            <td class="data_imp61">0</td>
-        </tr>
-        <tr>
-            <td>哈薩克</td>
-            <td class="data_imp62">0</td>
-        </tr>
-    </tr>
-    </tbody>
     <tbody>
         <tr>
-            <th class="th-sm">境外總和</th>
+            <th class="th-sm">本土案例</th>
+            <th class="th-sm data_tcloc"></th>
+        </tr>
+        <tr>
+            <th class="th-sm">境外移入</th>
             <th class="th-sm data_tcimp"></th>
+        </tr>
+        <tr>
+            <th class="th-sm">其他</th>
+            <th class="th-sm data_imp1"></th>
+        </tr>
+        <tr>
+            <th class="th-sm">華航機組染疫</th>
+            <th class="th-sm data_imp2"></th>
         </tr>
     </tbody>
 `)
