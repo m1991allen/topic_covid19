@@ -1245,20 +1245,28 @@ $('#dt_imp_taiwan').append(`
     </thead>
     <tbody>
         <tr>
-            <th class="th-sm">本土案例</th>
-            <th class="th-sm data_tcloc"></th>
+            <td class="th-sm">本土案例</td>
+            <td class="th-sm data_tcloc"></td>
         </tr>
         <tr>
-            <th class="th-sm">境外移入</th>
-            <th class="th-sm data_tcimp"></th>
+            <td class="th-sm">境外移入</td>
+            <td class="th-sm data_tcimp"></td>
         </tr>
         <tr>
-            <th class="th-sm">其他</th>
-            <th class="th-sm data_imp1"></th>
+            <td class="th-sm">磐石艦</td>
+            <td class="th-sm data_imp1"></td>
         </tr>
         <tr>
-            <th class="th-sm">華航機組染疫</th>
-            <th class="th-sm data_imp2"></th>
+            <td class="th-sm">華航機組染疫</td>
+            <td class="th-sm data_imp2"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">航空器感染</td>
+            <td class="th-sm data_imp3"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">不明</td>
+            <td class="th-sm data_imp4"></td>
         </tr>
     </tbody>
 `)

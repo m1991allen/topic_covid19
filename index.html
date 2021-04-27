@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     <!-- customize -->
-    <link rel="stylesheet" href="css/map.css?ver=202103100830">
-    <link rel="stylesheet" href="css/style.css?ver=202103100830">
+    <link rel="stylesheet" href="css/map.css?ver=202104100830">
+    <link rel="stylesheet" href="css/style.css?ver=202104100830">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
@@ -120,45 +120,12 @@
     <main class="layout">
         <!-- 部桃群聚感染 -->
         <section class="guideText">
-            <h2>部立桃園醫院群聚感染</h2>
-            <p>台灣在2021年1月12日，爆發部立桃園醫院醫師因照顧確診患者而染疫事件。截至1月25日，累計有2醫師、4護理師、2病患、1外籍看護、6名確診者家屬，總計15人染疫。</p>
-
-            <p>針對院內感染群聚事件，指揮中心1月24日宣布「擴大回溯醫院相關接觸者居家隔離措施」，凡1月6日至1月19日醫院感染事件相關範圍之</p>
-
-            <ol>
-                <li>
-                    出院病患及其同住者
-                </li>
-                <li>
-                    陪病者及其同住者
-                </li>
-                <li>
-                    案889就醫時之相關接觸者
-                </li>
-            </ol>
-
-            <p>即日起全數列入居家隔離至出院後14天，若已完成14天居家隔離者，將安排採檢，並持續進行7天自主健康管理；另外，未完成14天居家隔離者，將持續完成居家隔離後，再安排採檢。</p>
-
-            <img src="img/hospital.png" style="margin:5% 0;max-width:100%;" alt="部桃感染關係圖">
+            <h2>台灣確診案例數</h2>
+            <table id="dt_imp_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                <!-- {{insert form}} -->
+            </table>
         </section>
-        <!-- 足跡表格 -->
-        <section>
-            <div id="footmap">
-                <ul class="footmap-table">
-                    <li>日期</li>
-                    <li>時間</li>
-                    <li>案例</li>
-                    <li>地點</li>
-                </ul>
-                <hr style="margin:1%; border-top-color: #ebcccc;">
-                <ul v-for="stuff of listArray" class="footmap-table">
-                    <li>{{stuff.date}}</li>
-                    <li>{{stuff.time}}</li>
-                    <li>{{stuff.case}}</li>
-                    <li>{{stuff.site}}</li>
-                </ul>
-            </div>
-        </section>
+        
         <!-- 台灣各地疫情地圖 -->
         <section id="item-1" class="guideText">
             <h2>台灣本土案例分佈</h2>
@@ -170,10 +137,6 @@
             <table id="dt_loc_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <!-- {{insert form}} -->
             </table>
-            <table id="dt_imp_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <!-- {{insert form}} -->
-            </table>
-            <table class="table table-action"></table>
 
         </section>
 
@@ -190,8 +153,14 @@
             <p style="color:#8a8a8a; margin: 10px 30px; font-size:.9rem">點擊 <i class="fas fa-plus"></i> 可以展開</p>
             <div class="row case_group">
                 <div class="col-12">
-                    <p>部立桃園醫院</p>
-                    <div id="tw_hos" class="spec_case_layout"></div>
+                    <p>華航案例調查中</p>
+                    <div id="tw_air" class="spec_case_layout"></div>
+                </div>
+            </div>
+            <div class="row case_group">
+                <div class="col-12">
+                    <p>部立桃園醫院 <i class="far fa-lg fa-plus-square"></i></p>
+                    <div id="tw_hos" class="case_layout disable"></div>
                 </div>
             </div>
             <div class="row case_group">
@@ -426,12 +395,12 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
 
     <!-- customize -->
-    <script src="js/data.js?ver=202103100830"></script>
-    <script src="js/editMap.js?ver=202103100830"></script>
-    <script src="js/edit.js?ver=202103100830"></script>
-    <script src="js/editTimeline_pc.js?ver=202103100830"></script>
-    <script src="js/editTimeline_mb.js?ver=202103100830"></script>
-    <script src="js/script.js?ver=202103100830"></script>
+    <!-- <script src="js/data.js?ver=202104100830"></script> -->
+    <script src="js/editMap.js?ver=202104100830"></script>
+    <script src="js/edit.js?ver=202104100830"></script>
+    <script src="js/editTimeline_pc.js?ver=202104100830"></script>
+    <script src="js/editTimeline_mb.js?ver=202104100830"></script>
+    <script src="js/script.js?ver=202104100830"></script>
 </body>
 
 </html>

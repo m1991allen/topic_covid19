@@ -159,18 +159,6 @@ function ajax_gsheet() {
                 ],
                 destroy: true,
             })
-            $('#dt_imp_taiwan').DataTable({
-                paging: false,
-                searching: false,
-                aaSorting: [],
-                columnDefs: [
-                    {
-                        orderable: false,
-                        targets: 0,
-                    },
-                ],
-                destroy: true,
-            })
 
             //// 台灣總和 ////
             $('#count_recently_taiwan').html(data.feed.entry[11].content.$t)
@@ -192,13 +180,21 @@ function ajax_gsheet() {
             var data_tcimp = data.feed.entry[69].content.$t
             $('.data_tcimp').html(data_tcimp)
 
-            // 其他（敦睦36 + 航空2 + 不明1）
+            // 磐石艦
             var data_imp1 = data.feed.entry[71].content.$t
             $('.data_imp1').html(data_imp1)
 
             // 華航機組染疫
             var data_imp2 = data.feed.entry[73].content.$t
             $('.data_imp2').html(data_imp2)
+
+            // 航空器感染
+            var data_imp3 = data.feed.entry[75].content.$t
+            $('.data_imp3').html(data_imp3)
+
+            // 不明
+            var data_imp4 = data.feed.entry[77].content.$t
+            $('.data_imp4').html(data_imp4)
 
             //// 台灣 首屏動態數字 ////
 
@@ -367,12 +363,13 @@ $('.alr3_country').html(alert3_country)
 
 // 磐石艦：tw_flt
 // 部桃：tw_hos
-// 未知感染：non ;
-// 旅美：trp_NA ;
-// 旅歐：trp_EU ;
-// 旅亞：trp_A ;
-// 旅非：trp_AF ;
-// 旅大洋：trp_OC ;
+// 機師：tw_air
+// 未知感染：non
+// 旅美：trp_NA
+// 旅歐：trp_EU
+// 旅亞：trp_A
+// 旅非：trp_AF
+// 旅大洋：trp_OC
 // 旅多國：trp_m
 
 /////////////// status：
@@ -15076,7 +15073,7 @@ case_data.list = [
         case: '1078',
         date: '4/20',
         status: 'default',
-        group: 'trp_NA',
+        group: 'tw_air',
         info:
             '《案1078》' +
             '<br>' +
@@ -15091,7 +15088,7 @@ case_data.list = [
         case: '1079',
         date: '4/20',
         status: 'default',
-        group: 'trp_NA',
+        group: 'tw_air',
         info:
             '《案1079》' +
             '<br>' +
@@ -15255,8 +15252,8 @@ case_data.list = [
         no: '1090',
         case: '1090',
         date: '4/23',
-        status: 'default',
-        group: 'trp_OC',
+        status: 'case_s1',
+        group: 'tw_air',
         info:
             '《案1090》' +
             '<br>' +
@@ -15273,7 +15270,7 @@ case_data.list = [
         case: '1091',
         date: '4/23',
         status: 'default',
-        group: 'trp_OC',
+        group: 'tw_air',
         info:
             '《案1091》' +
             '<br>' +
@@ -15290,7 +15287,7 @@ case_data.list = [
         case: '1092',
         date: '4/24',
         status: 'default',
-        group: 'trp_OC',
+        group: 'tw_air',
         info:
             '《案1092》' +
             '<br>' +
@@ -15412,7 +15409,7 @@ case_data.list = [
         case: '1100',
         date: '4/25',
         status: 'default',
-        group: 'trp_NA',
+        group: 'tw_air',
         info:
             '《案1100》' +
             '<br>' +
@@ -15427,7 +15424,7 @@ case_data.list = [
         case: '1101',
         date: '4/25',
         status: 'default',
-        group: 'trp_EU',
+        group: 'tw_air',
         info:
             '《案1101》' +
             '<br>' +
@@ -15442,7 +15439,7 @@ case_data.list = [
         case: '1102',
         date: '4/26',
         status: 'default',
-        group: 'trp_NA',
+        group: 'tw_air',
         info:
             '《案1102》' +
             '<br>' +
@@ -15487,12 +15484,102 @@ case_data.list = [
         case: '1105',
         date: '4/25',
         status: 'default',
-        group: 'trp_NA',
+        group: 'tw_air',
         info:
             '《案1105》' +
             '<br>' +
             `
             本國籍40多歲男性，為該航空公司貨機機師，個案今年4月8日至4月10日曾執勤美國，返臺後居家檢疫至4月15日，採檢結果為陰性，檢疫期間並無症狀；4月25日因飛航機師採檢專案進行採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1106',
+        case: '1106',
+        date: '4/27',
+        status: 'default',
+        group: 'trp_NA',
+        info:
+            '《案1106》' +
+            '<br>' +
+            `
+            本國籍70多歲女性，今（2021）年3月1日與日前公布之案1068一同至加拿大探親，4月8日返臺，持有搭機前3日內檢驗陰性報告，入境後至住處居家檢疫，因案1068確診，改列為居家隔離對象，4月13日進行接觸者採檢，結果為陰性。個案隔離期間並無症狀，4月25日由衛生單位安排至醫院進行隔離期滿前採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1107',
+        case: '1107',
+        date: '4/27',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1107》' +
+            '<br>' +
+            `
+            緬甸籍30多歲男性，為昨（26）日公布案1103及案1104之同船船員，於4月24日起陸續出現發燒及咳嗽症狀，4月25日後送就醫並採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1108',
+        case: '1108',
+        date: '4/27',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1108》' +
+            '<br>' +
+            `
+            菲律賓籍20多歲女性移工，今年4月25日來臺工作，持有搭機前3日內檢驗陰性報告，入境時無症狀，因主動通報3月下旬於菲律賓當地確診COVID-19，故在機場進行採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1109',
+        case: '1109',
+        date: '4/27',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1109》' +
+            '<br>' +
+            `
+            中國籍40多歲男性，為昨（26）日公布案1103及案1104之同船船員，於4月26日進行接觸者採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1110',
+        case: '1110',
+        date: '4/27',
+        status: 'default',
+        group: 'trp_A',
+        info:
+            '《案1110》' +
+            '<br>' +
+            `
+            緬甸籍20多歲男性，為昨（26）日公布案1103及案1104之同船船員，於4月26日進行接觸者採檢後確診。
+
+        
+            `,
+    },
+    {
+        no: '1111',
+        case: '1111',
+        date: '4/27',
+        status: 'case_s1',
+        group: 'tw_air',
+        info:
+            '《案1111》' +
+            '<br>' +
+            `
+            印尼籍40多歲女性，為澳洲驗出陽性機師及案1090之同住家人，近期無出國史，今（2021）年4月21日匡列為居家隔離接觸者，當日及次（22）日採檢結果均為陰性。4月26日出現喉嚨乾、身體痛、暈眩、口苦、噁心、睡不著等症狀，由衛生單位安排採檢後確診。
 
         
             `,
@@ -15523,6 +15610,8 @@ for (var i = 0; i < case_total.length; i++) {
         $('#tw_flt').append(case_result)
     } else if (group === 'tw_hos') {
         $('#tw_hos').append(case_result)
+    } else if (group === 'tw_air') {
+        $('#tw_air').append(case_result)
     } else if (group === 'trp_NA') {
         $('#trp_NA').append(case_result)
     } else if (group === 'trp_EU') {
