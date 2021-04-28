@@ -118,14 +118,32 @@
 
     <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19"></div>
     <main class="layout">
-        <!-- 部桃群聚感染 -->
+        <!-- 台灣確診案例數 -->
         <section class="guideText">
             <h2>台灣確診案例數</h2>
             <table id="dt_imp_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <!-- {{insert form}} -->
             </table>
         </section>
-        
+        <!-- 特殊案例足跡圖 -->
+        <section class="guideText">
+            <h2>確診足跡</h2>
+            <div id="footmap">
+                <ul class="footmap-table">
+                    <li>日期</li>
+                    <li>時間</li>
+                    <li>案例</li>
+                    <li>地點</li>
+                </ul>
+                <hr style="margin:1%; border-top-color: #ebcccc;">
+                <ul v-for="stuff of listArray" class="footmap-table">
+                    <li>{{stuff.date}}</li>
+                    <li>{{stuff.time}}</li>
+                    <li>{{stuff.case}}</li>
+                    <li>{{stuff.site}}</li>
+                </ul>
+            </div>
+        </section>
         <!-- 台灣各地疫情地圖 -->
         <section id="item-1" class="guideText">
             <h2>台灣本土案例分佈</h2>
@@ -398,6 +416,7 @@
     <!-- <script src="js/data.js?ver=202104100830"></script> -->
     <script src="js/editMap.js?ver=202104100830"></script>
     <script src="js/edit.js?ver=202104100830"></script>
+    <script src="js/data.js?ver=202104100830"></script>
     <script src="js/editTimeline_pc.js?ver=202104100830"></script>
     <script src="js/editTimeline_mb.js?ver=202104100830"></script>
     <script src="js/script.js?ver=202104100830"></script>
