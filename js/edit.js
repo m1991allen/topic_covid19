@@ -374,9 +374,11 @@ $('.alr3_country').html(alert3_country)
 
 /////////////// status：
 
-// 一般案例（粉）：default ;
-// 境內感染（綠）：case_s1 ;
+// 一般案例（粉）：default
+// 境內感染（綠）：case_s1
 // 死亡（紅）：case_s2
+// 敦睦（灰藍）：case_s3
+// 華航、諾富特（綠）：case_s4
 
 /////////////////////
 /////////////////////
@@ -15072,7 +15074,7 @@ case_data.list = [
         no: '1078',
         case: '1078',
         date: '4/20',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1078》' +
@@ -15087,7 +15089,7 @@ case_data.list = [
         no: '1079',
         case: '1079',
         date: '4/20',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1079》' +
@@ -15269,7 +15271,7 @@ case_data.list = [
         no: '1091',
         case: '1091',
         date: '4/23',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1091》' +
@@ -15286,7 +15288,7 @@ case_data.list = [
         no: '1092',
         case: '1092',
         date: '4/24',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1092》' +
@@ -15408,7 +15410,7 @@ case_data.list = [
         no: '1100',
         case: '1100',
         date: '4/25',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1100》' +
@@ -15423,7 +15425,7 @@ case_data.list = [
         no: '1101',
         case: '1101',
         date: '4/25',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1101》' +
@@ -15438,7 +15440,7 @@ case_data.list = [
         no: '1102',
         case: '1102',
         date: '4/26',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1102》' +
@@ -15483,7 +15485,7 @@ case_data.list = [
         no: '1105',
         case: '1105',
         date: '4/26',
-        status: 'default',
+        status: 'case_s4',
         group: 'tw_air',
         info:
             '《案1105》' +
@@ -15743,7 +15745,7 @@ case_data.list = [
             '《案1122》' +
             '<br>' +
             `
-           本國籍50多歲男性，為某航空公司貨機機師，4月2日至4月9日曾執勤至美國，返台後於防疫旅館檢疫至4月15日，期間無症狀，檢疫期滿採檢結果為陰性；個案4月19日再次執勤至美國，4月24日自美國經日本返台，4月25日入境後返回住處居家檢疫，4月27日出現喉嚨痛及發燒症狀，由衛生單位安排就醫採檢確診。
+            本國籍50多歲男性，為某航空公司貨機機師，4月2日至4月9日曾執勤至美國，返台後於防疫旅館檢疫至4月15日，期間無症狀，檢疫期滿採檢結果為陰性；個案4月19日再次執勤至美國，4月24日自美國經日本返台，4月25日入境後返回住處居家檢疫，4月27日出現喉嚨痛及發燒症狀，由衛生單位安排就醫採檢確診。
 
             `,
     },
@@ -15836,7 +15838,7 @@ case_data.list = [
         case: '1129',
         date: '4/30',
         status: 'case_s1',
-        group: 'trp_A',
+        group: 'tw_air',
         info:
             '《案1129》' +
             '<br>' +

@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     box-sizing: border-box;
     font-family: Microsoft JhengHei, 微軟正黑體, Arial, Helvetica;
     background-color: #efefef;
@@ -10,7 +11,17 @@ body, html {
     font-weight: bold;
 }
 
-*, h1, h2, h3, h4, h5, h6, span, p, div, svg {
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+div,
+svg {
     font-family: Microsoft JhengHei, 微軟正黑體, Arial, Helvetica;
 }
 
@@ -29,7 +40,7 @@ a:hover {
 
 h1 {
     font-size: 1.5rem;
-    margin-top: 5%
+    margin-top: 5%;
 }
 
 h2 {
@@ -41,7 +52,7 @@ h2 {
 }
 
 h2::after {
-    content: "";
+    content: '';
     border-top: 3px solid #d7d7d7;
     width: 30%;
     margin-left: 10px;
@@ -52,7 +63,7 @@ h4 {
 }
 
 hr {
-    margin: 5% 0
+    margin: 5% 0;
 }
 
 h5 {
@@ -94,35 +105,39 @@ table th {
     z-index: 99;
 }
 
-@media screen and (max-width:998px) {
+@media screen and (max-width: 998px) {
     #navbarBtn {
-        display: flex
+        display: flex;
     }
     #navbar {
         display: none;
     }
 }
 
-.taiwan_data div:nth-child(1), .taiwan_data div:nth-child(2), .taiwan_data div:nth-child(3) {
+.taiwan_data div:nth-child(1),
+.taiwan_data div:nth-child(2),
+.taiwan_data div:nth-child(3) {
     background-color: #ff6d001f;
     padding-top: 20px;
     color: #563723;
     font-size: 1.8rem;
 }
 
-.taiwan_data div:nth-child(2), .taiwan_data div:nth-child(3) {
+.taiwan_data div:nth-child(2),
+.taiwan_data div:nth-child(3) {
     border-left: 3px solid #efefef;
 }
 
-@media screen and (max-width:768px) {
-    .taiwan_data div:nth-child(2), .taiwan_data div:nth-child(3) {
+@media screen and (max-width: 768px) {
+    .taiwan_data div:nth-child(2),
+    .taiwan_data div:nth-child(3) {
         border-left: none;
         border-top: 5px solid #efefef;
     }
 }
 
 .bg-light {
-    opacity: .94;
+    opacity: 0.94;
 }
 
 h1.layout {
@@ -153,7 +168,7 @@ p.layout {
     max-height: 1000px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .mainbg {
         background-position: 87%;
     }
@@ -163,7 +178,8 @@ p.layout {
     width: 100%;
 }
 
-.mainbg .guideText, .mainbg .row {
+.mainbg .guideText,
+.mainbg .row {
     font-size: 1rem;
     font-weight: bold;
 }
@@ -172,7 +188,7 @@ p.layout {
     max-width: 150px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .mainbg .guideText {
         display: none;
     }
@@ -185,7 +201,7 @@ p.layout {
     margin: auto;
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width: 760px) {
     .mainbg .mainbg_title {
         padding: 0 5%;
     }
@@ -197,16 +213,16 @@ p.layout {
     text-align: center;
     padding: 25% 0 10px;
     margin: 0;
-    transition: .5s
+    transition: 0.5s;
 }
 
 .mainbg .mainbg_title h3 {
     font-size: 3.6rem;
     text-align: center;
-    transition: .5s
+    transition: 0.5s;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .mainbg .mainbg_title h1 {
         font-size: 4rem;
     }
@@ -215,7 +231,7 @@ p.layout {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     .mainbg .mainbg_title h1 {
         font-size: 2rem;
     }
@@ -247,7 +263,7 @@ p.layout {
     color: white;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     .bar1 {
         width: 51.68%;
     }
@@ -293,7 +309,7 @@ svg {
 /* 武漢地圖 */
 
 #wuhan {
-    transition: .5s;
+    transition: 0.5s;
     cursor: pointer;
     animation: twinkle 2s infinite;
 }
@@ -326,12 +342,12 @@ svg {
 }
 
 .changeImg {
-    transition: .5s;
+    transition: 0.5s;
     opacity: 0;
 }
 
 .wuhan1 img {
-    animation: changeImg .5s;
+    animation: changeImg 0.5s;
     width: 100%;
     max-width: 100% !important;
     position: relative !important;
@@ -371,7 +387,7 @@ svg {
     margin: auto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .earth div:nth-child(1) {
         margin: 5% auto;
     }
@@ -409,7 +425,7 @@ svg {
     box-shadow: 1px 2px 3px;
     display: none;
     z-index: 99;
-    transition: .5s
+    transition: 0.5s;
 }
 
 #BackTop img {
@@ -429,20 +445,34 @@ svg {
 
 /* jqueryui */
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
     border: none;
     background: #eacad0;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
     border: none;
 }
 
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
     color: black;
 }
 
-.ui-state-active .ui-icon, .ui-button:active .ui-icon, .ui-icon-triangle-1-e {
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon,
+.ui-icon-triangle-1-e {
     display: none;
 }
 
@@ -521,12 +551,12 @@ svg {
 
 .news_layout .news {
     box-shadow: 1px 2px 3px;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
     min-height: 200px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .news_layout .news {
         min-height: 200px;
         margin-bottom: 5%;
@@ -534,7 +564,7 @@ svg {
 }
 
 .news_layout .news:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .news_layout .news:hover a {
@@ -554,7 +584,7 @@ svg {
     overflow-y: hidden;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .news_layout .news .cover_size {
         height: 130px;
     }
@@ -580,7 +610,7 @@ svg {
     display: inline-block;
     padding: 5px 10px;
     margin: 10px auto;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -642,7 +672,8 @@ svg {
     /* display: none; */
 }
 
-.timeline-year, .timeline-title {
+.timeline-year,
+.timeline-title {
     margin: 3% 0;
 }
 
@@ -666,7 +697,7 @@ svg {
     display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .time_pc {
         display: none;
     }
@@ -675,7 +706,8 @@ svg {
     }
 }
 
-.icon_taiwan, .icon_global {
+.icon_taiwan,
+.icon_global {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
@@ -701,7 +733,7 @@ svg {
 }
 
 .compare_info {
-    margin: 7% 0 0
+    margin: 7% 0 0;
 }
 
 .compare_info div {
@@ -715,10 +747,11 @@ svg {
 }
 
 .compare_info .com_con {
-    background-color: #C15353;
+    background-color: #c15353;
 }
 
-.compare_info .com_die, .compare_info .com_con {
+.compare_info .com_die,
+.compare_info .com_con {
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -760,7 +793,7 @@ dd {
     margin-left: 0.5em;
     padding-left: 1.25em;
     opacity: 0.6;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .dd_2_line {
@@ -791,7 +824,7 @@ dd:hover {
     opacity: 1;
 }
 
-dd+dd {
+dd + dd {
     clear: both;
 }
 
@@ -821,7 +854,8 @@ dd:not(:last-of-type)::after {
     height: 100%;
 }
 
-dd.delay::after, .delay+dd::after {
+dd.delay::after,
+.delay + dd::after {
     border-left-style: dashed;
 }
 
@@ -829,7 +863,6 @@ dd.delay::after, .delay+dd::after {
 
 .protect_pc {
     width: 100%;
-    ;
 }
 
 .protect_pc tr {
@@ -911,11 +944,12 @@ dd.delay::after, .delay+dd::after {
     left: -30px;
 }
 
-.protect_mb p, .protect_mb ul {
+.protect_mb p,
+.protect_mb ul {
     color: white;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .protect_pc {
         display: none;
     }
@@ -1019,7 +1053,8 @@ dd.delay::after, .delay+dd::after {
     border-radius: 0 0 15px 15px;
 }
 
-.travel_info p:nth-child(1), .travel_info_mb p:nth-child(1) {
+.travel_info p:nth-child(1),
+.travel_info_mb p:nth-child(1) {
     background-color: #eae3dc;
     color: black;
     text-align: center;
@@ -1030,7 +1065,7 @@ dd.delay::after, .delay+dd::after {
     display: none;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     .alert_pc {
         display: none;
     }
@@ -1041,11 +1076,21 @@ dd.delay::after, .delay+dd::after {
 
 /* data table */
 
-table.dataTable thead .sorting:after, table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc_disabled:after, table.dataTable thead .sorting_desc_disabled:before {
-    bottom: .5em;
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+    bottom: 0.5em;
 }
 
-.table-bordered td, .table-bordered th {
+.table-bordered td,
+.table-bordered th {
     border: none;
 }
 
@@ -1076,7 +1121,11 @@ table.dataTable thead .sorting_asc {
     background-size: 10px;
 }
 
-table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
     background-position: 75% 50%;
 }
 
@@ -1089,7 +1138,11 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 
 /* 台灣疫情時間關係 */
 
-.case_ex1, .case_ex2, .case_ex3, .case_ex4 {
+.case_ex1,
+.case_ex2,
+.case_ex3,
+.case_ex4,
+.case_ex5 {
     width: 40px;
     height: 40px;
     margin: 10px 30px;
@@ -1132,9 +1185,18 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     position: absolute;
 }
 
+.case_ex5 {
+    background-color: #70b942;
+}
+
+.case_ex5:before {
+    content: '華航、諾富特';
+    position: absolute;
+}
+
 .spec_case_layout {
     display: inline-block;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 40px #e6e6e6;
@@ -1142,7 +1204,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 
 .case_layout {
     display: inline-block;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 40px #e6e6e6;
@@ -1166,7 +1228,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     width: 70px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .case_box {
         width: 55px;
     }
@@ -1200,7 +1262,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     cursor: pointer;
     background-color: #ebcccc;
     border-radius: 10px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .case_i:hover {
@@ -1223,7 +1285,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .case_info {
         width: 70%;
         left: 50% !important;
@@ -1247,6 +1309,12 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 
 .case_s3 {
     background-color: #97a5ac;
+}
+
+/* 華航、諾富特 */
+
+.case_s4 {
+    background-color: #70b942;
 }
 
 /* 頁尾 */
@@ -1291,6 +1359,30 @@ footer img {
     width: 25%;
 }
 
-.footmap-table li:nth-child(3), .footmap-table li:nth-child(4) {
+.footmap-table li:nth-child(3),
+.footmap-table li:nth-child(4) {
     width: 30%;
+}
+
+/* 竹雞日期底線 */
+ul.footmap-table{
+    background-color: rgb(255, 248, 248);
+}
+
+ul.footmap-table:nth-of-type(3),
+ul.footmap-table:nth-of-type(5),
+ul.footmap-table:nth-of-type(7),
+ul.footmap-table:nth-of-type(9),
+ul.footmap-table:nth-of-type(14),
+ul.footmap-table:nth-of-type(16),
+ul.footmap-table:nth-of-type(18),
+ul.footmap-table:nth-of-type(20),
+ul.footmap-table:nth-of-type(23),
+ul.footmap-table:nth-of-type(27),
+ul.footmap-table:nth-of-type(32),
+ul.footmap-table:nth-of-type(45),
+ul.footmap-table:nth-of-type(56) {
+    content: '';
+    border-bottom: 3px solid black;
+    padding-bottom: 1rem;
 }
