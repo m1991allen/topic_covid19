@@ -1379,9 +1379,9 @@ ul.footmap-table:nth-of-type(18),
 ul.footmap-table:nth-of-type(20),
 ul.footmap-table:nth-of-type(23),
 ul.footmap-table:nth-of-type(27),
-ul.footmap-table:nth-of-type(32),
-ul.footmap-table:nth-of-type(45),
-ul.footmap-table:nth-of-type(56) {
+ul.footmap-table:nth-of-type(33),
+ul.footmap-table:nth-of-type(46),
+ul.footmap-table:nth-of-type(57) {
     content: '';
     border-bottom: 3px solid black;
     padding-bottom: 1rem;
