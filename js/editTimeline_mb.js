@@ -24,6 +24,9 @@ $('.time_mobile').append(`
 
         <dt>3月22日</dt>
         <dd class="dd_3_line">台灣開始施打AZ疫苗
+
+        <dt>4月30日</dt>
+        <dd class="dd_3_line">指揮中心定調「華航諾富特」事件為台灣首例「飯店群聚感染」
     </dl>
 
 
