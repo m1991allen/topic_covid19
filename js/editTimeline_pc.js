@@ -40,6 +40,9 @@ $('.time_pc').append(`
 
             <dt>4月30日</dt>
             <dd class="dd_3_line">指揮中心定調「華航諾富特」事件為台灣首例「飯店群聚感染」
+
+            <dt>5月11日</dt>
+            <dd class="dd_3_line">出現感染源不明之本土病例，提升疫情警戒至第二級
         </dl>
     </div>
     <!-- 全球pc -->
@@ -66,6 +69,9 @@ $('.time_pc').append(`
 
             <dt>2月9日</dt>
             <dd class="dd_3_line">WHO調查：無足夠證據證明武漢2019年12月前有疫情傳播
+
+            <dt></dt>
+            <dd class="dd_3_line">
 
             <dt></dt>
             <dd class="dd_3_line">

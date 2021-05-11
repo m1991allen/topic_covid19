@@ -1365,7 +1365,7 @@ footer img {
 }
 
 /* 竹雞日期底線 */
-ul.footmap-table{
+ul.footmap-table {
     background-color: rgb(255, 248, 248);
 }
 
@@ -1381,7 +1381,14 @@ ul.footmap-table:nth-of-type(23),
 ul.footmap-table:nth-of-type(27),
 ul.footmap-table:nth-of-type(33),
 ul.footmap-table:nth-of-type(46),
-ul.footmap-table:nth-of-type(57) {
+ul.footmap-table:nth-of-type(57),
+ul.footmap-table:nth-of-type(63),
+ul.footmap-table:nth-of-type(66),
+ul.footmap-table:nth-of-type(67),
+ul.footmap-table:nth-of-type(71),
+ul.footmap-table:nth-of-type(73),
+ul.footmap-table:nth-of-type(74),
+ul.footmap-table:nth-of-type(75) {
     content: '';
     border-bottom: 3px solid black;
     padding-bottom: 1rem;
