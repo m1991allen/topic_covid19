@@ -1369,26 +1369,13 @@ ul.footmap-table {
     background-color: rgb(255, 248, 248);
 }
 
-ul.footmap-table:nth-of-type(3),
+ul.footmap-table:nth-of-type(4),
 ul.footmap-table:nth-of-type(5),
-ul.footmap-table:nth-of-type(7),
 ul.footmap-table:nth-of-type(9),
-ul.footmap-table:nth-of-type(14),
+ul.footmap-table:nth-of-type(13),
+ul.footmap-table:nth-of-type(15),
 ul.footmap-table:nth-of-type(16),
-ul.footmap-table:nth-of-type(18),
-ul.footmap-table:nth-of-type(20),
-ul.footmap-table:nth-of-type(23),
-ul.footmap-table:nth-of-type(27),
-ul.footmap-table:nth-of-type(33),
-ul.footmap-table:nth-of-type(46),
-ul.footmap-table:nth-of-type(57),
-ul.footmap-table:nth-of-type(63),
-ul.footmap-table:nth-of-type(66),
-ul.footmap-table:nth-of-type(67),
-ul.footmap-table:nth-of-type(71),
-ul.footmap-table:nth-of-type(73),
-ul.footmap-table:nth-of-type(74),
-ul.footmap-table:nth-of-type(75) {
+ul.footmap-table:nth-of-type(17) {
     content: '';
     border-bottom: 3px solid black;
     padding-bottom: 1rem;

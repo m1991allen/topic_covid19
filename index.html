@@ -1,436 +1,380 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="【最新疫情】台灣首現社區感染！圖解確診關係、足跡｜專題｜民視新聞網" />
+        <meta property="og:site_name" content="武漢肺炎 新冠肺炎 COVID-19-民視數位專題" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:url" content="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
+        <meta property="og:image" content="https://www.ftvnews.com.tw/topics/COVID-19/cover1.jpg" />
+        <meta property="og:image:width" content="563" />
+        <meta property="og:image:height" content="296" />
+        <meta
+            property="og:description"
+            content="武漢肺炎（新冠肺炎、COVID-19）疫情在全球持續升溫，民視新聞特別製作武漢肺炎專題，運用各式圖表，提供「世界疫情地圖」、「台灣疫情整理」、「各國防疫措施」等，讓讀者能即時掌握疫情資訊。"
+        />
+        <meta property="fb:app_id" content="157389381527660" />
+        <meta http-equiv="PRAGMA" content="NO-CACHE" />
+        <meta http-equiv="EXPIRES" content="0" />
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+        <title>【最新疫情】台灣首現社區感染！圖解確診關係、足跡｜專題｜民視新聞網</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="【不斷更新】華航諾富特群聚案！圖解確診關係、足跡｜專題｜民視新聞網" />
-    <meta property="og:site_name" content="武漢肺炎 新冠肺炎 COVID-19-民視數位專題" />
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="zh_TW" />
-    <meta property="og:url" content="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
-    <meta property="og:image" content="https://www.ftvnews.com.tw/topics/COVID-19/cover1.jpg" />
-    <meta property="og:image:width" content="563" />
-    <meta property="og:image:height" content="296" />
-    <meta property="og:description"
-        content="武漢肺炎（新冠肺炎、COVID-19）疫情在全球持續升溫，民視新聞特別製作武漢肺炎專題，運用各式圖表，提供「世界疫情地圖」、「台灣疫情整理」、「各國防疫措施」等，讓讀者能即時掌握疫情資訊。" />
-    <meta property="fb:app_id" content="157389381527660" />
-    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-    <META HTTP-EQUIV="EXPIRES" CONTENT="0">
-    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-    <title>【不斷更新】華航諾富特群聚案！圖解確診關係、足跡｜專題｜民視新聞網</title>
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
 
-    <link rel="icon" href="/images/favicon.ico" />
-    <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
+        <!-- jQueryUI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 
-    <!-- jQueryUI -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        <!-- jQueryDataTable -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
 
-    <!-- jQueryDataTable -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- customize -->
+        <link rel="stylesheet" href="css/map.css?ver=202105120830" />
+        <link rel="stylesheet" href="css/style.css?ver=202105120830" />
 
-    <!-- customize -->
-    <link rel="stylesheet" href="css/map.css?ver=202105040830">
-    <link rel="stylesheet" href="css/style.css?ver=202105040830">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-101119806-1');
-    </script>
-
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- 解析 -->
-    <script>
-        (function () {
-            if (screen.width < 768) {
-                $('.case_info').addClass('case_info_mb');
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
             }
-        })(screen.width);
-    </script>
-</head>
+            gtag('js', new Date())
 
-<body>
-    <header class="row">
-        <div id="progress"></div>
-    </header>
-    <nav id="navbarBtn"><i class=" fas fa-bars fa-2x"></i></nav>
-    <nav id="navbar" class="navbar navbar-light bg-light">
-        <nav class="nav nav-pills flex-column">
-            <p>導覽：</p>
-            <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">台灣本土案例</a>
-            <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">台灣確診關係</a>
-            <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">世界疫情地圖</a>
-            <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">最新事件時間</a>
+            gtag('config', 'UA-101119806-1')
+        </script>
+
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- 解析 -->
+        <script>
+            ;(function () {
+                if (screen.width < 768) {
+                    $('.case_info').addClass('case_info_mb')
+                }
+            })(screen.width)
+        </script>
+    </head>
+
+    <body>
+        <header class="row">
+            <div id="progress"></div>
+        </header>
+        <nav id="navbarBtn"><i class="fas fa-bars fa-2x"></i></nav>
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+                <p>導覽：</p>
+                <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">台灣本土案例</a>
+                <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">台灣確診關係</a>
+                <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">世界疫情地圖</a>
+                <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">最新事件時間</a>
+            </nav>
         </nav>
-    </nav>
-    <div class="cs-share-this-product facebook">
-        <a title="Share on Facebook" target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopic%2Fcovid-19%2Findex.html&amp;src=sdkpreparse">
-            <div class="social-share-icon-block">
-                <img src="./img/facebook-f-brands.png" alt="分享民視新聞專題">
-                <a target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"><span
-                        class="share-text"
-                        data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html">分享</span></a>
-            </div>
-        </a>
-    </div>
-
-    <div class="mainbg">
-        <!-- <img src="" alt=""> -->
-        <div class="mainbg_title">
-            <h1>武漢肺炎疫情</h1>
-            <h3>圖表資訊一次看懂</h3>
-            <div class="row taiwan_data">
-                <div class="col-md-4">
-                    <p>台灣確診數</p>
-                    <p id="tw_con" class="data_gc1" style="font-size:1.8rem;"></p>
+        <div class="cs-share-this-product facebook">
+            <a
+                title="Share on Facebook"
+                target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopic%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"
+            >
+                <div class="social-share-icon-block">
+                    <img src="./img/facebook-f-brands.png" alt="分享民視新聞專題" />
+                    <a
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"
+                        ><span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html"
+                            >分享</span
+                        ></a
+                    >
                 </div>
-                <div class="col-md-4">
-                    <p>解除隔離</p>
-                    <p id="tw_rec" class="data_rescue" style="font-size:1.8rem;"></p>
-                </div>
-                <div class="col-md-4">
-                    <p>死亡數</p>
-                    <p id="tw_die" class="data_gd1" style="font-size:1.8rem;"></p>
-                </div>
-            </div>
-            <div class="mainbg_info">
-                <div id="inc_con" class="count_sumConfirm_global bar1"></div>
-                <div id="inc_die" class="count_sumDeath_global bar2"></div>
-            </div>
-            <div class="row">
-                <div class="col-8">全球確診</div>
-                <div class="col-4">死亡</div>
-            </div>
-        </div>
-    </div>
-
-    <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19"></div>
-    <main class="layout">
-        <!-- 台灣確診案例數 -->
-        <section class="guideText">
-            <h2>台灣確診案例數</h2>
-            <table id="dt_imp_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <!-- {{insert form}} -->
-            </table>
-        </section>
-        <img src="./img/air.jpg" style="width:100%" alt="華航、諾富特群聚關係">
-        <!-- 特殊案例足跡圖 -->
-        <section class="guideText">
-            <h2>確診足跡</h2>
-            <div id="footmap">
-                <ul class="footmap-table">
-                    <li>日期</li>
-                    <li>時間</li>
-                    <li>案例</li>
-                    <li>地點</li>
-                </ul>
-                <hr style="margin:2%; ">
-                <ul v-for="stuff of listArray" class="footmap-table">
-                    <li>{{stuff.date}}</li>
-                    <li>{{stuff.time}}</li>
-                    <li>{{stuff.case}}</li>
-                    <li>{{stuff.site}}</li>
-                </ul>
-            </div>
-        </section>
-        <!-- 台灣各地疫情地圖 -->
-        <section id="item-1" class="guideText">
-            <h2>台灣本土案例分佈</h2>
-            <div class="hovertext"></div>
-
-            <div class="taiwan_map">
-                <!-- {{insert map}} -->
-            </div>
-            <table id="dt_loc_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <!-- {{insert form}} -->
-            </table>
-
-        </section>
-
-        <!-- 台灣疫情 時間關係圖 -->
-        <section id="item-2" class="guideText">
-            <div class="case_info"></div>
-            <h2>台灣確診關係圖</h2>
-            <div style="display:flex;">
-                <div class="case_ex1"></div>
-                <div class="case_ex2"></div>
-                <div class="case_ex3"></div>
-            </div>
-            <div style="display:flex;">
-                <div class="case_ex4"></div>
-                <div class="case_ex5"></div>
-            </div>
-            <p style="color:#8a8a8a; margin: 10px 30px; font-size:.9rem">點擊 <i class="fas fa-plus"></i> 可以展開</p>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>未知感染源 </p>
-                    <div id="non" class="spec_case_layout"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>華航、諾富特群聚<i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="tw_air" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>部立桃園醫院 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="tw_hos" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>敦睦艦隊 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="tw_flt" class="case_layout disable"></div>
-                </div>
-            </div>
-            
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>亞洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="trp_A" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>美洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="trp_NA" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>歐洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="trp_EU" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>非洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="trp_AF" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>大洋洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="trp_OC" class="case_layout disable"></div>
-                </div>
-            </div>
-            <div class="row case_group">
-                <div class="col-12">
-                    <p>多國旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                    <div id="trp_m" class="case_layout disable"></div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- 居家隔離/居家檢疫/自主健康管理 -->
-        <section class="guideText">
-            <h2>「居家隔離／居家檢疫／自主健康管理」差異</h2>
-            <table class="protect_pc">
-                <tbody>
-                    <tr class="info_layout">
-                        <td class="info_t" style="border: none;"></td>
-                        <td class="info_c col-style-t col-style-t1">居家隔離</td>
-                        <td class="info_c col-style-t col-style-t2">居家檢疫</td>
-                        <td class="info_c col-style-t col-style-t3">自主健康管理 </td>
-                    </tr>
-                    <tr class="info_layout">
-                        <td class="info_t"><i class="fas fa-user"></i>適用對象</td>
-                        <td class="info_c col-style-c col-style-c1">確定病例的接觸者</td>
-                        <td class="info_c col-style-c col-style-c2">所有入境台灣人士</td>
-                        <td class="info_c col-style-c col-style-c3">
-                            <ul>
-                                <li>武漢肺炎通報個案但採檢陰性者，應執行自主健康管理14天</li>
-                                <li>曾與染疫病人接觸或疑似被傳染者，隔離期滿後應繼續執行自主健康管理7天</li>
-                                <li>入、出（國）境者返台檢疫期滿後，應續執行自主健康管理7天</li>
-                                <li>台帛旅遊泡泡專案返台者，應執行自主健康管理14天</li>
-                            </ul>
-                    </tr>
-                    <tr class="info_layout">
-                        <td class="info_t"><i class="fas fa-home"></i> 負責單位</td>
-                        <td class="info_c col-style-c col-style-c1">地方衛生主管機關</td>
-                        <td class="info_c col-style-c col-style-c2">地方民政局里長或里幹事</td>
-                        <td class="info_c col-style-c col-style-c3">衛生主管機關</td>
-                    </tr>
-                    <tr class="info_layout">
-                        <td class="info_t"><i class="fas fa-exclamation-triangle"></i> 管理方式</td>
-                        <td class="info_c col-style-c col-style-c1">
-                            <ul>
-                                <li>14天內不得外出，留在家中或指定地點。</li>
-                                <li>手機電子監控，衛生機關每日致電追蹤2次。</li>
-                                <li>擅自外出或其他違規情節，可處20萬至100萬元罰鍰，必要時強制安置。</li>
-                            </ul>
-                        </td>
-                        <td class="info_c col-style-c col-style-c2">
-                            <ul>
-                                <li>14天內不得外出，留在家中或指定地點。</li>
-                                <li>手機電子監控，里長或里幹事每日電話追蹤。</li>
-                                <li>入境時未詳實填寫資料，可處1萬至15萬元罰鍰。</li>
-                                <li>擅自外出、未配合主管機關開立的檢疫通知書所載自機場返家規定或違反其他相關規定，可處10萬至100萬元罰鍰。</li>
-                            </ul>
-                        </td>
-                        <td class="info_c col-style-c col-style-c3">
-                            <ul>
-                                <li>外出必須戴口罩，避免出入無法保持社交距離，或容易近距離接觸不特定人的場所。</li>
-                                <li>每日早晚各量一次體溫。</li>
-                                <li>若有不舒服症狀需馬上通報，依指示安排就醫。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="protect_mb">
-                <article class="col-style-c1">
-                    <h3 class="col-style-t col-style-t1">居家隔離</h3>
-                    <p><i class="fas fa-user"></i> 適用對象：確定病例的接觸者</p>
-                    <p><i class="fas fa-home"></i> 負責單位：地方衛生主管機關</p>
-                    <p><i class="fas fa-exclamation-triangle"></i> 管理方式：</p>
-                    <ul>
-                        <li>14天內不得外出，留在家中或指定地點。</li>
-                        <li>手機電子監控，衛生機關每日致電追蹤2次。</li>
-                        <li>若未配合管制，可處新台幣6萬以上、30萬以下罰鍰，必要時強制安置。</li>
-                    </ul>
-                </article>
-                <article class="col-style-c2">
-                    <h3 class="col-style-t col-style-t2">居家檢疫</h3>
-                    <p><i class="fas fa-user"></i> 適用對象：3月19日起所有入境台灣者。</p>
-                    <p><i class="fas fa-home"></i> 負責單位：地方民政局里長或里幹事</p>
-                    <p><i class="fas fa-exclamation-triangle"></i> 管理方式：</p>
-                    <ul>
-                        <li>14天內不得外出，留在家中或指定地點。</li>
-                        <li>手機電子監控，里長或里幹事每日電話追蹤。</li>
-                        <li>若未配合管制，可處新台幣1萬以上、15萬以下罰鍰，必要時強制安置。</li>
-                    </ul>
-                </article>
-                <article class="col-style-c3">
-                    <h3 class="col-style-t col-style-t3">自主健康管理</h3>
-                    <p><i class="fas fa-user"></i> 適用對象：
-                    <ul>
-                        <li>通報個案但已檢驗陰性，且符合解除隔離條件者</li>
-                        <li>申請赴港澳獲准者</li>
-                        <li>自一、二級旅遊警示國家入境者</li>
-                    </ul>
-                    </p>
-                    <p><i class="fas fa-home"></i> 負責單位：衛生主管機關</p>
-                    <p><i class="fas fa-exclamation-triangle"></i> 管理方式：</p>
-                    <ul>
-                        <li>14天內自主健康管理，外出必須戴口罩。</li>
-                        <li>每日早晚各量一次體溫。</li>
-                        <li>若有不舒服症狀需馬上通報，依指示安排就醫。</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- 世界疫情 地圖 數據表格-->
-
-        <section class="guideText" id="worldMap">
-            <h2 id="item-3">世界疫情地圖</h2>
-            <p>2019年12月底在中國爆發武漢肺炎後，泰國於2020年1月13日也出現確診首例，為一名來自武漢的61歲女遊客，這也是第一起中國境外的感染案例。
-
-<p>情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年；南韓「新天地大邱教會」則出現一位超級傳播者，導致大規模群聚感染。</p>
-
-<p>此外，伊朗、土耳其等地疫情也相當嚴重。其中，印度近來舉行地方選舉、慶祝重要節慶「大壺節」，加上變種病毒肆虐的情況下，單日確診和死亡人數屢破新高，目前累計確診數已突破2000萬，死亡人數也超過20萬大關。</p>
-
-<p>歐洲部分，自義大利疫情大爆發後，鄰近國家也陸續出現確診案例，截至2021年4月，法國已經突破500萬確診，俄羅斯、英國、義大利也有超過400萬人染疫。</p>
-
-<p>美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數逼近3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數逼季1500萬，也是拉美第一大重災區。
-            </p>
-
-        </section>
-
-        <!-- 各國趨勢 -->
-        <!-- <section class="guidetext">
-            <h2>世界各國近期病例確診趨勢</h2>
-            <canvas id="lineChart_country_confirm"></canvas>
-        </section> -->
-        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%"
-            height="600px"></iframe>
-        <p style="margin-bottom: 10%;">資料來源：Our World in Data</p>
-
-        <!-- 武漢肺炎重點 時間軸 pc-->
-
-        <div id="item-4"></div>
-        <section class="guideText time_pc">
-            <h2>武漢肺炎重點時間軸</h2>
-        </section>
-        <!-- 武漢肺炎重點 時間軸 mb-->
-        <section class="guideText time_mobile">
-            <h2>武漢肺炎重點時間軸</h2>
-        </section>
-
-        <!-- 延伸閱讀 -->
-        <section class="guideText" id="reading">
-            <h2>武漢肺炎即時新聞</h2>
-            <div class="row news_layout">
-            </div>
-            <a href="https://www.ftvnews.com.tw/tag/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E" target="_blank"
-                style="display: flex;">
-                <div class="moreBtn">更多新聞</div>
             </a>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_logo">
-            <img src="img/logo_ftv.png" alt="民視新聞網">
-            <span>民視新聞網</span>
         </div>
-    </footer>
-    <script>
-        function ScrollTo(id_name) {
-            $('html,body').animate({
-                scrollTop: $('#' + id_name).offset().top
-            }, 1000);
-        }
-    </script>
 
-    <!-- fb share -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=1854261788223985&autoLogAppEvents=1"></script>
+        <!-- 世界數據 台灣案例 首圖 -->
+        <div class="mainbg">
+            <div class="mainbg_title">
+                <h1>武漢肺炎疫情</h1>
+                <h3>圖表資訊一次看懂</h3>
+                <div class="row taiwan_data">
+                    <div class="col-md-4">
+                        <p>台灣確診數</p>
+                        <p id="tw_con" class="data_gc1" style="font-size: 1.8rem"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>解除隔離</p>
+                        <p id="tw_rec" class="data_rescue" style="font-size: 1.8rem"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>死亡數</p>
+                        <p id="tw_die" class="data_gd1" style="font-size: 1.8rem"></p>
+                    </div>
+                </div>
+                <div class="mainbg_info">
+                    <div id="inc_con" class="count_sumConfirm_global bar1"></div>
+                    <div id="inc_die" class="count_sumDeath_global bar2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-8">全球確診</div>
+                    <div class="col-4">死亡</div>
+                </div>
+            </div>
+        </div>
 
-    <!-- jqueryDataTables -->
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19" /></div>
 
-    <!-- boot -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <main class="layout">
+            <!-- 台灣確診案例數 -->
+            <section class="guideText">
+                <h2>台灣確診案例數</h2>
+                <table
+                    id="dt_imp_taiwan"
+                    class="table table-striped table-bordered table-sm"
+                    cellspacing="0"
+                    width="100%"
+                >
+                    <!-- {{insert form}} -->
+                </table>
+            </section>
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
+            <!-- 台灣本土案例分佈 -->
+            <section id="item-1" class="guideText">
+                <h2>台灣本土案例分佈</h2>
+                <div class="hovertext"></div>
 
-    <!-- line chart -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+                <div class="taiwan_map">
+                    <!-- {{insert map}} -->
+                </div>
+                <table
+                    id="dt_loc_taiwan"
+                    class="table table-striped table-bordered table-sm"
+                    cellspacing="0"
+                    width="100%"
+                >
+                    <!-- {{insert form}} -->
+                </table>
+            </section>
 
-    <!-- world map -->
-    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
-    <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
-    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+            <!-- 華航諾富特確診關係圖 -->
+            <section class="guideText">
+                <img src="./img/air.jpg" style="width: 100%" alt="華航、諾富特群聚關係" />
+            </section>
 
-    <!-- vuejs -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+            <!-- 本土群聚、不明感染關係圖 確診足跡 -->
+            <section class="guideText">
+                <h2>本土群聚、不明感染關係圖 確診足跡</h2>
+                <div id="footmap">
+                    <ul class="footmap-table">
+                        <li>日期</li>
+                        <li>時間</li>
+                        <li>案例</li>
+                        <li>地點</li>
+                    </ul>
+                    <hr style="margin: 2%" />
+                    <ul v-for="stuff of listArray" class="footmap-table">
+                        <li>{{stuff.date}}</li>
+                        <li>{{stuff.time}}</li>
+                        <li>{{stuff.case}}</li>
+                        <li>{{stuff.site}}</li>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- customize -->
-    <!-- <script src="js/data.js?ver=202105040830"></script> -->
-    <script src="js/editMap.js?ver=202105040830"></script>
-    <script src="js/edit.js?ver=202105040830"></script>
-    <script src="js/data.js?ver=202105040830"></script>
-    <script src="js/editTimeline_pc.js?ver=202105040830"></script>
-    <script src="js/editTimeline_mb.js?ver=202105040830"></script>
-    <script src="js/script.js?ver=202105040830"></script>
-</body>
+            <!-- 疫情警戒分級標準 -->
+            <section class="guideText">
+                <h2>疫情警戒分級標準需要標題</h2>
+                <img src="./img/alert.jpg" style="width: 100%" alt="疫情警戒分級標準與因應事項" />
+            </section>
 
+            <!-- 台灣確診案例 -->
+            <section id="item-2" class="guideText">
+                <div class="case_info"></div>
+                <h2>台灣確診案例</h2>
+                <div style="display: flex">
+                    <div class="case_ex1"></div>
+                    <div class="case_ex2"></div>
+                    <div class="case_ex3"></div>
+                </div>
+                <div style="display: flex">
+                    <div class="case_ex4"></div>
+                    <div class="case_ex5"></div>
+                </div>
+                <p style="color: #8a8a8a; margin: 10px 30px; font-size: 0.9rem">
+                    點擊 <i class="fas fa-plus"></i> 可以展開
+                </p>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>未知感染源</p>
+                        <div id="non" class="spec_case_layout"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>華航、諾富特群聚<i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="tw_air" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>部立桃園醫院 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="tw_hos" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>敦睦艦隊 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="tw_flt" class="case_layout disable"></div>
+                    </div>
+                </div>
+
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>亞洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="trp_A" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>美洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="trp_NA" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>歐洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="trp_EU" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>非洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="trp_AF" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>大洋洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="trp_OC" class="case_layout disable"></div>
+                    </div>
+                </div>
+                <div class="row case_group">
+                    <div class="col-12">
+                        <p>多國旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
+                        <div id="trp_m" class="case_layout disable"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 全球確診-->
+            <section class="guideText" id="worldMap">
+                <h2 id="item-3">全球確診</h2>
+                <p>
+                    2019年12月底在中國爆發武漢肺炎後，泰國於2020年1月13日也出現確診首例，為一名來自武漢的61歲女遊客，這也是第一起中國境外的感染案例。
+                </p>
+
+                <p>
+                    情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年；南韓「新天地大邱教會」則出現一位超級傳播者，導致大規模群聚感染。
+                </p>
+
+                <p>
+                    此外，伊朗、土耳其等地疫情也相當嚴重。其中，印度近來舉行地方選舉、慶祝重要節慶「大壺節」，加上變種病毒肆虐的情況下，單日確診和死亡人數屢破新高，目前累計確診數已突破2000萬，死亡人數也超過20萬大關。
+                </p>
+
+                <p>
+                    歐洲部分，自義大利疫情大爆發後，鄰近國家也陸續出現確診案例，截至2021年4月，法國已經突破500萬確診，俄羅斯、英國、義大利也有超過400萬人染疫。
+                </p>
+
+                <p>
+                    美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數逼近3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數逼季1500萬，也是拉美第一大重災區。
+                </p>
+                <iframe
+                    src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"
+                    width="100%"
+                    height="600px"
+                ></iframe>
+                <p style="margin-bottom: 10%">資料來源：Our World in Data</p>
+            </section>
+
+            <!-- 武漢肺炎重點 時間軸 pc-->
+            <div id="item-4"></div>
+            <section class="guideText time_pc">
+                <h2>武漢肺炎重點時間軸</h2>
+            </section>
+            <!-- 武漢肺炎重點 時間軸 mb-->
+            <section class="guideText time_mobile">
+                <h2>武漢肺炎重點時間軸</h2>
+            </section>
+
+            <!-- 延伸閱讀 -->
+            <section class="guideText" id="reading">
+                <h2>武漢肺炎即時新聞</h2>
+                <div class="row news_layout"></div>
+                <a
+                    href="https://www.ftvnews.com.tw/tag/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E"
+                    target="_blank"
+                    style="display: flex"
+                >
+                    <div class="moreBtn">更多新聞</div>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_logo">
+                <img src="img/logo_ftv.png" alt="民視新聞網" />
+                <span>民視新聞網</span>
+            </div>
+        </footer>
+        <script>
+            function ScrollTo(id_name) {
+                $('html,body').animate(
+                    {
+                        scrollTop: $('#' + id_name).offset().top,
+                    },
+                    1000
+                )
+            }
+        </script>
+
+        <!-- fb share -->
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=1854261788223985&autoLogAppEvents=1"
+        ></script>
+
+        <!-- jqueryDataTables -->
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+        <!-- boot -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
+
+        <!-- line chart -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+        <!-- world map -->
+        <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+        <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+        <!-- vuejs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+
+        <!-- customize -->
+        <!-- <script src="js/data.js?ver=202105120830"></script> -->
+        <script src="js/editMap.js?ver=202105120830"></script>
+        <script src="js/edit.js?ver=202105120830"></script>
+        <script src="js/data.js?ver=202105120830"></script>
+        <script src="js/editTimeline_pc.js?ver=202105120830"></script>
+        <script src="js/editTimeline_mb.js?ver=202105120830"></script>
+        <script src="js/script.js?ver=202105120830"></script>
+    </body>
 </html>
