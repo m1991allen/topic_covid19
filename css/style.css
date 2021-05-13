@@ -1382,7 +1382,7 @@ ul.footmap-table:nth-of-type(17) {
 }
 
 .footmap {
-    width: 49px;
+    width: 49%;
 }
 
 @media screen and (max-width: 768px) {
