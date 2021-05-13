@@ -1380,3 +1380,13 @@ ul.footmap-table:nth-of-type(17) {
     border-bottom: 3px solid black;
     padding-bottom: 1rem;
 }
+
+.footmap {
+    width: 49px;
+}
+
+@media screen and (max-width: 768px) {
+    .footmap {
+        width: 100%;
+    }
+}
