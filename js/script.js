@@ -200,8 +200,7 @@ $(document).ready(function () {
     //延伸閱讀api
     function ajax_test() {
         $.ajax({
-            url:
-                'https://cors-anywhere.herokuapp.com/https://ftvnews-api2.azurewebsites.net/API/FtvGetNewsWeb.aspx?Cate=%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E&Page=1&sp=6', //json文件位置
+            url: 'https://cors-anywhere.herokuapp.com/https://ftvnews-api2.azurewebsites.net/API/FtvGetNewsWeb.aspx?Cate=%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E&Page=1&sp=6', //json文件位置
             type: 'GET', //請求方式為get
             dataType: 'json', //返回數據格式為json
             success: function (data) {
@@ -273,4 +272,3 @@ for (let i = 0; i < btn_display.length; i++) {
         }
     }, 1000)
 })()
-
