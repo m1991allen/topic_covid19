@@ -1342,6 +1342,10 @@ footer img {
 
 /* 足跡表格 */
 
+.footmap {
+    width: 100%;
+}
+
 #footmap .footmap-table:nth-child(1) {
     font-size: 1.2rem;
     font-weight: border;
@@ -1379,14 +1383,4 @@ ul.footmap-table:nth-of-type(17) {
     content: '';
     border-bottom: 3px solid black;
     padding-bottom: 1rem;
-}
-
-.footmap {
-    width: 49%;
-}
-
-@media screen and (max-width: 768px) {
-    .footmap {
-        width: 100%;
-    }
 }
