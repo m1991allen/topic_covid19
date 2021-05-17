@@ -306,6 +306,7 @@ svg {
     stroke-width: 0;
 }
 
+
 /* 武漢地圖 */
 
 #wuhan {
@@ -371,11 +372,13 @@ svg {
     right: 0;
 }
 
+
 /* 病毒與棺材人物 */
 
 #virusAcd img {
     width: 100%;
 }
+
 
 /* 地球封城比較 */
 
@@ -402,6 +405,7 @@ svg {
     z-index: 100;
 }
 
+
 /* 地球數據 */
 
 .earth_info {
@@ -410,6 +414,7 @@ svg {
     margin: auto;
     width: 100%;
 }
+
 
 /* scrollTop */
 
@@ -442,6 +447,7 @@ svg {
     width: 35px;
     height: 35px;
 }
+
 
 /* jqueryui */
 
@@ -479,6 +485,7 @@ html .ui-button.ui-state-disabled:active {
 .ui-accordion-header-icon ui-icon ui-icon-triangle-1-e {
     display: none;
 }
+
 
 /* social icon */
 
@@ -529,19 +536,35 @@ html .ui-button.ui-state-disabled:active {
     vertical-align: text-top;
 }
 
-.cs-share-this-product .social-share-icon-block span.share-text {
-    color: #fff;
-    transition: all 0.45s ease-in-out;
-    margin-right: 10px;
-}
-
 .cs-share-this-product.facebook {
     background-color: #3c5da1;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 99;
+    width: 80px;
 }
+
+span.share-text {
+    color: #fff;
+    transition: all 0.45s ease-in-out;
+}
+
+.line-style {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: #00c755;
+    width: 80px;
+    height: 30px;
+}
+
+.line-style span {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
 
 /* 延伸閱讀 */
 
@@ -619,6 +642,7 @@ html .ui-button.ui-state-disabled:active {
     color: white;
 }
 
+
 /* 症狀 */
 
 .symptom {
@@ -633,11 +657,13 @@ html .ui-button.ui-state-disabled:active {
     margin: auto;
 }
 
+
 /* 封城 */
 
 #close_city {
     width: 100%;
 }
+
 
 /* 時間軸layout */
 
@@ -693,19 +719,6 @@ html .ui-button.ui-state-disabled:active {
     border-radius: 4px;
 }
 
-.time_mobile {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .time_pc {
-        display: none;
-    }
-    .time_mobile {
-        display: block;
-    }
-}
-
 .icon_taiwan,
 .icon_global {
     font-size: 1.2rem;
@@ -716,6 +729,7 @@ html .ui-button.ui-state-disabled:active {
     padding: 10px;
     border-radius: 10px;
 }
+
 
 /* 三種病毒比較 */
 
@@ -756,6 +770,7 @@ html .ui-button.ui-state-disabled:active {
     height: 20px;
     border-radius: 50px;
 }
+
 
 /* 時間軸style */
 
@@ -824,7 +839,7 @@ dd:hover {
     opacity: 1;
 }
 
-dd + dd {
+dd+dd {
     clear: both;
 }
 
@@ -855,9 +870,10 @@ dd:not(:last-of-type)::after {
 }
 
 dd.delay::after,
-.delay + dd::after {
+.delay+dd::after {
     border-left-style: dashed;
 }
+
 
 /* 防疫 電腦版 */
 
@@ -868,6 +884,7 @@ dd.delay::after,
 .protect_pc tr {
     border: 1px solid white;
 }
+
 
 /* .protect_pc .info_layout {
     display: flex;
@@ -926,6 +943,7 @@ dd.delay::after,
     text-align: left;
 }
 
+
 /* 防疫 手機版 */
 
 .protect_mb {
@@ -970,6 +988,7 @@ dd.delay::after,
 .fa-exclamation-triangle {
     color: #ffcd21;
 }
+
 
 /* 旅遊警示 */
 
@@ -1074,6 +1093,7 @@ dd.delay::after,
     }
 }
 
+
 /* data table */
 
 table.dataTable thead .sorting:after,
@@ -1135,6 +1155,7 @@ table.dataTable thead .sorting_desc_disabled {
     align-content: center;
     background-color: #fff;
 }
+
 
 /* 台灣疫情時間關係 */
 
@@ -1243,11 +1264,13 @@ table.dataTable thead .sorting_desc_disabled {
     }
 }
 
+
 /* 案例日期 */
 
 .case_d {
     text-align: center;
 }
+
 
 /* 案例預設狀態 */
 
@@ -1269,6 +1292,7 @@ table.dataTable thead .sorting_desc_disabled {
     border: 2px dashed black;
     padding: 8px;
 }
+
 
 /* 案例訊息 */
 
@@ -1293,11 +1317,13 @@ table.dataTable thead .sorting_desc_disabled {
     }
 }
 
+
 /* 案例狀態 境內感染 */
 
 .case_s1 {
     background-color: #f5dc64;
 }
+
 
 /* 案例狀態 死亡 */
 
@@ -1305,17 +1331,20 @@ table.dataTable thead .sorting_desc_disabled {
     background-color: #e5596a;
 }
 
+
 /* 案例狀態 磐石艦 */
 
 .case_s3 {
     background-color: #97a5ac;
 }
 
+
 /* 華航、諾富特 */
 
 .case_s4 {
     background-color: #70b942;
 }
+
 
 /* 頁尾 */
 
@@ -1334,21 +1363,19 @@ footer img {
     text-align: center;
 }
 
+
 /* 敦睦艦隊 */
 
 .HzV7m-b7CEbf .i4ewOd-pzNkMb-tJHJj {
     background-color: #cc6655 !important;
 }
 
+
 /* 足跡表格 */
 
 .footmap {
     width: 100%;
-}
-
-#footmap .footmap-table:nth-child(1) {
-    font-size: 1.2rem;
-    font-weight: border;
+    margin-bottom: 10px;
 }
 
 .footmap-table {
@@ -1368,19 +1395,9 @@ footer img {
     width: 30%;
 }
 
-/* 竹雞日期底線 */
-ul.footmap-table {
-    background-color: rgb(255, 248, 248);
-}
 
-ul.footmap-table:nth-of-type(4),
-ul.footmap-table:nth-of-type(5),
-ul.footmap-table:nth-of-type(9),
-ul.footmap-table:nth-of-type(13),
-ul.footmap-table:nth-of-type(15),
-ul.footmap-table:nth-of-type(16),
-ul.footmap-table:nth-of-type(17) {
-    content: '';
-    border-bottom: 3px solid black;
-    padding-bottom: 1rem;
+/* splide slider */
+
+.splide__list {
+    width: 100%;
 }

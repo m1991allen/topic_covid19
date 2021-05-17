@@ -1,37 +1,36 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // scrollspy
-    $(window).on('load scroll resize', function () {
-        var docHeight = $(document).height()
-        var windowPos = $(window).scrollTop()
-        var windowHeight = $(window).height()
-        var windowWidth = $(window).width()
-        var completion = windowPos / (docHeight - windowHeight)
+    $(window).on('load scroll resize', function() {
+            var docHeight = $(document).height()
+            var windowPos = $(window).scrollTop()
+            var windowHeight = $(window).height()
+            var windowWidth = $(window).width()
+            var completion = windowPos / (docHeight - windowHeight)
 
-        if (docHeight <= windowHeight) {
-            $('#progress').width(windowWidth)
-        } else {
-            $('#progress').width(completion * windowWidth)
-        }
-    })
-    // scrolltop
-    $('#BackTop').click(function (event) {
-        $('html, body').animate(
-            {
+            if (docHeight <= windowHeight) {
+                $('#progress').width(windowWidth)
+            } else {
+                $('#progress').width(completion * windowWidth)
+            }
+        })
+        // scrolltop
+    $('#BackTop').click(function(event) {
+        $('html, body').animate({
                 scrollTop: 0,
             },
             '1000'
         )
     })
-    $(window).scroll(function () {
-        if ($(this).scrollTop() < 100) {
-            //判斷捲軸小於200座標位置時，消失
-            $('#BackTop').stop().fadeOut('fast')
-        } else {
-            $('#BackTop').stop().fadeIn('fast') //stop()可以讓使用者停止
-        }
-    })
-    // navbar toggle
-    $('#navbarBtn').click(function () {
+    $(window).scroll(function() {
+            if ($(this).scrollTop() < 100) {
+                //判斷捲軸小於200座標位置時，消失
+                $('#BackTop').stop().fadeOut('fast')
+            } else {
+                $('#BackTop').stop().fadeIn('fast') //stop()可以讓使用者停止
+            }
+        })
+        // navbar toggle
+    $('#navbarBtn').click(function() {
         $('#navbar').slideToggle('slow')
         $('#navbar').css('display', 'flex')
     })
@@ -49,7 +48,7 @@ $(document).ready(function () {
     )
 
     // 武漢地圖切換
-    $('.wuhan #wuhan').click(function () {
+    $('.wuhan #wuhan').click(function() {
         $('#wuhan').addClass('changeImg')
         $('#hubei').addClass('changeImg')
         $('#click_me').addClass('changeImg')
@@ -63,11 +62,12 @@ $(document).ready(function () {
     })
 
     //China Map
-    ;(function ($) {
+    ;
+    (function($) {
         'use strict'
-        $(function () {
+        $(function() {
             var $svgEl = $('.map_china')
-            $('.map_china__trigger a').on('click', function (e) {
+            $('.map_china__trigger a').on('click', function(e) {
                 // stop propagation of this event, it will never reach body in bubbling phase.
                 e.stopPropagation()
 
@@ -76,7 +76,7 @@ $(document).ready(function () {
                     svgCurName = '',
                     svgNameIndex = 0
 
-                $('.map_china .map_china__name').each(function () {
+                $('.map_china .map_china__name').each(function() {
                     if (goName == $(this).data('title')) {
                         svgCurName = $(this).data('title')
                         return false
@@ -93,7 +93,7 @@ $(document).ready(function () {
             })
 
             //Restore all elements
-            $('body').on('click', function (e) {
+            $('body').on('click', function(e) {
                 svgMapRestore(2)
             })
 
@@ -108,7 +108,7 @@ $(document).ready(function () {
                     opacity: alpha,
                 })
 
-                $svgEl.find('.map_china__name').each(function () {
+                $svgEl.find('.map_china__name').each(function() {
                     $(this)
                         .css({
                             transform: 'translate(0,15px)',
@@ -126,7 +126,7 @@ $(document).ready(function () {
             }
 
             function svgMapActive(index, text) {
-                $svgEl.each(function () {
+                $svgEl.each(function() {
                     $(this).children().eq(index).addClass('is-show')
                     $(this).find('circle').eq(index).css({
                         r: 15,
@@ -155,7 +155,7 @@ $(document).ready(function () {
     })(jQuery)
 
     // World Map
-    $('path').mousemove(function (e) {
+    $('path').mousemove(function(e) {
         $('.hovertext').text($(this).attr('title'))
         $('.hovertext')
             .css({
@@ -164,7 +164,7 @@ $(document).ready(function () {
             })
             .fadeIn()
     })
-    $('circle').mousemove(function (e) {
+    $('circle').mousemove(function(e) {
         $('.hovertext').text($(this).attr('title'))
         $('.hovertext')
             .css({
@@ -173,15 +173,15 @@ $(document).ready(function () {
             })
             .fadeIn()
     })
-    $('path').mouseleave(function () {
+    $('path').mouseleave(function() {
         $('.hovertext').css('display', 'none')
     })
-    $('circle').mouseleave(function () {
+    $('circle').mouseleave(function() {
         $('.hovertext').css('display', 'none')
     })
 
     //台灣疫情關係
-    $('.case_i').mousemove(function (e) {
+    $('.case_i').mousemove(function(e) {
         // console.log(e.pageX, e.pageY)
         var case_item = $(this).text()
         $('.case_info')
@@ -193,20 +193,24 @@ $(document).ready(function () {
         $('.case_info').html(case_total[case_item - 1].info)
     })
 
-    $('.case_i').mouseleave(function () {
+    $('.case_i').mouseleave(function() {
         $('.case_info').css('display', 'none')
     })
 
     //延伸閱讀api
     function ajax_test() {
         $.ajax({
-            url: 'https://cors-anywhere.herokuapp.com/https://ftvnews-api2.azurewebsites.net/API/FtvGetNewsWeb.aspx?Cate=%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E&Page=1&sp=6', //json文件位置
+            url: 'https://ftvapi.ftvnews.com.tw/API/FtvGetNewsWeb.aspx?Cate=%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E&Page=1&sp=6', //json文件位置
             type: 'GET', //請求方式為get
+            headers: {
+                'Ocp-Apim-Subscription-Key': 'f0513aa877834e0a873e160cf16d4471',
+                'Ocp-Apim-Trace': 'true',
+            },
             dataType: 'json', //返回數據格式為json
-            success: function (data) {
+            success: function(data) {
                 //請求成功完成后要執行的方法
                 //each循環 使用$.each方法遍歷返回的數據
-
+                console.log(data)
                 var html_read =
                     '<div class="news_frame col-lg-4 col-md-4 col-sm-6"><a href="https://www.ftvnews.com.tw/news/detail/{{link}}" target="_blank"><div class="news"><div class="cover_size"><img class="cover" src="{{url}}"></div><div class="title">{{title}}</div><div class="date"><i class="far fa-clock" aria-hidden="true"></i> {{date}}</div></div></a></div>'
 
@@ -216,13 +220,14 @@ $(document).ready(function () {
                         .replace('{{url}}', data.ITEM[i].Image)
                         .replace('{{date}}', data.ITEM[i].CreateDate)
                         .replace('{{link}}', data.ITEM[i].ID)
+
                     function limitUploadFileName() {
                         let newsTitle = data.ITEM[i].Title
                         let len = newsTitle.length
                         let str = ''
 
                         if (len > 20) {
-                            str = newsTitle.substring(0, 20) + '......'
+                            str = newsTitle.substring(0, 40) + '......'
                         } else {
                             return newsTitle
                         }
@@ -240,7 +245,7 @@ $(document).ready(function () {
 // 疫情關係圖縮合
 const btn_display = document.querySelectorAll('.fa-plus-square')
 for (let i = 0; i < btn_display.length; i++) {
-    btn_display[i].addEventListener('click', function () {
+    btn_display[i].addEventListener('click', function() {
         // 控制按鈕icon
         if (btn_display[i].classList.contains('fa-plus-square')) {
             btn_display[i].classList.remove('fa-plus-square')
@@ -261,7 +266,8 @@ for (let i = 0; i < btn_display.length; i++) {
 }
 
 // 表格值=0隱藏
-;(function () {
+;
+(function() {
     let filter = document.querySelectorAll('.ctrl>td:nth-child(2)')
     setTimeout(() => {
         for (let i = 0; i < filter.length; i++) {

@@ -33,19 +33,19 @@ function ajax_gsheet() {
 
             // 桃園市
             var data_tc4 = data.feed.entry[27].content.$t
-            $('.data_tc4').addClass('deg1')
+            $('.data_tc4').addClass('deg2')
             $('.data_tc4').html(data_tc4)
             $('.data_tc4').attr('title', '桃園市：' + data_tc4 + '例')
 
             // 新竹市
             var data_tc5 = data.feed.entry[29].content.$t
-            $('.data_tc5').addClass('deg3')
+            $('.data_tc5').addClass('deg4')
             $('.data_tc5').html(data_tc5)
             $('.data_tc5').attr('title', '新竹市：' + data_tc5 + '例')
 
             // 新竹縣
             var data_tc6 = data.feed.entry[31].content.$t
-            $('.data_tc6').addClass('degNone')
+            $('.data_tc6').addClass('deg4')
             $('.data_tc6').html(data_tc6)
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例')
 
@@ -57,7 +57,7 @@ function ajax_gsheet() {
 
             // 台中市
             var data_tc8 = data.feed.entry[35].content.$t
-            $('.data_tc8').addClass('deg2')
+            $('.data_tc8').addClass('deg4')
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
@@ -99,7 +99,7 @@ function ajax_gsheet() {
 
             // 高雄市
             var data_tc15 = data.feed.entry[49].content.$t
-            $('.data_tc15').addClass('degNone')
+            $('.data_tc15').addClass('deg4')
             $('.data_tc15').html(data_tc15)
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例')
 
@@ -111,7 +111,7 @@ function ajax_gsheet() {
 
             // 宜蘭縣
             var data_tc17 = data.feed.entry[53].content.$t
-            $('.data_tc17').addClass('deg2')
+            $('.data_tc17').addClass('deg3')
             $('.data_tc17').html(data_tc17)
             $('.data_tc17').attr('title', '宜蘭縣：' + data_tc17 + '例')
 
