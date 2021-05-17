@@ -71,7 +71,7 @@
             <nav class="nav nav-pills flex-column">
                 <p>導覽：</p>
                 <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">台灣本土案例</a>
-                <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">台灣確診關係</a>
+                <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">疫情因應政策</a>
                 <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">世界疫情地圖</a>
                 <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">最新事件時間</a>
             </nav>
@@ -159,123 +159,52 @@
                 </table>
             </section>
 
-            <!-- 本土群聚關係關係圖 -->
-            <section class="guideText">
-                <img src="./img/grp_non.jpg" style="width: 100%" alt="本土群聚關係" />
-            </section>
-
-            <!-- 華航諾富特確診關係圖 -->
-            <section class="guideText">
-                <img src="./img/grp_air.jpg" style="width: 100%" alt="華航、諾富特群聚關係" />
-            </section>
-
-            <!-- 本土群聚、不明感染關係圖 確診足跡 -->
-            <section class="guideText">
-                <h2>確診足跡</h2>
-                <div id="footmap">
-                    <!-- <ul class="footmap-table">
-                        <li>日期</li>
-                        <li>時間</li>
-                        <li>案例</li>
-                        <li>地點</li>
-                    </ul>
-                    <hr style="margin: 2%" />
-                    <ul v-for="stuff of listArray" class="footmap-table">
-                        <li>{{stuff.date}}</li>
-                        <li>{{stuff.time}}</li>
-                        <li>{{stuff.case}}</li>
-                        <li>{{stuff.site}}</li>
-                    </ul> -->
-                    <img src="./img/footmap0.jpg" alt="足跡圖" class="footmap" />
-                    <img src="./img/footmap1.jpg" alt="足跡圖" class="footmap" />
-                    <img src="./img/footmap2.jpg" alt="足跡圖" class="footmap" />
-                    <img src="./img/footmap3.jpg" alt="足跡圖" class="footmap" />
-                    <img src="./img/footmap4.jpg" alt="足跡圖" class="footmap" />
-                    <img src="./img/footmap5.jpg" alt="足跡圖" class="footmap" />
-                </div>
-            </section>
-
             <!-- 疫情警戒分級標準 -->
             <section class="guideText">
                 <h2>疫情警戒分級標準</h2>
                 <img src="./img/alert.jpg" style="width: 100%" alt="疫情警戒分級標準與因應事項" />
             </section>
 
-            <!-- 台灣確診案例 -->
+            <!-- 全國防疫措施 -->
             <section id="item-2" class="guideText">
-                <div class="case_info"></div>
-                <h2>台灣確診案例</h2>
-                <div style="display: flex">
-                    <div class="case_ex1"></div>
-                    <div class="case_ex2"></div>
-                    <div class="case_ex3"></div>
-                </div>
-                <div style="display: flex">
-                    <div class="case_ex4"></div>
-                    <div class="case_ex5"></div>
-                </div>
-                <p style="color: #8a8a8a; margin: 10px 30px; font-size: 0.9rem">
-                    點擊 <i class="fas fa-plus"></i> 可以展開
+                <h2>全國防疫措施</h2>
+                <p>
+                    因應國內疫情持續嚴峻，雙北地區陸續發生感染來源不明的病例及群聚事件，指揮中宣布自即日起至5月28日，啟動全國防疫因應措施。
                 </p>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>未知感染源</p>
-                        <div id="non" class="spec_case_layout"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>華航、諾富特群聚<i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="tw_air" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>部立桃園醫院 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="tw_hos" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>敦睦艦隊 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="tw_flt" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>亞洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="trp_A" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>美洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="trp_NA" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>歐洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="trp_EU" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>非洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="trp_AF" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>大洋洲旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="trp_OC" class="case_layout disable"></div>
-                    </div>
-                </div>
-                <div class="row case_group">
-                    <div class="col-12">
-                        <p>多國旅遊史 <i class="far fa-lg fa-plus-square"></i></p>
-                        <div id="trp_m" class="case_layout disable"></div>
-                    </div>
+                <img src="./img/alert_global.jpg" style="width: 100%" alt="全國防疫措施" />
+            </section>
+
+            <!-- 雙北防疫措施 -->
+            <section class="guideText">
+                <h2>雙北防疫措施</h2>
+                <p>
+                    除了全國必須關閉場所外，由於雙北（台北市、新北市）提升為第三級警戒區域，另公布九大防疫措施、額外關閉場所。
+                </p>
+                <img src="./img/alert_taipei0.jpg" style="width: 100%" alt="雙北防疫措施" />
+                <img src="./img/alert_taipei1.jpg" style="width: 100%" alt="雙北防疫措施" />
+                <img src="./img/alert_taipei2.jpg" style="width: 100%" alt="雙北防疫措施" />
+            </section>
+            </section>
+
+            <!-- 近期感染事件病毒定序結果 -->
+            <section class="guideText">
+                <h2>近期感染事件病毒定序結果</h2>
+                <p>
+                    根據指揮中心公布近日案例病毒定序結果，其中華航諾福特案、蘆洲獅子會案1203、羅東遊藝場、萬華茶藝館均為相同的英國變異株，因此能夠認定上述案例為一樣的病毒株在互相傳播。
+                </p>
+                <img src="./img/alert_dna.jpg" style="width: 100%" alt="近期感染事件病毒定序結果" />
+            </section>
+
+            <!-- 本土群聚、不明感染關係圖 確診足跡 -->
+            <section class="guideText">
+                <h2>確診足跡</h2>
+                <div id="footmap">
+                    <img src="./img/footmap0.jpg" alt="足跡圖" class="footmap" />
+                    <img src="./img/footmap1.jpg" alt="足跡圖" class="footmap" />
+                    <img src="./img/footmap2.jpg" alt="足跡圖" class="footmap" />
+                    <img src="./img/footmap3.jpg" alt="足跡圖" class="footmap" />
+                    <img src="./img/footmap4.jpg" alt="足跡圖" class="footmap" />
+                    <img src="./img/footmap5.jpg" alt="足跡圖" class="footmap" />
                 </div>
             </section>
 
@@ -307,6 +236,16 @@
                     height="600px"
                 ></iframe>
                 <p style="margin-bottom: 10%">資料來源：Our World in Data</p>
+            </section>
+
+            <!-- 確診者、接觸者注意事項 -->
+            <section class="guideText">
+                <h2>確診者、接觸者注意事項</h2>
+                <p>
+                    由於雙北確診者激增，恐怕出現醫療量能不足情況，目前除了北部各大醫院進行降載計畫，指揮中心也列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
+                </p>
+                <img src="./img/alert_touch0.jpg" style="width: 100%" alt="確診者注意事項" />
+                <img src="./img/alert_touch1.jpg" style="width: 100%" alt="接觸者注意事項" />
             </section>
 
             <!-- 武漢肺炎重點 時間軸 pc-->
