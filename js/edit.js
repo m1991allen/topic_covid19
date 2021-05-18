@@ -168,6 +168,8 @@ function ajax_gsheet() {
             $('#tw_local').html(data.feed.entry[15].content.$t)
             //境外移入
             $('#tw_import').html(data.feed.entry[17].content.$t)
+            //最後更新日期
+            $('#tw_pubDate').html(data.feed.entry[79].content.$t)
 
 
             //// 全球總合 ////

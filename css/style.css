@@ -106,7 +106,7 @@ table th {
     z-index: 99;
 }
 
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1160px) {
     #navbarBtn {
         display: flex;
     }
@@ -273,7 +273,7 @@ p.layout {
 }
 
 .guideText {
-    margin: 15% 0;
+    margin: 10% 0;
 }
 
 .first-font {
@@ -1469,6 +1469,8 @@ footer img {
 }
 
 
-#tw_con{
+#tw_con,
+#tw_today{
     color:#894040
 }
+
