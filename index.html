@@ -36,8 +36,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <!-- customize -->
-    <link rel="stylesheet" href="css/map.css?ver=202105181730" />
-    <link rel="stylesheet" href="css/style.css?ver=202105181730" />
+    <link rel="stylesheet" href="css/map.css?ver=202105182200" />
+    <link rel="stylesheet" href="css/style.css?ver=202105182200" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
@@ -69,20 +69,21 @@
     <header class="row">
         <div id="progress"></div>
     </header>
-    <nav id="navbarBtn"><i class="fas fa-bars fa-2x"></i></nav>
+    <nav id="navbarBtn"><i class="fas fa-bars fa-3x"></i></nav>
     <nav id="navbar" class="navbar navbar-light bg-light">
         <nav class="nav nav-pills flex-column">
             <p>導覽：</p>
             <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">台灣本土案例</a>
             <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">疫情分級標準</a>
             <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">全國防疫措施</a>
-            <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">防疫照顧假Q&A</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-5')">近期感染事件病毒定序結果</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-6')">確診足跡一覽</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-7')">確診者、接觸者注意事項</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-8')">全球確診</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-9')">武肺重點時間軸</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-10')">武肺即時新聞</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-4')">確診足跡一覽</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-5')">快篩注意事項</a>
+            <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-6')">防疫照顧假Q&A</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-7')">病毒定序結果</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-8')">確診注意事項</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-9')">全球確診統計</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-10')">武肺重點時間軸</a>
+            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-11')">武肺即時新聞</a>
 
 
 
@@ -116,8 +117,8 @@
                     <p id="tw_import" class="data_gd1" style="font-size: 1.7rem"></p>
                 </div>
             </div>
-            <p style="text-align: right;">最後更新日期：5/18 14:30 <span></span> </p>
-    
+            <p style="text-align: right;">最後更新日期： <span id="tw_pubDate"></span> </p>
+
             <div class="mainbg_info">
                 <div id="inc_con" class="count_sumConfirm_global bar1"></div>
                 <div id="inc_die" class="count_sumDeath_global bar2"></div>
@@ -183,13 +184,61 @@
             <p>
                 除了全國必須關閉場所外，由於雙北（台北市、新北市）提升為第三級警戒區域，另公布九大防疫措施、額外關閉場所。
             </p>
-            <img src="./img/alert_taipei0.jpg" style="width: 100%; margin-bottom: 10px;" alt="雙北防疫措施" />
-            <img src="./img/alert_taipei1.jpg" style="width: 100%; margin-bottom: 10px;" alt="雙北防疫措施" />
-            <img src="./img/alert_taipei2.jpg" style="width: 100%; margin-bottom: 10px;" alt="雙北防疫措施" />
+            <img src="./img/alert_taipei0.jpg" class="protect" alt="雙北防疫措施" />
+            <img src="./img/alert_taipei1.jpg" class="protect" alt="雙北防疫措施" />
+            <img src="./img/alert_taipei2.jpg" class="protect" alt="雙北防疫措施" />
+        </section>
+
+        <!-- 確診足跡一覽 -->
+        <section id="item-4" class="guideText">
+            <h2>確診足跡</h2>
+            <div id="splide_footmap" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./img/footmap/1.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/2.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/3.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/4.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/5.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/6.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/7.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/7-0.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/7-1.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/8.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/9.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/10.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/11.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/12.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/12-0.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/13.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/14.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/14-0.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/14-1.jpg" alt="足跡圖" class="footmap" /></li>
+                        <li class="splide__slide"><img src="./img/footmap/15.jpg" alt="足跡圖" class="footmap" /></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快篩站注意事項 -->
+        <section id="item-5" class="guideText">
+            <h2>雙北快篩站注意事項</h2>
+            <div id="splide_station" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./img/station/1.jpg" alt="足跡圖" class="station" /></li>
+                        <li class="splide__slide"><img src="./img/station/2.jpg" alt="足跡圖" class="station" /></li>
+                        <li class="splide__slide"><img src="./img/station/3.jpg" alt="足跡圖" class="station" /></li>
+                        <li class="splide__slide"><img src="./img/station/4.jpg" alt="足跡圖" class="station" /></li>
+                        <li class="splide__slide"><img src="./img/station/5.jpg" alt="足跡圖" class="station" /></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 3rem;">點我看<a style="font-size: 1.2rem;" href="https://www.ftvnews.com.tw/news/detail/2021518W0264" target="_blank">  ——> 「雙北快篩站Q&A」完整新聞</a></p>
         </section>
 
         <!-- 防疫照顧假Q&A -->
-        <section id="item-4" class="guideText">
+        <section id="item-6" class="guideText">
             <h2>防疫照顧假Q&A</h2>
             <p>
                 因應嚴峻疫情，雙北市宣布5月18日至5月28日，高中職以下各級學校、安親班、課輔班全面停課，家長可請「防疫照顧假」。民視新聞對此整理相關Q&A，供有需要的民眾參考。
@@ -223,48 +272,17 @@
             <p style="margin-top: 3rem;">點我看<a style="font-size: 1.2rem;" href="https://www.ftvnews.com.tw/news/detail/2021517W0495" target="_blank">  ——> 「防疫照顧假Q&A」完整新聞</a></p>
         </section>
 
-        <!-- 近期感染事件病毒定序結果 -->
-        <section id="item-5" class="guideText">
+        <!-- 病毒定序結果 -->
+        <section id="item-7" class="guideText">
             <h2>近期感染事件病毒定序結果</h2>
             <p>
                 根據指揮中心公布近日案例病毒定序結果，其中華航諾福特案、蘆洲獅子會案1203、羅東遊藝場、萬華茶藝館均為相同的英國變異株，因此能夠認定上述案例為一樣的病毒株在互相傳播。
             </p>
             <img src="./img/alert_dna.jpg" style="width: 100%; margin-bottom: 10px;" alt="近期感染事件病毒定序結果" />
         </section>
-
-        <!-- 本土群聚、不明感染關係圖 確診足跡 -->
-        <section id="item-6" class="guideText">
-            <h2>確診足跡</h2>
-            <div id="splide_footmap" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/footmap/1.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/2.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/3.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/4.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/5.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/6.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/7.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/7-0.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/7-1.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/8.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/9.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/10.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/11.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/12.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/12-0.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/13.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/14.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/14-0.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/14-1.jpg" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/15.jpg" alt="足跡圖" class="footmap" /></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 確診者、接觸者注意事項 -->
-        <section id="item-7" class="guideText">
+        
+        <!-- 確診注意事項 -->
+        <section id="item-8" class="guideText">
             <h2>確診者、接觸者注意事項</h2>
             <p>
                 由於雙北確診者激增，恐怕出現醫療量能不足情況，目前除了北部各大醫院進行降載計畫，指揮中心也列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
@@ -275,15 +293,15 @@
             <img src="./img/alert_touch3.jpg" style="width: 100%; margin-bottom: 10px;" alt="接觸者注意事項" />
         </section>
 
-        <!-- 全球確診-->
-        <section id="item-8" class="guideText" id="worldMap">
+        <!-- 全球確診統計 -->
+        <section id="item-9" class="guideText" id="worldMap">
             <h2 id="item-3">全球確診</h2>
             <p>
                 2019年12月底在中國爆發武漢肺炎後，泰國於2020年1月13日也出現確診首例，為一名來自武漢的61歲女遊客，這也是第一起中國境外的感染案例。
             </p>
 
             <p>
-                情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年；南韓「新天地大邱教會」則出現一位超級傳播者，導致大規模群聚感染。
+                疫情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年；南韓「新天地大邱教會」則出現一位超級傳播者，導致大規模群聚感染。
             </p>
 
             <p>
@@ -295,14 +313,14 @@
             </p>
 
             <p>
-                美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數逼近3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數逼季1500萬，也是拉美第一大重災區。
+                美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數逼近3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數逼近1500萬，也是拉美第一大重災區。
             </p>
             <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
             <p style="margin-bottom: 10%">資料來源：Our World in Data</p>
         </section>
 
-        <!-- 武漢肺炎重點時間軸-->
-        <div id="item-9"></div>
+        <!-- 武漢重點時間軸-->
+        <div id="item-10"></div>
         <section id="data_timeline" class="guideText time_pc">
             <h2>武漢肺炎重點時間軸</h2>
             <div id="splide_timeline" class="splide">
@@ -360,15 +378,15 @@
             </div>
         </section>
 
-        <!-- 武漢肺炎即時新聞 -->
-        <section id="item-10" class="guideText" id="reading">
+        <!-- 武肺即時新聞 -->
+        <section id="item-11" class="guideText" id="reading">
             <h2>武漢肺炎即時新聞</h2>
             <!-- <div class="row news_layout"></div> -->
             <iframe width="100%" height="300" src="https://www.youtube.com/embed/XxJKnDLYZz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <div class="block_layout">
                 <a href="https://www.ftvnews.com.tw/tag/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E/" target="_blank">
-                    <div>武漢肺炎最新動態 <i class="far fa-hand-point-left fa-2x"></i></div>
+                    <div>點我看武肺疫情最新動態</div>
                 </a>
                 <!-- <a href="https://www.ftvnews.com.tw/tag/%E6%94%BF%E6%B2%BB/" target="_blank">
                     <div>政治動態</div>
@@ -387,7 +405,7 @@
 
         <!-- 下載民視新聞APP 社群連結 -->
         <section class="guideText">
-            <h3 class="icon_ftv">下載民視新聞APP 疫情動態不漏接</h3>
+            <h3 class="icon_ftv">下載民視新聞APP<br> 疫情動態不漏接</h3>
             <ul class="social_info">
                 <li>
                     <img src="./img/apple.png" alt="download IOS">
@@ -478,14 +496,18 @@
                 rewind: true,
             }).mount();
         }, 1000);
+
+        new Splide('#splide_station', {
+            rewind: true,
+        }).mount();
     </script>
 
     <!-- customize -->
-    <script src="js/editMap.js?ver=202105181730 "></script>
-    <script src="js/edit.js?ver=202105181730 "></script>
-    <script src="js/data.js?ver=202105181730 "></script>
-    <script src="js/editTimeline.js?ver=202105181730 "></script>
-    <script src="js/script.js?ver=202105181730 "></script>
+    <script src="js/editMap.js?ver=202105182200 "></script>
+    <script src="js/edit.js?ver=202105182200 "></script>
+    <script src="js/data.js?ver=202105182200 "></script>
+    <script src="js/editTimeline.js?ver=202105182200 "></script>
+    <script src="js/script.js?ver=202105182200 "></script>
 </body>
 
 </html>
