@@ -45,11 +45,10 @@ h1 {
 
 h2 {
     margin: 2% 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 h2::after {
@@ -92,6 +91,9 @@ table th {
     background-color: rgb(235, 204, 204);
 }
 
+
+/* 漢堡選單 */
+
 #navbarBtn {
     position: fixed;
     display: none;
@@ -118,27 +120,6 @@ table th {
     }
 }
 
-.taiwan_data div{
-    background-color: #ff6f001e;
-    padding-top: 20px;
-    color: #563723;
-    font-size: 1.8rem;
-}
-
-.taiwan_data .col-4:nth-child(1)::after {
-    content: "=";
-    position: absolute;
-    right: -5px;
-    top: 50%;
-}
-
-.taiwan_data .col-4:nth-child(2)::after {
-    content: "+";
-    position: absolute;
-    right: -5px;
-    top: 50%;
-}
-
 .bg-light {
     opacity: 0.94;
 }
@@ -157,10 +138,23 @@ p.layout {
     margin-left: 0px;
 }
 
+.guideText {
+    margin: 10% 0;
+}
+
 .layout {
     max-width: 900px;
     margin: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .layout {
+        margin: 5%;
+    }
+}
+
+
+/* 首圖 */
 
 .mainbg {
     position: relative;
@@ -249,6 +243,9 @@ p.layout {
     margin-top: 40px;
 }
 
+
+/* 全球確診死亡 首圖 */
+
 .bar1 {
     background-color: #ffa059;
     font-size: 1.8rem;
@@ -275,129 +272,8 @@ p.layout {
     }
 }
 
-.guideText {
-    margin: 10% 0;
-}
 
-.first-font {
-    font-size: 26px;
-    margin-right: 3px;
-}
-
-.sign {
-    display: flex;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .layout {
-        margin: 5%;
-    }
-}
-
-svg {
-    margin: 5% 0;
-}
-
-.svgfont {
-    fill: black;
-    font-size: 14px;
-    display: block;
-    height: 100px;
-    stroke-width: 0;
-}
-
-
-/* 武漢地圖 */
-
-#wuhan {
-    transition: 0.5s;
-    cursor: pointer;
-    animation: twinkle 2s infinite;
-}
-
-@keyframes twinkle {
-    0% {
-        max-width: 15%;
-    }
-    50% {
-        max-width: 17%;
-    }
-    100% {
-        max-width: 15%;
-    }
-}
-
-#wuhan:hover {
-    transform: scale(1.2);
-}
-
-.wuhan {
-    position: relative;
-}
-
-.wuhan img:nth-child(1) {
-    position: absolute;
-    max-width: 15%;
-    right: 15%;
-    top: 40%;
-}
-
-.changeImg {
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.wuhan1 img {
-    animation: changeImg 0.5s;
-    width: 100%;
-    max-width: 100% !important;
-    position: relative !important;
-    right: auto !important;
-    top: auto !important;
-}
-
-@keyframes changeImg {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-#click_me {
-    max-width: 17%;
-    position: absolute;
-    top: 58%;
-    right: 0;
-}
-
-
-/* 病毒與棺材人物 */
-
-#virusAcd img {
-    width: 100%;
-}
-
-
-/* 地球封城比較 */
-
-.earth {
-    width: 100%;
-}
-
-.earth div:nth-child(1) {
-    margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .earth div:nth-child(1) {
-        margin: 5% auto;
-    }
-}
+/* 捲軸進度 */
 
 #progress {
     height: 10px;
@@ -406,16 +282,6 @@ svg {
     top: 0;
     left: 0;
     z-index: 100;
-}
-
-
-/* 地球數據 */
-
-.earth_info {
-    max-width: 600px;
-    display: flex;
-    margin: auto;
-    width: 100%;
 }
 
 
@@ -547,7 +413,6 @@ html .ui-button.ui-state-disabled:active {
     width: 80px;
     height: 26px;
     border-radius: 10px;
-
 }
 
 span.share-text {
@@ -569,6 +434,38 @@ span.share-text {
     display: block;
     text-align: center;
     justify-content: center;
+}
+
+
+/* 台灣數據 */
+
+.svgfont {
+    fill: black;
+    font-size: 14px;
+    display: block;
+    height: 100px;
+    stroke-width: 0;
+}
+
+.taiwan_data div {
+    background-color: #ff6f001e;
+    padding-top: 20px;
+    color: #563723;
+    font-size: 1.8rem;
+}
+
+.taiwan_data .col-4:nth-child(1)::after {
+    content: "=";
+    position: absolute;
+    right: -5px;
+    top: 50%;
+}
+
+.taiwan_data .col-4:nth-child(2)::after {
+    content: "+";
+    position: absolute;
+    right: -5px;
+    top: 50%;
 }
 
 
@@ -640,16 +537,25 @@ span.share-text {
     transition: 0.3s;
     cursor: pointer;
     width: 100%;
-    margin-top:-10px;
+    margin-top: -10px;
     margin: 6px;
     text-align: center;
     box-shadow: 1px 2px 3px black;
-
 }
 
 .moreBtn:hover {
     background-color: black;
     color: white;
+}
+
+.reading_layout a div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reading_layout a div p {
+    margin: 0;
 }
 
 .block_layout {
@@ -664,116 +570,30 @@ span.share-text {
     display: inline-block;
     text-align: center;
     color: white;
-    line-height: 90px;
     margin-bottom: 10px;
     font-size: 1.4rem;
     box-shadow: 1px 2px 3px black;
     transition: .3s;
 }
 
-.block_layout a:nth-child(1) div{
-    background-color: #997950;
-} 
-.block_layout a:nth-child(2) div{
-    background-color: #a39e85;
-} 
-.block_layout a:nth-child(3) div{
-    background-color: #d6b489;
-} 
-.block_layout a:nth-child(4) div{
+.block_layout a:nth-child(1) div {
+    background-color: #a14641;
+}
+
+.block_layout a:nth-child(2) div {
     background-color: #c68c63;
-} 
-.block_layout a:hover div{
+}
+
+.block_layout a:hover div {
     background-color: black;
 }
 
-/* 症狀 */
-
-.symptom {
-    width: 100%;
-    margin: 5% 0;
-    text-align: center;
-}
-
-.symptom img {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+.fa-mouse-pointer {
+    margin: 13px 0 0 10px;
 }
 
 
-/* 封城 */
-
-#close_city {
-    width: 100%;
-}
-
-
-/* 時間軸layout */
-
-.sum {
-    background-color: #f7a9a9;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    padding: 10px 15px;
-    animation: shining ease 1s infinite;
-    font-size: 1.2rem;
-    margin-bottom: 3%;
-    margin: auto;
-    color: white;
-}
-
-@keyframes shining {
-    0% {
-        background-color: #fa5757;
-    }
-    50% {
-        background-color: #fc9595;
-    }
-    100% {
-        background-color: #fa5757;
-    }
-}
-
-.timeline {
-    cursor: default;
-    text-align: center;
-    margin-bottom: 5%;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
-.timeline-year,
-.timeline-title {
-    margin: 3% 0;
-}
-
-.timeline-year {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.timeline-title {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffcccd;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 4px;
-}
-
-.icon_taiwan,
-.icon_global {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
+/* footer */
 
 .icon_ftv {
     margin: 2% 0;
@@ -792,150 +612,6 @@ span.share-text {
     border-top: 3px solid rgb(215, 215, 215);
     width: 30%;
     margin-left: 10px;
-}
-
-
-/* 三種病毒比較 */
-
-.compare {
-    margin-bottom: 5%;
-}
-
-.compare p {
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.compare p:nth-child(2) {
-    margin-top: 12px;
-}
-
-.compare_info {
-    margin: 7% 0 0;
-}
-
-.compare_info div {
-    display: flex;
-    align-content: center;
-    /* justify-content: center; */
-}
-
-.compare_info .com_die {
-    background-color: #000;
-}
-
-.compare_info .com_con {
-    background-color: #c15353;
-}
-
-.compare_info .com_die,
-.compare_info .com_con {
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-}
-
-
-/* 時間軸style */
-
-:root {
-    --column-width: 12ex;
-}
-
-dl {
-    padding-left: var(--column-width);
-    /* max-width: 320px; */
-    margin: auto;
-}
-
-dl::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-dt {
-    float: left;
-    clear: both;
-    width: var(--column-width);
-    margin-left: calc(-1 * var(--column-width));
-    font-weight: bold;
-    direction: rtl;
-}
-
-dd {
-    position: relative;
-    float: left;
-    text-align: left;
-    margin: 0;
-    padding-bottom: 1.2em;
-    margin-left: 0.5em;
-    padding-left: 1.25em;
-    opacity: 0.6;
-    transition: 0.5s;
-}
-
-.dd_2_line {
-    height: 100px;
-}
-
-.dd_3_line {
-    height: 130px;
-}
-
-.dd_3_line {
-    height: 160px;
-}
-
-.dd_4_line {
-    height: 200px;
-}
-
-.dd_5_line {
-    height: 230px;
-}
-
-.dd_6_line {
-    height: 260px;
-}
-
-dd:hover {
-    opacity: 1;
-}
-
-dd+dd {
-    clear: both;
-}
-
-dd::before {
-    content: '';
-    position: absolute;
-    top: 0.15em;
-    left: 0;
-    z-index: 1;
-    display: inline-block;
-    vertical-align: middle;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    width: 1em;
-    height: 1em;
-    background: red;
-    margin-right: 0.5em;
-}
-
-dd:not(:last-of-type)::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0.15em;
-    left: calc(0.4em + 1px);
-    border-left: 1px solid #888;
-    height: 100%;
-}
-
-dd.delay::after,
-.delay+dd::after {
-    border-left-style: dashed;
 }
 
 
@@ -1423,6 +1099,10 @@ footer img {
     vertical-align: middle;
 }
 
+.footer_info {
+    background-color: #fff;
+}
+
 .footer_logo {
     text-align: center;
 }
@@ -1437,7 +1117,9 @@ footer img {
 
 /* 足跡表格 */
 
-.footmap, .station, .protect {
+.footmap,
+.station,
+.protect {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -1459,10 +1141,18 @@ footer img {
     width: 30%;
 }
 
+.footmap h3 {
+    font-size: 1.2rem;
+}
+
 
 /* splide slider */
 
-.splide__list {
+.splide__slide {
+    background-color: antiquewhite;
+}
+
+.splide__slide img {
     width: 100%;
 }
 
@@ -1474,9 +1164,25 @@ footer img {
     margin-bottom: 1.2rem;
 }
 
-
 #tw_con,
-#tw_today{
-    color:#894040
+#tw_today {
+    color: #894040
 }
 
+
+/* 時間軸plugin */
+
+p.yearstyle1 {
+    background-color: #e8e89b;
+    padding: 10px;
+}
+
+p.yearstyle2 {
+    background-color: #f68c8c;
+    padding: 10px;
+}
+
+p.yearstyle3 {
+    background-color: #dedede;
+    padding: 10px;
+}

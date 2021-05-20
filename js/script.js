@@ -1,6 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // scrollspy
-    $(window).on('load scroll resize', function () {
+    $(window).on('load scroll resize', function() {
         var docHeight = $(document).height()
         var windowPos = $(window).scrollTop()
         var windowHeight = $(window).height()
@@ -15,14 +15,14 @@ $(document).ready(function () {
     })
 
     // scrolltop
-    $('#BackTop').click(function (event) {
+    $('#BackTop').click(function(event) {
         $('html, body').animate({
-            scrollTop: 0,
-        },
+                scrollTop: 0,
+            },
             '1000'
         )
     })
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(this).scrollTop() < 100) {
             // 判斷捲軸小於200座標位置時，消失
             $('#BackTop').stop().fadeOut('fast')
@@ -31,9 +31,9 @@ $(document).ready(function () {
             $('#BackTop').stop().fadeIn('fast')
         }
     })
-    
+
     // navbar toggle
-    $('#navbarBtn').click(function () {
+    $('#navbarBtn').click(function() {
         $('#navbar').slideToggle('slow')
         $('#navbar').css('display', 'flex')
     })
@@ -54,7 +54,7 @@ $(document).ready(function () {
     )
 
     // 地圖案例數
-    $('path').mousemove(function (e) {
+    $('path').mousemove(function(e) {
         $('.hovertext').text($(this).attr('title'))
         $('.hovertext')
             .css({
@@ -63,7 +63,7 @@ $(document).ready(function () {
             })
             .fadeIn()
     })
-    $('circle').mousemove(function (e) {
+    $('circle').mousemove(function(e) {
         $('.hovertext').text($(this).attr('title'))
         $('.hovertext')
             .css({
@@ -72,15 +72,15 @@ $(document).ready(function () {
             })
             .fadeIn()
     })
-    $('path').mouseleave(function () {
+    $('path').mouseleave(function() {
         $('.hovertext').css('display', 'none')
     })
-    $('circle').mouseleave(function () {
+    $('circle').mouseleave(function() {
         $('.hovertext').css('display', 'none')
     })
 
     //台灣疫情關係
-    $('.case_i').mousemove(function (e) {
+    $('.case_i').mousemove(function(e) {
         // console.log(e.pageX, e.pageY)
         var case_item = $(this).text()
         $('.case_info')
@@ -92,13 +92,14 @@ $(document).ready(function () {
         $('.case_info').html(case_total[case_item - 1].info)
     })
 
-    $('.case_i').mouseleave(function () {
+    $('.case_i').mouseleave(function() {
         $('.case_info').css('display', 'none')
     })
 })
 
 //  隱藏表格值=02的欄位
-;(function() {
+;
+(function() {
     let filter = document.querySelectorAll('.ctrl>td:nth-child(2)')
     setTimeout(() => {
         for (let i = 0; i < filter.length; i++) {
@@ -109,3 +110,6 @@ $(document).ready(function () {
         }
     }, 1000)
 })()
+
+
+// 時間軸plugin
