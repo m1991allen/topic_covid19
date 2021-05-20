@@ -58,6 +58,10 @@ h2::after {
     margin-left: 10px;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
 h4 {
     text-align: center;
 }
@@ -289,9 +293,9 @@ p.layout {
 
 #BackTop {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 15px;
-    width: 30px;
+    width: 50px;
     height: 30px;
     background-color: #db9e9e;
     border-radius: 3px;
@@ -312,9 +316,35 @@ p.layout {
     transform: translate(-50%, -50%);
 }
 
-#BackTop:hover {
-    width: 35px;
-    height: 35px;
+#GoNews {
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%;
+}
+
+#GoNews a {
+    display: block;
+    width: 33%;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px black;
+}
+
+#GoNews a:nth-child(1) {
+    background-color: #883c3b;
+}
+
+#GoNews a:nth-child(2) {
+    background-color: #99504f;
+}
+
+#GoNews a:nth-child(3) {
+    background-color: #d47c7b;
 }
 
 
@@ -421,6 +451,7 @@ span.share-text {
 }
 
 .line-style {
+    z-index: 99;
     position: fixed;
     top: 50px;
     right: 10px;
@@ -849,17 +880,13 @@ table.dataTable thead .sorting_desc_disabled:before {
     bottom: 0.5em;
 }
 
+.table-bordered {
+    border: 3px solid white;
+}
+
 .table-bordered td,
 .table-bordered th {
-    border: none;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #e9e9e9 !important;
-}
-
-.dataTables_wrapper {
-    margin: 5% 0 !important;
+    border: 1px solid white;
 }
 
 .dataTables_wrapper .dataTables_info {
@@ -1090,7 +1117,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 footer {
     background-color: #fffafe;
-    padding: 10px;
+    padding: 10px 0 3rem 0;
 }
 
 footer img {
@@ -1171,6 +1198,23 @@ footer img {
 
 
 /* 時間軸plugin */
+
+@media screen and (max-width:800px) {
+    .time_layout {
+        height: 400px;
+        overflow-y: scroll;
+    }
+}
+
+.time_layout:nth-of-type(1) {
+    background-color: rgb(255 240 231);
+    padding: 10px;
+}
+
+.time_layout:nth-of-type(2) {
+    background-color: rgb(247 228 215);
+    padding: 10px;
+}
 
 p.yearstyle1 {
     background-color: #e8e89b;

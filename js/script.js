@@ -33,10 +33,37 @@ $(document).ready(function() {
     })
 
     // navbar toggle
-    $('#navbarBtn').click(function() {
-        $('#navbar').slideToggle('slow')
-        $('#navbar').css('display', 'flex')
-    })
+    let switcher = document.querySelector('#navbarBtn').addEventListener('click', switchHandler)
+    let navAnchor = document.querySelectorAll('.nav-link')
+
+    var status = true
+        // 漢堡icon變換
+    function switchHandler() {
+        let iconClass = document.querySelector('#switcher')
+        let navBar = document.querySelector('#navbar')
+
+        if (status) {
+            iconClass.classList.remove('fa-bars')
+            iconClass.classList.add('fa-times')
+            status = false
+
+            navBar.style.display = 'flex'
+
+        } else {
+            iconClass.classList.remove('fa-times')
+            iconClass.classList.add('fa-bars')
+            status = true
+
+            navBar.style.display = 'none'
+        }
+    }
+    // 點擊⚓順便關閉選單
+    for (let i = 0; i < navAnchor.length; i++) {
+        navAnchor[i].addEventListener('click', function() {
+            switchHandler()
+        })
+    }
+
 
     //inser icon before H2
     $('h2').prepend(

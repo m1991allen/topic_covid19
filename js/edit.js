@@ -169,7 +169,7 @@ function ajax_gsheet() {
                 //境外移入
             $('#tw_import').html(data.feed.entry[17].content.$t)
                 //最後更新日期
-            $('#tw_pubDate').html(data.feed.entry[79].content.$t)
+            $('#tw_pubDate').html(data.feed.entry[81].content.$t)
 
 
             //// 全球總合 ////
@@ -200,6 +200,10 @@ function ajax_gsheet() {
             // 不明
             var data_imp4 = data.feed.entry[77].content.$t
             $('.data_imp4').html(data_imp4)
+
+            // 死亡
+            var data_imp5 = data.feed.entry[79].content.$t
+            $('.data_imp5').html(data_imp5)
 
             //// 台灣 首屏動態數字 ////
 
@@ -250,7 +254,6 @@ function ajax_gsheet() {
                     }
                 }, 3600)
             })
-
             $('#tw_today').each(function() {
                 $(this)
                     .prop('Counter', 0)
@@ -274,7 +277,6 @@ function ajax_gsheet() {
                     }
                 }, 3600)
             })
-
             $('#tw_import').each(function() {
                 $(this)
                     .prop('Counter', 0)

@@ -303,5 +303,9 @@ $('#dt_imp_taiwan').append(`
             <td class="th-sm">不明</td>
             <td class="th-sm data_imp4"></td>
         </tr>
+        <tr>
+            <td class="th-sm">死亡</td>
+            <td class="th-sm data_imp5"></td>
+        </tr>
     </tbody>
 `)
