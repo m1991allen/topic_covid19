@@ -172,7 +172,7 @@ $('.taiwan_map').append(`
 </svg>
 `)
 
-// 表格：台灣各縣市 確診/總數
+// 表格：台灣各縣市 確診數
 $('#dt_loc_taiwan').append(`
     <thead>
         <tr>
@@ -268,44 +268,6 @@ $('#dt_loc_taiwan').append(`
         <tr class="ctrl">
             <td>澎湖縣</td>
             <td class="data_tc22">0</td>
-        </tr>
-    </tbody>
-`)
-$('#dt_imp_taiwan').append(`
-    <thead>
-        <tr>
-            <th class="th-sm">案例項目</th>
-            <th class="th-sm">案例數</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="th-sm">本土案例</td>
-            <td class="th-sm data_tcloc"></td>
-        </tr>
-        <tr>
-            <td class="th-sm">境外移入</td>
-            <td class="th-sm data_tcimp"></td>
-        </tr>
-        <tr>
-            <td class="th-sm">磐石艦</td>
-            <td class="th-sm data_imp1"></td>
-        </tr>
-        <tr>
-            <td class="th-sm">華航機組染疫</td>
-            <td class="th-sm data_imp2"></td>
-        </tr>
-        <tr>
-            <td class="th-sm">航空器感染</td>
-            <td class="th-sm data_imp3"></td>
-        </tr>
-        <tr>
-            <td class="th-sm">不明</td>
-            <td class="th-sm data_imp4"></td>
-        </tr>
-        <tr>
-            <td class="th-sm">死亡</td>
-            <td class="th-sm data_imp5"></td>
         </tr>
     </tbody>
 `)

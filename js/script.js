@@ -139,4 +139,33 @@ $(document).ready(function() {
 })()
 
 
-// 時間軸plugin
+// 圖檔版號控管
+let Today = new Date();
+let YYYY = Today.getFullYear();
+let MM = Today.getMonth() + 1;
+let DD = Today.getDate();
+let h = Today.getHours();
+let m = Today.getMinutes();
+let Time = YYYY + '' + MM + '' + DD + '' + h + '' + m;
+
+// let img = $("#localcases"); // 本土案例
+// let img_foot = $(".slider_item"); // 本土案例
+let photo = $("img")
+
+// for (let i = 0; i < img.length; i++) {
+//     if (img[i].src) {
+//         img[i].src = img[i].src + '?ver=' + Time;
+//     }
+// };
+
+// for (let i = 0; i < img_foot.length; i++) {
+//     if (img_foot[i].src) {
+//         img_foot[i].src = img_foot[i].src + '?ver=' + Time;
+//     }
+// };
+
+for (let i = 0; i < photo.length; i++) {
+    if (photo[i].src) {
+        photo[i].src = photo[i].src + '?ver=' + Time;
+    }
+};

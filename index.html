@@ -21,26 +21,23 @@
     <title>【最新疫情】台灣首現社區感染！圖解確診關係、足跡｜專題｜民視新聞網</title>
 
     <link rel="icon" href="/images/favicon.ico" />
-    <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
+    <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html?ver=5220" />
 
     <!-- jQueryUI -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css?ver=5220" />
 
     <!-- jQueryDataTable -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css?ver=5220" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css?ver=5220" />
 
     <!-- splide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-
-    <!-- timeline -->
-    <link href="./dist/css/timeline.min.css?ver=202105201800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css?ver=5220  ">
 
     <!-- customize -->
-    <link rel="stylesheet" href="css/map.css?ver=202105201800" />
-    <link rel="stylesheet" href="css/style.css?ver=202105201800" />
+    <link rel="stylesheet" href="css/map.css?ver=5220" />
+    <link rel="stylesheet" href="css/style.css?ver=5220" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
@@ -86,9 +83,8 @@
             <a class="nav-link" href="#item-7" onclick="javascript:ScrollTo('item-7')">防疫照顧假Q&A</a>
             <a class="nav-link" href="#item-8" onclick="javascript:ScrollTo('item-8')">確診注意事項</a>
             <a class="nav-link" href="#item-9" onclick="javascript:ScrollTo('item-9')">全球確診統計</a>
-            <a class="nav-link" href="#item-10" onclick="javascript:ScrollTo('item-10')">武肺重點時間軸</a>
+            <!-- <a class="nav-link" href="#item-10" onclick="javascript:ScrollTo('item-10')">武肺重點時間軸</a> -->
             <a class="nav-link" href="#item-11" onclick="javascript:ScrollTo('item-11')">武肺即時新聞</a>
-
         </nav>
     </nav>
     <!-- 一鍵置頂/置底 -->
@@ -156,7 +152,7 @@
         <!-- 今日新增本土案例 -->
         <section id="item-1" class="guideText">
             <h2>今日新增本土案例</h2>
-            <img style="width:100%" src="./img/localcases.jpg?ver=202105201800" alt="今日新增本土案例">
+            <img id="localcases" style="width:100%" src="./img/localcases.jpg" alt="今日新增本土案例">
         </section>
 
         <!-- 台灣本土案例分佈 -->
@@ -182,86 +178,61 @@
         <section id="item-3" class="guideText">
             <h2>全國防疫措施</h2>
             <p>
-                因應國內疫情持續嚴峻，雙北地區陸續發生感染來源不明的病例及群聚事件，指揮中宣布自即日起至5月28日，啟動全國防疫因應措施。
+                因應國內疫情持續嚴峻，雙北地區陸續發生感染來源不明的病例及群聚事件，指揮中心宣布自即日起至5月28日，啟動全國防疫因應措施。
             </p>
             <p>
                 另外，教育部也於5月18日宣布，自5月19日起至28日，全國各級學校及公私立幼兒園停止到校上課，且兒童課後照顧服務中心、補習班等各類教育機構也同時配合停課，請所有學生停止前往，在家學習。
             </p>
-            <img src="./img/alert_taipei0.jpg" class="protect" alt="雙北防疫措施" />
-            <img src="./img/alert_taipei1.jpg" class="protect" alt="雙北防疫措施" />
-            <img src="./img/alert_taipei2.jpg" class="protect" alt="雙北防疫措施" />
+            <div id="splide_protect" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./img/alert_taipei0.jpg" class="protect" alt="雙北防疫措施" /></li>
+                        <li class="splide__slide"><img src="./img/alert_taipei1.jpg" class="protect" alt="雙北防疫措施" /></li>
+                        <li class="splide__slide"><img src="./img/alert_taipei2.jpg" class="protect" alt="雙北防疫措施" /></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- 確診足跡一覽 -->
-        <section id="item-4" class="guideText footmap">
+        <section id="item-4" class="guideText">
             <h2>確診足跡</h2>
             <!-- 北北基宜 -->
-            <h3><i class="fas fa-map-pin"></i> 北北基宜</h3>
-            <div id="splide_footmap_north1" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/footmap/noth1/1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/1-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/1-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/2-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/2-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/2-3.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/2-4.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/2-5.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth1/3.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                    </ul>
+            <div id="footmap">
+                <h3><i class="fas fa-map-pin"></i> 北北基宜</h3>
+                <div id="splide_footmap_north1" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li v-for="(img,index) in photos_north1" class="splide__slide"><img :src="photos_north1[index]" alt="足跡圖" class="slider_item" /></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- 桃竹苗 -->
-            <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
-            <div id="splide_footmap_north2" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-3.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-4.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-5.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-6.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-7.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/1-8.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/2-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/noth2/2-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                    </ul>
+                <!-- 桃竹苗 -->
+                <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
+                <div id="splide_footmap_north2" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li v-for="(img,index) in photos_north2" class="splide__slide"><img :src="photos_north2[index]" alt="足跡圖" class="slider_item" /></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- 中彰雲嘉投 -->
-            <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
-            <div id="splide_footmap_center" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/footmap/center/1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/1-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/1-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/1-3.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/2-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/2-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/center/2-3.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                    </ul>
+                <!-- 中彰雲嘉投 -->
+                <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
+                <div id="splide_footmap_center" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li v-for="(img,index) in photos_center" class="splide__slide"><img :src="photos_center[index]" alt="足跡圖" class="slider_item" /></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- 南高屏 -->
-            <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
-            <div id="splide_footmap_south" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/footmap/south/1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/south/2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/south/2-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/south/2-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/south/3.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/south/3-1.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                        <li class="splide__slide"><img src="./img/footmap/south/3-2.jpg?ver=202105201700" alt="足跡圖" class="footmap" /></li>
-                    </ul>
+                <!-- 南高屏 -->
+                <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
+                <div id="splide_footmap_south" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li v-for="(img,index) in photos_south" class="splide__slide"><img :src="photos_south[index]" alt="足跡圖" class="slider_item" /></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -272,11 +243,11 @@
             <div id="splide_station" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/station/1.jpg" alt="足跡圖" class="station" /></li>
-                        <li class="splide__slide"><img src="./img/station/2.jpg" alt="足跡圖" class="station" /></li>
-                        <li class="splide__slide"><img src="./img/station/3.jpg" alt="足跡圖" class="station" /></li>
-                        <li class="splide__slide"><img src="./img/station/4.jpg" alt="足跡圖" class="station" /></li>
-                        <li class="splide__slide"><img src="./img/station/5.jpg" alt="足跡圖" class="station" /></li>
+                        <li class="splide__slide"><img src="./img/station/1.jpg" alt="雙北快篩站" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/station/2.jpg" alt="雙北快篩站" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/station/3.jpg" alt="雙北快篩站" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/station/4.jpg" alt="雙北快篩站" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/station/5.jpg" alt="雙北快篩站" class="slider_item" /></li>
                     </ul>
                 </div>
             </div>
@@ -297,10 +268,10 @@
             <div id="splide_booking" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/booking/1.jpg" alt="實聯制" class="booking" /></li>
-                        <li class="splide__slide"><img src="./img/booking/2.jpg" alt="實聯制" class="booking" /></li>
-                        <li class="splide__slide"><img src="./img/booking/3.jpg" alt="實聯制" class="booking" /></li>
-                        <li class="splide__slide"><img src="./img/booking/4.jpg" alt="實聯制" class="booking" /></li>
+                        <li class="splide__slide"><img src="./img/booking/1.jpg" alt="實聯制" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/booking/2.jpg" alt="實聯制" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/booking/3.jpg" alt="實聯制" class="slider_item" /></li>
+                        <li class="splide__slide"><img src="./img/booking/4.jpg" alt="實聯制" class="slider_item" /></li>
                     </ul>
                 </div>
             </div>
@@ -398,780 +369,29 @@
         <!-- 武漢重點時間軸-->
         <section id="item-10" class="guideText">
             <h2>武漢肺炎重點時間軸</h2>
-            <div class="time_layout">
-                <h3 style="text-align: center;">
-                    <img src="./img/icon_taiwan.png" alt=""> 台灣
-                </h3>
+            <div id="timeline">
+                <h3><img src="./img/icon_taiwan.png" alt="taiwan"> 台灣</h3>
                 <div class="timeline">
-                    <div id="timeline" class="timeline__wrap">
-                        <div class="timeline__items">
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年5月18日</p>
-                                    <p>教育部宣布全國各級學校因應疫情，自即日起至5月28日停課居家線上學習</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年5月17日</p>
-                                    <p>台灣確診數破2000例</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年5月15日</p>
-                                    <p>新增180例本土案例，雙北進入第三級警戒</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年5月11日</p>
-                                    <p>出現感染源不明之本土病例，提升疫情警戒至第二級</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年4月30日</p>
-                                    <p>指揮中心定調「華航諾富特」事件為台灣首例「飯店群聚感染」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年3月22日</p>
-                                    <p>台灣開始施打AZ疫苗</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年3月19日</p>
-                                    <p>台灣確診數破1000例</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年3月3日</p>
-                                    <p>台灣首批AZ疫苗運抵桃園機場</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年2月19日</p>
-                                    <p>部立桃園醫院恢復營運，隔離、專責病房分階段開放</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年2月7日</p>
-                                    <p>部立桃園醫院群聚危機解除，累計20名感染者</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年1月18日</p>
-                                    <p>醫院群聚累計2醫師、3護理師確診；陳時中公布「北部染疫醫院」為部立桃園醫院，指揮中心駐醫院成立「前進指揮所」，清空相關樓層、全院患者只出不進、取消探病</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年1月12日</p>
-                                    <p>新增2本土病例，為照顧確診者醫師及其女友，是台灣首例醫師感染個案</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月23日</p>
-                                    <p>自英國入境及過去14日有英國旅遊史者，皆至集中檢疫所進行居家檢疫</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月22日</p>
-                                    <p>台灣相隔253天再度出現「本土案例」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月4日</p>
-                                    <p>暫停引進印尼移工來台工作兩周</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月1日</p>
-                                    <p>啟動「秋冬防疫專案」，旅客入境須出示3日內武漢肺炎核酸檢驗報告</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年11月20日</p>
-                                    <p>印尼籍移工入境採集中檢疫，暫緩4間印尼人力仲介公司仲介移工來台</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年11月11日</p>
-                                    <p>指揮中心宣布建置「COVID-19疫苗臨床試驗意向登記平台」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年8月27日</p>
-                                    <p>彰化「萬人血清抗體」檢驗調查結果出爐</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年8月19日</p>
-                                    <p>教育部宣布開放高中以下學校各國家／地區境外生返台就學</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年7月26日</p>
-                                    <p>自菲律賓入境所有旅客，皆須配合機場採檢及檢疫</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年7月15日</p>
-                                    <p>振興三倍券開放領用</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月25日</p>
-                                    <p>桃園機場開放轉機</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月24日</p>
-                                    <p>日籍女學生來台就學，返回日本後確診武漢肺炎</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月22日</p>
-                                    <p>符合4條件短期商務人士，入境可申請縮短居家檢疫時間</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月7日</p>
-                                    <p>台灣防疫大解封，搭乘台鐵、高鐵可以飲食；職棒、餐飲、藝文不再做人數限制</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年5月26日</p>
-                                    <p>敦睦艦隊磐石艦群聚感染事件結案，追溯病毒來源研判是本土感染</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年5月8日</p>
-                                    <p>中職領先全球開放球迷進場</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月28日</p>
-                                    <p>中央流行疫情指揮中心成立100天</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月18日</p>
-                                    <p>海軍敦睦遠訓支隊磐石艦爆發群聚感染</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月14日</p>
-                                    <p>台灣時隔37天再度零確診</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月14日</p>
-                                    <p>台灣時隔37天再度零確診</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月13日</p>
-                                    <p>《紐約時報》刊登「台灣人寫給世界的一封信」全版廣告</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月11日</p>
-                                    <p>疫情指揮中心公布通報WHO電郵全文，內文提到「病患隔離治療」，強烈暗示人傳人可能</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月9日</p>
-                                    <p>「口罩實名制」升級，每14天大人可買9片，小孩可買10片；全台酒店和舞廳停止營業</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月4日</p>
-                                    <p>疫情指揮中心發布細胞簡訊，提醒11旅遊景點民眾保持社交距離</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月1日</p>
-                                    <p>指揮中心公布「社交安全距離」，室內應保持1.5公尺、室外保持1公尺；搭乘台鐵、高鐵民眾應全面量體溫和配戴口罩</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月25日</p>
-                                    <p>指揮中心宣布「室內超過100人以上、室外超過500人以上」的公眾集會活動建議停辦</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月21日</p>
-                                    <p>為了落實「一入境就防疫」，機場免稅店代售徵用之口罩給入境旅客</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月19日</p>
-                                    <p>外國人禁止入境，本國人或非本國人入境一律居家檢疫14天<br>觀光局禁止旅行社出團、接待國外旅遊團至4月底</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月18日</p>
-                                    <p>台灣確診病例達百位數</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月17日</p>
-                                    <p>大專院校跟進禁令，師生本學期禁出國</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月16日</p>
-                                    <p>行政院拍板高中以下師生本學期禁出國</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月13日</p>
-                                    <p>防疫紓困特別預算三讀通過，600億預算一毛都沒刪</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月12日</p>
-                                    <p>「口罩實名制2.0 」上路，民眾可藉由網路購買</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月10日</p>
-                                    <p>第二批中國武漢包機回台，分別由華航、東航載回361國人</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月8日</p>
-                                    <p>中研院宣布成功製造「15分鐘完成」快篩試劑</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月3日</p>
-                                    <p>經濟部宣布額溫槍禁止出口至3月底</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月27日</p>
-                                    <p>中央疫情指揮中心提升至一級開設，陳時中任指揮官</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月25日</p>
-                                    <p>《嚴重特殊傳染性肺炎防治及紓困振興特別條例》三讀通過</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月22日</p>
-                                    <p>鑽石公主號19名國人包機返台</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月16日</p>
-                                    <p>公布新增2例本土個案，其中一例不治為全台首例</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月10日</p>
-                                    <p>暫停小三通客運船舶往來</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月8日</p>
-                                    <p>郵輪寶瓶星號停靠基隆港，船上128名採檢者均為陰性</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月6日</p>
-                                    <p>台灣武漢肺炎首位確診病患痊癒出院；實施「口罩販售實名制」；全面禁止中國人入境，港澳人士入境後須居家檢疫14天；禁止國際郵輪靠泊我國港口</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月3日</p>
-                                    <p>首批中國武漢台商共247人返台</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月30日</p>
-                                    <p>我國確診首例本土感染個案</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月28日</p>
-                                    <p>將中國（不含港澳）旅遊疫情建議列為「第三級警告（Warning）」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月26日</p>
-                                    <p>宣布全面禁止中國旅客（不含港澳）來台</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月24日</p>
-                                    <p>台灣禁止口罩出口一個月</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月23日</p>
-                                    <p>中央流行疫情指揮中心二級開設</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月21日</p>
-                                    <p>台灣確診首例境外移入個案</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月20日</p>
-                                    <p>疾管署宣布成立「中央流行疫情指揮中心」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月15日</p>
-                                    <p>疾管署將「嚴重特殊傳染性肺炎」列為第五類法定傳染病</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月7日</p>
-                                    <p>將中國武漢旅遊疫情建議列為「第一級注意（Watch）」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle3">2019年12月31日</p>
-                                    <p>疾管署宣布針對武漢直航班機進行登機檢疫</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ul>
+                        <li v-for="(event,index) of taiwan">
+                            <p>{{taiwan[index].date}}</p>
+                            <p v-html="taiwan[index].event"></p>
+                            <div></div>
+                            <span></span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <hr>
-            <div class="time_layout">
-                <h3 style="text-align: center;">
-                    <img src="./img/icon_global.png" alt=""> 全球
-                </h3>
+                <hr>
+                <h3><img src="./img/icon_global.png" alt="global"> 全球</h3>
                 <div class="timeline">
-                    <div id="timeline" class="timeline__wrap">
-                        <div class="timeline__items">
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年1月1日</p>
-                                    <p>世衛秘書長譚德塞發布新年致詞影片，喊話「隧道的盡頭是光明，我們將一起走向那裡」；美國確診病例突破2000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年1月12日</p>
-                                    <p>全球確診病例突破9000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年1月14日</p>
-                                    <p>WHO團隊抵達中國，隔離14天後將調查疫情源頭</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年1月26日</p>
-                                    <p>全球確診病例突破1億</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年2月9日</p>
-                                    <p>WHO調查：無足夠證據證明武漢2019年12月前有疫情傳播</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle1">2021年2月9日</p>
-                                    <p>WHO調查：無足夠證據證明武漢2019年12月前有疫情傳播</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月26日</p>
-                                    <p>全球確診病例突破8000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月19日</p>
-                                    <p>英國首相強生宣布境內出現變種病毒株，各國紛紛暫停英國來往航班</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月18日</p>
-                                    <p>印度確診病例突破1000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月11日</p>
-                                    <p>全球確診病例突破7000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年12月8日</p>
-                                    <p>英國領先全球施打武漢肺炎疫苗</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年11月25日</p>
-                                    <p>全球確診病例突破6000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年11月9日</p>
-                                    <p>世界衛生大會以線上虛擬方式復會；美國確診病例突破1000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年11月8日</p>
-                                    <p>全球確診病例突破5000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年10月18日</p>
-                                    <p>全球確診病例突破4000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年10月12日</p>
-                                    <p>荷蘭出現全球首例「二次感染」死亡個案</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年10月1日</p>
-                                    <p>美國總統川普與妻子梅蘭妮亞確診</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年9月17日</p>
-                                    <p>全球確診病例突破3000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年8月10日</p>
-                                    <p>全球確診病例突破2000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年7月22日</p>
-                                    <p>全球確診病例突破1500萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年7月7日</p>
-                                    <p>美國正式宣布退出WHO，預計於2021年7月6日生效</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月28日</p>
-                                    <p>全球確診病例突破1000萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月23日</p>
-                                    <p>全球確診病例突破900萬<br>世界球王喬科維奇（Novak Djokovic）確診</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月16日</p>
-                                    <p>全球確診病例突破800萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年6月8日</p>
-                                    <p>全球確診病例突破700萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年5月31日</p>
-                                    <p>全球確診病例突破600萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年5月21日</p>
-                                    <p>全球確診病例突破500萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年5月10日</p>
-                                    <p>全球確診病例突破400萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月28日</p>
-                                    <p>全球確診病例突破300萬；美國確診病例超過100萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月15日</p>
-                                    <p>全球確診病例突破200萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月14日</p>
-                                    <p>美國總統川普宣布停止贊助WHO</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月8日</p>
-                                    <p>世界衛生組織秘書長譚德塞，指責台灣對他人身攻擊</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年4月3日</p>
-                                    <p>全球確診病例突破100萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月27日</p>
-                                    <p>英國首相強森確診，成為全球第一位染病領袖</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月26日</p>
-                                    <p>美國確診數超過中國，成全球疫情最嚴重國家<br>全球確診病例突破50萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月24日</p>
-                                    <p>日本2020東京奧運決定延期一年</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月18日</p>
-                                    <p>全球確診病例突破20萬<br> 湖北首次單日無新增確診，中國新增確診全為境外移入</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月16日</p>
-                                    <p>美國展開全球首次「武漢肺炎病毒疫苗」人體臨床試驗</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月13日</p>
-                                    <p>美國實施旅遊禁令，未來30天禁止從歐洲入境旅客</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月12日</p>
-                                    <p>世界衛生組織宣布武漢肺炎疫情為「全球大流行疾病（Pandemic）」；爵士隊球員戈貝爾（Rudy Gobert）確診，NBA無限期暫緩球季</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月10日</p>
-                                    <p>歐盟證實27個會員國全部淪陷</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月9日</p>
-                                    <p>義大利超過9千人染病，總理孔蒂宣布全境封鎖</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年3月7日</p>
-                                    <p>武漢肺炎疫情擴散逾90國家，全球確診病例突破10萬</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月29日</p>
-                                    <p>世界衛生組織秘書長譚德塞宣布，武漢肺炎疫情全球評估，由「高」調至「非常高」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月26日</p>
-                                    <p>全球單日確診病例首度超越中國</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月19日</p>
-                                    <p>鑽石公主號14天隔離期結束，船上乘客分批離開<br> 南韓「新天地大邱教會」出現超級傳播者</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月12日</p>
-                                    <p>武漢肺炎病毒正式定名「COVID-19」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月10日</p>
-                                    <p>中國國家主習近平首次視察疫情」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月7日</p>
-                                    <p>「吹哨人」李文亮醫師逝世</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年2月2日</p>
-                                    <p>菲律賓出現首起死亡病例，為中國境外地區首例</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月30日</p>
-                                    <p>西藏出現首例確診，中國境內全面淪陷，世界衛生組織宣布為「國際公衛緊急事件」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月28日</p>
-                                    <p>中國境內確診病例超過2003年SARS疫情，WHO將全球危險等級調升為「高」，中國為「極高」</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月23日</p>
-                                    <p>中國湖北城市相繼宣布封城</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月13日</p>
-                                    <p>泰國出現首例確診，為中國境外地區首例</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月11日</p>
-                                    <p>中國武漢出現首起死亡病例</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle2">2020年1月7日</p>
-                                    <p>WHO宣布新病毒並命名為2019新型冠狀病毒（2019-nCoV）</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle3">2019年12月31日</p>
-                                    <p>中國向WHO通報，出現27起原因不明肺炎病例。</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle3">2019年12月30日</p>
-                                    <p>網路流傳一張武漢衛健委內部通知，稱武漢出現 「不明原因」肺炎，並與華南海鮮市場有關，但 相關8人被政府指控造謠。</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__content">
-                                    <p class="yearstyle3">2019年12月上旬</p>
-                                    <p>湖北武漢華南海鮮市場，陸續出現不明肺炎案例。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ul>
+                        <li v-for="(event,index) of global">
+                            <p>{{global[index].date}}</p>
+                            <p v-html="global[index].event"></p>
+                            <div></div>
+                            <span></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -1199,7 +419,7 @@
 
         <!-- 下載民視新聞APP 社群連結 -->
         <section class="guideText">
-            <h3 class="icon_ftv">下載民視新聞APP<br> 疫情動態不漏接</h3>
+            <h3 class="icon_ftv" style="text-align:left;">下載民視新聞APP<br> 疫情動態不漏接</h3>
             <ul class="social_info">
                 <li>
                     <img src="./img/apple.png" alt="download IOS">
@@ -1224,7 +444,7 @@
     <!-- fb share -->
     <div id=" fb-root"></div>
     <div class="cs-share-this-product facebook">
-        <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopic%2Fcovid-19%2Findex.html&amp;src=sdkpreparse">
+        <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse">
             <div class="social-share-icon-block">
                 <img src="./img/facebook-f-brands.png" alt="分享民視新聞專題" />
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"><span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html" >分享</span></a>
@@ -1248,23 +468,40 @@
 
     <!-- js include -->
     <!-- fb share setting -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=1854261788223985&autoLogAppEvents=1"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=1854261788223985&autoLogAppEvents=1" nonce="mTRTGA9g"></script>
+
+    <!-- vuejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+    <script src="js/editFootmap.js?ver=5220"></script>
 
     <!-- jqueryDataTables -->
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js?ver=5220"></script>
 
     <!-- bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js?ver=5220"></script>
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
 
-    <!-- vuejs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+    <!-- ScrollToTop smooth -->
+    <script>
+        function ScrollTo(id_name) {
+            $('html,body').animate({
+                    scrollTop: $('#' + id_name).offset().top,
+                },
+                1000
+            )
+        }
+    </script>
 
     <!-- splide -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js?ver=5220"></script>
     <script>
+        // 全國防疫
+        new Splide('#splide_protect', {
+            rewind: true,
+        }).mount();
+
         // 足跡
         new Splide('#splide_footmap_north1', {
             rewind: true,
@@ -1293,32 +530,11 @@
         }).mount();
     </script>
 
-    <!-- ScrollToTop smooth -->
-    <script>
-        function ScrollTo(id_name) {
-            $('html,body').animate({
-                    scrollTop: $('#' + id_name).offset().top,
-                },
-                1000
-            )
-        }
-    </script>
-
-    <!-- timeline -->
-    <script src='./dist/js/timeline.min.js?ver=202105201800'></script>
-    <script>
-        timeline(document.querySelectorAll('.timeline'), {
-            forceVerticalMode: 800,
-            mode: 'horizontal',
-            visibleItems: 4
-        });
-    </script>
-
     <!-- customize -->
-    <script src="js/editMap.js?ver=202105201800"></script>
-    <script src="js/edit.js?ver=202105201800"></script>
-    <script src="js/editTimeline.js?ver=202105201800"></script>
-    <script src="js/script.js?ver=202105201800"></script>
+    <script src="js/edit.js?ver=5220"></script>
+    <script src="js/editMap.js?ver=5220"></script>
+    <script src="js/editTimeline.js?ver=5220"></script>
+    <script src="js/script.js?ver=5220"></script>
 </body>
 
 </html>

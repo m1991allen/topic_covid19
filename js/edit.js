@@ -57,7 +57,7 @@ function ajax_gsheet() {
 
             // 台中市
             var data_tc8 = data.feed.entry[35].content.$t
-            $('.data_tc8').addClass('deg4')
+            $('.data_tc8').addClass('deg3')
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
@@ -87,7 +87,7 @@ function ajax_gsheet() {
 
             // 雲林縣
             var data_tc13 = data.feed.entry[45].content.$t
-            $('.data_tc13').addClass('degNone')
+            $('.data_tc13').addClass('deg4')
             $('.data_tc13').html(data_tc13)
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例')
 
@@ -99,13 +99,13 @@ function ajax_gsheet() {
 
             // 高雄市
             var data_tc15 = data.feed.entry[49].content.$t
-            $('.data_tc15').addClass('deg4')
+            $('.data_tc15').addClass('deg3')
             $('.data_tc15').html(data_tc15)
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例')
 
             // 屏東縣
             var data_tc16 = data.feed.entry[51].content.$t
-            $('.data_tc16').addClass('degNone')
+            $('.data_tc16').addClass('deg4')
             $('.data_tc16').html(data_tc16)
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例')
 
@@ -325,7 +325,6 @@ function ajax_gsheet() {
                     }
                 }, 3600)
             })
-
             $('#inc_die').each(function() {
                 $(this)
                     .prop('Counter', 0)
@@ -353,5 +352,44 @@ function ajax_gsheet() {
     })
 }
 ajax_gsheet()
+    /////////////// END get API
 
-/////////////// END get API
+// 表格：台灣各縣市 案例項目數
+$('#dt_imp_taiwan').append(`
+    <thead>
+        <tr>
+            <th class="th-sm">案例項目</th>
+            <th class="th-sm">案例數</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="th-sm">本土案例</td>
+            <td class="th-sm data_tcloc"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">境外移入</td>
+            <td class="th-sm data_tcimp"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">磐石艦</td>
+            <td class="th-sm data_imp1"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">華航機組染疫</td>
+            <td class="th-sm data_imp2"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">航空器感染</td>
+            <td class="th-sm data_imp3"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">不明</td>
+            <td class="th-sm data_imp4"></td>
+        </tr>
+        <tr>
+            <td class="th-sm">死亡</td>
+            <td class="th-sm data_imp5"></td>
+        </tr>
+    </tbody>
+`)

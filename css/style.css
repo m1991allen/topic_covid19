@@ -7,7 +7,6 @@ html {
 }
 
 * {
-    touch-action: pan-y;
     font-weight: bold;
 }
 
@@ -60,6 +59,8 @@ h2::after {
 
 h3 {
     font-size: 1.2rem;
+    margin: 1.2rem;
+    text-align: center;
 }
 
 h4 {
@@ -574,11 +575,6 @@ span.share-text {
     box-shadow: 1px 2px 3px black;
 }
 
-.moreBtn:hover {
-    background-color: black;
-    color: white;
-}
-
 .reading_layout a div {
     display: flex;
     align-items: center;
@@ -617,6 +613,7 @@ span.share-text {
 
 .block_layout a:hover div {
     background-color: black;
+    box-shadow: none;
 }
 
 .fa-mouse-pointer {
@@ -643,225 +640,6 @@ span.share-text {
     border-top: 3px solid rgb(215, 215, 215);
     width: 30%;
     margin-left: 10px;
-}
-
-
-/* 防疫 電腦版 */
-
-.protect_pc {
-    width: 100%;
-}
-
-.protect_pc tr {
-    border: 1px solid white;
-}
-
-
-/* .protect_pc .info_layout {
-    display: flex;
-} */
-
-.protect_pc .info_layout ul li {
-    padding: 5px 0;
-    list-style-type: disc;
-}
-
-.col-style-t {
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.col-style-t1 {
-    background-color: #cc6756;
-}
-
-.col-style-t2 {
-    background-color: #7a5851;
-}
-
-.col-style-t3 {
-    background-color: #e5a951;
-}
-
-.col-style-c {
-    color: white;
-    height: 200px;
-}
-
-.col-style-c1 {
-    background-color: #e59588;
-}
-
-.col-style-c2 {
-    background-color: #c4af96;
-}
-
-.col-style-c3 {
-    background-color: #ad9e9a;
-}
-
-.info_t {
-    text-align: center;
-    margin: auto;
-    width: 16%;
-}
-
-.info_c {
-    width: 28%;
-    padding: 10px;
-    box-sizing: content-box;
-    text-align: left;
-}
-
-
-/* 防疫 手機版 */
-
-.protect_mb {
-    display: none;
-}
-
-.protect_mb article {
-    padding: 15px;
-    margin: 5% 0;
-}
-
-.protect_mb h3 {
-    display: inline-block;
-    margin: 10px;
-    position: relative;
-    left: -30px;
-}
-
-.protect_mb p,
-.protect_mb ul {
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .protect_pc {
-        display: none;
-    }
-    .protect_mb {
-        display: block;
-    }
-}
-
-.fa-user {
-    color: #a02b3a;
-    margin: 0 2px;
-}
-
-.fa-home {
-    color: #333333;
-}
-
-.fa-exclamation-triangle {
-    color: #ffcd21;
-}
-
-
-/* 旅遊警示 */
-
-.alert_layout {
-    display: flex;
-    font-size: 1.2rem;
-}
-
-.travel_rank {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    margin: 10px 0;
-    height: 150px;
-    color: white;
-    width: 30%;
-    padding: 15px;
-}
-
-.vt {
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    width: 30%;
-    letter-spacing: 1rem;
-    margin-top: 10px;
-}
-
-.vt_info {
-    width: 70%;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.alr1 {
-    background-color: #e8d100;
-}
-
-.alr2 {
-    background-color: #ea9c2a;
-}
-
-.alr3 {
-    background-color: #d63030;
-}
-
-.travel_info {
-    background-color: #c4af96;
-    border-radius: 15px;
-    margin: 10px;
-    min-height: 150px;
-    color: white;
-    width: 70%;
-    padding: 15px;
-}
-
-.alert_block {
-    margin-bottom: 5%;
-    border-radius: 15px;
-}
-
-.alr_mb {
-    text-align: center;
-    padding: 10px;
-    color: white;
-    border-radius: 15px 15px 0 0;
-}
-
-.alr_mb p {
-    margin: 0;
-}
-
-.alr_mb p:nth-child(2) {
-    font-size: 2rem;
-}
-
-.travel_info_mb {
-    background-color: #c4af96;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    border-radius: 0 0 15px 15px;
-}
-
-.travel_info p:nth-child(1),
-.travel_info_mb p:nth-child(1) {
-    background-color: #eae3dc;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.alert_mb {
-    display: none;
-}
-
-@media screen and (max-width: 500px) {
-    .alert_pc {
-        display: none;
-    }
-    .alert_mb {
-        display: block;
-    }
 }
 
 
@@ -924,195 +702,6 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 
-/* 台灣疫情時間關係 */
-
-.case_ex1,
-.case_ex2,
-.case_ex3,
-.case_ex4,
-.case_ex5 {
-    width: 40px;
-    height: 40px;
-    margin: 10px 30px;
-    padding: 5px;
-}
-
-.case_ex1 {
-    background-color: #ebcccc;
-}
-
-.case_ex1:before {
-    content: '境外移入';
-    position: absolute;
-}
-
-.case_ex2 {
-    background-color: #f5dc64;
-}
-
-.case_ex2:before {
-    content: '境內感染';
-    position: absolute;
-}
-
-.case_ex3 {
-    background-color: #e5596a;
-}
-
-.case_ex3:before {
-    content: '死亡';
-    position: absolute;
-}
-
-.case_ex4 {
-    background-color: #97a5ac;
-}
-
-.case_ex4:before {
-    content: '敦睦艦隊';
-    position: absolute;
-}
-
-.case_ex5 {
-    background-color: #70b942;
-}
-
-.case_ex5:before {
-    content: '華航、諾富特';
-    position: absolute;
-}
-
-.spec_case_layout {
-    display: inline-block;
-    background-color: #f5f5f5;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 40px #e6e6e6;
-}
-
-.case_layout {
-    display: inline-block;
-    background-color: #f5f5f5;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 40px #e6e6e6;
-}
-
-.disable {
-    display: none;
-}
-
-.enable {
-    display: block;
-}
-
-.case_group {
-    margin: 5% 0;
-}
-
-.case_box {
-    display: inline-block;
-    float: left;
-    width: 70px;
-}
-
-@media screen and (max-width: 768px) {
-    .case_box {
-        width: 55px;
-    }
-    .case_i {
-        font-size: 1rem;
-        text-align: center;
-        display: block;
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-        margin: 0 5px 5px;
-    }
-}
-
-
-/* 案例日期 */
-
-.case_d {
-    text-align: center;
-}
-
-
-/* 案例預設狀態 */
-
-.case_i {
-    float: left;
-    text-align: center;
-    display: block;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin: 0 10px 10px;
-    cursor: pointer;
-    background-color: #ebcccc;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.case_i:hover {
-    border: 2px dashed black;
-    padding: 8px;
-}
-
-
-/* 案例訊息 */
-
-.case_info {
-    position: absolute;
-    background-color: #ffffffe0;
-    box-shadow: grey 1px 2px 5px;
-    cursor: default;
-    padding: 15px;
-    max-width: 400px;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .case_info {
-        width: 70%;
-        left: 50% !important;
-        transform: translateX(-50%);
-    }
-}
-
-
-/* 案例狀態 境內感染 */
-
-.case_s1 {
-    background-color: #f5dc64;
-}
-
-
-/* 案例狀態 死亡 */
-
-.case_s2 {
-    background-color: #e5596a;
-}
-
-
-/* 案例狀態 磐石艦 */
-
-.case_s3 {
-    background-color: #97a5ac;
-}
-
-
-/* 華航、諾富特 */
-
-.case_s4 {
-    background-color: #70b942;
-}
-
-
 /* 頁尾 */
 
 footer {
@@ -1135,41 +724,12 @@ footer img {
 }
 
 
-/* 敦睦艦隊 */
-
-.HzV7m-b7CEbf .i4ewOd-pzNkMb-tJHJj {
-    background-color: #cc6655 !important;
-}
-
-
-/* 足跡表格 */
-
-.footmap,
-.station,
-.protect {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.footmap-table {
-    display: flex;
-}
-
-.footmap-table li:nth-child(1) {
-    width: 15%;
-}
-
-.footmap-table li:nth-child(2) {
-    width: 25%;
-}
-
-.footmap-table li:nth-child(3),
-.footmap-table li:nth-child(4) {
-    width: 30%;
-}
+/* 足跡 */
 
 .footmap h3 {
     font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 
@@ -1179,12 +739,69 @@ footer img {
     background-color: antiquewhite;
 }
 
-.splide__slide img {
+.splide__slide img,
+.slider_item {
     width: 100%;
 }
 
 
-/* 社群訊息*/
+/* 時間軸 */
+
+.timeline {
+    overflow-x: scroll;
+    position: relative;
+    background-color: rgb(219 158 158 / 50%);
+    border-radius: 15px;
+}
+
+.timeline h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.timeline ul {
+    display: inline-flex;
+    align-items: center;
+}
+
+.timeline ul li {
+    z-index: 1;
+    border-radius: 10px;
+    background-color: rgb(243 232 222);
+    box-shadow: 2px 2px 3px #9d9d9d;
+    margin: 1rem 2rem;
+    padding: 10px;
+    width: 280px;
+    height: auto;
+    display: inline-table;
+    position: relative;
+}
+
+.timeline ul div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(219 158 158 / 50%);
+    border-radius: 10px;
+    border: 2px solid black;
+    top: 50%;
+    right: 0;
+    transform: translateY(-35%);
+}
+
+.timeline ul span {
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    border-top: 10px;
+    background-color: #820f24;
+    top: 50%;
+    left: 95%;
+}
+
+
+/* 社群訊息 */
 
 .social_info li {
     font-size: 1rem;
@@ -1194,39 +811,4 @@ footer img {
 #tw_con,
 #tw_today {
     color: #894040
-}
-
-
-/* 時間軸plugin */
-
-@media screen and (max-width:800px) {
-    .time_layout {
-        height: 400px;
-        overflow-y: scroll;
-    }
-}
-
-.time_layout:nth-of-type(1) {
-    background-color: rgb(255 240 231);
-    padding: 10px;
-}
-
-.time_layout:nth-of-type(2) {
-    background-color: rgb(247 228 215);
-    padding: 10px;
-}
-
-p.yearstyle1 {
-    background-color: #e8e89b;
-    padding: 10px;
-}
-
-p.yearstyle2 {
-    background-color: #f68c8c;
-    padding: 10px;
-}
-
-p.yearstyle3 {
-    background-color: #dedede;
-    padding: 10px;
 }
