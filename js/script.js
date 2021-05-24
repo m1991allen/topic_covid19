@@ -64,20 +64,36 @@ $(document).ready(function() {
         })
     }
 
+    // 一鍵複製url  
+    let oneClick = document.querySelector('.localurl-style')
+    oneClick.addEventListener('click', copyUrl)
 
-    //inser icon before H2
+    function copyUrl() {
+        let urlInput = document.createElement('input'),
+            text = window.location.href + '?utm_source=WHpage&utm_medium=copybutton';
+
+        document.body.appendChild(urlInput);
+        urlInput.value = text;
+        urlInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(urlInput);
+        alert("複製成功!");
+    }
+
+
+    // inser icon before H2
     $('h2').prepend(
-        '<img style="width:40px; margin-right:10px" src="img/virus.svg" alt=""><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->'
+        '<img style="width:40px; margin-right:10px" src="img/virus.svg"><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->'
     )
 
     $('.icon_taiwan').prepend(
-        '<img style="width:28px; margin-right:10px" src="img/icon_taiwan.png" alt=""><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div> -->'
+        '<img style="width:28px; margin-right:10px" src="img/icon_taiwan.png"><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div> -->'
     )
     $('.icon_global').prepend(
-        '<img style="width:28px; margin-right:10px" src="img/icon_global.png" alt=""><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->'
+        '<img style="width:28px; margin-right:10px" src="img/icon_global.png"><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->'
     )
     $('.icon_ftv').prepend(
-        '<img style="width:28px; margin-right:10px" src="img/logo_ftv.png" alt="">'
+        '<img style="width:28px; margin-right:10px" src="img/logo_ftv.png">'
     )
 
     // 地圖案例數
@@ -106,7 +122,7 @@ $(document).ready(function() {
         $('.hovertext').css('display', 'none')
     })
 
-    //台灣疫情關係
+    // 台灣疫情關係
     $('.case_i').mousemove(function(e) {
         // console.log(e.pageX, e.pageY)
         var case_item = $(this).text()
@@ -122,6 +138,41 @@ $(document).ready(function() {
     $('.case_i').mouseleave(function() {
         $('.case_info').css('display', 'none')
     })
+
+    // 輪播圖初始 splide
+    // 全國防疫
+    new Splide('#splide_protect', {}).mount();
+
+    // 足跡
+    new Splide('#splide_footmap_north1', {
+        rewind: true,
+    }).mount();
+
+    new Splide('#splide_footmap_north2', {
+        rewind: true,
+    }).mount();
+
+    new Splide('#splide_footmap_center', {
+        rewind: true,
+    }).mount();
+
+    new Splide('#splide_footmap_south', {
+        rewind: true,
+    }).mount();
+
+    new Splide('#splide_footmap_east', {
+        rewind: true,
+    }).mount();
+
+    // 快篩站
+    new Splide('#splide_station', {
+        rewind: true,
+    }).mount();
+
+    // 實聯制
+    new Splide('#splide_booking', {
+        rewind: true,
+    }).mount();
 })
 
 //  隱藏表格值=02的欄位
@@ -138,34 +189,23 @@ $(document).ready(function() {
     }, 1000)
 })()
 
+// 版號控管
+;
+(function() {
+    let Today = new Date();
+    let YYYY = Today.getFullYear();
+    let MM = Today.getMonth() + 1;
+    let DD = Today.getDate();
+    let h = Today.getHours();
+    let m = Today.getMinutes();
+    let Time = YYYY + '' + MM + '' + DD + '' + h + '' + m;
 
-// 圖檔版號控管
-let Today = new Date();
-let YYYY = Today.getFullYear();
-let MM = Today.getMonth() + 1;
-let DD = Today.getDate();
-let h = Today.getHours();
-let m = Today.getMinutes();
-let Time = YYYY + '' + MM + '' + DD + '' + h + '' + m;
+    let photo = $('img')
 
-// let img = $("#localcases"); // 本土案例
-// let img_foot = $(".slider_item"); // 本土案例
-let photo = $("img")
+    for (let i = 0; i < photo.length; i++) {
+        if (photo[i].src) {
+            photo[i].src = photo[i].src + '?ver=' + Time;
+        }
+    };
 
-// for (let i = 0; i < img.length; i++) {
-//     if (img[i].src) {
-//         img[i].src = img[i].src + '?ver=' + Time;
-//     }
-// };
-
-// for (let i = 0; i < img_foot.length; i++) {
-//     if (img_foot[i].src) {
-//         img_foot[i].src = img_foot[i].src + '?ver=' + Time;
-//     }
-// };
-
-for (let i = 0; i < photo.length; i++) {
-    if (photo[i].src) {
-        photo[i].src = photo[i].src + '?ver=' + Time;
-    }
-};
+})()

@@ -442,7 +442,7 @@ html .ui-button.ui-state-disabled:active {
     right: 0;
     z-index: 99;
     width: 80px;
-    height: 26px;
+    height: 24px;
     border-radius: 10px;
 }
 
@@ -458,11 +458,25 @@ span.share-text {
     right: 10px;
     background-color: #00c755;
     width: 80px;
-    height: 26px;
+    height: 24px;
     border-radius: 10px;
 }
 
-.line-style span {
+.localurl-style {
+    z-index: 99;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    background-color: #f3931d;
+    color: white;
+    width: 80px;
+    height: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.line-style span,
+.localurl-style span {
     display: block;
     text-align: center;
     justify-content: center;
@@ -498,6 +512,66 @@ span.share-text {
     position: absolute;
     right: -5px;
     top: 50%;
+}
+
+
+/* 台灣地圖 */
+
+#taiwan_map {
+    cursor: pointer;
+    stroke: #fff;
+    stroke-width: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+#taiwan_map .degNone {
+    fill: #dedede;
+    stroke: aliceblue;
+}
+
+.hovertext {
+    position: absolute;
+    background-color: #d4d3d3a6;
+    cursor: default;
+    padding: 5px 3px;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+
+/* 區域嚴重程度 */
+
+.deg0 {
+    fill: #5d0606;
+}
+
+.deg1 {
+    fill: #8f0808;
+}
+
+.deg2 {
+    fill: #bb2727;
+}
+
+.deg3 {
+    fill: #fc5d5d;
+}
+
+.deg4 {
+    fill: #fda1a1;
+}
+
+.degstyle0 {
+    fill: #040101;
+}
+
+.degstyle1 {
+    fill: #d6bfae;
+}
+
+.degstyle2 {
+    fill: #ad9e9a;
 }
 
 
