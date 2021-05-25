@@ -33,10 +33,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 
     <!-- splide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css  ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css  " />
 
     <!-- customize -->
-    <link rel="stylesheet" href="css/style.css?ver=0524-5" />
+    <link rel="stylesheet" href="css/style.css?ver=0525-2" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
@@ -111,7 +111,7 @@
                     <p id="tw_con" class="data_gc1" style="font-size: 1.8rem"></p>
                 </div>
             </div>
-            <hr style="margin: 3px;">
+            <hr style="margin: 3px" />
             <div class="row taiwan_data">
                 <div class="col-4">
                     <p>今日新增</p>
@@ -126,7 +126,7 @@
                     <p id="tw_import" class="data_gd1" style="font-size: 1.7rem"></p>
                 </div>
             </div>
-            <p style="text-align: right;">最後更新日期： <span id="tw_pubDate"></span> </p>
+            <p style="text-align: right">最後更新日期： <span id="tw_pubDate"></span></p>
 
             <div class="mainbg_info">
                 <div id="inc_con" class="count_sumConfirm_global bar1"></div>
@@ -151,7 +151,7 @@
         <!-- 今日新增本土案例 -->
         <section id="item-1" class="guideText">
             <h2>今日新增本土案例</h2>
-            <img id="localcases" style="width:100%" src="./img/localcases.jpg" loading="lazy" alt="今日新增本土案例">
+            <img id="localcases" style="width: 100%" src="./img/localcases.jpg" loading="lazy" alt="今日新增本土案例" />
         </section>
 
         <!-- 台灣本土案例分佈 -->
@@ -170,15 +170,14 @@
         <!-- 本土案例校正回歸情形 -->
         <section class="guideText">
             <h2>本土案例校正回歸情形</h2>
-            <img style="width:100%; margin-bottom: 10px;" src="./img/localtweak1.jpg" loading="lazy" alt="本土案例校正回歸">
-            <img style="width:100%; margin-bottom: 10px;" src="./img/localtweak2.jpg" loading="lazy" alt="本土案例校正回歸">
-
+            <img style="width: 100%; margin-bottom: 10px" src="./img/localtweak1.jpg" loading="lazy" alt="本土案例校正回歸" />
+            <img style="width: 100%; margin-bottom: 10px" src="./img/localtweak2.jpg" loading="lazy" alt="本土案例校正回歸" />
         </section>
 
         <!-- 疫情警戒分級標準 -->
         <section id="item-2" class="guideText">
             <h2>疫情警戒分級標準</h2>
-            <img src="./img/alert.jpg" style="width: 100%; margin-bottom: 10px;" loading="lazy" alt="疫情警戒分級標準與因應事項" />
+            <img src="./img/alert.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="疫情警戒分級標準與因應事項" />
         </section>
 
         <!-- 全國防疫措施 -->
@@ -193,9 +192,15 @@
             <div id="splide_protect" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/alert_taipei0.jpg" class="protect" loading="lazy" alt="雙北防疫措施" /></li>
-                        <li class="splide__slide"><img src="./img/alert_taipei1.jpg" class="protect" loading="lazy" alt="雙北防疫措施" /></li>
-                        <li class="splide__slide"><img src="./img/alert_taipei2.jpg" class="protect" loading="lazy" alt="雙北防疫措施" /></li>
+                        <li class="splide__slide">
+                            <img src="./img/alert_taipei0.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/alert_taipei1.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/alert_taipei2.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -210,7 +215,9 @@
                 <div id="splide_footmap_north1" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li v-for="(img,index) in photos_north1" class="splide__slide"><img :src="photos_north1[index]" loading="lazy" alt="足跡圖" class="slider_item" /></li>
+                            <li v-for="(img,index) in photos_north1" class="splide__slide">
+                                <img :src="photos_north1[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -219,7 +226,9 @@
                 <div id="splide_footmap_north2" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li v-for="(img,index) in photos_north2" class="splide__slide"><img :src="photos_north2[index]" loading="lazy" alt="足跡圖" class="slider_item" /></li>
+                            <li v-for="(img,index) in photos_north2" class="splide__slide">
+                                <img :src="photos_north2[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -228,7 +237,9 @@
                 <div id="splide_footmap_center" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li v-for="(img,index) in photos_center" class="splide__slide"><img :src="photos_center[index]" loading="lazy" alt="足跡圖" class="slider_item" /></li>
+                            <li v-for="(img,index) in photos_center" class="splide__slide">
+                                <img :src="photos_center[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -237,7 +248,9 @@
                 <div id="splide_footmap_south" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li v-for="(img,index) in photos_south" class="splide__slide"><img :src="photos_south[index]" loading="lazy" alt="足跡圖" class="slider_item" /></li>
+                            <li v-for="(img,index) in photos_south" class="splide__slide">
+                                <img :src="photos_south[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -246,7 +259,9 @@
                 <div id="splide_footmap_east" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li v-for="(img,index) in photos_east" class="splide__slide"><img :src="photos_east[index]" loading="lazy" alt="足跡圖" class="slider_item" /></li>
+                            <li v-for="(img,index) in photos_east" class="splide__slide">
+                                <img :src="photos_east[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -259,11 +274,21 @@
             <div id="splide_station" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/station/1.jpg" alt="雙北快篩站" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/station/2.jpg" alt="雙北快篩站" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/station/3.jpg" alt="雙北快篩站" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/station/4.jpg" alt="雙北快篩站" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/station/5.jpg" alt="雙北快篩站" class="slider_item" /></li>
+                        <li class="splide__slide">
+                            <img src="./img/station/1.jpg" alt="雙北快篩站" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/station/2.jpg" alt="雙北快篩站" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/station/3.jpg" alt="雙北快篩站" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/station/4.jpg" alt="雙北快篩站" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/station/5.jpg" alt="雙北快篩站" class="slider_item" />
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -277,7 +302,7 @@
                 </a>
             </div>
             <div>
-                <img style="width:100%" src="./img/station/result.jpg" loading="lazy" alt="雙北快篩量能結果">
+                <img style="width: 100%; margin-top: 1rem" src="./img/station/result.jpg" loading="lazy" alt="雙北快篩量能結果" />
             </div>
         </section>
 
@@ -287,10 +312,18 @@
             <div id="splide_booking" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/booking/1.jpg" loading="lazy" alt="實聯制" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/booking/2.jpg" loading="lazy" alt="實聯制" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/booking/3.jpg" loading="lazy" alt="實聯制" class="slider_item" /></li>
-                        <li class="splide__slide"><img src="./img/booking/4.jpg" loading="lazy" alt="實聯制" class="slider_item" /></li>
+                        <li class="splide__slide">
+                            <img src="./img/booking/1.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/booking/2.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/booking/3.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/booking/4.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -302,7 +335,7 @@
             <p>
                 根據指揮中心公布近日案例病毒定序結果，其中華航諾福特案、蘆洲獅子會案1203、羅東遊藝場、萬華茶藝館均為相同的英國變異株，因此能夠認定上述案例為一樣的病毒株在互相傳播。
             </p>
-            <img src="./img/alert_dna.jpg" style="width: 100%; margin-bottom: 10px;" loading="lazy" alt="近期感染事件病毒定序結果" />
+            <img src="./img/alert_dna.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="近期感染事件病毒定序結果" />
         </section>
 
         <!-- 防疫照顧假Q&A -->
@@ -313,28 +346,36 @@
             </p>
             <ul>
                 <li>
-                    <p> Q：孩子學校因為疫情停課，可以向雇主請什麼假？</p>
-                    <p>A：12歲以下學童之家長其中一人，於停課期間如有照顧學童之需求，得請「防疫照顧假」。另外，如有就讀高級中等學校（含高中、高職、五專一、二、三年級）或國民中學持有身心障礙證明之子女，有照顧需求，家長其中一人也得請防疫照顧假。</p>
+                    <p>Q：孩子學校因為疫情停課，可以向雇主請什麼假？</p>
+                    <p>
+                        A：12歲以下學童之家長其中一人，於停課期間如有照顧學童之需求，得請「防疫照顧假」。另外，如有就讀高級中等學校（含高中、高職、五專一、二、三年級）或國民中學持有身心障礙證明之子女，有照顧需求，家長其中一人也得請防疫照顧假。
+                    </p>
                 </li>
-                <hr>
+                <hr />
 
                 <li>
-                    <p>Q：哪些家長可以請「防疫照顧假」？ </p>
-                    <P>A：包括：父母、養父母、監護人或其他日常實際照顧兒童之人，如爺爺、奶奶等。</P>
+                    <p>Q：哪些家長可以請「防疫照顧假」？</p>
+                    <p>A：包括：父母、養父母、監護人或其他日常實際照顧兒童之人，如爺爺、奶奶等。</p>
                 </li>
-                <hr>
+                <hr />
 
                 <li>
-                    <p>Q：如果雇主不給防疫照顧假，如何處理？ </p>
-                    <p>A：依據規定，若家長符合上述需求，雇主應予准假，且不得視為曠工、強迫勞工以事假或其他假別處理，亦不得扣發全勤獎金、解僱或予不利之處分。</p>
-                    <p>若雇主扣發全勤獎金，將依違反勞基法第22條「工資未全額給付」處罰；如強制勞工一定要請特休、事假，將依違反勞基法第38條或第43條規定處罰，處罰金額都是2萬元至100萬元。</p>
+                    <p>Q：如果雇主不給防疫照顧假，如何處理？</p>
+                    <p>
+                        A：依據規定，若家長符合上述需求，雇主應予准假，且不得視為曠工、強迫勞工以事假或其他假別處理，亦不得扣發全勤獎金、解僱或予不利之處分。
+                    </p>
+                    <p>
+                        若雇主扣發全勤獎金，將依違反勞基法第22條「工資未全額給付」處罰；如強制勞工一定要請特休、事假，將依違反勞基法第38條或第43條規定處罰，處罰金額都是2萬元至100萬元。
+                    </p>
                 </li>
-                <hr>
+                <hr />
 
                 <li>
                     <p>Q：若家中孩子不符合「防疫照顧假」適用對象，家長還可以請什麼假？</p>
-                    <p> A：家長得請「家庭照顧假」、「特休」或「事假」以為運用，雇主應予准假。 </p>
-                    <p>其中「家庭照顧假」是依據《性別工作平等法》而規定，受僱者於家庭成員預防接種、發生嚴重之疾病或其他重大事故須親自照顧時，得請家庭照顧假。該假日數併入事假計算，全年以7日為限，請假期間可不給工資，但不得視為缺勤而影響其全勤獎金、考績。</p>
+                    <p>A：家長得請「家庭照顧假」、「特休」或「事假」以為運用，雇主應予准假。</p>
+                    <p>
+                        其中「家庭照顧假」是依據《性別工作平等法》而規定，受僱者於家庭成員預防接種、發生嚴重之疾病或其他重大事故須親自照顧時，得請家庭照顧假。該假日數併入事假計算，全年以7日為限，請假期間可不給工資，但不得視為缺勤而影響其全勤獎金、考績。
+                    </p>
                 </li>
             </ul>
             <div class="block_layout reading_layout">
@@ -353,10 +394,10 @@
             <p>
                 由於雙北確診者激增，恐怕出現醫療量能不足情況，目前除了北部各大醫院進行降載計畫，指揮中心也列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
             </p>
-            <img src="./img/alert_touch0.jpg" style="width: 100%; margin-bottom: 10px;" loading="lazy" alt="確診者注意事項" />
-            <img src="./img/alert_touch1.jpg" style="width: 100%; margin-bottom: 10px;" loading="lazy" alt="接觸者注意事項" />
-            <img src="./img/alert_touch2.jpg" style="width: 100%; margin-bottom: 10px;" loading="lazy" alt="照顧確診病患" />
-            <img src="./img/alert_touch3.jpg" style="width: 100%; margin-bottom: 10px;" loading="lazy" alt="照顧確診病患" />
+            <img src="./img/alert_touch0.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="確診者注意事項" />
+            <img src="./img/alert_touch1.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="接觸者注意事項" />
+            <img src="./img/alert_touch2.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="照顧確診病患" />
+            <img src="./img/alert_touch3.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="照顧確診病患" />
         </section>
 
         <!-- 全球確診統計 -->
@@ -389,7 +430,7 @@
         <section id="item-10" class="guideText">
             <h2>武漢肺炎重點時間軸</h2>
             <div id="timeline">
-                <h3><img src="./img/icon_taiwan.png" alt="taiwan"> 台灣</h3>
+                <h3><img src="./img/icon_taiwan.png" alt="taiwan" /> 台灣</h3>
                 <div class="timeline">
                     <ul>
                         <li v-for="(event,index) of taiwan">
@@ -400,8 +441,8 @@
                         </li>
                     </ul>
                 </div>
-                <hr>
-                <h3><img src="./img/icon_global.png" alt="global"> 全球</h3>
+                <hr />
+                <h3><img src="./img/icon_global.png" alt="global" /> 全球</h3>
                 <div class="timeline">
                     <ul>
                         <li v-for="(event,index) of global">
@@ -424,25 +465,30 @@
             <div class="block_layout reading_layout">
                 <a href="https://www.ftvnews.com.tw/tag/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E/">
                     <div>
-                        <p>武肺疫情最新動態</p><i class="fas fa-mouse-pointer"></i>
+                        <p>武肺疫情最新動態</p>
+                        <i class="fas fa-mouse-pointer"></i>
                     </div>
                 </a>
 
                 <a href="https://www.ftvnews.com.tw/tag/%E5%8F%B0%E7%81%A3%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8%E4%B8%AD%E5%BF%83/">
                     <div>
-                        <p>常見疫情謠言查證專區</p><i class="fas fa-mouse-pointer"></i>
+                        <p>常見疫情謠言查證專區</p>
+                        <i class="fas fa-mouse-pointer"></i>
                     </div>
                 </a>
             </div>
             <!-- 開始Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
             <div id="dablewidget_klrJ21lm" data-widget_id="klrJ21lm">
                 <script>
+                    ;
                     (function(d, a) {
-                        d[a] = d[a] || function() {
-                            (d[a].q = d[a].q || []).push(arguments)
-                        };
-                    }(window, 'dable'));
-                    dable('renderWidget', 'dablewidget_klrJ21lm');
+                        d[a] =
+                            d[a] ||
+                            function() {;
+                                (d[a].q = d[a].q || []).push(arguments)
+                            }
+                    })(window, 'dable')
+                    dable('renderWidget', 'dablewidget_klrJ21lm')
                 </script>
             </div>
             <!-- 結束Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
@@ -450,26 +496,29 @@
 
         <!-- 下載民視新聞APP 社群連結 -->
         <section class="guideText">
-            <h3 class="icon_ftv" style="text-align:left;">下載民視新聞APP<br> 疫情動態不漏接</h3>
+            <h3 class="icon_ftv" style="text-align: left">
+                下載民視新聞APP<br /> 疫情動態不漏接
+            </h3>
             <ul class="social_info">
                 <li>
-                    <img src="./img/apple.png" alt="download IOS">
+                    <img src="./img/apple.png" alt="download IOS" />
                     <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">iOS蘋果系統</a>
                 </li>
                 <li>
-                    <img src="./img/Android.png" alt="download Android">
+                    <img src="./img/Android.png" alt="download Android" />
                     <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">Android安卓系統</a>
                 </li>
-                <hr>
-                <li><i class="fab fa-facebook-square fa-2x" style="color:#476FC0"></i> 加入
+                <hr />
+                <li>
+                    <i class="fab fa-facebook-square fa-2x" style="color: #476fc0"></i> 加入
                     <a href="https://bit.ly/3orvCiI" target="_blank">民視新聞FB紛絲團</a>
                 </li>
-                <li><i class="fab fa-line fa-2x" style="color:#00C755"></i> 加入
+                <li>
+                    <i class="fab fa-line fa-2x" style="color: #00c755"></i> 加入
                     <a href="https://goo.gl/hze3Wv" target="_blank">民視新聞LINE官方帳號</a>
                 </li>
             </ul>
         </section>
-
     </main>
 
     <!-- fb share -->
@@ -478,66 +527,70 @@
         <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse">
             <div class="social-share-icon-block">
                 <img src="./img/facebook-f-brands.png" alt="分享民視新聞專題" />
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"><span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html" >分享</span></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"><span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html"
+                            >分享</span
+                        ></a
+                    >
+                </div>
+            </a>
+            </div>
+
+            <!-- line share -->
+            <a href="https://social-plugins.line.me/lineit/share?url=https://www.ftvnews.com.tw/topics/covid-19/index.html" target="_blank">
+                <div class="line-style">
+                    <span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html">LINE 分享</span
+                >
             </div>
         </a>
-    </div>
 
-    <!-- line share -->
-    <a href="https://social-plugins.line.me/lineit/share?url=https://www.ftvnews.com.tw/topics/covid-19/index.html" target="_blank">
-        <div class="line-style">
-            <span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html">LINE 分享</span>
-        </div>
-    </a>
+        <!-- 一鍵複製 -->
+        <div class="localurl-style">
+            <span>複製網址</span>
+                </div>
 
-    <!-- 一鍵複製 -->
-    <div class="localurl-style">
-        <span>複製網址</span>
-    </div>
+                <footer>
+                    <div class="footer_logo">
+                        <img src="img/logo_ftv.png" alt="民視新聞網" />
+                        <span>Copyright &copy; 2019 民視新聞網路部 社群中心</span>
+                    </div>
+                </footer>
 
-    <footer>
-        <div class="footer_logo">
-            <img src="img/logo_ftv.png" alt="民視新聞網" />
-            <span>Copyright &copy; 2019 民視新聞網路部 社群中心</span>
-        </div>
-    </footer>
+                <!-- js include -->
+                <!-- fb share setting -->
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=1854261788223985&autoLogAppEvents=1" nonce="mTRTGA9g"></script>
 
-    <!-- js include -->
-    <!-- fb share setting -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=1854261788223985&autoLogAppEvents=1" nonce="mTRTGA9g"></script>
+                <!-- vuejs -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
 
-    <!-- vuejs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+                <!-- jqueryDataTables -->
+                <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
-    <!-- jqueryDataTables -->
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+                <!-- bootstrap -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <!-- bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                <!-- fontawesome -->
+                <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
+                <!-- ScrollToTop smooth -->
+                <script>
+                    function ScrollTo(id_name) {
+                        $('html,body').animate({
+                                scrollTop: $('#' + id_name).offset().top,
+                            },
+                            1000
+                        )
+                    }
+                </script>
 
-    <!-- ScrollToTop smooth -->
-    <script>
-        function ScrollTo(id_name) {
-            $('html,body').animate({
-                    scrollTop: $('#' + id_name).offset().top,
-                },
-                1000
-            )
-        }
-    </script>
+                <!-- splide -->
+                <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-    <!-- splide -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-
-    <!-- customize -->
-    <script src="js/data.js?ver=0524-5"></script>
-    <script src="js/editData.js?ver=0524-5"></script>
-    <script src="js/editFootmap.js?ver=0524-5"></script>
-    <script src="js/editTimeline.js?ver=0524-5"></script>
-    <script src="js/script.js?ver=0524-5"></script>
+                <!-- customize -->
+                <script src="js/data.js?ver=0525-2"></script>
+                <script src="js/editData.js?ver=0525-2"></script>
+                <script src="js/editFootmap.js?ver=0525-2"></script>
+                <script src="js/editTimeline.js?ver=0525-2"></script>
+                <script src="js/script.js?ver=0525-2"></script>
 </body>
 
 </html>
