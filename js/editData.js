@@ -9,7 +9,7 @@ function ajax_gsheet() {
         success: function data_sheet(data) {
             // 基隆市
             var data_tc1 = data.feed.entry[21].content.$t
-            $('.data_tc1').addClass('deg3')
+            $('.data_tc1').addClass('deg2')
             $('.data_tc1').attr('title', '基隆市：' + data_tc1 + '例')
             $('.data_tc1').html(data_tc1)
 
@@ -33,13 +33,13 @@ function ajax_gsheet() {
 
             // 新竹市
             var data_tc5 = data.feed.entry[29].content.$t
-            $('.data_tc5').addClass('deg4')
+            $('.data_tc5').addClass('deg3')
             $('.data_tc5').html(data_tc5)
             $('.data_tc5').attr('title', '新竹市：' + data_tc5 + '例')
 
             // 新竹縣
             var data_tc6 = data.feed.entry[31].content.$t
-            $('.data_tc6').addClass('deg4')
+            $('.data_tc6').addClass('deg3')
             $('.data_tc6').html(data_tc6)
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例')
 
@@ -51,19 +51,19 @@ function ajax_gsheet() {
 
             // 台中市
             var data_tc8 = data.feed.entry[35].content.$t
-            $('.data_tc8').addClass('deg3')
+            $('.data_tc8').addClass('deg2')
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
             // 彰化縣
             var data_tc9 = data.feed.entry[37].content.$t
-            $('.data_tc9').addClass('deg2')
+            $('.data_tc9').addClass('deg1')
             $('.data_tc9').html(data_tc9)
             $('.data_tc9').attr('title', '彰化縣：' + data_tc9 + '例')
 
             // 南投縣
             var data_tc10 = data.feed.entry[39].content.$t
-            $('.data_tc10').addClass('deg4')
+            $('.data_tc10').addClass('deg3')
             $('.data_tc10').html(data_tc10)
             $('.data_tc10').attr('title', '南投縣：' + data_tc10 + '例')
 
@@ -87,7 +87,7 @@ function ajax_gsheet() {
 
             // 台南市
             var data_tc14 = data.feed.entry[47].content.$t
-            $('.data_tc14').addClass('deg4')
+            $('.data_tc14').addClass('deg3')
             $('.data_tc14').html(data_tc14)
             $('.data_tc14').attr('title', '台南市：' + data_tc14 + '例')
 
@@ -99,7 +99,7 @@ function ajax_gsheet() {
 
             // 屏東縣
             var data_tc16 = data.feed.entry[51].content.$t
-            $('.data_tc16').addClass('deg4')
+            $('.data_tc16').addClass('deg3')
             $('.data_tc16').html(data_tc16)
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例')
 
@@ -117,7 +117,7 @@ function ajax_gsheet() {
 
             // 台東縣
             var data_tc19 = data.feed.entry[57].content.$t
-            $('.data_tc19').addClass('degNone')
+            $('.data_tc19').addClass('deg4')
             $('.data_tc19').html(data_tc19)
             $('.data_tc19').attr('title', '台東縣：' + data_tc19 + '例')
 
@@ -164,7 +164,6 @@ function ajax_gsheet() {
             $('#tw_import').html(data.feed.entry[17].content.$t)
                 //最後更新日期
             $('#tw_pubDate').html(data.feed.entry[81].content.$t)
-
 
             //// 全球總合 ////
             $('#inc_con').html(data.feed.entry[5].content.$t)

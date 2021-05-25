@@ -48,7 +48,6 @@ $(document).ready(function() {
             status = false
 
             navBar.style.display = 'flex'
-
         } else {
             iconClass.classList.remove('fa-times')
             iconClass.classList.add('fa-bars')
@@ -64,22 +63,21 @@ $(document).ready(function() {
         })
     }
 
-    // 一鍵複製url  
+    // 一鍵複製url
     let oneClick = document.querySelector('.localurl-style')
     oneClick.addEventListener('click', copyUrl)
 
     function copyUrl() {
         let urlInput = document.createElement('input'),
-            text = window.location.href + '?utm_source=WHpage&utm_medium=copybutton';
+            text = window.location.href + '?utm_source=WHpage&utm_medium=copybutton'
 
-        document.body.appendChild(urlInput);
-        urlInput.value = text;
-        urlInput.select();
-        document.execCommand('copy');
-        document.body.removeChild(urlInput);
-        alert("複製成功!");
+        document.body.appendChild(urlInput)
+        urlInput.value = text
+        urlInput.select()
+        document.execCommand('copy')
+        document.body.removeChild(urlInput)
+        alert('複製成功!')
     }
-
 
     // inser icon before H2
     $('h2').prepend(
@@ -92,9 +90,7 @@ $(document).ready(function() {
     $('.icon_global').prepend(
         '<img style="width:28px; margin-right:10px" src="img/icon_global.png"><!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->'
     )
-    $('.icon_ftv').prepend(
-        '<img style="width:28px; margin-right:10px" src="img/logo_ftv.png">'
-    )
+    $('.icon_ftv').prepend('<img style="width:28px; margin-right:10px" src="img/logo_ftv.png">')
 
     // 地圖案例數
     $('path').mousemove(function(e) {
@@ -141,38 +137,45 @@ $(document).ready(function() {
 
     // 輪播圖初始 splide
     // 全國防疫
-    new Splide('#splide_protect', {}).mount();
+    new Splide('#splide_protect', {
+        rewind: true,
+    }).mount()
 
     // 足跡
     new Splide('#splide_footmap_north1', {
         rewind: true,
-    }).mount();
+    }).mount()
 
     new Splide('#splide_footmap_north2', {
         rewind: true,
-    }).mount();
+    }).mount()
 
     new Splide('#splide_footmap_center', {
         rewind: true,
-    }).mount();
+    }).mount()
 
     new Splide('#splide_footmap_south', {
         rewind: true,
-    }).mount();
+    }).mount()
 
     new Splide('#splide_footmap_east', {
         rewind: true,
-    }).mount();
+    }).mount()
 
     // 快篩站
     new Splide('#splide_station', {
         rewind: true,
-    }).mount();
+    }).mount()
 
     // 實聯制
     new Splide('#splide_booking', {
         rewind: true,
-    }).mount();
+    }).mount()
+
+    // 注意事項
+    new Splide('#splide_alert', {
+        rewind: true,
+    }).mount()
 })
 
 //  隱藏表格值=02的欄位
@@ -192,20 +195,19 @@ $(document).ready(function() {
 // 版號控管
 ;
 (function() {
-    let Today = new Date();
-    let YYYY = Today.getFullYear();
-    let MM = Today.getMonth() + 1;
-    let DD = Today.getDate();
-    let h = Today.getHours();
-    let m = Today.getMinutes();
-    let Time = YYYY + '' + MM + '' + DD + '' + h + '' + m;
+    let Today = new Date()
+    let YYYY = Today.getFullYear()
+    let MM = Today.getMonth() + 1
+    let DD = Today.getDate()
+    let h = Today.getHours()
+    let m = Today.getMinutes()
+    let Time = YYYY + '' + MM + '' + DD + '' + h + '' + m
 
     let photo = $('img')
 
     for (let i = 0; i < photo.length; i++) {
         if (photo[i].src) {
-            photo[i].src = photo[i].src + '?ver=' + Time;
+            photo[i].src = photo[i].src + '?ver=' + Time
         }
-    };
-
+    }
 })()

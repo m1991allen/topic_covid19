@@ -38,9 +38,9 @@ new Vue({
             './img/footmap/north2/竹市0522-2.jpg',
             './img/footmap/north2/竹市0522-1.jpg',
 
-            './img/footmap/center/苗0524-2.jpg',
-            './img/footmap/center/苗0524-1.jpg',
-            './img/footmap/center/苗0522-1.jpg',
+            './img/footmap/north2/苗0524-2.jpg',
+            './img/footmap/north2/苗0524-1.jpg',
+            './img/footmap/north2/苗0522-1.jpg',
         ],
 
         // 中彰雲嘉投 照片路徑
