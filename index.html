@@ -1,586 +1,750 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="【最新疫情】本土疫情持續延燒！圖解各縣市累積確診、足跡｜專題｜民視新聞網" />
+        <meta property="og:site_name" content="武漢肺炎 新冠肺炎 COVID-19-民視數位專題" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:url" content="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
+        <meta property="og:image" content="https://www.ftvnews.com.tw/topics/COVID-19/cover1.jpg" />
+        <meta property="og:image:width" content="563" />
+        <meta property="og:image:height" content="296" />
+        <meta
+            property="og:description"
+            content="武漢肺炎（新冠肺炎、COVID-19）疫情在全球持續升溫，民視新聞特別製作武漢肺炎專題，運用各式圖表，提供「世界疫情地圖」、「台灣疫情整理」、「各國防疫措施」等，讓讀者能即時掌握疫情資訊。"
+        />
+        <meta property="fb:app_id" content="157389381527660" />
+        <meta http-equiv="PRAGMA" content="NO-CACHE" />
+        <meta http-equiv="EXPIRES" content="0" />
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+        <title>【最新疫情】本土疫情持續延燒！圖解各縣市累積確診、足跡｜專題｜民視新聞網</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="【最新疫情】】台灣本土疫情蔓延！圖解各縣市累積確診、足跡｜專題｜民視新聞網" />
-    <meta property="og:site_name" content="武漢肺炎 新冠肺炎 COVID-19-民視數位專題" />
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="zh_TW" />
-    <meta property="og:url" content="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
-    <meta property="og:image" content="https://www.ftvnews.com.tw/topics/COVID-19/cover1.jpg" />
-    <meta property="og:image:width" content="563" />
-    <meta property="og:image:height" content="296" />
-    <meta property="og:description" content="武漢肺炎（新冠肺炎、COVID-19）疫情在全球持續升溫，民視新聞特別製作武漢肺炎專題，運用各式圖表，提供「世界疫情地圖」、「台灣疫情整理」、「各國防疫措施」等，讓讀者能即時掌握疫情資訊。" />
-    <meta property="fb:app_id" content="157389381527660" />
-    <meta http-equiv="PRAGMA" content="NO-CACHE" />
-    <meta http-equiv="EXPIRES" content="0" />
-    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
-    <title>【最新疫情】】台灣本土疫情蔓延！圖解各縣市累積確診、足跡｜專題｜民視新聞網</title>
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
 
-    <link rel="icon" href="/images/favicon.ico" />
-    <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
+        <!-- jQueryUI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 
-    <!-- jQueryUI -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+        <!-- jQueryDataTable -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
 
-    <!-- jQueryDataTable -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <!-- splide -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css  " />
 
-    <!-- splide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css  " />
+        <!-- customize -->
+        <link rel="stylesheet" href="css/style.css?ver=0526-3" />
 
-    <!-- customize -->
-    <link rel="stylesheet" href="css/style.css?ver=0526-3" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || []
-
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        gtag('js', new Date())
-
-        gtag('config', 'UA-101119806-1')
-    </script>
-
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- 解析 -->
-    <script>
-        ;
-        (function() {
-            if (screen.width < 768) {
-                $('.case_info').addClass('case_info_mb')
+            function gtag() {
+                dataLayer.push(arguments)
             }
-        })(screen.width)
-    </script>
-</head>
+            gtag('js', new Date())
 
-<body>
-    <header class="row">
-        <div id="progress"></div>
-    </header>
-    <!-- 漢堡選單 -->
-    <nav id="navbarBtn"><i id="switcher" class="fas fa-bars fa-3x"></i></nav>
-    <nav id="navbar" class="navbar navbar-light bg-light">
-        <nav class="nav nav-pills flex-column">
-            <p>導覽：</p>
-            <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">今日新增案例</a>
-            <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">疫情分級標準</a>
-            <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">全國防疫措施</a>
-            <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">確診足跡一覽</a>
-            <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-5')">全台快篩一覽</a>
-            <a class="nav-link" href="#item-6" onclick="javascript:ScrollTo('item-6')">簡訊實聯制</a>
-            <a class="nav-link" href="#item-7" onclick="javascript:ScrollTo('item-7')">防疫照顧假Q&A</a>
-            <a class="nav-link" href="#item-8" onclick="javascript:ScrollTo('item-8')">確診注意事項</a>
-            <a class="nav-link" href="#item-9" onclick="javascript:ScrollTo('item-9')">全球確診統計</a>
-            <a class="nav-link" href="#item-10" onclick="javascript:ScrollTo('item-10')">武肺重點時間軸</a>
-            <a class="nav-link" href="#item-11" onclick="javascript:ScrollTo('item-11')">武肺即時新聞</a>
+            gtag('config', 'UA-101119806-1')
+        </script>
+
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- 解析 -->
+        <script>
+            ;(function () {
+                if (screen.width < 768) {
+                    $('.case_info').addClass('case_info_mb')
+                }
+            })(screen.width)
+        </script>
+    </head>
+
+    <body>
+        <header class="row">
+            <div id="progress"></div>
+        </header>
+        <!-- 漢堡選單 -->
+        <nav id="navbarBtn"><i id="switcher" class="fas fa-bars fa-3x"></i></nav>
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+                <p>導覽：</p>
+                <a class="nav-link" href="#item-1" onclick="javascript:ScrollTo('item-1')">今日新增案例</a>
+                <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">疫情分級標準</a>
+                <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">全國防疫措施</a>
+                <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">確診足跡一覽</a>
+                <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-5')">全台快篩一覽</a>
+                <a class="nav-link" href="#item-6" onclick="javascript:ScrollTo('item-6')">簡訊實聯制</a>
+                <a class="nav-link" href="#item-7" onclick="javascript:ScrollTo('item-7')">防疫照顧假Q&A</a>
+                <a class="nav-link" href="#item-8" onclick="javascript:ScrollTo('item-8')">確診注意事項</a>
+                <a class="nav-link" href="#item-9" onclick="javascript:ScrollTo('item-9')">疫苗接種統計</a>
+                <a class="nav-link" href="#item-10" onclick="javascript:ScrollTo('item-10')">全球確診統計</a>
+                <a class="nav-link" href="#item-11" onclick="javascript:ScrollTo('item-11')">武肺重點時間軸</a>
+                <a class="nav-link" href="#item-12" onclick="javascript:ScrollTo('item-12')">武肺即時新聞</a>
+            </nav>
         </nav>
-    </nav>
-    <!-- 一鍵置頂/置底 -->
-    <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19" /></div>
-    <div id="GoNews">
-        <a href="#item-1">
-            <span><i class="fas fa-virus"></i> 今日疫情</span>
-        </a>
-        <a href="#item-4">
-            <span><i class="fas fa-shoe-prints"></i> 確診足跡</span>
-        </a>
-        <a href="#item-11">
-            <span><i class="fas fa-newspaper"></i> 即時新聞</span>
-        </a>
-    </div>
+        <!-- 一鍵置頂/置底 -->
+        <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19" /></div>
+        <div id="GoNews">
+            <a href="#item-1">
+                <span><i class="fas fa-virus"></i> 今日疫情</span>
+            </a>
+            <a href="#item-4">
+                <span><i class="fas fa-shoe-prints"></i> 確診足跡</span>
+            </a>
+            <a href="#item-11">
+                <span><i class="fas fa-newspaper"></i> 即時新聞</span>
+            </a>
+        </div>
 
-    <!-- 世界數據 台灣案例 首圖 -->
-    <div class="mainbg">
-        <div class="mainbg_title">
-            <h1>武漢肺炎疫情</h1>
-            <h3>圖表資訊一次看懂</h3>
-            <div class="row taiwan_data">
-                <div class="col-12">
-                    <p>台灣累計確診總數</p>
-                    <p id="tw_con" class="data_gc1" style="font-size: 1.8rem"></p>
+        <!-- 世界數據 台灣案例 首圖 -->
+        <div class="mainbg">
+            <div class="mainbg_title">
+                <h1>武漢肺炎疫情</h1>
+                <h3>圖表資訊一次看懂</h3>
+                <div class="row taiwan_data">
+                    <div class="col-12">
+                        <p>台灣累計確診總數</p>
+                        <p id="tw_con" class="data_gc1" style="font-size: 1.8rem"></p>
+                    </div>
                 </div>
-            </div>
-            <hr style="margin: 3px" />
-            <div class="row taiwan_data">
-                <div class="col-4">
-                    <p>今日新增</p>
-                    <p id="tw_today" class="data_rescue" style="font-size: 1.7rem"></p>
+                <hr style="margin: 3px" />
+                <div class="row taiwan_data">
+                    <div class="col-4">
+                        <p>今日新增</p>
+                        <p id="tw_today" class="data_rescue" style="font-size: 1.7rem"></p>
+                    </div>
+                    <div class="col-4">
+                        <p>本土案例</p>
+                        <p id="tw_local" class="data_gd1" style="font-size: 1.7rem"></p>
+                    </div>
+                    <div class="col-4">
+                        <p>境外移入</p>
+                        <p id="tw_import" class="data_gd1" style="font-size: 1.7rem"></p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <p>本土案例</p>
-                    <p id="tw_local" class="data_gd1" style="font-size: 1.7rem"></p>
-                </div>
-                <div class="col-4">
-                    <p>境外移入</p>
-                    <p id="tw_import" class="data_gd1" style="font-size: 1.7rem"></p>
-                </div>
-            </div>
-            <p style="text-align: right">最後更新日期： <span id="tw_pubDate"></span></p>
+                <p style="text-align: right">最後更新日期： <span id="tw_pubDate"></span></p>
 
-            <div class="mainbg_info">
-                <div id="inc_con" class="count_sumConfirm_global bar1"></div>
-                <div id="inc_die" class="count_sumDeath_global bar2"></div>
-            </div>
-            <div class="row">
-                <div class="col-8">全球確診</div>
-                <div class="col-4">死亡</div>
+                <div class="mainbg_info">
+                    <div id="inc_con" class="count_sumConfirm_global bar1"></div>
+                    <div id="inc_die" class="count_sumDeath_global bar2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-8">全球確診</div>
+                    <div class="col-4">死亡</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <main class="layout">
-        <!-- 台灣確診案例數 -->
-        <section class="guideText">
-            <h2>台灣確診案例數</h2>
-            <table id="dt_imp_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <!-- {{insert form}} -->
-            </table>
-        </section>
+        <main class="layout">
+            <!-- 台灣確診案例數 -->
+            <section class="guideText">
+                <h2>台灣確診案例數</h2>
+                <table
+                    id="dt_imp_taiwan"
+                    class="table table-striped table-bordered table-sm"
+                    cellspacing="0"
+                    width="100%"
+                >
+                    <!-- {{insert form}} -->
+                </table>
+            </section>
 
-        <!-- 今日新增本土案例 -->
-        <section id="item-1" class="guideText">
-            <h2>今日新增本土案例</h2>
-            <img id="localcases" style="width: 100%" src="https://www.ftvnews.com.tw/images/topics/localcase.jpg" loading="lazy" alt="今日新增本土案例" />
-        </section>
+            <!-- 今日新增本土案例 -->
+            <section id="item-1" class="guideText">
+                <h2>今日新增本土案例</h2>
+                <img
+                    id="localcases"
+                    style="width: 100%"
+                    src="https://www.ftvnews.com.tw/images/topics/localcase.jpg"
+                    loading="lazy"
+                    alt="今日新增本土案例"
+                />
+            </section>
 
-        <!-- 台灣本土案例分佈 -->
-        <section class="guideText">
-            <h2>台灣本土案例分佈</h2>
-            <div class="hovertext"></div>
+            <!-- 台灣本土案例分佈 -->
+            <section class="guideText">
+                <h2>台灣本土案例分佈</h2>
+                <div class="hovertext"></div>
 
-            <div class="taiwan_map">
-                <!-- {{insert map}} -->
-            </div>
-            <table id="dt_loc_taiwan" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <!-- {{insert form}} -->
-            </table>
-        </section>
-
-        <!-- 本土案例校正回歸情形 -->
-        <section class="guideText">
-            <h2>本土案例校正回歸情形</h2>
-            <img style="width: 100%; margin-bottom: 10px" src="./img/localtweak1.jpg" loading="lazy" alt="本土案例校正回歸" />
-            <img style="width: 100%; margin-bottom: 10px" src="./img/localtweak2.jpg" loading="lazy" alt="本土案例校正回歸" />
-        </section>
-
-        <!-- 疫情警戒分級標準 -->
-        <section id="item-2" class="guideText">
-            <h2>疫情警戒分級標準</h2>
-            <img src="./img/alert.jpg" style="width: 100%; margin-bottom: 10px" loading="lazy" alt="疫情警戒分級標準與因應事項" />
-        </section>
-
-        <!-- 全國防疫措施 -->
-        <section id="item-3" class="guideText">
-            <h2>全國防疫措施</h2>
-            <p>
-                因應國內疫情持續嚴峻，全台陸續發生感染來源不明的病例及群聚事件，指揮中心宣布自即日起至6月14日，啟動「三級警戒」全國防疫因應措施。
-            </p>
-            <p>
-                另外，教育部也宣布自5月19日起至6月14日，全國各級學校及公私立幼兒園停止到校上課，且兒童課後照顧服務中心、補習班等各類教育機構也同時配合停課，請所有學生停止前往，在家學習。
-            </p>
-            <div id="splide_protect" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="./img/alert_taipei0.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/alert_taipei1.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/alert_taipei2.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
-                        </li>
-                    </ul>
+                <div class="taiwan_map">
+                    <!-- {{insert map}} -->
                 </div>
-            </div>
-        </section>
+                <table
+                    id="dt_loc_taiwan"
+                    class="table table-striped table-bordered table-sm"
+                    cellspacing="0"
+                    width="100%"
+                >
+                    <!-- {{insert form}} -->
+                </table>
+            </section>
 
-        <!-- 確診足跡一覽 -->
-        <section id="item-4" class="guideText">
-            <h2>確診足跡</h2>
-            <!-- 北北基 -->
-            <div id="footmap">
-                <h3><i class="fas fa-map-pin"></i> 北北基</h3>
-                <div id="splide_footmap_north1" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li v-for="(img,index) in photos_north1" class="splide__slide">
-                                <img :src="photos_north1[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- 桃竹苗 -->
-                <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
-                <div id="splide_footmap_north2" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li v-for="(img,index) in photos_north2" class="splide__slide">
-                                <img :src="photos_north2[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- 中彰雲嘉投 -->
-                <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
-                <div id="splide_footmap_center" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li v-for="(img,index) in photos_center" class="splide__slide">
-                                <img :src="photos_center[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- 南高屏 -->
-                <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
-                <div id="splide_footmap_south" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li v-for="(img,index) in photos_south" class="splide__slide">
-                                <img :src="photos_south[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- 宜花東 -->
-                <h3><i class="fas fa-map-pin"></i> 宜花東</h3>
-                <div id="splide_footmap_east" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li v-for="(img,index) in photos_east" class="splide__slide">
-                                <img :src="photos_east[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 快篩站注意事項 -->
-        <section id="item-5" class="guideText">
-            <h2>全台快篩站一覽</h2>
-            <div id="splide_station" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="./img/station/1.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/2.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/3.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/4.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/5.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/6.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/7.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/8.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/9.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/10.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/11.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/12.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/13.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/station/14.jpg" alt="雙北快篩站" class="slider_item" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="block_layout reading_layout">
-                <a href="https://www.ftvnews.com.tw/news/detail/2021525W0155">
-                    <div>
-                        <p>「全台快篩站一覽」完整新聞</p>
-                        <i class="fas fa-mouse-pointer" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <img style="width: 100%; margin-top: 1rem" src="./img/station/result.jpg" loading="lazy" alt="雙北快篩量能結果" />
-            </div>
-        </section>
-
-        <!-- 簡訊實聯制 -->
-        <section id="item-6" class="guideText">
-            <h2>簡訊實聯制</h2>
-            <div id="splide_booking" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="./img/booking/1.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/booking/2.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/booking/3.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/booking/4.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 防疫照顧假Q&A -->
-        <section id="item-7" class="guideText">
-            <h2>防疫照顧假Q&A</h2>
-            <p>
-                因應嚴峻疫情，雙北市宣布5月18日至5月28日，高中職以下各級學校、安親班、課輔班全面停課，家長可請「防疫照顧假」。民視新聞對此整理相關Q&A，供有需要的民眾參考。
-            </p>
-            <ul>
-                <li>
-                    <p>Q：孩子學校因為疫情停課，可以向雇主請什麼假？</p>
-                    <p>
-                        A：12歲以下學童之家長其中一人，於停課期間如有照顧學童之需求，得請「防疫照顧假」。另外，如有就讀高級中等學校（含高中、高職、五專一、二、三年級）或國民中學持有身心障礙證明之子女，有照顧需求，家長其中一人也得請防疫照顧假。
-                    </p>
-                </li>
-                <hr />
-
-                <li>
-                    <p>Q：哪些家長可以請「防疫照顧假」？</p>
-                    <p>A：包括：父母、養父母、監護人或其他日常實際照顧兒童之人，如爺爺、奶奶等。</p>
-                </li>
-                <hr />
-
-                <li>
-                    <p>Q：如果雇主不給防疫照顧假，如何處理？</p>
-                    <p>
-                        A：依據規定，若家長符合上述需求，雇主應予准假，且不得視為曠工、強迫勞工以事假或其他假別處理，亦不得扣發全勤獎金、解僱或予不利之處分。
-                    </p>
-                    <p>
-                        若雇主扣發全勤獎金，將依違反勞基法第22條「工資未全額給付」處罰；如強制勞工一定要請特休、事假，將依違反勞基法第38條或第43條規定處罰，處罰金額都是2萬元至100萬元。
-                    </p>
-                </li>
-                <hr />
-
-                <li>
-                    <p>Q：若家中孩子不符合「防疫照顧假」適用對象，家長還可以請什麼假？</p>
-                    <p>A：家長得請「家庭照顧假」、「特休」或「事假」以為運用，雇主應予准假。</p>
-                    <p>
-                        其中「家庭照顧假」是依據《性別工作平等法》而規定，受僱者於家庭成員預防接種、發生嚴重之疾病或其他重大事故須親自照顧時，得請家庭照顧假。該假日數併入事假計算，全年以7日為限，請假期間可不給工資，但不得視為缺勤而影響其全勤獎金、考績。
-                    </p>
-                </li>
-            </ul>
-            <div class="block_layout reading_layout">
-                <a href="https://www.ftvnews.com.tw/news/detail/2021517W0495">
-                    <div>
-                        <p>「防疫照顧假Q&A」完整新聞</p>
-                        <i class="fas fa-mouse-pointer" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- 確診注意事項 -->
-        <section id="item-8" class="guideText">
-            <h2>確診者、接觸者注意事項</h2>
-            <p>
-                由於雙北確診者激增，恐怕出現醫療量能不足情況，目前除了北部各大醫院進行降載計畫，指揮中心也列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
-            </p>
-            <div id="splide_alert" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="./img/alert_touch0.jpg" loading="lazy" alt="確診者注意事項" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/alert_touch1.jpg" loading="lazy" alt="確診者注意事項" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/alert_touch2.jpg" loading="lazy" alt="確診者注意事項" class="slider_item" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./img/alert_touch3.jpg" loading="lazy" alt="確診者注意事項" class="slider_item" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 全球確診統計 -->
-        <section id="item-9" class="guideText" id="worldMap">
-            <h2 id="item-3">全球確診</h2>
-            <p>
-                2019年12月底在中國爆發武漢肺炎後，泰國於2020年1月13日也出現確診首例，為一名來自武漢的61歲女遊客，這也是第一起中國境外的感染案例。
-            </p>
-
-            <p>
-                疫情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年。
-            </p>
-
-            <p>
-                此外，伊朗、土耳其等地疫情也相當嚴重。其中，印度近來舉行地方選舉、慶祝重要節慶「大壺節」，加上變種病毒肆虐的情況下，單日確診和死亡人數屢破新高，目前累計確診數已突破2600萬，死亡人數也超過30萬大關。
-            </p>
-
-            <p>
-                歐洲部分，自義大利疫情大爆發後，鄰近國家也陸續出現確診案例，截至2021年4月，法國已經突破500萬確診，俄羅斯、英國、義大利也有超過400萬人染疫。
-            </p>
-
-            <p>
-                美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數超過3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數超過1600萬，也是拉美第一大重災區。以下數據為全球每日確診數、累積確診數，將不斷更新資料。
-            </p>
-            <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
-            <p style="margin-bottom: 10%">資料來源：Our World in Data</p>
-        </section>
-
-        <!-- 武漢重點時間軸-->
-        <section id="item-10" class="guideText">
-            <h2>武漢肺炎重點時間軸</h2>
-            <div id="timeline">
-                <h3><img src="./img/icon_taiwan.png" alt="taiwan" /> 台灣</h3>
-                <div class="timeline">
-                    <ul>
-                        <li v-for="(event,index) of taiwan">
-                            <p>{{taiwan[index].date}}</p>
-                            <p v-html="taiwan[index].event"></p>
-                            <div></div>
-                            <span></span>
-                        </li>
-                    </ul>
-                </div>
-                <hr />
-                <h3><img src="./img/icon_global.png" alt="global" /> 全球</h3>
-                <div class="timeline">
-                    <ul>
-                        <li v-for="(event,index) of global">
-                            <p>{{global[index].date}}</p>
-                            <p v-html="global[index].event"></p>
-                            <div></div>
-                            <span></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 武肺即時新聞 -->
-        <section id="item-11" class="guideText">
-            <h2>武漢肺炎即時新聞</h2>
-            <!-- <div class="row news_layout"></div> -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/XxJKnDLYZz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <div class="block_layout reading_layout">
-                <a href="https://www.ftvnews.com.tw/tag/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E/">
-                    <div>
-                        <p>武肺疫情最新動態</p>
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                </a>
-
-                <a href="https://www.ftvnews.com.tw/tag/%E5%8F%B0%E7%81%A3%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8%E4%B8%AD%E5%BF%83/">
-                    <div>
-                        <p>常見疫情謠言查證專區</p>
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- 開始Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
-        <section class="guideText">
-            <div id="dablewidget_klrJ21lm" data-widget_id="klrJ21lm">
+            <!-- 本土案例校正回歸情形 -->
+            <section class="guideText">
+                <h2>本土案例校正回歸情形</h2>
+                <div
+                    class="infogram-embed"
+                    data-id="ef44eab5-de2a-4e0f-b7c5-e91b895354e0"
+                    data-type="interactive"
+                    data-title="本土案例校正回歸情形"
+                ></div>
                 <script>
-                    ;
-                    (function(d, a, b, l, e, _) {
-                        if (d[b] && d[b].q) return
-                        d[b] = function() {;
-                            (d[b].q = d[b].q || []).push(arguments)
+                    !(function (e, i, n, s) {
+                        var t = 'InfogramEmbeds',
+                            d = e.getElementsByTagName('script')[0]
+                        if (window[t] && window[t].initialized) window[t].process && window[t].process()
+                        else if (!e.getElementById(n)) {
+                            var o = e.createElement('script')
+                            ;(o.async = 1),
+                                (o.id = n),
+                                (o.src = 'https://e.infogram.com/js/dist/embed-loader-min.js'),
+                                d.parentNode.insertBefore(o, d)
                         }
-                        e = a.createElement(l)
-                        e.async = 1
-                        e.charset = 'utf-8'
-                        e.src = '//static.dable.io/dist/plugin.min.js'
-                        _ = a.getElementsByTagName(l)[0]
-                        _.parentNode.insertBefore(e, _)
-                    })(window, document, 'dable', 'script')
-                    dable('setService', 'news.ftv.com.tw')
-                    dable('sendLogOnce')
-                    dable('renderWidget', 'dablewidget_klrJ21lm')
+                    })(document, 0, 'infogram-async')
                 </script>
-            </div>
-        </section>
-        <!-- 結束Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
+                <div
+                    style="
+                        padding: 8px 0;
+                        font-family: Arial !important;
+                        font-size: 13px !important;
+                        line-height: 15px !important;
+                        text-align: center;
+                        border-top: 1px solid #dadada;
+                        margin: 0 30px;
+                    "
+                >
+                    <a
+                        href="https://infogram.com/ef44eab5-de2a-4e0f-b7c5-e91b895354e0"
+                        style="color: #989898 !important; text-decoration: none !important"
+                        target="_blank"
+                        >本土案例校正回歸情形</a
+                    ><br /><a
+                        href="https://infogram.com"
+                        style="color: #989898 !important; text-decoration: none !important"
+                        target="_blank"
+                        rel="nofollow"
+                        >Infogram</a
+                    >
+                </div>
+            </section>
 
-        <!-- 下載民視新聞APP 社群連結 -->
-        <section class="guideText">
-            <h3 class="icon_ftv" style="text-align: left">
-                下載民視新聞APP<br /> 疫情動態不漏接
-            </h3>
-            <ul class="social_info">
-                <li>
-                    <img src="./img/apple.png" alt="download IOS" />
-                    <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">iOS蘋果系統</a>
-                </li>
-                <li>
-                    <img src="./img/Android.png" alt="download Android" />
-                    <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">Android安卓系統</a>
-                </li>
-                <hr />
-                <li>
-                    <i class="fab fa-facebook-square fa-2x" style="color: #476fc0"></i> 加入
-                    <a href="https://bit.ly/3orvCiI" target="_blank">民視新聞FB紛絲團</a>
-                </li>
-                <li>
-                    <i class="fab fa-line fa-2x" style="color: #00c755"></i> 加入
-                    <a href="https://goo.gl/hze3Wv" target="_blank">民視新聞LINE官方帳號</a>
-                </li>
-            </ul>
-        </section>
-    </main>
+            <!-- 疫情警戒分級標準 -->
+            <section id="item-2" class="guideText">
+                <h2>疫情警戒分級標準</h2>
+                <img
+                    src="./img/alert.jpg"
+                    style="width: 100%; margin-bottom: 10px"
+                    loading="lazy"
+                    alt="疫情警戒分級標準與因應事項"
+                />
+            </section>
 
-    <!-- fb share -->
-    <div id=" fb-root"></div>
-    <div class="cs-share-this-product facebook">
-        <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse">
-            <div class="social-share-icon-block">
-                <img src="./img/facebook-f-brands.png" alt="分享民視新聞專題" />
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"><span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html"
+            <!-- 全國防疫措施 -->
+            <section id="item-3" class="guideText">
+                <h2>全國防疫措施</h2>
+                <p>
+                    因應國內疫情持續嚴峻，全台陸續發生感染來源不明的病例及群聚事件，指揮中心宣布自即日起至6月14日，啟動「三級警戒」全國防疫因應措施。
+                </p>
+                <p>
+                    另外，教育部也宣布自5月19日起至6月14日，全國各級學校及公私立幼兒園停止到校上課，且兒童課後照顧服務中心、補習班等各類教育機構也同時配合停課，請所有學生停止前往，在家學習。
+                </p>
+                <div id="splide_protect" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./img/alert_taipei0.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/alert_taipei1.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/alert_taipei2.jpg" class="protect" loading="lazy" alt="雙北防疫措施" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 確診足跡一覽 -->
+            <section id="item-4" class="guideText">
+                <h2>確診足跡</h2>
+                <!-- 北北基 -->
+                <div id="footmap">
+                    <h3><i class="fas fa-map-pin"></i> 北北基</h3>
+                    <div id="splide_footmap_north1" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li v-for="(img,index) in photos_north1" class="splide__slide">
+                                    <img :src="photos_north1[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 桃竹苗 -->
+                    <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
+                    <div id="splide_footmap_north2" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li v-for="(img,index) in photos_north2" class="splide__slide">
+                                    <img :src="photos_north2[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 中彰雲嘉投 -->
+                    <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
+                    <div id="splide_footmap_center" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li v-for="(img,index) in photos_center" class="splide__slide">
+                                    <img :src="photos_center[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 南高屏 -->
+                    <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
+                    <div id="splide_footmap_south" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li v-for="(img,index) in photos_south" class="splide__slide">
+                                    <img :src="photos_south[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 宜花東 -->
+                    <h3><i class="fas fa-map-pin"></i> 宜花東</h3>
+                    <div id="splide_footmap_east" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li v-for="(img,index) in photos_east" class="splide__slide">
+                                    <img :src="photos_east[index]" loading="lazy" alt="足跡圖" class="slider_item" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 快篩站注意事項 -->
+            <section id="item-5" class="guideText">
+                <h2>全台快篩站一覽</h2>
+                <div id="splide_station" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./img/station/1.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/2.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/3.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/4.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/5.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/6.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/7.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/8.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/9.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/10.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/11.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/12.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/13.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/station/14.jpg" alt="雙北快篩站" class="slider_item" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="block_layout reading_layout">
+                    <a href="https://www.ftvnews.com.tw/news/detail/2021525W0155">
+                        <div>
+                            <p>「全台快篩站一覽」完整新聞</p>
+                            <i class="fas fa-mouse-pointer" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <img
+                        style="width: 100%; margin-top: 1rem"
+                        src="./img/station/result.jpg"
+                        loading="lazy"
+                        alt="雙北快篩量能結果"
+                    />
+                </div>
+            </section>
+
+            <!-- 簡訊實聯制 -->
+            <section id="item-6" class="guideText">
+                <h2>簡訊實聯制</h2>
+                <div id="splide_booking" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./img/booking/1.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/booking/2.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/booking/3.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/booking/4.jpg" loading="lazy" alt="實聯制" class="slider_item" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 防疫照顧假Q&A -->
+            <section id="item-7" class="guideText">
+                <h2>防疫照顧假Q&A</h2>
+                <p>
+                    因應嚴峻疫情，雙北市宣布5月18日至5月28日，高中職以下各級學校、安親班、課輔班全面停課，家長可請「防疫照顧假」。民視新聞對此整理相關Q&A，供有需要的民眾參考。
+                </p>
+                <ul>
+                    <li>
+                        <p>Q：孩子學校因為疫情停課，可以向雇主請什麼假？</p>
+                        <p>
+                            A：12歲以下學童之家長其中一人，於停課期間如有照顧學童之需求，得請「防疫照顧假」。另外，如有就讀高級中等學校（含高中、高職、五專一、二、三年級）或國民中學持有身心障礙證明之子女，有照顧需求，家長其中一人也得請防疫照顧假。
+                        </p>
+                    </li>
+                    <hr />
+
+                    <li>
+                        <p>Q：哪些家長可以請「防疫照顧假」？</p>
+                        <p>A：包括：父母、養父母、監護人或其他日常實際照顧兒童之人，如爺爺、奶奶等。</p>
+                    </li>
+                    <hr />
+
+                    <li>
+                        <p>Q：如果雇主不給防疫照顧假，如何處理？</p>
+                        <p>
+                            A：依據規定，若家長符合上述需求，雇主應予准假，且不得視為曠工、強迫勞工以事假或其他假別處理，亦不得扣發全勤獎金、解僱或予不利之處分。
+                        </p>
+                        <p>
+                            若雇主扣發全勤獎金，將依違反勞基法第22條「工資未全額給付」處罰；如強制勞工一定要請特休、事假，將依違反勞基法第38條或第43條規定處罰，處罰金額都是2萬元至100萬元。
+                        </p>
+                    </li>
+                    <hr />
+
+                    <li>
+                        <p>Q：若家中孩子不符合「防疫照顧假」適用對象，家長還可以請什麼假？</p>
+                        <p>A：家長得請「家庭照顧假」、「特休」或「事假」以為運用，雇主應予准假。</p>
+                        <p>
+                            其中「家庭照顧假」是依據《性別工作平等法》而規定，受僱者於家庭成員預防接種、發生嚴重之疾病或其他重大事故須親自照顧時，得請家庭照顧假。該假日數併入事假計算，全年以7日為限，請假期間可不給工資，但不得視為缺勤而影響其全勤獎金、考績。
+                        </p>
+                    </li>
+                </ul>
+                <div class="block_layout reading_layout">
+                    <a href="https://www.ftvnews.com.tw/news/detail/2021517W0495">
+                        <div>
+                            <p>「防疫照顧假Q&A」完整新聞</p>
+                            <i class="fas fa-mouse-pointer" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 確診注意事項 -->
+            <section id="item-8" class="guideText">
+                <h2>確診者、接觸者注意事項</h2>
+                <p>
+                    由於雙北確診者激增，恐怕出現醫療量能不足情況，目前除了北部各大醫院進行降載計畫，指揮中心也列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
+                </p>
+                <div id="splide_alert" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch0.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch1.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch2.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch3.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 疫苗接種統計 -->
+            <section id="item-9" class="guideText">
+                <h2>疫苗接種統計</h2>
+                <div
+                    class="infogram-embed"
+                    data-id="ec0524bc-6ddd-4b96-a713-6cd2dd3871df"
+                    data-type="interactive"
+                    data-title="疫苗統計資料"
+                ></div>
+                <script>
+                    !(function (e, i, n, s) {
+                        var t = 'InfogramEmbeds',
+                            d = e.getElementsByTagName('script')[0]
+                        if (window[t] && window[t].initialized) window[t].process && window[t].process()
+                        else if (!e.getElementById(n)) {
+                            var o = e.createElement('script')
+                            ;(o.async = 1),
+                                (o.id = n),
+                                (o.src = 'https://e.infogram.com/js/dist/embed-loader-min.js'),
+                                d.parentNode.insertBefore(o, d)
+                        }
+                    })(document, 0, 'infogram-async')
+                </script>
+                <div
+                    style="
+                        padding: 8px 0;
+                        font-family: Arial !important;
+                        font-size: 13px !important;
+                        line-height: 15px !important;
+                        text-align: center;
+                        border-top: 1px solid #dadada;
+                        margin: 0 30px;
+                    "
+                >
+                    <a
+                        href="https://infogram.com/ec0524bc-6ddd-4b96-a713-6cd2dd3871df"
+                        style="color: #989898 !important; text-decoration: none !important"
+                        target="_blank"
+                        >疫苗統計資料</a
+                    ><br /><a
+                        href="https://infogram.com"
+                        style="color: #989898 !important; text-decoration: none !important"
+                        target="_blank"
+                        rel="nofollow"
+                        >Infogram</a
+                    >
+                </div>
+            </section>
+
+            <!-- 全球確診統計 -->
+            <section id="item-10" class="guideText" id="worldMap">
+                <h2 id="item-3">全球確診統計</h2>
+                <p>
+                    2019年12月底在中國爆發武漢肺炎後，泰國於2020年1月13日也出現確診首例，為一名來自武漢的61歲女遊客，這也是第一起中國境外的感染案例。
+                </p>
+
+                <p>
+                    疫情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年。
+                </p>
+
+                <p>
+                    此外，伊朗、土耳其等地疫情也相當嚴重。其中，印度近來舉行地方選舉、慶祝重要節慶「大壺節」，加上變種病毒肆虐的情況下，單日確診和死亡人數屢破新高，目前累計確診數已突破2600萬，死亡人數也超過30萬大關。
+                </p>
+
+                <p>
+                    歐洲部分，自義大利疫情大爆發後，鄰近國家也陸續出現確診案例，截至2021年4月，法國已經突破500萬確診，俄羅斯、英國、義大利也有超過400萬人染疫。
+                </p>
+
+                <p>
+                    美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數超過3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數超過1600萬，也是拉美第一大重災區。以下數據為全球每日確診數、累積確診數，將不斷更新資料。
+                </p>
+                <iframe
+                    src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"
+                    width="100%"
+                    height="600px"
+                ></iframe>
+                <p style="margin-bottom: 10%">資料來源：Our World in Data</p>
+            </section>
+
+            <!-- 武漢重點時間軸-->
+            <section id="item-11" class="guideText">
+                <h2>武漢肺炎重點時間軸</h2>
+                <div id="timeline">
+                    <h3><img src="./img/icon_taiwan.png" alt="taiwan" /> 台灣</h3>
+                    <div class="timeline">
+                        <ul>
+                            <li v-for="(event,index) of taiwan">
+                                <p>{{taiwan[index].date}}</p>
+                                <p v-html="taiwan[index].event"></p>
+                                <div></div>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <h3><img src="./img/icon_global.png" alt="global" /> 全球</h3>
+                    <div class="timeline">
+                        <ul>
+                            <li v-for="(event,index) of global">
+                                <p>{{global[index].date}}</p>
+                                <p v-html="global[index].event"></p>
+                                <div></div>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 武肺即時新聞 -->
+            <section id="item-12" class="guideText">
+                <h2>武漢肺炎即時新聞</h2>
+                <!-- <div class="row news_layout"></div> -->
+                <iframe
+                    width="100%"
+                    height="300"
+                    src="https://www.youtube.com/embed/XxJKnDLYZz4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+
+                <div class="block_layout reading_layout">
+                    <a href="https://www.ftvnews.com.tw/tag/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E/">
+                        <div>
+                            <p>武肺疫情最新動態</p>
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://www.ftvnews.com.tw/tag/%E5%8F%B0%E7%81%A3%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8%E4%B8%AD%E5%BF%83/"
+                    >
+                        <div>
+                            <p>常見疫情謠言查證專區</p>
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 開始Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
+            <section class="guideText">
+                <div id="dablewidget_klrJ21lm" data-widget_id="klrJ21lm">
+                    <script>
+                        ;(function (d, a, b, l, e, _) {
+                            if (d[b] && d[b].q) return
+                            d[b] = function () {
+                                ;(d[b].q = d[b].q || []).push(arguments)
+                            }
+                            e = a.createElement(l)
+                            e.async = 1
+                            e.charset = 'utf-8'
+                            e.src = '//static.dable.io/dist/plugin.min.js'
+                            _ = a.getElementsByTagName(l)[0]
+                            _.parentNode.insertBefore(e, _)
+                        })(window, document, 'dable', 'script')
+                        dable('setService', 'news.ftv.com.tw')
+                        dable('sendLogOnce')
+                        dable('renderWidget', 'dablewidget_klrJ21lm')
+                    </script>
+                </div>
+            </section>
+            <!-- 結束Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
+
+            <!-- 下載民視新聞APP 社群連結 -->
+            <section class="guideText">
+                <h3 class="icon_ftv" style="text-align: left">
+                    下載民視新聞APP<br />
+                    疫情動態不漏接
+                </h3>
+                <ul class="social_info">
+                    <li>
+                        <img src="./img/apple.png" alt="download IOS" />
+                        <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">iOS蘋果系統</a>
+                    </li>
+                    <li>
+                        <img src="./img/Android.png" alt="download Android" />
+                        <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">Android安卓系統</a>
+                    </li>
+                    <hr />
+                    <li>
+                        <i class="fab fa-facebook-square fa-2x" style="color: #476fc0"></i> 加入
+                        <a href="https://bit.ly/3orvCiI" target="_blank">民視新聞FB紛絲團</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-line fa-2x" style="color: #00c755"></i> 加入
+                        <a href="https://goo.gl/hze3Wv" target="_blank">民視新聞LINE官方帳號</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- fb share -->
+        <div id=" fb-root"></div>
+        <div class="cs-share-this-product facebook">
+            <a
+                title="Share on Facebook"
+                target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"
+            >
+                <div class="social-share-icon-block">
+                    <img src="./img/facebook-f-brands.png" alt="分享民視新聞專題" />
+                    <a
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Fcovid-19%2Findex.html&amp;src=sdkpreparse"
+                        ><span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html"
                             >分享</span
                         ></a
                     >
                 </div>
             </a>
-            </div>
+        </div>
 
-            <!-- line share -->
-            <a href="https://social-plugins.line.me/lineit/share?url=https://www.ftvnews.com.tw/topics/covid-19/index.html" target="_blank">
-                <div class="line-style">
-                    <span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html">LINE 分享</span
+        <!-- line share -->
+        <a
+            href="https://social-plugins.line.me/lineit/share?url=https://www.ftvnews.com.tw/topics/covid-19/index.html"
+            target="_blank"
+        >
+            <div class="line-style">
+                <span class="share-text" data-href="https://www.ftvnews.com.tw/topics/covid-19/index.html"
+                    >LINE 分享</span
                 >
             </div>
         </a>
@@ -588,51 +752,57 @@
         <!-- 一鍵複製 -->
         <div class="localurl-style">
             <span>複製網址</span>
-                </div>
+        </div>
 
-                <footer>
-                    <div class="footer_logo">
-                        <img src="img/logo_ftv.png" alt="民視新聞網" />
-                        <span>Copyright &copy; 2019 民視新聞網路部 社群中心</span>
-                    </div>
-                </footer>
+        <footer>
+            <div class="footer_logo">
+                <img src="img/logo_ftv.png" alt="民視新聞網" />
+                <span>Copyright &copy; 2019 民視新聞網路部 社群中心</span>
+            </div>
+        </footer>
 
-                <!-- js include -->
-                <!-- fb share setting -->
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=1854261788223985&autoLogAppEvents=1" nonce="mTRTGA9g"></script>
+        <!-- js include -->
+        <!-- fb share setting -->
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=1854261788223985&autoLogAppEvents=1"
+            nonce="mTRTGA9g"
+        ></script>
 
-                <!-- vuejs -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+        <!-- vuejs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
 
-                <!-- jqueryDataTables -->
-                <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <!-- jqueryDataTables -->
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
-                <!-- bootstrap -->
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- bootstrap -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-                <!-- fontawesome -->
-                <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
 
-                <!-- ScrollToTop smooth -->
-                <script>
-                    function ScrollTo(id_name) {
-                        $('html,body').animate({
-                                scrollTop: $('#' + id_name).offset().top,
-                            },
-                            1000
-                        )
-                    }
-                </script>
+        <!-- ScrollToTop smooth -->
+        <script>
+            function ScrollTo(id_name) {
+                $('html,body').animate(
+                    {
+                        scrollTop: $('#' + id_name).offset().top,
+                    },
+                    1000
+                )
+            }
+        </script>
 
-                <!-- splide -->
-                <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <!-- splide -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-                <!-- customize -->
-                <script src="js/data.js?ver=0526-3"></script>
-                <script src="js/editData.js?ver=0526-3"></script>
-                <script src="js/editFootmap.js?ver=0526-3"></script>
-                <script src="js/editTimeline.js?ver=0526-3"></script>
-                <script src="js/script.js?ver=0526-3"></script>
-</body>
-
+        <!-- customize -->
+        <script src="js/data.js?ver=0526-3"></script>
+        <script src="js/editData.js?ver=0526-3"></script>
+        <script src="js/editFootmap.js?ver=0526-3"></script>
+        <script src="js/editTimeline.js?ver=0526-3"></script>
+        <script src="js/script.js?ver=0526-3"></script>
+    </body>
 </html>
