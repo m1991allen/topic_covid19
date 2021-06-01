@@ -1,0 +1,157 @@
+/* 中國省份 */
+
+.map_china polygon {
+    cursor: pointer;
+    stroke: #fff;
+    stroke-width: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.map_china text {
+    font-size: 8px;
+    fill: #292929;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    text-anchor: middle;
+}
+
+.map_china text.map_china__name {
+    transform: translate(0, 15px);
+}
+
+.map_china text.map_china__num {
+    transform: translate(0, 3px);
+    fill: #fff;
+    font-family: Arial;
+}
+
+.map_china text.num_impot {
+    font-size: 12px;
+}
+
+.map_china circle {
+    fill: rgba(186, 69, 161, 0.5);
+    stroke: rgba(255, 145, 125, 0.7);
+    stroke-width: 7;
+    r: 10 !important;
+    animation: uix-cssAnim--map-dot ease 1s infinite;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    filter: drop-shadow(-5px -5px 5px #000);
+}
+
+.map_china circle, .map_china text {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+.map_china circle.is-show, .map_china circle.is-show, .map_china text.is-show, .map_china text.is-show {
+    opacity: 1;
+}
+
+@keyframes uix-cssAnim--map-dot {
+    0% {
+        stroke-width: 5;
+    }
+    50% {
+        stroke-width: 0;
+    }
+    100% {
+        stroke-width: 5;
+    }
+}
+
+/* 世界地圖 */
+
+.hovertext {
+    position: absolute;
+    background-color: #d4d3d3a6;
+    cursor: default;
+    padding: 5px 3px;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+#worldMap path {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    stroke: aliceblue;
+    stroke-width: 1px;
+}
+
+#worldMap path.degNone {
+    fill: #dedede;
+    stroke: aliceblue;
+}
+
+/* taiwan_map */
+
+#taiwan_map {
+    cursor: pointer;
+    stroke: #fff;
+    stroke-width: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+#taiwan_map .degNone {
+    fill: #dedede;
+    stroke: aliceblue;
+}
+
+/* 折線圖 */
+
+#lineChart {
+    width: 100%;
+}
+
+#myChart {
+    width: 100% !important;
+    height: auto !important;
+    padding: 2%;
+}
+
+/* 區域嚴重程度 100,000 up */
+
+.deg0 {
+    fill: #5d0606;
+}
+
+/* 區域嚴重程度 10,000 up */
+
+.deg1 {
+    fill: #8f0808;
+}
+
+/* 1,000 up */
+
+.deg2 {
+    fill: #bb2727;
+}
+
+/* 100 up */
+
+.deg3 {
+    fill: #fc5d5d;
+}
+
+/* 10 */
+
+.deg4 { 
+    fill: #fda1a1;
+}
+
+.degstyle0 {
+    fill: #db9e9e;
+}
+
+.degstyle1 {
+    fill: #d6bfae;
+}
+
+.degstyle2 {
+    fill: #ad9e9a;
+}

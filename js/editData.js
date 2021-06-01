@@ -9,7 +9,7 @@ function ajax_gsheet() {
         success: function data_sheet(data) {
             // 基隆市
             var data_tc1 = data.feed.entry[21].content.$t
-            $('.data_tc1').addClass('deg2')
+            $('.data_tc1').addClass('deg1')
             $('.data_tc1').attr('title', '基隆市：' + data_tc1 + '例')
             $('.data_tc1').html(data_tc1)
 
@@ -45,13 +45,13 @@ function ajax_gsheet() {
 
             // 苗栗縣
             var data_tc7 = data.feed.entry[33].content.$t
-            $('.data_tc7').addClass('deg4')
+            $('.data_tc7').addClass('deg3')
             $('.data_tc7').html(data_tc7)
             $('.data_tc7').attr('title', '苗栗縣：' + data_tc7 + '例')
 
             // 台中市
             var data_tc8 = data.feed.entry[35].content.$t
-            $('.data_tc8').addClass('deg2')
+            $('.data_tc8').addClass('deg1')
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
@@ -81,7 +81,7 @@ function ajax_gsheet() {
 
             // 雲林縣
             var data_tc13 = data.feed.entry[45].content.$t
-            $('.data_tc13').addClass('deg4')
+            $('.data_tc13').addClass('deg3')
             $('.data_tc13').html(data_tc13)
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例')
 
@@ -105,25 +105,25 @@ function ajax_gsheet() {
 
             // 宜蘭縣
             var data_tc17 = data.feed.entry[53].content.$t
-            $('.data_tc17').addClass('deg3')
+            $('.data_tc17').addClass('deg2')
             $('.data_tc17').html(data_tc17)
             $('.data_tc17').attr('title', '宜蘭縣：' + data_tc17 + '例')
 
             // 花蓮縣
             var data_tc18 = data.feed.entry[55].content.$t
-            $('.data_tc18').addClass('deg4')
+            $('.data_tc18').addClass('deg3')
             $('.data_tc18').html(data_tc18)
             $('.data_tc18').attr('title', '花蓮縣：' + data_tc18 + '例')
 
             // 台東縣
             var data_tc19 = data.feed.entry[57].content.$t
-            $('.data_tc19').addClass('deg4')
+            $('.data_tc19').addClass('deg3')
             $('.data_tc19').html(data_tc19)
             $('.data_tc19').attr('title', '台東縣：' + data_tc19 + '例')
 
             // 連江縣
             var data_tc20 = data.feed.entry[59].content.$t
-            $('.data_tc20').addClass('degNone')
+            $('.data_tc20').addClass('deg4')
             $('.data_tc20').html(data_tc20)
             $('.data_tc20').attr('title', '連江縣：' + data_tc20 + '例')
 
@@ -135,7 +135,7 @@ function ajax_gsheet() {
 
             // 澎湖縣
             var data_tc22 = data.feed.entry[63].content.$t
-            $('.data_tc22').addClass('degNone')
+            $('.data_tc22').addClass('deg4')
             $('.data_tc22').html(data_tc22)
             $('.data_tc22').attr('title', '澎湖縣：' + data_tc22 + '例')
 
@@ -144,25 +144,27 @@ function ajax_gsheet() {
                 paging: false,
                 searching: false,
                 aaSorting: [],
-                columnDefs: [{
-                    orderable: false,
-                    targets: 0,
-                }, ],
+                columnDefs: [
+                    {
+                        orderable: false,
+                        targets: 0,
+                    },
+                ],
                 destroy: true,
             })
 
             //// 台灣總和 ////
             $('#count_recently_taiwan').html(data.feed.entry[11].content.$t)
             $('#count_sumConfirm_taiwan').html(data.feed.entry[13].content.$t)
-                //確診數
+            //確診數
             $('#tw_con').html(data.feed.entry[11].content.$t)
-                //今日新增
+            //今日新增
             $('#tw_today').html(data.feed.entry[13].content.$t)
-                //本土案例
+            //本土案例
             $('#tw_local').html(data.feed.entry[15].content.$t)
-                //境外移入
+            //境外移入
             $('#tw_import').html(data.feed.entry[17].content.$t)
-                //最後更新日期
+            //最後更新日期
             $('#tw_pubDate').html(data.feed.entry[81].content.$t)
 
             //// 全球總合 ////
@@ -200,18 +202,21 @@ function ajax_gsheet() {
 
             //// 台灣 首屏動態數字 ////
 
-            $('#tw_con').each(function(now) {
+            $('#tw_con').each(function (now) {
                 $(this)
                     .prop('Counter', 0)
-                    .animate({
-                        Counter: $(this).text(),
-                    }, {
-                        duration: 3500,
-                        easing: 'swing',
-                        step: function(now) {
-                            $(this).text(Math.ceil(now))
+                    .animate(
+                        {
+                            Counter: $(this).text(),
                         },
-                    })
+                        {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now))
+                            },
+                        }
+                    )
             })
             setTimeout(() => {
                 segment($('#tw_con')[0].Counter)
@@ -224,18 +229,21 @@ function ajax_gsheet() {
                 }
             }, 3600)
 
-            $('#tw_local').each(function() {
+            $('#tw_local').each(function () {
                 $(this)
                     .prop('Counter', 0)
-                    .animate({
-                        Counter: $(this).text(),
-                    }, {
-                        duration: 3500,
-                        easing: 'swing',
-                        step: function(now) {
-                            $(this).text(Math.ceil(now))
+                    .animate(
+                        {
+                            Counter: $(this).text(),
                         },
-                    })
+                        {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now))
+                            },
+                        }
+                    )
                 setTimeout(() => {
                     segment($('#tw_local')[0].Counter)
 
@@ -247,18 +255,21 @@ function ajax_gsheet() {
                     }
                 }, 3600)
             })
-            $('#tw_today').each(function() {
+            $('#tw_today').each(function () {
                 $(this)
                     .prop('Counter', 0)
-                    .animate({
-                        Counter: $(this).text(),
-                    }, {
-                        duration: 3500,
-                        easing: 'swing',
-                        step: function(now) {
-                            $(this).text(Math.ceil(now))
+                    .animate(
+                        {
+                            Counter: $(this).text(),
                         },
-                    })
+                        {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now))
+                            },
+                        }
+                    )
                 setTimeout(() => {
                     segment($('#tw_today')[0].Counter)
 
@@ -270,18 +281,21 @@ function ajax_gsheet() {
                     }
                 }, 3600)
             })
-            $('#tw_import').each(function() {
+            $('#tw_import').each(function () {
                 $(this)
                     .prop('Counter', 0)
-                    .animate({
-                        Counter: $(this).text(),
-                    }, {
-                        duration: 3500,
-                        easing: 'swing',
-                        step: function(now) {
-                            $(this).text(Math.ceil(now))
+                    .animate(
+                        {
+                            Counter: $(this).text(),
                         },
-                    })
+                        {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now))
+                            },
+                        }
+                    )
                 setTimeout(() => {
                     segment($('#tw_import')[0].Counter)
 
@@ -295,18 +309,21 @@ function ajax_gsheet() {
             })
 
             //// 全球 首屏動態數字 ////
-            $('#inc_con').each(function() {
+            $('#inc_con').each(function () {
                 $(this)
                     .prop('Counter', 0)
-                    .animate({
-                        Counter: $(this).text(),
-                    }, {
-                        duration: 3500,
-                        easing: 'swing',
-                        step: function(now) {
-                            $(this).text(Math.ceil(now))
+                    .animate(
+                        {
+                            Counter: $(this).text(),
                         },
-                    })
+                        {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now))
+                            },
+                        }
+                    )
                 setTimeout(() => {
                     segment($('#inc_con')[0].Counter)
 
@@ -318,18 +335,21 @@ function ajax_gsheet() {
                     }
                 }, 3600)
             })
-            $('#inc_die').each(function() {
+            $('#inc_die').each(function () {
                 $(this)
                     .prop('Counter', 0)
-                    .animate({
-                        Counter: $(this).text(),
-                    }, {
-                        duration: 3500,
-                        easing: 'swing',
-                        step: function(now) {
-                            $(this).text(Math.ceil(now))
+                    .animate(
+                        {
+                            Counter: $(this).text(),
                         },
-                    })
+                        {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now))
+                            },
+                        }
+                    )
                 setTimeout(() => {
                     segment($('#inc_die')[0].Counter)
 
@@ -345,4 +365,4 @@ function ajax_gsheet() {
     })
 }
 ajax_gsheet()
-    // END get API
+// END get API

@@ -96,7 +96,6 @@ table th {
     background-color: rgb(235, 204, 204);
 }
 
-
 /* 漢堡選單 */
 
 #navbarBtn {
@@ -116,13 +115,11 @@ table th {
     z-index: 99;
 }
 
-@media screen and (max-width: 1280px) {
-    #navbarBtn {
-        display: flex;
-    }
-    #navbar {
-        display: none;
-    }
+#navbarBtn {
+    display: flex;
+}
+#navbar {
+    display: none;
 }
 
 .bg-light {
@@ -157,7 +154,6 @@ p.layout {
         margin: 5%;
     }
 }
-
 
 /* 首圖 */
 
@@ -248,7 +244,6 @@ p.layout {
     margin-top: 40px;
 }
 
-
 /* 全球確診死亡 首圖 */
 
 .bar1 {
@@ -277,7 +272,6 @@ p.layout {
     }
 }
 
-
 /* 捲軸進度 */
 
 #progress {
@@ -288,7 +282,6 @@ p.layout {
     left: 0;
     z-index: 100;
 }
-
 
 /* scrollTop */
 
@@ -348,7 +341,6 @@ p.layout {
     background-color: #d47c7b;
 }
 
-
 /* jqueryui */
 
 .ui-state-active,
@@ -385,7 +377,6 @@ html .ui-button.ui-state-disabled:active {
 .ui-accordion-header-icon ui-icon ui-icon-triangle-1-e {
     display: none;
 }
-
 
 /* social icon */
 
@@ -482,7 +473,6 @@ span.share-text {
     justify-content: center;
 }
 
-
 /* 台灣數據 */
 
 .svgfont {
@@ -501,19 +491,18 @@ span.share-text {
 }
 
 .taiwan_data .col-4:nth-child(1)::after {
-    content: "=";
+    content: '=';
     position: absolute;
     right: -5px;
     top: 50%;
 }
 
 .taiwan_data .col-4:nth-child(2)::after {
-    content: "+";
+    content: '+';
     position: absolute;
     right: -5px;
     top: 50%;
 }
-
 
 /* 台灣地圖 */
 
@@ -538,7 +527,6 @@ span.share-text {
     top: 0;
     z-index: 99;
 }
-
 
 /* 區域嚴重程度 */
 
@@ -573,7 +561,6 @@ span.share-text {
 .degstyle2 {
     fill: #ad9e9a;
 }
-
 
 /* 即時新聞 */
 
@@ -674,7 +661,7 @@ span.share-text {
     margin-bottom: 10px;
     font-size: 1.4rem;
     box-shadow: 1px 2px 3px black;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .block_layout a:nth-child(1) div {
@@ -693,7 +680,6 @@ span.share-text {
 .fa-mouse-pointer {
     margin: 13px 0 0 10px;
 }
-
 
 /* footer */
 
@@ -715,7 +701,6 @@ span.share-text {
     width: 30%;
     margin-left: 10px;
 }
-
 
 /* data table */
 
@@ -775,7 +760,6 @@ table.dataTable thead .sorting_desc_disabled {
     background-color: #fff;
 }
 
-
 /* 頁尾 */
 
 footer {
@@ -797,7 +781,6 @@ footer img {
     text-align: center;
 }
 
-
 /* 足跡 */
 
 .footmap h3 {
@@ -805,7 +788,6 @@ footer img {
     text-align: center;
     margin: 1rem 0;
 }
-
 
 /* splide slider */
 
@@ -817,7 +799,6 @@ footer img {
 .slider_item {
     width: 100%;
 }
-
 
 /* 時間軸 */
 
@@ -874,7 +855,6 @@ footer img {
     left: 95%;
 }
 
-
 /* 社群訊息 */
 
 .social_info li {
@@ -884,5 +864,5 @@ footer img {
 
 #tw_con,
 #tw_today {
-    color: #894040
+    color: #894040;
 }
