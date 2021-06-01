@@ -75,7 +75,7 @@ function ajax_gsheet() {
 
             // 嘉義縣
             var data_tc12 = data.feed.entry[43].content.$t
-            $('.data_tc12').addClass('deg4')
+            $('.data_tc12').addClass('deg3')
             $('.data_tc12').html(data_tc12)
             $('.data_tc12').attr('title', '嘉義縣：' + data_tc12 + '例')
 
