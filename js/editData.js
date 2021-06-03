@@ -93,7 +93,7 @@ function ajax_gsheet() {
 
             // 高雄市
             var data_tc15 = data.feed.entry[49].content.$t
-            $('.data_tc15').addClass('deg3')
+            $('.data_tc15').addClass('deg2')
             $('.data_tc15').html(data_tc15)
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例')
 

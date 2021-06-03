@@ -6,6 +6,7 @@ new Vue({
             './img/footmap/north1/新北0601-1.jpg',
             './img/footmap/north1/新北0531-1.jpg',
             './img/footmap/north1/新北0530-1.jpg',
+            './img/footmap/north1/基0602-1.jpg',
             './img/footmap/north1/基0601-1.jpg',
             './img/footmap/north1/基0531-1.jpg',
             './img/footmap/north1/基0530-3.jpg',
@@ -15,11 +16,14 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0602-2.jpg',
+            './img/footmap/north2/桃0602-1.jpg',
             './img/footmap/north2/桃0601-1.jpg',
             './img/footmap/north2/桃0531-2.jpg',
             './img/footmap/north2/桃0531-1.jpg',
             './img/footmap/north2/桃0530-2.jpg',
             './img/footmap/north2/桃0530-1.jpg',
+            './img/footmap/north2/竹縣0602-1.jpg',
             './img/footmap/north2/竹縣0601-1.jpg',
             './img/footmap/north2/苗0601-2.jpg',
             './img/footmap/north2/苗0601-1.jpg',
@@ -32,6 +36,8 @@ new Vue({
 
         // 中彰雲嘉投 照片路徑
         photos_center: [
+            './img/footmap/center/中0602-2.jpg',
+            './img/footmap/center/中0602-1.jpg',
             './img/footmap/center/中0601-3.jpg',
             './img/footmap/center/中0601-2.jpg',
             './img/footmap/center/中0601-1.jpg',
@@ -40,6 +46,7 @@ new Vue({
             './img/footmap/center/中0531-2.jpg',
             './img/footmap/center/中0530-2.jpg',
             './img/footmap/center/中0530-1.jpg',
+            './img/footmap/center/彰0602-1.jpg',
             './img/footmap/center/彰0601-1.jpg',
             './img/footmap/center/彰0531-1.jpg',
             './img/footmap/center/彰0530-1.jpg',
@@ -48,6 +55,9 @@ new Vue({
             './img/footmap/center/嘉縣0530-3.jpg',
             './img/footmap/center/嘉縣0530-2.jpg',
             './img/footmap/center/嘉縣0530-1.jpg',
+
+            './img/footmap/center/投0602-2.jpg',
+            './img/footmap/center/投0602-1.jpg',
             './img/footmap/center/投0530-3.jpg',
             './img/footmap/center/投0530-2.jpg',
             './img/footmap/center/投0530-1.jpg',
@@ -55,11 +65,18 @@ new Vue({
 
         // 南高屏 照片路徑
         photos_south: [
+            './img/footmap/south/南0602-1.jpg',
             './img/footmap/south/南0531-1.jpg',
             './img/footmap/south/南0528-4.jpg',
             './img/footmap/south/南0528-3.jpg',
             './img/footmap/south/南0528-2.jpg',
             './img/footmap/south/南0528-1.jpg',
+            './img/footmap/south/高0602-6.jpg',
+            './img/footmap/south/高0602-5.jpg',
+            './img/footmap/south/高0602-4.jpg',
+            './img/footmap/south/高0602-3.jpg',
+            './img/footmap/south/高0602-2.jpg',
+            './img/footmap/south/高0602-1.jpg',
             './img/footmap/south/高0531-1.jpg',
             './img/footmap/south/高0528-1.jpg',
             './img/footmap/south/高0527-7.jpg',
@@ -82,6 +99,9 @@ new Vue({
             './img/footmap/east/花0530-3.jpg',
             './img/footmap/east/花0530-2.jpg',
             './img/footmap/east/花0530-1.jpg',
+            './img/footmap/east/東0602-3.jpg',
+            './img/footmap/east/東0602-2.jpg',
+            './img/footmap/east/東0602-1.jpg',
             './img/footmap/east/東0601-3.jpg',
             './img/footmap/east/東0601-2.jpg',
             './img/footmap/east/東0601-1.jpg',
