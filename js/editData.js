@@ -9,7 +9,7 @@ function ajax_gsheet() {
         success: function data_sheet(data) {
             // 基隆市
             var data_tc1 = data.feed.entry[21].content.$t
-            $('.data_tc1').addClass('deg1')
+            $('.data_tc1').addClass('deg2')
             $('.data_tc1').attr('title', '基隆市：' + data_tc1 + '例')
             $('.data_tc1').html(data_tc1)
 
@@ -45,19 +45,19 @@ function ajax_gsheet() {
 
             // 苗栗縣
             var data_tc7 = data.feed.entry[33].content.$t
-            $('.data_tc7').addClass('deg3')
+            $('.data_tc7').addClass('deg2')
             $('.data_tc7').html(data_tc7)
             $('.data_tc7').attr('title', '苗栗縣：' + data_tc7 + '例')
 
             // 台中市
             var data_tc8 = data.feed.entry[35].content.$t
-            $('.data_tc8').addClass('deg1')
+            $('.data_tc8').addClass('deg2')
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
             // 彰化縣
             var data_tc9 = data.feed.entry[37].content.$t
-            $('.data_tc9').addClass('deg1')
+            $('.data_tc9').addClass('deg2')
             $('.data_tc9').html(data_tc9)
             $('.data_tc9').attr('title', '彰化縣：' + data_tc9 + '例')
 
@@ -75,19 +75,19 @@ function ajax_gsheet() {
 
             // 嘉義縣
             var data_tc12 = data.feed.entry[43].content.$t
-            $('.data_tc12').addClass('deg3')
+            $('.data_tc12').addClass('deg4')
             $('.data_tc12').html(data_tc12)
             $('.data_tc12').attr('title', '嘉義縣：' + data_tc12 + '例')
 
             // 雲林縣
             var data_tc13 = data.feed.entry[45].content.$t
-            $('.data_tc13').addClass('deg3')
+            $('.data_tc13').addClass('deg4')
             $('.data_tc13').html(data_tc13)
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例')
 
             // 台南市
             var data_tc14 = data.feed.entry[47].content.$t
-            $('.data_tc14').addClass('deg3')
+            $('.data_tc14').addClass('deg2')
             $('.data_tc14').html(data_tc14)
             $('.data_tc14').attr('title', '台南市：' + data_tc14 + '例')
 
@@ -111,7 +111,7 @@ function ajax_gsheet() {
 
             // 花蓮縣
             var data_tc18 = data.feed.entry[55].content.$t
-            $('.data_tc18').addClass('deg3')
+            $('.data_tc18').addClass('deg2')
             $('.data_tc18').html(data_tc18)
             $('.data_tc18').attr('title', '花蓮縣：' + data_tc18 + '例')
 
