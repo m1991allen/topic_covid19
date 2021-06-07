@@ -782,6 +782,21 @@ footer img {
 }
 
 /* 足跡 */
+#footmap {
+    width: 100%;
+}
+#footmap > div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1200px) {
+    #footmap > div {
+        display: block;
+        width: 100%;
+    }
+}
 
 .footmap h3 {
     font-size: 1.2rem;
@@ -789,11 +804,9 @@ footer img {
     margin: 1rem 0;
 }
 
-/* splide slider */
-
-.splide__slide {
+/* .splide__slide {
     background-color: antiquewhite;
-}
+} */
 
 .splide__slide img,
 .slider_item {

@@ -9,135 +9,150 @@ function ajax_gsheet() {
         success: function data_sheet(data) {
             // 基隆市
             var data_tc1 = data.feed.entry[21].content.$t
-            $('.data_tc1').addClass('deg2')
+            $('.data_tc1').addClass(map_degree(data_tc1))
             $('.data_tc1').attr('title', '基隆市：' + data_tc1 + '例')
             $('.data_tc1').html(data_tc1)
 
             // 台北市
             var data_tc2 = data.feed.entry[23].content.$t
-            $('.data_tc2').addClass('deg1')
+            $('.data_tc2').addClass(map_degree(data_tc2))
             $('.data_tc2').html(data_tc2)
             $('.data_tc2').attr('title', '台北市：' + data_tc2 + '例')
 
             // 新北市
             var data_tc3 = data.feed.entry[25].content.$t
-            $('.data_tc3').addClass('deg1')
+            $('.data_tc3').addClass(map_degree(data_tc3))
             $('.data_tc3').html(data_tc3)
             $('.data_tc3').attr('title', '新北市：' + data_tc3 + '例')
 
             // 桃園市
             var data_tc4 = data.feed.entry[27].content.$t
-            $('.data_tc4').addClass('deg1')
+            $('.data_tc4').addClass(map_degree(data_tc4))
             $('.data_tc4').html(data_tc4)
             $('.data_tc4').attr('title', '桃園市：' + data_tc4 + '例')
 
             // 新竹市
             var data_tc5 = data.feed.entry[29].content.$t
-            $('.data_tc5').addClass('deg3')
+            $('.data_tc5').addClass(map_degree(data_tc5))
             $('.data_tc5').html(data_tc5)
             $('.data_tc5').attr('title', '新竹市：' + data_tc5 + '例')
 
             // 新竹縣
             var data_tc6 = data.feed.entry[31].content.$t
-            $('.data_tc6').addClass('deg3')
+            $('.data_tc6').addClass(map_degree(data_tc6))
             $('.data_tc6').html(data_tc6)
             $('.data_tc6').attr('title', '新竹縣：' + data_tc6 + '例')
 
             // 苗栗縣
             var data_tc7 = data.feed.entry[33].content.$t
-            $('.data_tc7').addClass('deg2')
+            $('.data_tc7').addClass(map_degree(data_tc7))
             $('.data_tc7').html(data_tc7)
             $('.data_tc7').attr('title', '苗栗縣：' + data_tc7 + '例')
 
             // 台中市
             var data_tc8 = data.feed.entry[35].content.$t
-            $('.data_tc8').addClass('deg2')
+            $('.data_tc8').addClass(map_degree(data_tc8))
             $('.data_tc8').html(data_tc8)
             $('.data_tc8').attr('title', '台中市：' + data_tc8 + '例')
 
             // 彰化縣
             var data_tc9 = data.feed.entry[37].content.$t
-            $('.data_tc9').addClass('deg2')
+            $('.data_tc9').addClass(map_degree(data_tc9))
             $('.data_tc9').html(data_tc9)
             $('.data_tc9').attr('title', '彰化縣：' + data_tc9 + '例')
 
             // 南投縣
             var data_tc10 = data.feed.entry[39].content.$t
-            $('.data_tc10').addClass('deg3')
+            $('.data_tc10').addClass(map_degree(data_tc10))
             $('.data_tc10').html(data_tc10)
             $('.data_tc10').attr('title', '南投縣：' + data_tc10 + '例')
 
             // 嘉義市
             var data_tc11 = data.feed.entry[41].content.$t
-            $('.data_tc11').addClass('deg4')
+            $('.data_tc11').addClass(map_degree(data_tc11))
             $('.data_tc11').html(data_tc11)
             $('.data_tc11').attr('title', '嘉義市：' + data_tc11 + '例')
 
             // 嘉義縣
             var data_tc12 = data.feed.entry[43].content.$t
-            $('.data_tc12').addClass('deg4')
+            $('.data_tc12').addClass(map_degree(data_tc12))
             $('.data_tc12').html(data_tc12)
             $('.data_tc12').attr('title', '嘉義縣：' + data_tc12 + '例')
 
             // 雲林縣
             var data_tc13 = data.feed.entry[45].content.$t
-            $('.data_tc13').addClass('deg4')
+            $('.data_tc13').addClass(map_degree(data_tc13))
             $('.data_tc13').html(data_tc13)
             $('.data_tc13').attr('title', '雲林縣：' + data_tc13 + '例')
 
             // 台南市
             var data_tc14 = data.feed.entry[47].content.$t
-            $('.data_tc14').addClass('deg2')
+            $('.data_tc14').addClass(map_degree(data_tc14))
             $('.data_tc14').html(data_tc14)
             $('.data_tc14').attr('title', '台南市：' + data_tc14 + '例')
 
             // 高雄市
             var data_tc15 = data.feed.entry[49].content.$t
-            $('.data_tc15').addClass('deg2')
+            $('.data_tc15').addClass(map_degree(data_tc15))
             $('.data_tc15').html(data_tc15)
             $('.data_tc15').attr('title', '高雄市：' + data_tc15 + '例')
 
             // 屏東縣
             var data_tc16 = data.feed.entry[51].content.$t
-            $('.data_tc16').addClass('deg3')
+            $('.data_tc16').addClass(map_degree(data_tc16))
             $('.data_tc16').html(data_tc16)
             $('.data_tc16').attr('title', '屏東縣：' + data_tc16 + '例')
 
             // 宜蘭縣
             var data_tc17 = data.feed.entry[53].content.$t
-            $('.data_tc17').addClass('deg2')
+            $('.data_tc17').addClass(map_degree(data_tc17))
             $('.data_tc17').html(data_tc17)
             $('.data_tc17').attr('title', '宜蘭縣：' + data_tc17 + '例')
 
             // 花蓮縣
             var data_tc18 = data.feed.entry[55].content.$t
-            $('.data_tc18').addClass('deg2')
+            $('.data_tc18').addClass(map_degree(data_tc18))
             $('.data_tc18').html(data_tc18)
             $('.data_tc18').attr('title', '花蓮縣：' + data_tc18 + '例')
 
             // 台東縣
             var data_tc19 = data.feed.entry[57].content.$t
-            $('.data_tc19').addClass('deg3')
+            $('.data_tc19').addClass(map_degree(data_tc19))
             $('.data_tc19').html(data_tc19)
             $('.data_tc19').attr('title', '台東縣：' + data_tc19 + '例')
 
             // 連江縣
             var data_tc20 = data.feed.entry[59].content.$t
-            $('.data_tc20').addClass('deg4')
+            $('.data_tc20').addClass(map_degree(data_tc20))
             $('.data_tc20').html(data_tc20)
             $('.data_tc20').attr('title', '連江縣：' + data_tc20 + '例')
 
             // 金門縣
             var data_tc21 = data.feed.entry[61].content.$t
-            $('.data_tc21').addClass('degNone')
+            $('.data_tc21').addClass(map_degree(data_tc21))
             $('.data_tc21').html(data_tc21)
             $('.data_tc21').attr('title', '金門縣：' + data_tc21 + '例')
 
             // 澎湖縣
             var data_tc22 = data.feed.entry[63].content.$t
-            $('.data_tc22').addClass('deg4')
+            $('.data_tc22').addClass(map_degree(data_tc22))
             $('.data_tc22').html(data_tc22)
             $('.data_tc22').attr('title', '澎湖縣：' + data_tc22 + '例')
+
+            // 地圖顏色嚴重程度
+            function map_degree(deg) {
+                if (deg > 300) {
+                    return 'deg1'
+                } else if (deg > 30) {
+                    return 'deg2'
+                } else if (deg > 16) {
+                    return 'deg3'
+                } else if (deg > 1) {
+                    return 'deg4'
+                } else {
+                    return 'degNone'
+                }
+            }
 
             // 台灣本土／境外 表格控制 //
             $('#dt_loc_taiwan').DataTable({

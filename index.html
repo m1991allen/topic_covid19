@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta property="og:title" content="【最新疫情】本土疫情持續延燒！圖解各縣市累積確診、足跡｜專題｜民視新聞網" />
+        <meta
+            property="og:title"
+            content="【最新疫情】本土疫情持續延燒！圖解縣市確診、疫苗施打狀況｜專題｜民視新聞網"
+        />
         <meta property="og:site_name" content="武漢肺炎 新冠肺炎 COVID-19-民視數位專題" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="zh_TW" />
@@ -20,7 +23,7 @@
         <meta http-equiv="PRAGMA" content="NO-CACHE" />
         <meta http-equiv="EXPIRES" content="0" />
         <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
-        <title>【最新疫情】本土疫情持續延燒！圖解各縣市累積確診、足跡｜專題｜民視新聞網</title>
+        <title>【最新疫情】本土疫情持續延燒！圖解縣市確診、疫苗施打狀況｜專題｜民視新聞網</title>
 
         <link rel="icon" href="https://cdn.ftvnews.com.tw/client/images/favicons/favicon.ico" />
         <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
@@ -38,7 +41,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css  " />
 
         <!-- customize -->
-        <link rel="stylesheet" href="css/style.css?ver=0603-1" />
+        <link rel="stylesheet" href="css/style.css?ver=0606-1" />
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
@@ -373,71 +376,103 @@
             <!-- 確診足跡一覽 -->
             <section id="item-5" class="guideText">
                 <h2>確診足跡一覽</h2>
-                <!-- 北北基 -->
                 <div id="footmap">
-                    <h3><i class="fas fa-map-pin"></i> 北北基</h3>
-                    <div id="splide_footmap_north1" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li v-for="(img,index) in photos_north1" class="splide__slide">
-                                    <img :src="photos_north1[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                                </li>
-                            </ul>
+                    <!-- 北北基 -->
+                    <div>
+                        <h3><i class="fas fa-map-pin"></i> 北北基</h3>
+                        <div id="splide_footmap_north1" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li v-for="(img,index) in photos_north1" class="splide__slide">
+                                        <img
+                                            :src="photos_north1[index]"
+                                            loading="lazy"
+                                            alt="足跡圖"
+                                            class="slider_item"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- 桃竹苗 -->
-                    <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
-                    <div id="splide_footmap_north2" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li v-for="(img,index) in photos_north2" class="splide__slide">
-                                    <img :src="photos_north2[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                                </li>
-                            </ul>
+                    <div>
+                        <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
+                        <div id="splide_footmap_north2" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li v-for="(img,index) in photos_north2" class="splide__slide">
+                                        <img
+                                            :src="photos_north2[index]"
+                                            loading="lazy"
+                                            alt="足跡圖"
+                                            class="slider_item"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- 中彰雲嘉投 -->
-                    <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
-                    <div id="splide_footmap_center" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li v-for="(img,index) in photos_center" class="splide__slide">
-                                    <img :src="photos_center[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                                </li>
-                            </ul>
+                    <div>
+                        <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
+                        <div id="splide_footmap_center" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li v-for="(img,index) in photos_center" class="splide__slide">
+                                        <img
+                                            :src="photos_center[index]"
+                                            loading="lazy"
+                                            alt="足跡圖"
+                                            class="slider_item"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- 南高屏 -->
-                    <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
-                    <div id="splide_footmap_south" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li v-for="(img,index) in photos_south" class="splide__slide">
-                                    <img :src="photos_south[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                                </li>
-                            </ul>
+                    <div>
+                        <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
+                        <div id="splide_footmap_south" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li v-for="(img,index) in photos_south" class="splide__slide">
+                                        <img
+                                            :src="photos_south[index]"
+                                            loading="lazy"
+                                            alt="足跡圖"
+                                            class="slider_item"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- 宜花東 -->
-                    <h3><i class="fas fa-map-pin"></i> 宜花東</h3>
-                    <div id="splide_footmap_east" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li v-for="(img,index) in photos_east" class="splide__slide">
-                                    <img :src="photos_east[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                                </li>
-                            </ul>
+                    <div>
+                        <h3><i class="fas fa-map-pin"></i> 宜花東</h3>
+                        <div id="splide_footmap_east" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li v-for="(img,index) in photos_east" class="splide__slide">
+                                        <img :src="photos_east[index]" alt="足跡圖" class="slider_item" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- 金馬澎 -->
-                    <h3><i class="fas fa-map-pin"></i> 金馬澎</h3>
-                    <div id="splide_footmap_island" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li v-for="(img,index) in photos_island" class="splide__slide">
-                                    <img :src="photos_island[index]" loading="lazy" alt="足跡圖" class="slider_item" />
-                                </li>
-                            </ul>
+                    <div>
+                        <h3><i class="fas fa-map-pin"></i> 金馬澎</h3>
+                        <div id="splide_footmap_island" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li v-for="(img,index) in photos_island" class="splide__slide">
+                                        <img :src="photos_island[index]" alt="足跡圖" class="slider_item" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -716,7 +751,7 @@
             <!-- 下載民視新聞APP 社群連結 -->
             <section class="guideText">
                 <h3 class="icon_ftv" style="text-align: left">
-                    下載民視新聞APP<br />
+                    民視新聞App<br />
                     疫情動態不漏接
                 </h3>
                 <ul class="social_info">
@@ -726,7 +761,11 @@
                     </li>
                     <li>
                         <img src="./img/Android.png" alt="download Android" />
-                        <a href="https://apps.apple.com/tw/app/id853490128" target="_blank">Android安卓系統</a>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=tw.com.ftv.android&hl=zh_TW&gl=US"
+                            target="_blank"
+                            >Android安卓系統</a
+                        >
                     </li>
                     <hr />
                     <li>
@@ -824,11 +863,11 @@
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
         <!-- customize -->
-        <script src="js/data.js?ver=0603-1"></script>
-        <script src="js/editData.js?ver=0603-1"></script>
-        <script src="js/editFootmap.js?ver=0603-1"></script>
-        <script src="js/editTimeline.js?ver=0603-1"></script>
-        <script src="js/script.js?ver=0603-1"></script>
+        <script src="js/data.js?ver=0606-1"></script>
+        <script src="js/editData.js?ver=0606-1"></script>
+        <script src="js/editFootmap.js?ver=0606-1"></script>
+        <script src="js/editTimeline.js?ver=0606-1"></script>
+        <script src="js/script.js?ver=0606-1"></script>
         <script>
             // 版號控管
             ;(function () {
