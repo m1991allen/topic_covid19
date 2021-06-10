@@ -145,9 +145,9 @@ function ajax_gsheet() {
                     return 'deg1'
                 } else if (deg > 30) {
                     return 'deg2'
-                } else if (deg > 16) {
+                } else if (deg > 15) {
                     return 'deg3'
-                } else if (deg > 1) {
+                } else if (deg > 0) {
                     return 'deg4'
                 } else {
                     return 'degNone'
