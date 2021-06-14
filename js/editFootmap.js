@@ -4,6 +4,7 @@ new Vue({
         // 北北基宜 照片路徑
         photos_north1: [
             './img/footmap/north1/新北0601-1.jpg',
+            './img/footmap/north1/基0614-1.jpg',
             './img/footmap/north1/基0612-1.jpg',
             './img/footmap/north1/基0610-2.jpg',
             './img/footmap/north1/基0610-1.jpg',
@@ -14,6 +15,8 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0614-2.jpg',
+            './img/footmap/north2/桃0614-1.jpg',
             './img/footmap/north2/桃0613-2.jpg',
             './img/footmap/north2/桃0613-1.jpg',
             './img/footmap/north2/桃0612-2.jpg',
@@ -25,6 +28,7 @@ new Vue({
             './img/footmap/north2/竹市0612-1.jpg',
             './img/footmap/north2/竹縣0611-1.jpg',
             './img/footmap/north2/竹縣0610-1.jpg',
+            './img/footmap/north2/苗0614-1.jpg',
             './img/footmap/north2/苗0612-1.jpg',
             './img/footmap/north2/苗0611-1.jpg',
             './img/footmap/north2/苗0610-1.jpg',
@@ -32,6 +36,7 @@ new Vue({
 
         // 中彰雲嘉投 照片路徑
         photos_center: [
+            './img/footmap/center/中0614-1.jpg',
             './img/footmap/center/中0613-2.jpg',
             './img/footmap/center/中0613-1.jpg',
             './img/footmap/center/中0612-1.jpg',
@@ -63,6 +68,7 @@ new Vue({
 
         // 宜花東 照片路徑
         photos_east: [
+            './img/footmap/east/宜0614-1.jpg',
             './img/footmap/east/宜0612-1.jpg',
             './img/footmap/east/宜0611-1.jpg',
             './img/footmap/east/宜0610-1.jpg',

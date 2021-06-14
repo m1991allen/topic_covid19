@@ -76,17 +76,6 @@
     z-index: 99;
 }
 
-#worldMap path {
-    cursor: pointer;
-    transition: fill 0.3s ease;
-    stroke: aliceblue;
-    stroke-width: 1px;
-}
-
-#worldMap path.degNone {
-    fill: #dedede;
-    stroke: aliceblue;
-}
 
 /* taiwan_map */
 
