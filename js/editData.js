@@ -141,11 +141,11 @@ function ajax_gsheet() {
 
             // 地圖顏色嚴重程度
             function map_degree(deg) {
-                if (deg > 300) {
+                if (deg > 600) {
                     return 'deg1'
-                } else if (deg > 30) {
+                } else if (deg > 100) {
                     return 'deg2'
-                } else if (deg > 15) {
+                } else if (deg > 30) {
                     return 'deg3'
                 } else if (deg > 0) {
                     return 'deg4'
