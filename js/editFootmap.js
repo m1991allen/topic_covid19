@@ -15,6 +15,8 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0617-2.jpg',
+            './img/footmap/north2/桃0617-1.jpg',
             './img/footmap/north2/桃0616-2.jpg',
             './img/footmap/north2/桃0616-1.jpg',
             './img/footmap/north2/桃0615-1.jpg',
@@ -32,6 +34,7 @@ new Vue({
             './img/footmap/north2/竹縣0616-1.jpg',
             './img/footmap/north2/竹縣0611-1.jpg',
             './img/footmap/north2/竹縣0610-1.jpg',
+            './img/footmap/north2/苗0617-1.jpg',
             './img/footmap/north2/苗0615-1.jpg',
             './img/footmap/north2/苗0614-1.jpg',
             './img/footmap/north2/苗0612-1.jpg',
@@ -41,6 +44,7 @@ new Vue({
 
         // 中彰雲嘉投 照片路徑
         photos_center: [
+            './img/footmap/center/中0617-1.jpg',
             './img/footmap/center/中0616-1.jpg',
             './img/footmap/center/中0615-1.jpg',
             './img/footmap/center/中0614-1.jpg',
@@ -79,6 +83,7 @@ new Vue({
             './img/footmap/east/宜0612-1.jpg',
             './img/footmap/east/宜0611-1.jpg',
             './img/footmap/east/宜0610-1.jpg',
+            './img/footmap/east/花0617-1.jpg',
             './img/footmap/east/花0616-5.jpg',
             './img/footmap/east/花0616-4.jpg',
             './img/footmap/east/花0616-3.jpg',
