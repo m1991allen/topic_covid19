@@ -11,12 +11,16 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0629-1.jpg',
+            './img/footmap/north2/桃0628-2.jpg',
+            './img/footmap/north2/桃0628-1.jpg',
             './img/footmap/north2/桃0626-2.jpg',
             './img/footmap/north2/桃0626-1.jpg',
             './img/footmap/north2/桃0624-1.jpg',
             './img/footmap/north2/桃0623-1.jpg',
             './img/footmap/north2/桃0621-1.jpg',
             './img/footmap/north2/竹市0612-1.jpg',
+            './img/footmap/north2/竹縣0629-1.jpg',
             './img/footmap/north2/竹縣0625-2.jpg',
             './img/footmap/north2/竹縣0625-1.jpg',
             './img/footmap/north2/竹縣0624-2.jpg',
@@ -31,6 +35,8 @@ new Vue({
         photos_center: [
             './img/footmap/center/中0625-1.jpg',
             './img/footmap/center/中0620-1.jpg',
+            './img/footmap/center/彰0629-1.jpg',
+            './img/footmap/center/彰0628-1.jpg',
             './img/footmap/center/彰0626-2.jpg',
             './img/footmap/center/彰0626-1.jpg',
             './img/footmap/center/彰0625-1.jpg',
@@ -44,11 +50,11 @@ new Vue({
             './img/footmap/center/嘉市0606-1.jpg',
             './img/footmap/center/嘉縣0605-2.jpg',
             './img/footmap/center/嘉縣0605-1.jpg',
+            './img/footmap/center/投0628-1.jpg',
             './img/footmap/center/投0627-2.jpg',
             './img/footmap/center/投0627-1.jpg',
             './img/footmap/center/投0624-1.jpg',
             './img/footmap/center/投0622-1.jpg',
-
         ],
 
         // 南高屏 照片路徑
@@ -69,6 +75,7 @@ new Vue({
             './img/footmap/south/高0623-3.jpg',
             './img/footmap/south/高0623-2.jpg',
             './img/footmap/south/高0623-1.jpg',
+            './img/footmap/south/屏0629-1.jpg',
             './img/footmap/south/屏0627-1.jpg',
             './img/footmap/south/屏0626-2.jpg',
             './img/footmap/south/屏0626-1.jpg',
