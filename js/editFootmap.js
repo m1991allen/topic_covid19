@@ -6,6 +6,7 @@ new Vue({
             './img/footmap/north1/基0624-1.jpg',
             './img/footmap/north1/基0614-1.jpg',
             './img/footmap/north1/基0612-1.jpg',
+            './img/footmap/north1/新北0707-1.jpg',
             './img/footmap/north1/新北0705-1.jpg',
             './img/footmap/north1/新北0704-1.jpg',
             './img/footmap/north1/新北0630-1.jpg',
