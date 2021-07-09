@@ -6,6 +6,7 @@ new Vue({
             './img/footmap/north1/基0624-1.jpg',
             './img/footmap/north1/基0614-1.jpg',
             './img/footmap/north1/基0612-1.jpg',
+            './img/footmap/north1/北市0708-1.jpg',
             './img/footmap/north1/新北0707-1.jpg',
             './img/footmap/north1/新北0705-1.jpg',
             './img/footmap/north1/新北0704-1.jpg',
@@ -14,6 +15,7 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0708-1.jpg',
             './img/footmap/north2/桃0705-1.jpg',
             './img/footmap/north2/桃0703-2.jpg',
             './img/footmap/north2/桃0703-1.jpg',
