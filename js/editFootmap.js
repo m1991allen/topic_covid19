@@ -3,18 +3,25 @@ new Vue({
     data: {
         // 北北基 照片路徑
         photos_north1: [
-            './img/footmap/north1/基0624-1.jpg',
-            './img/footmap/north1/基0614-1.jpg',
-            './img/footmap/north1/基0612-1.jpg',
+            './img/footmap/north1/北市0709-1.jpg',
             './img/footmap/north1/北市0708-1.jpg',
+            './img/footmap/north1/新北0710-1.jpg',
+            './img/footmap/north1/新北0709-1.jpg',
             './img/footmap/north1/新北0707-1.jpg',
             './img/footmap/north1/新北0705-1.jpg',
             './img/footmap/north1/新北0704-1.jpg',
             './img/footmap/north1/新北0630-1.jpg',
+            './img/footmap/north1/基0710-1.jpg',
+            './img/footmap/north1/基0624-1.jpg',
+            './img/footmap/north1/基0614-1.jpg',
+            './img/footmap/north1/基0612-1.jpg',
         ],
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0710-2.jpg',
+            './img/footmap/north2/桃0710-1.jpg',
+            './img/footmap/north2/桃0709-1.jpg',
             './img/footmap/north2/桃0708-1.jpg',
             './img/footmap/north2/桃0705-1.jpg',
             './img/footmap/north2/桃0703-2.jpg',
@@ -31,6 +38,8 @@ new Vue({
 
         // 中彰雲嘉投 照片路徑
         photos_center: [
+            './img/footmap/center/中0710-2.jpg',
+            './img/footmap/center/中0710-1.jpg',
             './img/footmap/center/中0625-1.jpg',
             './img/footmap/center/中0620-1.jpg',
             './img/footmap/center/彰0630-1.jpg',
