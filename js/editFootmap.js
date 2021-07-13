@@ -5,6 +5,7 @@ new Vue({
         photos_north1: [
             './img/footmap/north1/北市0709-1.jpg',
             './img/footmap/north1/北市0708-1.jpg',
+            './img/footmap/north1/新北0713-1.jpg',
             './img/footmap/north1/新北0712-1.jpg',
             './img/footmap/north1/新北0711-1.jpg',
             './img/footmap/north1/新北0710-1.jpg',
@@ -32,6 +33,7 @@ new Vue({
             './img/footmap/north2/竹市0701-2.jpg',
             './img/footmap/north2/竹市0701-1.jpg',
             './img/footmap/north2/竹縣0629-1.jpg',
+            './img/footmap/north2/苗0713-1.jpg',
             './img/footmap/north2/苗0705-1.jpg',
             './img/footmap/north2/苗0624-2.jpg',
             './img/footmap/north2/苗0624-1.jpg',
