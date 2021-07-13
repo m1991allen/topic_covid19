@@ -5,6 +5,7 @@ new Vue({
         photos_north1: [
             './img/footmap/north1/北市0709-1.jpg',
             './img/footmap/north1/北市0708-1.jpg',
+            './img/footmap/north1/新北0712-1.jpg',
             './img/footmap/north1/新北0711-1.jpg',
             './img/footmap/north1/新北0710-1.jpg',
             './img/footmap/north1/新北0709-1.jpg',
@@ -16,6 +17,7 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0712-1.jpg',
             './img/footmap/north2/桃0710-2.jpg',
             './img/footmap/north2/桃0710-1.jpg',
             './img/footmap/north2/桃0709-1.jpg',
@@ -24,6 +26,8 @@ new Vue({
             './img/footmap/north2/桃0703-2.jpg',
             './img/footmap/north2/桃0703-1.jpg',
             './img/footmap/north2/桃0701-1.jpg',
+            './img/footmap/north2/竹市0712-2.jpg',
+            './img/footmap/north2/竹市0712-1.jpg',
             './img/footmap/north2/竹市0701-3.jpg',
             './img/footmap/north2/竹市0701-2.jpg',
             './img/footmap/north2/竹市0701-1.jpg',
