@@ -3,6 +3,7 @@ new Vue({
     data: {
         // 北北基 照片路徑
         photos_north1: [
+            './img/footmap/north1/北市0714-1.jpg',
             './img/footmap/north1/北市0709-1.jpg',
             './img/footmap/north1/北市0708-1.jpg',
             './img/footmap/north1/新北0713-1.jpg',
@@ -18,6 +19,8 @@ new Vue({
 
         // 桃竹苗 照片路徑
         photos_north2: [
+            './img/footmap/north2/桃0714-2.jpg',
+            './img/footmap/north2/桃0714-1.jpg',
             './img/footmap/north2/桃0712-1.jpg',
             './img/footmap/north2/桃0710-2.jpg',
             './img/footmap/north2/桃0710-1.jpg',
@@ -41,6 +44,7 @@ new Vue({
 
         // 中彰雲嘉投 照片路徑
         photos_center: [
+            './img/footmap/center/中0714-1.jpg',
             './img/footmap/center/中0711-2.jpg',
             './img/footmap/center/中0711-1.jpg',
             './img/footmap/center/中0710-2.jpg',
