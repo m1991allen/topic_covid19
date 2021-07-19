@@ -136,54 +136,32 @@
             <div class="mainbg_title">
                 <h1>武漢肺炎疫情</h1>
                 <h3>圖表資訊一次看懂</h3>
+                <p style="font-size: 12px">最後更新日期： <span id="tw_pubDate"></span></p>
                 <div class="row taiwan_data">
                     <div class="col-12">
-                        <p>台灣累計確診總數</p>
+                        <p style="margin-bottom: 0px">台灣累計確診總數</p>
                         <p id="tw_con" class="data_gc1" style="font-size: 1.8rem"></p>
                     </div>
                 </div>
                 <hr style="margin: 3px" />
                 <div class="row taiwan_data">
                     <div class="col-4">
-                        <p>今日新增</p>
+                        <p style="margin-bottom: 0px">今日新增</p>
                         <p id="tw_today" class="data_rescue" style="font-size: 1.7rem"></p>
                     </div>
                     <div class="col-4">
-                        <p>本土案例</p>
+                        <p style="margin-bottom: 0px">本土案例</p>
                         <p id="tw_local" class="data_gd1" style="font-size: 1.7rem"></p>
                     </div>
                     <div class="col-4">
-                        <p>境外移入</p>
+                        <p style="margin-bottom: 0px">境外移入</p>
                         <p id="tw_import" class="data_gd1" style="font-size: 1.7rem"></p>
                     </div>
-                </div>
-                <p style="text-align: right">最後更新日期： <span id="tw_pubDate"></span></p>
-
-                <div class="mainbg_info">
-                    <div id="inc_con" class="count_sumConfirm_global bar1"></div>
-                    <div id="inc_die" class="count_sumDeath_global bar2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">全球確診</div>
-                    <div class="col-4">死亡</div>
                 </div>
             </div>
         </div>
 
         <main class="layout">
-            <!-- 台灣確診案例數 -->
-            <section class="guideText">
-                <h2>台灣確診案例數</h2>
-                <table
-                    id="dt_imp_taiwan"
-                    class="table table-striped table-bordered table-sm"
-                    cellspacing="0"
-                    width="100%"
-                >
-                    <!-- {{insert form}} -->
-                </table>
-            </section>
-
             <!-- 今日新增本土案例 -->
             <section class="guideText" id="item-1">
                 <h2>今日新增本土案例</h2>
@@ -196,28 +174,17 @@
                 />
             </section>
 
-            <!-- 台灣本土案例分佈 -->
+            <!-- 本土案例校正回歸情形 -->
             <section class="guideText">
-                <h2>台灣本土案例分佈</h2>
-                <div class="hovertext"></div>
-
-                <div class="taiwan_map">
-                    <!-- {{insert map}} -->
-                </div>
-                <p>統計時間自2021/01/01起</p>
+                <h2>台灣疫情分析</h2>
                 <table
-                    id="dt_loc_taiwan"
+                    id="dt_imp_taiwan"
                     class="table table-striped table-bordered table-sm"
                     cellspacing="0"
                     width="100%"
                 >
                     <!-- {{insert form}} -->
                 </table>
-            </section>
-
-            <!-- 本土案例校正回歸情形 -->
-            <section class="guideText">
-                <h2>本土案例校正回歸情形</h2>
                 <div
                     class="infogram-embed"
                     data-id="ef44eab5-de2a-4e0f-b7c5-e91b895354e0"
@@ -262,6 +229,25 @@
                         >Infogram</a
                     >
                 </div>
+            </section>
+
+            <!-- 台灣本土案例分佈 -->
+            <section class="guideText">
+                <h2>台灣本土案例分佈</h2>
+                <div class="hovertext"></div>
+
+                <div class="taiwan_map">
+                    <!-- {{insert map}} -->
+                </div>
+                <p>統計時間自2021/01/01起</p>
+                <table
+                    id="dt_loc_taiwan"
+                    class="table table-striped table-bordered table-sm"
+                    cellspacing="0"
+                    width="100%"
+                >
+                    <!-- {{insert form}} -->
+                </table>
             </section>
 
             <!-- 疫苗接種統計 -->
@@ -554,11 +540,57 @@
                 </div>
             </section> -->
 
+            <!-- 確診注意事項 -->
+            <section class="guideText" id="item-9">
+                <h2>確診者、接觸者注意事項</h2>
+                <p>
+                    為了防範因疫情嚴峻，醫療量能不足情況，指揮中心列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
+                </p>
+                <div id="splide_alert" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch0.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch1.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch2.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    src="./img/alert_touch3.jpg"
+                                    loading="lazy"
+                                    alt="確診者注意事項"
+                                    class="slider_item"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <!-- 防疫照顧假Q&A -->
             <section class="guideText" id="item-8">
                 <h2>防疫照顧假Q&A</h2>
                 <p>
-                    因應嚴峻疫情，雙北市宣布5月18日至5月28日，高中職以下各級學校、安親班、課輔班全面停課，家長可請「防疫照顧假」。民視新聞對此整理相關Q&A，供有需要的民眾參考。
+                    因應嚴峻疫情，教育部宣布高中職以下各級學校、安親班、課輔班全面停課，家長可請「防疫照顧假」。民視新聞對此整理相關Q&A，供有需要的民眾參考。
                 </p>
                 <ul>
                     <li>
@@ -604,73 +636,12 @@
                 </div>
             </section>
 
-            <!-- 確診注意事項 -->
-            <section class="guideText" id="item-9">
-                <h2>確診者、接觸者注意事項</h2>
-                <p>
-                    由於雙北確診者激增，恐怕出現醫療量能不足情況，目前除了北部各大醫院進行降載計畫，指揮中心也列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
-                </p>
-                <div id="splide_alert" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img
-                                    src="./img/alert_touch0.jpg"
-                                    loading="lazy"
-                                    alt="確診者注意事項"
-                                    class="slider_item"
-                                />
-                            </li>
-                            <li class="splide__slide">
-                                <img
-                                    src="./img/alert_touch1.jpg"
-                                    loading="lazy"
-                                    alt="確診者注意事項"
-                                    class="slider_item"
-                                />
-                            </li>
-                            <li class="splide__slide">
-                                <img
-                                    src="./img/alert_touch2.jpg"
-                                    loading="lazy"
-                                    alt="確診者注意事項"
-                                    class="slider_item"
-                                />
-                            </li>
-                            <li class="splide__slide">
-                                <img
-                                    src="./img/alert_touch3.jpg"
-                                    loading="lazy"
-                                    alt="確診者注意事項"
-                                    class="slider_item"
-                                />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
             <!-- 全球確診統計 -->
             <section class="guideText" id="item-10">
                 <h2 id="item-3">全球確診統計</h2>
                 <p>
-                    2019年12月底在中國爆發武漢肺炎後，泰國於2020年1月13日也出現確診首例，為一名來自武漢的61歲女遊客，這也是第一起中國境外的感染案例。
-                </p>
-
-                <p>
-                    疫情隨後在亞洲地區擴散，日本因「鑽石公主號」郵輪隔離不當，造成大量旅客染疫及死亡，又因為境內不斷爆發群聚感染，迫使首相發布「緊急事態宣言」，東京奧運甚至被迫延期至2021年。
-                </p>
-
-                <p>
-                    此外，伊朗、土耳其等地疫情也相當嚴重。其中，印度近來舉行地方選舉、慶祝重要節慶「大壺節」，加上變種病毒肆虐的情況下，單日確診和死亡人數屢破新高，目前累計確診數已突破2600萬，死亡人數也超過30萬大關。
-                </p>
-
-                <p>
-                    歐洲部分，自義大利疫情大爆發後，鄰近國家也陸續出現確診案例，截至2021年4月，法國已經突破500萬確診，俄羅斯、英國、義大利也有超過400萬人染疫。
-                </p>
-
-                <p>
-                    美洲方面，美國2020年2月29日宣布首宗死亡個案後，各洲陸續出現案例，隨後更成為這場全球大流行疾病的「震央」，至今確診人數超過3000萬。而南美第一大國巴西，在總統波索納諾堅持走「超佛系抗疫」路線，還堅稱武漢肺炎僅是「小流感」的情況下，目前確診數超過1600萬，也是拉美第一大重災區。以下數據為全球每日確診數、累積確診數，將不斷更新資料。
+                    「武漢肺炎」疫情自2019年12月底在中國爆發後，迅速擴散全球，至今逾億人確診，超過400萬人因此喪命。牛津大學數據研究網站《Our
+                    World in Data》也提供各國累積確診數，讓讀者了解全球疫情狀況。
                 </p>
                 <iframe
                     src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"
@@ -889,7 +860,7 @@
         <footer>
             <div class="footer_logo">
                 <img src="img/logo_ftv.png" alt="民視新聞網" />
-                <span>Copyright &copy; 2019 民視新聞網路部 社群中心</span>
+                <span>Copyright &copy; 2021 民視新聞網路部 社群中心</span>
             </div>
         </footer>
 

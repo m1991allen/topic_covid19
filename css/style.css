@@ -59,7 +59,7 @@ h2::after {
 
 h3 {
     font-size: 1.2rem;
-    margin: 1.2rem;
+    margin-bottom: 1.2rem;
     text-align: center;
 }
 
@@ -206,7 +206,7 @@ p.layout {
 }
 
 .mainbg .mainbg_title h1 {
-    font-size: 5.4rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     padding: 25% 0 10px;
@@ -215,12 +215,13 @@ p.layout {
 }
 
 .mainbg .mainbg_title h3 {
-    font-size: 3.6rem;
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
     transition: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .mainbg .mainbg_title h1 {
         font-size: 4rem;
     }
@@ -236,7 +237,7 @@ p.layout {
     .mainbg .mainbg_title h3 {
         font-size: 1.4rem;
     }
-}
+} */
 
 .mainbg_info {
     width: 100%;
@@ -484,7 +485,7 @@ span.share-text {
 }
 
 .taiwan_data div {
-    background-color: #ff6f001e;
+    background-color: #6767671e;
     padding-top: 20px;
     color: #563723;
     font-size: 1.8rem;
@@ -876,6 +877,8 @@ footer img {
 }
 
 #tw_con,
-#tw_today {
-    color: #894040;
+#tw_today,
+#tw_local,
+#tw_import {
+    color: #d63a2b;
 }
