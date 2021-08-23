@@ -76,12 +76,5 @@ $(document).ready(function () {
             $('.case_info').css('display', 'none')
         }),
         new Splide('#splide_protect', { rewind: !0 }).mount(),
-        // new Splide('#splide_footmap_north1', { rewind: !0 }).mount(),
-        // new Splide('#splide_footmap_north2', { rewind: !0 }).mount(),
-        // new Splide('#splide_footmap_center', { rewind: !0 }).mount(),
-        // new Splide('#splide_footmap_south', { rewind: !0 }).mount(),
-        // new Splide('#splide_footmap_east', { rewind: !0 }).mount(),
-        // new Splide('#splide_footmap_island', { rewind: !0 }).mount(),
-        // new Splide('#splide_booking', { rewind: !0 }).mount(),
         new Splide('#splide_alert', { rewind: !0 }).mount()
 })

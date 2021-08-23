@@ -107,14 +107,10 @@
                 <a class="nav-link" href="#item-2" onclick="javascript:ScrollTo('item-2')">疫苗接種統計</a>
                 <a class="nav-link" href="#item-3" onclick="javascript:ScrollTo('item-3')">疫情分級標準</a>
                 <a class="nav-link" href="#item-4" onclick="javascript:ScrollTo('item-4')">全國防疫措施</a>
-                <!-- <a class="nav-link" href="#item-5" onclick="javascript:ScrollTo('item-5')">確診足跡一覽</a>
-                <a class="nav-link" href="#item-6" onclick="javascript:ScrollTo('item-6')">全台快篩一覽</a>
-                <a class="nav-link" href="#item-7" onclick="javascript:ScrollTo('item-7')">簡訊實聯制</a> -->
-                <a class="nav-link" href="#item-8" onclick="javascript:ScrollTo('item-8')">防疫照顧假Q&A</a>
-                <a class="nav-link" href="#item-9" onclick="javascript:ScrollTo('item-9')">確診注意事項</a>
-                <a class="nav-link" href="#item-10" onclick="javascript:ScrollTo('item-10')">全球確診統計</a>
-                <!-- <a class="nav-link" href="#item-11" onclick="javascript:ScrollTo('item-11')">武肺重點時間軸</a> -->
-                <a class="nav-link" href="#item-12" onclick="javascript:ScrollTo('item-12')">武肺即時新聞</a>
+                <a class="nav-link" href="#item-9" onclick="javascript:ScrollTo('item-5')">確診注意事項</a>
+                <a class="nav-link" href="#item-8" onclick="javascript:ScrollTo('item-6')">防疫照顧假Q&A</a>
+                <a class="nav-link" href="#item-10" onclick="javascript:ScrollTo('item-7')">全球確診統計</a>
+                <a class="nav-link" href="#item-12" onclick="javascript:ScrollTo('item-8')">武肺即時新聞</a>
             </nav>
         </nav>
         <!-- 一鍵置頂/置底 -->
@@ -126,7 +122,7 @@
             <a href="#item-2">
                 <span><i class="fas fa-syringe"></i> 疫苗資訊</span>
             </a>
-            <a href="#item-12">
+            <a href="#item-8">
                 <span><i class="fas fa-newspaper"></i> 即時新聞</span>
             </a>
         </div>
@@ -330,170 +326,8 @@
                 </div>
             </section>
 
-            <!-- 確診足跡一覽 -->
-            <!-- <section class="guideText" id="item-5">
-                <h2>確診足跡一覽</h2>
-                <div id="footmap">
-                    
-                    <div>
-                        <h3><i class="fas fa-map-pin"></i> 北北基</h3>
-                        <div id="splide_footmap_north1" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li v-for="(img,index) in photos_north1" class="splide__slide">
-                                        <img
-                                            :src="photos_north1[index]"
-                                            loading="lazy"
-                                            alt="足跡圖"
-                                            class="slider_item"
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3><i class="fas fa-map-pin"></i> 桃竹苗</h3>
-                        <div id="splide_footmap_north2" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li v-for="(img,index) in photos_north2" class="splide__slide">
-                                        <img
-                                            :src="photos_north2[index]"
-                                            loading="lazy"
-                                            alt="足跡圖"
-                                            class="slider_item"
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3><i class="fas fa-map-pin"></i> 中彰雲嘉投</h3>
-                        <div id="splide_footmap_center" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li v-for="(img,index) in photos_center" class="splide__slide">
-                                        <img
-                                            :src="photos_center[index]"
-                                            loading="lazy"
-                                            alt="足跡圖"
-                                            class="slider_item"
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3><i class="fas fa-map-pin"></i> 南高屏</h3>
-                        <div id="splide_footmap_south" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li v-for="(img,index) in photos_south" class="splide__slide">
-                                        <img
-                                            :src="photos_south[index]"
-                                            loading="lazy"
-                                            alt="足跡圖"
-                                            class="slider_item"
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3><i class="fas fa-map-pin"></i> 宜花東</h3>
-                        <div id="splide_footmap_east" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li v-for="(img,index) in photos_east" class="splide__slide">
-                                        <img :src="photos_east[index]" alt="足跡圖" class="slider_item" />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3><i class="fas fa-map-pin"></i> 金馬澎</h3>
-                        <div id="splide_footmap_island" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li v-for="(img,index) in photos_island" class="splide__slide">
-                                        <img :src="photos_island[index]" alt="足跡圖" class="slider_item" />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- 快篩站注意事項 -->
-            <!-- <section class="guideText" id="item-6">
-                <h2>全台快篩站一覽</h2>
-                <div
-                    class="infogram-embed"
-                    data-id="f3fae3c4-073b-44cb-a3b4-bc3bca0b6b86"
-                    data-type="interactive"
-                    data-title="全台快篩一覽"
-                ></div>
-                <script>
-                    !(function (e, i, n, s) {
-                        var t = 'InfogramEmbeds',
-                            d = e.getElementsByTagName('script')[0]
-                        if (window[t] && window[t].initialized) window[t].process && window[t].process()
-                        else if (!e.getElementById(n)) {
-                            var o = e.createElement('script')
-                            ;(o.async = 1),
-                                (o.id = n),
-                                (o.src = 'https://e.infogram.com/js/dist/embed-loader-min.js'),
-                                d.parentNode.insertBefore(o, d)
-                        }
-                    })(document, 0, 'infogram-async')
-                </script>
-
-                <div class="block_layout reading_layout">
-                    <a href="https://www.ftvnews.com.tw/news/detail/2021525W0155">
-                        <div>
-                            <p>「全台快篩站一覽」完整新聞</p>
-                            <i class="fas fa-mouse-pointer" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </div>
-            </section> -->
-
-            <!-- 簡訊實聯制 -->
-            <!-- <section class="guideText" id="item-7">
-                <h2>簡訊實聯制</h2>
-                <div id="splide_booking" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="./img/booking/1.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./img/booking/2.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./img/booking/3.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./img/booking/4.jpg" loading="lazy" alt="實聯制" class="slider_item" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section> -->
-
             <!-- 確診注意事項 -->
-            <section class="guideText" id="item-9">
+            <section class="guideText" id="item-5">
                 <h2>確診者、接觸者注意事項</h2>
                 <p>
                     為了防範因疫情嚴峻，醫療量能不足情況，指揮中心列出「輕症確診者注意事項」，呼籲確診個案在接獲通知前，在家等候公衛人員通知，將醫療資源留給重症患者。
@@ -539,7 +373,7 @@
             </section>
 
             <!-- 防疫照顧假Q&A -->
-            <section class="guideText" id="item-8">
+            <section class="guideText" id="item-6">
                 <h2>防疫照顧假Q&A</h2>
                 <p>
                     因應嚴峻疫情，教育部宣布高中職以下各級學校、安親班、課輔班全面停課，家長可請「防疫照顧假」。民視新聞對此整理相關Q&A，供有需要的民眾參考。
@@ -589,7 +423,7 @@
             </section>
 
             <!-- 全球確診統計 -->
-            <section class="guideText" id="item-10">
+            <section class="guideText" id="item-7">
                 <h2 id="item-3">全球確診統計</h2>
                 <p>
                     「武漢肺炎」疫情自2019年12月底在中國爆發後，迅速擴散全球，至今逾億人確診，超過400萬人因此喪命。牛津大學數據研究網站《Our
@@ -652,38 +486,8 @@
                 </div>
             </section>
 
-            <!-- 武漢重點時間軸-->
-            <!-- <section class="guideText" id="item-11">
-                <h2>武漢肺炎重點時間軸</h2>
-                <div id="timeline">
-                    <h3><img src="./img/icon_taiwan.png" alt="taiwan" /> 台灣</h3>
-                    <div class="timeline">
-                        <ul>
-                            <li v-for="(event,index) of taiwan">
-                                <p>{{taiwan[index].date}}</p>
-                                <p v-html="taiwan[index].event"></p>
-                                <div></div>
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr />
-                    <h3><img src="./img/icon_global.png" alt="global" /> 全球</h3>
-                    <div class="timeline">
-                        <ul>
-                            <li v-for="(event,index) of global">
-                                <p>{{global[index].date}}</p>
-                                <p v-html="global[index].event"></p>
-                                <div></div>
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section> -->
-
             <!-- 武肺即時新聞 -->
-            <section class="guideText" id="item-12">
+            <section class="guideText" id="item-8">
                 <h2>武漢肺炎即時新聞</h2>
                 <!-- <div class="row news_layout"></div> -->
                 <iframe
@@ -856,8 +660,6 @@
         <!-- customize -->
         <script src="js/data.js?ver=0719-1"></script>
         <script src="js/editData.js?ver=0719-1"></script>
-        <!-- <script src="js/editFootmap.js?ver=0719-1"></script> -->
-        <script src="js/editTimeline.js?ver=0719-1"></script>
         <script src="js/script.js?ver=0719-1"></script>
         <script>
             // 版號控管

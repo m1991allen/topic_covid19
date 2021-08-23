@@ -3,7 +3,6 @@
 function ajax_gsheet() {
     $.ajax({
         url: 'https://spreadsheets.google.com/feeds/cells/1UVnq9a1zVIfygplsbOjOtMX2Bu6aUfet1PwN3MOM7bk/1/public/full?alt=json',
-
         type: 'GET',
         dataType: 'json',
         success: function data_sheet(data) {
