@@ -159,22 +159,13 @@ p.layout {
 /* 首圖 */
 
 .mainbg {
-    position: relative;
-    background-image: url(../img/mainbg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 1000px;
-}
-
-@media screen and (max-width: 768px) {
-    .mainbg {
-        background-position: 87%;
-    }
+    max-height: 600px;
 }
 
 .mainbg img {
     width: 100%;
+    padding-top: 3rem;
+    -webkit-user-drag: none;
 }
 
 .mainbg .guideText,
@@ -193,33 +184,10 @@ p.layout {
     }
 }
 
-.mainbg .mainbg_title {
-    text-align: center;
-    color: #563723;
-    max-width: 800px;
-    margin: auto;
-}
-
-@media screen and (max-width: 760px) {
-    .mainbg .mainbg_title {
-        padding: 0 5%;
-    }
-}
-
-.mainbg .mainbg_title h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 25% 0 10px;
-    margin: 0;
-    transition: 0.5s;
-}
-
-.mainbg .mainbg_title h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.5s;
+.mainbg h1 {
+    position: absolute;
+    z-index: -1111;
+    top: 0;
 }
 
 .mainbg_info {
@@ -259,11 +227,12 @@ p.layout {
 /* 捲軸進度 */
 header p {
     position: fixed;
-    background-color: #fff;
+    background-color: #98504f;
     padding: 10px 20px;
     width: 100%;
     font-size: 1.2rem;
     z-index: 9999;
+    color: white;
 }
 
 #progress {
