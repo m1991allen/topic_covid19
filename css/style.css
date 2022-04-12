@@ -842,3 +842,34 @@ footer img {
 #tw_import {
     color: #d63a2b;
 }
+
+.list_out li {
+    list-style: cjk-ideographic;
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+    margin-left: 2.4rem;
+}
+
+.list_out li p {
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.list_out .p_in {
+    margin-left: -30px;
+}
+
+.list_out p {
+    font-size: 1.3rem;
+}
+
+.list_in {
+    margin-bottom: 2.2rem;
+}
+
+.list_in li {
+    list-style: decimal;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-left: 1rem;
+}
