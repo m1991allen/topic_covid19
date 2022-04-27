@@ -4,6 +4,7 @@ html {
     font-family: Microsoft JhengHei, 微軟正黑體, Arial, Helvetica;
     background-color: #efefef;
     font-weight: bold;
+    scroll-behavior: smooth;
 }
 
 * {

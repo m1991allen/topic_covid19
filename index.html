@@ -29,11 +29,11 @@
         <link rel="icon" href="https://cdn.ftvnews.com.tw/client/images/favicons/favicon.ico" />
         <link rel="canonical" href="https://www.ftvnews.com.tw/topics/COVID-19/index.html" />
 
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <!-- jQueryUI -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
-
-        <!-- jQueryDataTable -->
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
 
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -48,24 +48,12 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
         <script>
             window.dataLayer = window.dataLayer || []
-
             function gtag() {
                 dataLayer.push(arguments)
             }
             gtag('js', new Date())
 
             gtag('config', 'UA-101119806-1')
-        </script>
-
-        <!-- jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- 解析 -->
-        <script>
-            ;(function () {
-                if (screen.width < 768) {
-                    $('.case_info').addClass('case_info_mb')
-                }
-            })(screen.width)
         </script>
 
         <!-- Google Tag Manager -->
@@ -81,20 +69,6 @@
                 f.parentNode.insertBefore(j, f)
             })(window, document, 'script', 'dataLayer', 'GTM-KNBHTG5')
         </script>
-        <!-- End Google Tag Manager -->
-    </head>
-
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-KNBHTG5"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
 
         <!-- Hotjar Tracking Code for https://www.ftvnews.com.tw/topics/covid-19/ -->
         <script>
@@ -112,7 +86,9 @@
                 a.appendChild(r)
             })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
         </script>
+    </head>
 
+    <body>
         <header class="row">
             <a href="https://www.ftvnews.com.tw/" target="_blank" style="color: black">
                 <p>
@@ -127,25 +103,25 @@
         <nav id="navbar" class="navbar navbar-light bg-light">
             <nav class="nav nav-pills flex-column">
                 <p>導覽：</p>
-                <a class="nav-link" href="https://lihi1.cc/ha4m8">台灣疫情動態</a>
-                <a class="nav-link" href="https://lihi1.cc/R4Ove">疫苗接種統計</a>
-                <a class="nav-link" href="https://lihi1.cc/4Ul3f">疫情分級標準</a>
-                <a class="nav-link" href="https://lihi1.cc/KNC62">全國防疫措施</a>
-                <a class="nav-link" href="https://lihi1.cc/OOTYm">輕症居家照護指引</a>
-                <a class="nav-link" href="https://lihi1.cc/HgzWC">全球確診統計</a>
-                <a class="nav-link" href="https://lihi1.cc/cXjFA">疫情即時新聞</a>
+                <a class="nav-link" href="#item-1">台灣疫情動態</a>
+                <a class="nav-link" href="#item-2">疫苗接種統計</a>
+                <a class="nav-link" href="#item-3">全國防疫措施</a>
+                <a class="nav-link" href="#item-4">1922常見問題</a>
+                <a class="nav-link" href="#item-5">輕症居家照護指引</a>
+                <a class="nav-link" href="#item-6">全球確診統計</a>
+                <a class="nav-link" href="#item-7">疫情即時新聞</a>
             </nav>
         </nav>
         <!-- 一鍵置頂/置底 -->
         <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19" /></div>
         <div id="GoNews">
-            <a href="https://lihi1.cc/ntlvv">
+            <a href="#item-1">
                 <span><i class="fas fa-virus"></i> 台灣疫情</span>
             </a>
-            <a href="https://lihi1.cc/6R4XO">
+            <a href="#item-2">
                 <span><i class="fas fa-syringe"></i> 疫苗資訊</span>
             </a>
-            <a href="https://lihi1.cc/HL6qj">
+            <a href="#item-7">
                 <span><i class="fas fa-newspaper"></i> 即時新聞</span>
             </a>
         </div>
@@ -222,34 +198,52 @@
                 </script>
             </section>
 
-            <!-- 疫情警戒分級標準 -->
-            <section class="guideText" id="item-3">
-                <h2>疫情警戒分級標準</h2>
-                <img
-                    src="./img/alert.jpg"
-                    style="width: 100%; margin-bottom: 10px"
-                    loading="lazy"
-                    alt="疫情警戒分級標準與因應事項"
-                />
-            </section>
-
             <!-- 全國防疫措施 -->
-            <section class="guideText" id="item-4">
+            <section class="guideText" id="item-3">
                 <h2>全國防疫措施</h2>
                 <p>
-                    指揮中心表示，考量國際疫情仍然嚴峻，且境外移入病例數持續增加，而本土疫情新增數起不同場域且感染源待釐清之群聚事件，顯示社區傳播風險上升，為兼顧與維持國內防疫量能、社會經濟活動及有效控管風險，4月1日至4月30日將強化特定娛樂場所防疫作為，並維持現行口罩等防疫措施。
+                    中央流行疫情指揮中心表示，國內COVID-19疫情進入社區流行階段，本土疫情將持續升溫，為兼顧防疫、經濟及社會運作，維持國內防疫量能與有效控管風險，經綜合評估疫情情勢，宣布4月27日起取消實聯制，現行戴口罩等防疫措施仍維持至今年5月31日，相關規定說明如下：
                 </p>
                 <div id="splide_protect" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <img src="./img/alert_protect0.jpg" class="protect" loading="lazy" alt="全國防疫措施" />
+                                <img src="./img/alert_protect0.jpg" loading="lazy" alt="全國防疫措施" />
                             </li>
                             <li class="splide__slide">
-                                <img src="./img/alert_protect1.jpg" class="protect" loading="lazy" alt="全國防疫措施" />
+                                <img src="./img/alert_protect1.jpg" loading="lazy" alt="全國防疫措施" />
                             </li>
                             <li class="splide__slide">
-                                <img src="./img/alert_protect2.jpg" class="protect" loading="lazy" alt="全國防疫措施" />
+                                <img src="./img/alert_protect2.jpg" loading="lazy" alt="全國防疫措施" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 1922常見問題 -->
+            <section class="guideText" id="item-4">
+                <h2>1922常見問題</h2>
+                <p>
+                    本土疫情升溫，面對龐大確診與匡列居隔者，基層人員忙於發通知書，民眾等待時間也不知該如何應變，指揮中心列出1922常見5大問題，盼能替民眾解惑。
+                </p>
+                <div id="splide_1922" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./img/1922_1.jpg" loading="lazy" alt="1922常見問題" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/1922_2.jpg" loading="lazy" alt="1922常見問題" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/1922_3.jpg" loading="lazy" alt="1922常見問題" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/1922_4.jpg" loading="lazy" alt="1922常見問題" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./img/1922_5.jpg" loading="lazy" alt="1922常見問題" />
                             </li>
                         </ul>
                     </div>
@@ -257,7 +251,7 @@
             </section>
 
             <!-- 輕症居家照護指引 -->
-            <section class="guideText" id="item-6">
+            <section class="guideText" id="item-5">
                 <h2>輕症居家照護指引</h2>
                 <ul class="list_out">
                     <li>
@@ -349,7 +343,7 @@
             </section>
 
             <!-- 全球確診統計 -->
-            <section class="guideText" id="item-7">
+            <section class="guideText" id="item-6">
                 <h2 id="item-3">全球確診統計</h2>
                 <p>
                     「COVID-19」疫情自2019年12月底在中國爆發後，迅速擴散全球，至今逾億人確診，超過600萬人因此喪命。牛津大學數據研究網站《Our
@@ -413,7 +407,7 @@
             </section>
 
             <!-- 疫情即時新聞 -->
-            <section class="guideText" id="item-8">
+            <section class="guideText" id="item-7">
                 <h2>疫情即時新聞</h2>
                 <!-- <div class="row news_layout"></div> -->
                 <iframe
@@ -467,7 +461,6 @@
                     </script>
                 </div>
             </section>
-            <!-- 結束Dable covid_bottom / 如有任何疑問，請瀏覽http://dable.io -->
 
             <!-- 下載民視新聞APP 社群連結 -->
             <section class="guideText">
@@ -556,9 +549,6 @@
             nonce="mTRTGA9g"
         ></script>
 
-        <!-- vue js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
-
         <!-- jqueryDataTables -->
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
@@ -568,50 +558,16 @@
         <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
 
-        <!-- ScrollToTop smooth -->
-        <script>
-            function ScrollTo(id_name) {
-                $('html,body').animate(
-                    {
-                        scrollTop: $('#' + id_name).offset().top,
-                    },
-                    1000
-                )
-            }
-        </script>
-
         <!-- splide -->
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
         <!-- customize -->
-        <script src="js/data.js?ver=0719-1"></script>
-        <script src="js/editData.js?ver=0719-1"></script>
         <script src="js/script.js?ver=0719-1"></script>
+        <script src="js/system/version.js?ver=0719-1"></script>
+        <script src="js/system/jqscript.js?ver=0719-1"></script>
+
         <script>
             // 版號控管
-            ;(function () {
-                let Today = new Date()
-                let YYYY = Today.getFullYear()
-                let MM = Today.getMonth() + 1
-                let DD = Today.getDate()
-                let h = Today.getHours()
-                let m = Today.getMinutes()
-                let Time = YYYY + '' + MM + '' + DD + '' + h + '' + m
-
-                let photo = $('img')
-                let js = $('script')
-
-                for (let i = 0; i < photo.length; i++) {
-                    if (photo[i].src) {
-                        photo[i].src = photo[i].src + '?ver=' + Time
-                    }
-                }
-                for (let i = 0; i < js.length; i++) {
-                    if (js[i].src) {
-                        js[i].src = js[i].src + '?ver=' + Time
-                    }
-                }
-            })()
         </script>
     </body>
 </html>
