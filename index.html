@@ -103,25 +103,25 @@
         <nav id="navbar" class="navbar navbar-light bg-light">
             <nav class="nav nav-pills flex-column">
                 <p>導覽：</p>
-                <a class="nav-link" href="#item-1">台灣疫情動態</a>
-                <a class="nav-link" href="#item-2">疫苗接種統計</a>
-                <a class="nav-link" href="#item-3">全國防疫措施</a>
-                <a class="nav-link" href="#item-4">1922常見問題</a>
-                <a class="nav-link" href="#item-5">輕症居家照護指引</a>
-                <a class="nav-link" href="#item-6">全球確診統計</a>
-                <a class="nav-link" href="#item-7">疫情即時新聞</a>
+                <a class="nav-link" href="#item-tw">台灣疫情動態</a>
+                <a class="nav-link" href="#item-vaccine-sum">疫苗接種統計</a>
+                <a class="nav-link" href="#item-prevent-tw">全國防疫措施</a>
+                <a class="nav-link" href="#item-1922">1922常見問題</a>
+                <a class="nav-link" href="#item-guide">輕症居家照護指引</a>
+                <a class="nav-link" href="#item-prevent-global">全球確診統計</a>
+                <a class="nav-link" href="#item-news">疫情即時新聞</a>
             </nav>
         </nav>
         <!-- 一鍵置頂/置底 -->
         <div id="BackTop"><img src="img/up-arrow.svg" alt="COVDI-19" /></div>
         <div id="GoNews">
-            <a href="#item-1">
+            <a href="#item-tw">
                 <span><i class="fas fa-virus"></i> 台灣疫情</span>
             </a>
-            <a href="#item-2">
+            <a href="#item-vaccine-sum">
                 <span><i class="fas fa-syringe"></i> 疫苗資訊</span>
             </a>
-            <a href="#item-7">
+            <a href="#item-news">
                 <span><i class="fas fa-newspaper"></i> 即時新聞</span>
             </a>
         </div>
@@ -137,8 +137,8 @@
         </div>
 
         <main class="layout">
-            <!-- 本土案例校正回歸情形 -->
-            <section class="guideText" id="item-1">
+            <!-- 台灣疫情動態 -->
+            <section class="guideText" id="item-tw">
                 <h2>台灣疫情動態</h2>
                 <div
                     class="infogram-embed"
@@ -177,35 +177,71 @@
                     data-type="interactive"
                     data-title="台灣防疫政策"
                 ></div>
-                <script>
-                    !(function (e, i, n, s) {
-                        var t = 'InfogramEmbeds',
-                            d = e.getElementsByTagName('script')[0]
-                        if (window[t] && window[t].initialized) window[t].process && window[t].process()
-                        else if (!e.getElementById(n)) {
-                            var o = e.createElement('script')
-                            ;(o.async = 1),
-                                (o.id = n),
-                                (o.src = 'https://e.infogram.com/js/dist/embed-loader-min.js'),
-                                d.parentNode.insertBefore(o, d)
-                        }
-                    })(document, 0, 'infogram-async')
-                </script>
-                <div
-                    style="
-                        padding: 8px 0;
-                        font-family: Arial !important;
-                        font-size: 13px !important;
-                        line-height: 15px !important;
-                        text-align: center;
-                        border-top: 1px solid #dadada;
-                        margin: 0 30px;
-                    "
-                ></div>
+            </section>
+
+            <!-- 快篩實名制 -->
+            <section class="guideText">
+                <h2>快篩實名制</h2>
+                <button class="accordion">Q：實名制快篩試劑何時開賣？哪裡可以買？</button>
+                <div class="panel">
+                    <p>
+                        「快篩實名制」4月28日早上9點上路，全國有參與販售的4909家健保特約藥局、58個偏鄉衛生所皆可購買。健保署也提供4種「家用快篩試劑地圖查詢」功能，讓民眾可以快速查詢販賣地點及剩餘數量：
+                    </p>
+                    <ul>
+                        <li>
+                            （1）家用快篩熱度圖：<a href="https://selftest.mowd.tw/" target="_blank"
+                                >https://selftest.mowd.tw/</a
+                            >
+                        </li>
+
+                        <li>
+                            （2）COVID-19實名制快篩試劑地圖：<a href="https://reurl.cc/x9G2Gz" target="_blank"
+                                >https://reurl.cc/x9G2Gz</a
+                            >
+                        </li>
+
+                        <li>
+                            （3）台灣COVID-19快篩試劑購買地圖：<a href="https://reurl.cc/YvObXa" target="_blank"
+                                >https://reurl.cc/YvObXa</a
+                            >
+                        </li>
+
+                        <li>
+                            （4）全台快篩低價販賣所LINE：<a href="https://reurl.cc/yrE0ma" target="_blank"
+                                >https://reurl.cc/yrE0ma</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion">Q：誰可以購買快篩試劑？每天都可以買嗎？</button>
+                <div class="panel">
+                    <p>只要是持有健保卡或居留證的民眾，每個人都可以購買，無年齡限制。</p>
+                    <p>以身分證字號尾數進行分流，尾數單號週一、三、五購買，尾數雙號則是週二、四、六購買。</p>
+                </div>
+
+                <button class="accordion">Q：該準備什麼購買？一次可以買幾劑？</button>
+                <div class="panel">
+                    <p>
+                        每一輪每個身分證字號只能購買1次，一份5劑。第一輪是28日開賣，只要備妥健保卡和500元就可以購買一份5劑的快篩試劑。
+                    </p>
+                </div>
+
+                <button class="accordion">Q：可以請人代買嗎？</button>
+                <div class="panel">
+                    <p>可以，若不方便外出（例如正在居家隔離、居家檢疫、行動不便者），可將健保卡交由親友協助購買。</p>
+                </div>
+
+                <button class="accordion">Q：沒有健保卡怎麼辦？</button>
+                <div class="panel">
+                    <p>
+                        如果民眾有加健保資格但沒有健保卡，要辦理加保手續或補換發健保卡後，持健保卡購買。外國人則要持居留證購買。
+                    </p>
+                </div>
             </section>
 
             <!-- 疫苗接種統計 -->
-            <section class="guideText" id="item-2">
+            <section class="guideText" id="item-vaccine-sum">
                 <h2>疫苗接種統計</h2>
                 <div
                     class="infogram-embed"
@@ -230,7 +266,7 @@
             </section>
 
             <!-- 全國防疫措施 -->
-            <section class="guideText" id="item-3">
+            <section class="guideText" id="item-prevent-tw">
                 <h2>全國防疫措施</h2>
                 <p>
                     中央流行疫情指揮中心表示，國內COVID-19疫情進入社區流行階段，本土疫情將持續升溫，為兼顧防疫、經濟及社會運作，維持國內防疫量能與有效控管風險，經綜合評估疫情情勢，宣布4月27日起取消實聯制，現行戴口罩等防疫措施仍維持至今年5月31日，相關規定說明如下：
@@ -253,7 +289,7 @@
             </section>
 
             <!-- 1922常見問題 -->
-            <section class="guideText" id="item-4">
+            <section class="guideText" id="item-1922">
                 <h2>1922常見問題</h2>
                 <p>
                     本土疫情升溫，面對龐大確診與匡列居隔者，基層人員忙於發通知書，民眾等待時間也不知該如何應變，指揮中心列出1922常見5大問題，盼能替民眾解惑。
@@ -282,7 +318,7 @@
             </section>
 
             <!-- 輕症居家照護指引 -->
-            <section class="guideText" id="item-5">
+            <section class="guideText" id="item-guide">
                 <h2>輕症居家照護指引</h2>
                 <ul class="list_out">
                     <li>
@@ -374,8 +410,8 @@
             </section>
 
             <!-- 全球確診統計 -->
-            <section class="guideText" id="item-6">
-                <h2 id="item-3">全球確診統計</h2>
+            <section class="guideText" id="item-prevent-global">
+                <h2>全球確診統計</h2>
                 <p>
                     「COVID-19」疫情自2019年12月底在中國爆發後，迅速擴散全球，至今逾億人確診，超過600萬人因此喪命。牛津大學數據研究網站《Our
                     World in Data》也提供各國累積確診數，讓讀者了解全球疫情狀況。
@@ -425,7 +461,7 @@
             </section>
 
             <!-- 疫情即時新聞 -->
-            <section class="guideText" id="item-7">
+            <section class="guideText" id="item-news">
                 <h2>疫情即時新聞</h2>
                 <!-- <div class="row news_layout"></div> -->
                 <iframe
