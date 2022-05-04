@@ -916,3 +916,17 @@ button {
     background-color: white;
     overflow: hidden;
 }
+
+.panel ul li {
+    padding: 1rem 0;
+}
+
+.panel img {
+    width: 100%;
+}
+
+.panel span {
+    background-color: #d47c7a;
+    color: white;
+    padding: 2px;
+}
