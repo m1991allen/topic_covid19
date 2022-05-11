@@ -917,7 +917,8 @@ button {
     overflow: hidden;
 }
 
-.panel ul li {
+.panel ul li,
+.panel p {
     padding: 1rem 0;
 }
 
